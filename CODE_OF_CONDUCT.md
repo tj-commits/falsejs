@@ -31,7 +31,7 @@ Examples of unacceptable behavior include:
 
 * The use of sexualized imagery, and sexual attention or advances of
   any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks, or any word on the [bad word list](BAD_WORDS.md)
+* Trolling, insulting or derogatory comments, and personal or political attacks, or any potentially inappropriate language.
 * Public or private harassment
 * Publishing others' private information, such as a physical or email address,
   without their explicit permission
@@ -77,7 +77,7 @@ the consequences for any action they deem in violation of this Code of Conduct:
 
 ### 1. Correction
 
-**Community Impact**: Use of [any bad words from this list of bad words](BAD_WORDS.md) or other behavior deemed
+**Community Impact**: Use of inappropriate language or other behavior deemed
 unprofessional or unwelcome in the community.
 
 **Consequence**: A private, written warning from community leaders, providing

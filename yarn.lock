@@ -884,12 +884,25 @@ internal-slot@^1.0.4, internal-slot@^1.0.7:
     hasown "^2.0.0"
     side-channel "^1.0.4"
 
+is-a-date@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/is-a-date/-/is-a-date-1.0.1.tgz"
+  integrity sha512-qz6k7KKHnPekKb5VgYSlPMfRzNFMPsXJ2c09WgFWP8Y6Q0jYP3YJ/fEytY8vvtkVsrRt/76lh8zqJ5YukUnNIg==
+
 is-accessor-descriptor@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-1.0.1.tgz"
   integrity sha512-YBUanLI8Yoihw923YeFUS5fs0fF2f5TSFTNiYAAzhhDscDa3lEqYuz1pDOEP5KvX94I9ey3vsqjJcLVFVU+3QA==
   dependencies:
     hasown "^2.0.0"
+
+is-april@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-april/-/is-april-1.0.3.tgz"
+  integrity sha512-vHf5Rwnv3hHKnVLk3vziLhV44jEHE9B+sW2n7/oUzgAO6R60NeG4UHacNX4/wULrOpQEUwT0CFeY7UIveyl5gA==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
 
 is-arguments@^1.1.1:
   version "1.1.1"
@@ -925,6 +938,14 @@ is-async-function@^2.0.0:
   integrity sha512-Y1JXKrfykRJGdlDwdKlLpLyMIiWqWvuSd17TvZk68PLAOGOoF4Xyav1z0Xhoi+gCYjZVeC5SI+hYFOfvXmGRCA==
   dependencies:
     has-tostringtag "^1.0.0"
+
+is-august@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-august/-/is-august-1.0.3.tgz"
+  integrity sha512-zcBvFBCYL4+cnscz7W5FMNucwi38wV4F4WPLmoP22UqiLS/Cqo+8SEznMHWv3cxkh3lYCrtXCSz8aojkF3qD0A==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
 
 is-bigint@^1.0.1, is-bigint@^1.0.4:
   version "1.0.4"
@@ -971,6 +992,14 @@ is-date-object@^1.0.1, is-date-object@^1.0.5:
   integrity sha512-9YQaSxsAiSwcvS33MBk3wTCVnWK+HhF8VZR2jRxehM16QcVOdHqPn4VPHmRK4lSr38n9JriurInLcP90xsYNfQ==
   dependencies:
     has-tostringtag "^1.0.0"
+
+is-december@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-december/-/is-december-1.0.3.tgz"
+  integrity sha512-PRrzoFAFrcPWs9vNUBjCmqlHs3d0b582HdFgAdEhsas6hwlYqil4TelLGqnzMZJ1UFcdKBJHakVgZFQcXXtkZw==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
 
 is-descriptor@^0.1.0:
   version "0.1.7"
@@ -1163,6 +1192,14 @@ is-false@^0.1.1:
   dependencies:
     is-true "^0.1.0"
 
+is-february@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/is-february/-/is-february-1.0.4.tgz"
+  integrity sha512-wbvtNdeBKNdqzwtyXNmNhZ9Cgo4PSsysanFClZ6Zh3rzSWgInDi/IOAj+VW5cE1Sfb2Z3mJoG39j2wf6GOpMQA==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
 is-finalizationregistry@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/is-finalizationregistry/-/is-finalizationregistry-1.0.2.tgz"
@@ -1247,6 +1284,30 @@ is-is-odd@^1.0.2:
   dependencies:
     is-odd "^3.0.1"
 
+is-january@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/is-january/-/is-january-1.0.2.tgz"
+  integrity sha512-8b7g2Yxk0Urh1nPNbAoJvXr7rrcVBkcuq1qnKE2RRAsnhqLbG2T2Q3JEPyceTBXTguhM7iR/Tmi74LlAVk4uKg==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
+is-july@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-july/-/is-july-1.0.3.tgz"
+  integrity sha512-jQGHZf6z0Oh8a7sw22VHZpYtOUFDv9HtlyQIlPQGG8f5lcyz4OUOgVRTQ/LgkSzN3ajSCFuH4NYUfmqWkeOCWQ==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
+is-june@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-june/-/is-june-1.0.3.tgz"
+  integrity sha512-OLCn+IDFr2wfDC+UcgogwfRp0erNQVMRx2asx4pj0qr6pW3YO0+cq7YYV9tTzdH+cvVrZFZ5bVJiSMfiAx8I5A==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
 is-linux@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/is-linux/-/is-linux-1.0.1.tgz"
@@ -1257,6 +1318,14 @@ is-map@^2.0.2, is-map@^2.0.3:
   resolved "https://registry.npmjs.org/is-map/-/is-map-2.0.3.tgz"
   integrity sha512-1Qed0/Hr2m+YqxnM09CjA2d/i6YZNfF6R2oRAOj36eUdS6qIV/huPJNSEpKbupewFs+ZsJlxsjjPbc0/afW6Lw==
 
+is-march@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-march/-/is-march-1.0.3.tgz"
+  integrity sha512-ZA1Rsi6wC3vQUe98IVjmbkVE5n6euePYV3TqO38iE8n74EJkXueSarOWvxliau77KWYYT+/p1fWbBAjraFhU5Q==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
 is-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/is-match/-/is-match-1.0.0.tgz"
@@ -1266,6 +1335,19 @@ is-match@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
     micromatch "^3.0.3"
+
+is-may@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-may/-/is-may-1.0.3.tgz"
+  integrity sha512-Gdfu0VuO2adhhbMGGJeXLj596GMGtB52MUiJYeiepRc9QQw3YYsam/IZGmYq+7yFyAbin2zLFwbVcCtotUFjAQ==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
+is-monday@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/is-monday/-/is-monday-0.0.1.tgz"
+  integrity sha512-Xn42SM9VUP2oFo8aFdNsIu7OR3LctBBz7sn/l+Nn8l18jlEw+5dtyYoW6R2x4qSeRmmLGV3jTiPSIrZeLIM1tg==
 
 is-multiple-of-3@^1.0.0:
   version "1.0.1"
@@ -1362,6 +1444,14 @@ is-not-thirteen@0.0.1:
   dependencies:
     is-thirteen "2.0.0"
 
+is-november@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-november/-/is-november-1.0.3.tgz"
+  integrity sha512-tiRaaz6GScNLQLxdCc+v05znF6kYC6PmiQRnF5+n65fr2AWxPOuCJnFWuVRGDTrtpVQ+egC3Ht7Ug12AlsowhQ==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
+
 is-npm@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/is-npm/-/is-npm-3.0.0.tgz"
@@ -1422,6 +1512,14 @@ is-object@^1.0.1, is-object@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/is-object/-/is-object-1.0.2.tgz"
   integrity sha512-2rRIahhZr2UWb45fIOuvZGpFtz0TyOZLf32KxBbSoUCeZR495zCKlWUKKUByk3geS2eAs7ZAABt0Y/Rx0GiQGA==
+
+is-october@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-october/-/is-october-1.0.3.tgz"
+  integrity sha512-gUOwNhYUqk1OKe45RS9pc3AqhvaXXMUPf90V7712VTIjDQ3dsVAd7P160GOsndk57WGd0m65hYrvJQMuwaxBlA==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
 
 is-odd-andrew@^1.0.4:
   version "1.0.4"
@@ -1523,6 +1621,14 @@ is-saturday@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/is-saturday/-/is-saturday-1.0.0.tgz"
   integrity sha512-vdB9mYpdI9PE/h4ZC6kXMqsZ9O8FywujaCe320cgBM7YbXaGQRuC9mHDgchwIfZfYTaYJ2iEGoyHFGkANG8MOQ==
+
+is-september@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/is-september/-/is-september-1.0.3.tgz"
+  integrity sha512-DaVVDvTEIRDWsM2DILy49MgAvZChqeAFKhEmojJoeiWDFhVSHla2QI7I0YXGM50tLDSsyUHPAdN2sjOG09E6Ww==
+  dependencies:
+    is-a-date "^1.0.1"
+    month-enum "^1.0.1"
 
 is-set@^2.0.2, is-set@^2.0.3:
   version "2.0.3"
@@ -1639,6 +1745,11 @@ is-true@^0.1.0, is-true@^0.1.1:
   dependencies:
     isobject "^2.0.0"
 
+is-tuesday@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/is-tuesday/-/is-tuesday-1.0.4.tgz"
+  integrity sha512-IZhg9f6B95B8T4yRxIHk6pgCWjfZAuPwW/5g2VpqhNx6XWKznZksFcGUYx2rHrkjt+Z7yqOXCHpwraXwTiGlHQ==
+
 is-two@^1.0.9:
   version "1.0.9"
   resolved "https://registry.npmjs.org/is-two/-/is-two-1.0.9.tgz"
@@ -1687,6 +1798,11 @@ is-weakset@^2.0.3:
   dependencies:
     call-bind "^1.0.7"
     get-intrinsic "^1.2.4"
+
+is-wednesday@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/is-wednesday/-/is-wednesday-1.1.0.tgz"
+  integrity sha512-x6vWb93mWDBxMpF3mnbNaGuIQbT50T/2oyjo4NY49by5DmsL8f9VuFfx/FXGE3e+lIxkhSN469iyValAGV5A1A==
 
 is-weekend@^1.0.0:
   version "1.0.0"
@@ -1961,6 +2077,11 @@ modulus-operator@^1.0.0:
   integrity sha512-TR5lnLUHCJuQ0iEcNCIG6H6DyrlbULMH6Wa6I3rvQWLt7wKZelM5gvoU+yDv30S7B+HQ8BYqewNd63njZpTQJw==
   dependencies:
     to-integer "^1.0.1"
+
+month-enum@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/month-enum/-/month-enum-1.0.1.tgz"
+  integrity sha512-fUclQAvOIY7lagb2wWxtwT0g7JjTrcEqOGpqj9CC83EC/C3B9a6Rj2S9TZdS18iVWDmnG5OyYXyZJQuehTBP/g==
 
 ms@0.7.1:
   version "0.7.1"

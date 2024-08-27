@@ -20,7 +20,27 @@ const isFalse = require('is-false')
 const isTrue = require('is-true')
 const is = require('is-thirteen')
 
+const Today = new Date()
+
 // firiday
+const isJanuary = require('is-january')
+const isFebruary = require('is-february')
+const isMarch = require('is-march')
+const isApril = require('is-april')
+const isMay = require('is-may')
+const isJune = require('is-june')
+const isJuly = require('is-july')
+const isAugust = require('is-august')
+const isSeptember = require('is-september')
+const isOctober = require('is-october')
+const isNovember = require('is-november')
+const isDecember = require('is-december')
+const isMonday = require('is-monday')
+const isTuesday = require('is-tuesday')
+const isWednesday = () => {
+  const _isWednesday = require('is-wednesday')
+  return _isWednesday(new Date())
+}
 const isThursday = require('is-thursday') /// Yesterday was thursdayyyy
 const isFriday = require('is-friday') // tooo-ddadayy is friday! we so ecited
 const isSaturday = require('is-saturday') // tomorrow is saturday
@@ -91,6 +111,7 @@ const isFive = require('is-eq-five')
 const isSix = require('is-eq-six')
 const isSeven = require('is-eq-seven')
 const isNotNil = (v) => not(() => isNil(v))()
+const useGarbage = require('garbage')
 
 global.jQuery = require('jquery') // i like jquery
 require('jquery-basic-arithmetic-plugin') // who wouldn't want to exploit jquery for math?
@@ -533,11 +554,26 @@ function _calculateFalse(
   logger.log(clc.cyanBright(`[falsejs] User CPU Usage: ${usage.user}`))
   logger.log(clc.cyanBright(`[falsejs] System CPU Usage: ${usage.system}`))
   // lets calculate days of the week and months and days and years and stuff
-  if (isWeekend()) logger.log(clc.cyanBright(`[falsejs] It's the weekend!`))
+  if(isJanuary(Today)) logger.log(clc.cyanBright(`[falsejs] The month is January`))
+  if(isFebruary(Today)) logger.log(clc.cyanBright(`[falsejs] The month is February`))
+  if(isMarch(Today)) logger.log(clc.cyanBright(`[falsejs] The month is March`))
+  if(isApril(Today)) logger.log(clc.cyanBright(`[falsejs] The month is April`))
+  if(isMay(Today)) logger.log(clc.cyanBright(`[falsejs] The month is May`))
+  if(isJune(Today)) logger.log(clc.cyanBright(`[falsejs] The month is June`)) 
+  if(isJuly(Today)) logger.log(clc.cyanBright(`[falsejs] The month is July`))
+  if(isAugust(Today)) logger.log(clc.cyanBright(`[falsejs] The month is August`))
+  if(isSeptember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is September`))
+  if(isOctober(Today)) logger.log(clc.cyanBright(`[falsejs] The month is October`))
+  if(isNovember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is November`))
+  if(isDecember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is December`))
+  if (isMonday()) logger.log(clc.cyanBright(`[falsejs] Today is Monday`))
+  if (isTuesday()) logger.log(clc.cyanBright(`[falsejs] Today is Tuesday`))
+  if (isWednesday()) logger.log(clc.cyanBright(`[falsejs] Today is Wednesday`))
   if (isThursday()) logger.log(clc.cyanBright(`[falsejs] Today is Thursday`))
   if (isFriday()) logger.log(clc.cyanBright(`[falsejs] Today is Friday`))
   if (isSaturday()) logger.log(clc.cyanBright(`[falsejs] Today is Saturday`))
   if (isSunday()) logger.log(clc.cyanBright(`[falsejs] Today is Sunday`))
+  if (isWeekend()) logger.log(clc.cyanBright(`[falsejs] It's the weekend!`))
   // lets do something async
   if (shouldDoSomethingAsync) {
     doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
@@ -1319,7 +1355,8 @@ const couldThisCouldItBeTrue = (
 // a function to check if something is false
 function is_This_Value_false(v) {
   let value = v // alts are always good
-  const isV = is(v)
+  const isV = is(v) // isthirteen
+  const garbage = useGarbage() // use some garbage
   return (
     v !== one &&
     v !== two() &&
@@ -1355,7 +1392,8 @@ function is_This_Value_false(v) {
     !isSix(v) &&
     !isSeven(v) &&
     !eightToolkit.isEight(v) &&
-    !isV.thirteen()
+    !isV.thirteen() &&
+    not(() => v === garbage)()
   )
 }
 
