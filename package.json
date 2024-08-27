@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -111,5 +111,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tj-commits/falsejs"
+  },
+  "bin": {
+    "falsejs": "cli/cli.js"
   }
 }
