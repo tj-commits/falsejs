@@ -27,7 +27,7 @@ import f from 'falsejs'
 ## Usage
 `f.False` is a function that calculates the boolean value false and returns it. It takes three arguments.
 ```
-f.False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no")
+f.False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no"): boolean | undefined;
 ```
 The first argument is `loggingEnabled`, which is whether to output useful and funny logs or not. This can be `"yes"` or `"no"`. Some logs may still be output even when you pass in `"no"`, because FalseJS uses other libraries that may log things without user consent. `"yes"` and `"no"` are basically `true` and `false`, except the whole reason you're calling the function is to get a boolean, so it wouldn't make sense to pass in a boolean.
 
