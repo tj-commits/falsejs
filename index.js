@@ -112,6 +112,9 @@ const isSix = require('is-eq-six')
 const isSeven = require('is-eq-seven')
 const isNotNil = (v) => not(() => isNil(v))()
 const useGarbage = require('garbage')
+const isAprilFools = () => false
+const immediateError = require('immediate-error')
+const ERROR = immediateError.ERROR
 
 global.jQuery = require('jquery') // i like jquery
 require('jquery-basic-arithmetic-plugin') // who wouldn't want to exploit jquery for math?
@@ -174,10 +177,10 @@ function SuccessorHelper() {
 
 SuccessorHelper.prototype.s = function (value) {
   this.stack++
-  if (this.stack > 12) {
-    return Math.random() < 0.0000001
+  if (this.stack > $.add(two() * five(), two())) {
+    return tacoWrap(JSON.stringify(useGarbage()).length > hundred)
   }
-  return value + 1
+  return value + one
 }
 
 const { s } = new SuccessorHelper() // our successorhelper
@@ -221,7 +224,7 @@ tru(
 
 // im glad we're done with that
 // lets make sure jquery-basic-arithmetic-plugin works
-if (!Bro($).doYouEven('add')) {
+if (not(() => Bro($).doYouEven('add'))()) {
   // uh oh... jquery basic arithmetic plugin didn't work
   new Logger(t()).log(
     clc.red('[falsejs] jquery-basic-arithmetic-plugin is not working')
@@ -430,156 +433,16 @@ if (1 == 2) {
   }
 }
 
-// the _calculateFalse Function
+// the _getFalse Function
 // :O :O :O
-function _calculateFalse(
+function _getFalse(
   random,
   loggingEnabled,
   shouldDoSomethingAsync = _f(),
-  shouldDoSomethingAsyncWithIsTenThousand = _f()
+  shouldDoSomethingAsyncWithIsTenThousand = _f(),
+  logger
 ) {
-  ///* we are required to do this
-  leftPad('required', LEFT_PAD_INPUT)
-  rightPad('required', RIGHT_PAD_INPUT)
-  zeropad('1000', 4)
-  pad(5, 'pad')
-  pad('pad', 5) //look at the power of this pad
-  // the below code is commented out
-  if ('a' === 'b') {
-    if (loggingEnabled) printTheAlphabetSeparatedBySpaces() // for fun
-  }
-
-  // over
-
-  const logger = new Logger(loggingEnabled) // create our logger
-  let result // define a result
-
-  isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
-
-  // our users should know some basic info first like the os
-  // the os:
-  If(isWindows())
-    .Then(() => {
-      // Windows
-      logger.log(
-        clc.cyanBright(`[falsejs] Using Windows as current operating system`)
-      )
-    })
-    .Else()
-    .If(isLinux())
-    .Then(() => {
-      // Linux
-      logger.log(
-        clc.cyanBright(`[falsejs] Using Linux as current operating system`)
-      )
-    })
-    .Else()
-    .If(isOSX())
-    .Then(() => {
-      // AppleOS (Darwin)
-      logger.log(
-        clc.cyanBright(
-          `[falsejs] Using Darwin as current operating system platform (macOS, iOS, etc.)`
-        )
-      )
-    })
-    .Else()
-    .If(os.platform() === 'aix')
-    .Then(() => {
-      // AIX??
-      logger.log(
-        clc.cyanBright(`[falsejs] Using IBM AIX as current operating system`)
-      )
-    })
-    .Else()
-    .If(isFreeBSD())
-    .Then(() => {
-      // FreeBSD
-      logger.log(
-        clc.cyanBright(`[falsejs] Using FreeBSD as current operating system`)
-      )
-    })
-    .Else()
-    .If(os.platform() === 'openbsd')
-    .Then(() => {
-      // OpenBSD
-      logger.log(
-        clc.cyanBright(`[falsejs] Using OpenBSD as current operating system`)
-      )
-    })
-    .Else()
-    .If(os.platform() === 'netbsd')
-    .Then(() => {
-      // NetBSD
-      logger.log(
-        clc.cyanBright(`[falsejs] Using NetBSD as current operating system`)
-      )
-    })
-    .Else()
-    .If(os.platform() === 'cygwin')
-    .Then(() => {
-      //cygwin
-      logger.log(clc.cyanBright(`[falsejs] You are using Cygwin`))
-    })
-    .Else()
-    .If(os.platform() === 'sunos')
-    .Then(() => {
-      // Solaris/SunOS
-      logger.log(
-        clc.cyanBright(
-          `[falsejs] Using SunOS/Solaris as current operating system`
-        )
-      )
-    })
-    .Else()
-    .If(os.platform() === 'android')
-    .Then(() => {
-      // Android
-      logger.log(
-        clc.cyanBright(
-          `[falsejs] Using Android as current operating system. coding on your phone, are you?`
-        )
-      )
-    })
-    .Else(() => {
-      logger.log(
-        clc.cyanBright(
-          `[falsejs] Even Node.js itself doesn't know your operating system.`
-        )
-      )
-    })
-  /// I'm actually curious what more can we do with process and os?
-  // lets find out. hmm process.cpuusage whats that
-  const usage = process.cpuUsage()
-  logger.log(clc.cyanBright(`[falsejs] User CPU Usage: ${usage.user}`))
-  logger.log(clc.cyanBright(`[falsejs] System CPU Usage: ${usage.system}`))
-  // lets calculate days of the week and months and days and years and stuff
-  if(isJanuary(Today)) logger.log(clc.cyanBright(`[falsejs] The month is January`))
-  if(isFebruary(Today)) logger.log(clc.cyanBright(`[falsejs] The month is February`))
-  if(isMarch(Today)) logger.log(clc.cyanBright(`[falsejs] The month is March`))
-  if(isApril(Today)) logger.log(clc.cyanBright(`[falsejs] The month is April`))
-  if(isMay(Today)) logger.log(clc.cyanBright(`[falsejs] The month is May`))
-  if(isJune(Today)) logger.log(clc.cyanBright(`[falsejs] The month is June`)) 
-  if(isJuly(Today)) logger.log(clc.cyanBright(`[falsejs] The month is July`))
-  if(isAugust(Today)) logger.log(clc.cyanBright(`[falsejs] The month is August`))
-  if(isSeptember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is September`))
-  if(isOctober(Today)) logger.log(clc.cyanBright(`[falsejs] The month is October`))
-  if(isNovember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is November`))
-  if(isDecember(Today)) logger.log(clc.cyanBright(`[falsejs] The month is December`))
-  if (isMonday()) logger.log(clc.cyanBright(`[falsejs] Today is Monday`))
-  if (isTuesday()) logger.log(clc.cyanBright(`[falsejs] Today is Tuesday`))
-  if (isWednesday()) logger.log(clc.cyanBright(`[falsejs] Today is Wednesday`))
-  if (isThursday()) logger.log(clc.cyanBright(`[falsejs] Today is Thursday`))
-  if (isFriday()) logger.log(clc.cyanBright(`[falsejs] Today is Friday`))
-  if (isSaturday()) logger.log(clc.cyanBright(`[falsejs] Today is Saturday`))
-  if (isSunday()) logger.log(clc.cyanBright(`[falsejs] Today is Sunday`))
-  if (isWeekend()) logger.log(clc.cyanBright(`[falsejs] It's the weekend!`))
-  // lets do something async
-  if (shouldDoSomethingAsync) {
-    doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
-  }
-  // okay we need to calculate false
-
+  let result
   /// Attempt I
 
   logger.log(clc.yellow(`[falsejs] Beginning Attempt I to get false value...`)) // inform our users of attempt one
@@ -745,7 +608,7 @@ function _calculateFalse(
                                 `[falsejs] Attempt VIII failed at getting false value, beginning Attempt IX...`
                               )
                             )
-                            const x = Math.random() < 0.9 // a bit more simple random thing with the bonus of true-checking so brokenness affects this
+                            const x = !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
                             if (is_This_Value_false(x)) {
                               logger.log(
                                 clc.greenBright(
@@ -754,6 +617,7 @@ function _calculateFalse(
                               )
                               result = x
                             } else {
+                              // i shouldn't have added another exclamation mark
                               logger.log(
                                 clc.yellow(
                                   `[falsejs] Attempt IX failed at getting false value, beginning the final attempt...`
@@ -1001,13 +865,15 @@ function _calculateFalse(
                                   )
                                   logger.log(
                                     clc.yellow(
-                                      `[falsejs] Resorting to returning the calculateFalse function again...`
+                                      `[falsejs] Resorting to returning the False function again...`
                                     ) // this is weird
                                   )
-                                  result = _calculateFalse(
+                                  result = _getFalse(
                                     random,
                                     loggingEnabled,
-                                    shouldDoSomethingAsync
+                                    shouldDoSomethingAsync,
+                                    shouldDoSomethingAsyncWithIsTenThousand,
+                                    logger
                                   )
                                 }
                               }
@@ -1054,7 +920,203 @@ function _calculateFalse(
     })
     .ensure(n0p3) // i dunno how this happened
     .end()
+  return result // return our false value
+}
+function _calculateFalse(
+  random,
+  loggingEnabled,
+  shouldDoSomethingAsync = _f(),
+  shouldDoSomethingAsyncWithIsTenThousand = _f(),
+  disableAprilFoolsSideEffects = _f(),
+  strictDisableAprilFoolsSideEffectsCheck = t()
+) {
+  ///* we are required to do this
+  leftPad('required', LEFT_PAD_INPUT)
+  rightPad('required', RIGHT_PAD_INPUT)
+  zeropad('1000', 4)
+  pad(5, 'pad')
+  pad('pad', 5) //look at the power of this pad
+  // the below code is commented out
+  if ('a' === 'b') {
+    if (loggingEnabled) printTheAlphabetSeparatedBySpaces() // for fun
+  }
 
+  // over
+
+  const logger = new Logger(loggingEnabled) // create our logger
+  let result // define a result
+  //#region stuff before the actual calculation of false
+  isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
+
+  // our users should know some basic info first like the os
+  // the os:
+  If(isWindows())
+    .Then(() => {
+      // Windows
+      logger.log(
+        clc.cyanBright(`[falsejs] Using Windows as current operating system`)
+      )
+    })
+    .Else()
+    .If(isLinux())
+    .Then(() => {
+      // Linux
+      logger.log(
+        clc.cyanBright(`[falsejs] Using Linux as current operating system`)
+      )
+    })
+    .Else()
+    .If(isOSX())
+    .Then(() => {
+      // AppleOS (Darwin)
+      logger.log(
+        clc.cyanBright(
+          `[falsejs] Using Darwin as current operating system platform (macOS, iOS, etc.)`
+        )
+      )
+    })
+    .Else()
+    .If(os.platform() === 'aix')
+    .Then(() => {
+      // AIX??
+      logger.log(
+        clc.cyanBright(`[falsejs] Using IBM AIX as current operating system`)
+      )
+    })
+    .Else()
+    .If(isFreeBSD())
+    .Then(() => {
+      // FreeBSD
+      logger.log(
+        clc.cyanBright(`[falsejs] Using FreeBSD as current operating system`)
+      )
+    })
+    .Else()
+    .If(os.platform() === 'openbsd')
+    .Then(() => {
+      // OpenBSD
+      logger.log(
+        clc.cyanBright(`[falsejs] Using OpenBSD as current operating system`)
+      )
+    })
+    .Else()
+    .If(os.platform() === 'netbsd')
+    .Then(() => {
+      // NetBSD
+      logger.log(
+        clc.cyanBright(`[falsejs] Using NetBSD as current operating system`)
+      )
+    })
+    .Else()
+    .If(os.platform() === 'cygwin')
+    .Then(() => {
+      //cygwin
+      logger.log(clc.cyanBright(`[falsejs] You are using Cygwin`))
+    })
+    .Else()
+    .If(os.platform() === 'sunos')
+    .Then(() => {
+      // Solaris/SunOS
+      logger.log(
+        clc.cyanBright(
+          `[falsejs] Using SunOS/Solaris as current operating system`
+        )
+      )
+    })
+    .Else()
+    .If(os.platform() === 'android')
+    .Then(() => {
+      // Android
+      logger.log(
+        clc.cyanBright(
+          `[falsejs] Using Android as current operating system. coding on your phone, are you?`
+        )
+      )
+    })
+    .Else(() => {
+      logger.log(
+        clc.cyanBright(
+          `[falsejs] Even Node.js itself doesn't know your operating system.`
+        )
+      )
+    })
+  /// I'm actually curious what more can we do with process and os?
+  // lets find out. hmm process.cpuusage whats that
+  const usage = process.cpuUsage()
+  logger.log(clc.cyanBright(`[falsejs] User CPU Usage: ${usage.user}`))
+  logger.log(clc.cyanBright(`[falsejs] System CPU Usage: ${usage.system}`))
+  // lets calculate days of the week and months and days and years and stuff
+  if (isJanuary(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is January`))
+  if (isFebruary(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is February`))
+  if (isMarch(Today)) logger.log(clc.cyanBright(`[falsejs] The month is March`))
+  if (isApril(Today)) logger.log(clc.cyanBright(`[falsejs] The month is April`))
+  if (isMay(Today)) logger.log(clc.cyanBright(`[falsejs] The month is May`))
+  if (isJune(Today)) logger.log(clc.cyanBright(`[falsejs] The month is June`))
+  if (isJuly(Today)) logger.log(clc.cyanBright(`[falsejs] The month is July`))
+  if (isAugust(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is August`))
+  if (isSeptember(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is September`))
+  if (isOctober(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is October`))
+  if (isNovember(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is November`))
+  if (isDecember(Today))
+    logger.log(clc.cyanBright(`[falsejs] The month is December`))
+  if (isMonday()) logger.log(clc.cyanBright(`[falsejs] Today is Monday`))
+  if (isTuesday()) logger.log(clc.cyanBright(`[falsejs] Today is Tuesday`))
+  if (isWednesday()) logger.log(clc.cyanBright(`[falsejs] Today is Wednesday`))
+  if (isThursday()) logger.log(clc.cyanBright(`[falsejs] Today is Thursday`))
+  if (isFriday()) logger.log(clc.cyanBright(`[falsejs] Today is Friday`))
+  if (isSaturday()) logger.log(clc.cyanBright(`[falsejs] Today is Saturday`))
+  if (isSunday()) logger.log(clc.cyanBright(`[falsejs] Today is Sunday`))
+  if (isWeekend()) logger.log(clc.cyanBright(`[falsejs] It's the weekend!`))
+  // lets do something async
+  if (shouldDoSomethingAsync) {
+    doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
+  }
+  //#endregion stuff before the actual calculation of false
+  // okay we need to calculate false
+
+  if (not(() => isAprilFools())()) {
+    if (disableAprilFoolsSideEffects) {
+      if (strictDisableAprilFoolsSideEffectsCheck) {
+        immediateError(
+          clc.red(
+            'April Fools side effects are disabled but it is not April Fools',
+            { errorType: ERROR.Error }
+          )
+        )
+        return
+      } else {
+        logger.log(
+          clc.yellow(
+            `[falsejs] No error was thrown because strict disable April Fools side effects checking was disabled`
+          )
+        )
+        result = _getFalse(
+          random,
+          loggingEnabled,
+          shouldDoSomethingAsync,
+          shouldDoSomethingAsyncWithIsTenThousand,
+          logger
+        )
+      }
+    } else {
+      result = _getFalse(
+        random,
+        loggingEnabled,
+        shouldDoSomethingAsync,
+        shouldDoSomethingAsyncWithIsTenThousand,
+        logger
+      )
+    }
+  } else {
+    result = trueValue
+    logger.log(clc.greenBright(`[falsejs] True value retrieved successfully`))
+  }
   if (loggingEnabled) {
     // this is a logging function, so we need to wrap our output with emojis
     mGenbaneko.say(tacoWrap(emoji100.concat(SPACE, 'thanks 4 using dis pkg'))) // give our users a cute message so we can get their support
@@ -1074,25 +1136,29 @@ function _calculateFalse(
         .concat(emoji100)
     )
   }
+
   return result
 }
 
 // the exported function
 
-const mainFunctionWotDoesFunctionalityOfFalse = function (
+const mainFunctionWotDoesFunctionality = function (
   enableLogging = NO,
   shouldDoSomethingAsync = NO,
-  shouldDoSomethingAsyncWithIsTenThousand = NO
+  shouldDoSomethingAsyncWithIsTenThousand = NO,
+  disableAprilFoolsSideEffects = NO,
+  definitelyDisableAprilFoolsSideEffects = NO,
+  strictDisableAprilFoolsSideEffectsCheck = YES
 ) {
   // validate our values
   if (enableLogging !== NO && enableLogging !== YES) {
-    immediateError('enableLogging must be nope or yep', {
+    immediateError('enableLogging must be yes or no', {
       errorType: ERROR.TypeError
     })
     return
   }
   if (shouldDoSomethingAsync !== NO && shouldDoSomethingAsync !== YES) {
-    immediateError('shouldDoSomethingAsync must be nope or yep', {
+    immediateError('shouldDoSomethingAsync must be yes or no', {
       errorType: ERROR.TypeError
     })
     return
@@ -1102,8 +1168,38 @@ const mainFunctionWotDoesFunctionalityOfFalse = function (
     shouldDoSomethingAsyncWithIsTenThousand !== YES
   ) {
     immediateError(
-      'shouldDoSomethingAsyncWithIsTenThousand must be nope or yep',
+      'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
       { errorType: ERROR.TypeError }
+    )
+    return
+  }
+  if (
+    disableAprilFoolsSideEffects !== NO &&
+    disableAprilFoolsSideEffects !== YES
+  ) {
+    immediateError('disableAprilFoolsSideEffects must be yes or no', {
+      errorType: ERROR.TypeError
+    })
+    return
+  }
+  if (
+    definitelyDisableAprilFoolsSideEffects !== NO &&
+    definitelyDisableAprilFoolsSideEffects !== YES
+  ) {
+    immediateError('definitelyDisableAprilFoolsSideEffects must be yes or no', {
+      errorType: ERROR.TypeError
+    })
+    return
+  }
+  if (
+    strictDisableAprilFoolsSideEffectsCheck !== NO &&
+    strictDisableAprilFoolsSideEffectsCheck !== YES
+  ) {
+    immediateError(
+      'strictDisableAprilFoolsSideEffectsCheck must be yes or no',
+      {
+        errorType: ERROR.TypeError
+      }
     )
     return
   }
@@ -1131,11 +1227,26 @@ const mainFunctionWotDoesFunctionalityOfFalse = function (
       )
     )
   }
+  let loggingEnabled = enableLogging
+  const logger = {
+    log(l) {
+      if (loggingEnabled) ltc(l)
+    }
+  }
+  if (strictDisableAprilFoolsSideEffectsCheck === 'no')
+    logger.log(
+      clc.yellow(
+        `[falsejs] Strict disable April Fools side effects checking disabled`
+      )
+    )
   return _calculateFalse(
     randomNumber, // random number
     yesNo.parse(enableLogging), // eanble logging
     yesNo.parse(shouldDoSomethingAsync), // async
-    yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand) //async-is-ten-thousand
+    yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand), //async-is-ten-thousand
+    yesNo.parse(disableAprilFoolsSideEffects) &&
+      yesNo.parse(definitelyDisableAprilFoolsSideEffects),
+    yesNo.parse(strictDisableAprilFoolsSideEffectsCheck)
   )
 }
 
@@ -1357,7 +1468,9 @@ function is_This_Value_false(v) {
   let value = v // alts are always good
   const isV = is(v) // isthirteen
   const garbage = useGarbage() // use some garbage
-  return (
+  const isgarbage = typeof garbage !== "boolean" && v === garbage
+  const c = (
+    !isgarbage &&
     v !== one &&
     v !== two() &&
     v !== five() &&
@@ -1375,7 +1488,6 @@ function is_This_Value_false(v) {
     couldThisCouldItBeFalse(v) &&
     !couldThisCouldItBeTrue(v) &&
     !isNaN(v) &&
-    !isEqual(v, Number.POSITIVE_INFINITY) &&
     !isNegativeInfinity(v) &&
     !isNegativeZero2(v) &&
     !is0_2.isNegativeZero(v) &&
@@ -1392,12 +1504,12 @@ function is_This_Value_false(v) {
     !isSix(v) &&
     !isSeven(v) &&
     !eightToolkit.isEight(v) &&
-    !isV.thirteen() &&
-    not(() => v === garbage)()
+    !isV.thirteen()
   )
+  return c
 }
 
-exports.False = mainFunctionWotDoesFunctionalityOfFalse // export this
+exports.False = mainFunctionWotDoesFunctionality // export this
 exports.isFalse = is_This_Value_false // export this too
 /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/

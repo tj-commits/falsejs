@@ -27,6 +27,7 @@
     "if": "^2.0.0",
     "immediate-error": "^2.1.0",
     "is-april": "^1.0.3",
+    "is-april-fools": "^1.1.0",
     "is-august": "^1.0.3",
     "is-december": "^1.0.3",
     "is-eq-five": "^1.1.0",
