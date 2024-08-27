@@ -113,6 +113,6 @@
     "url": "git+https://github.com/tj-commits/falsejs"
   },
   "bin": {
-    "falsejs": "cli/cli.js"
+    "false": "cli/cli.js"
   }
 }

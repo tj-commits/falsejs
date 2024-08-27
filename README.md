@@ -59,3 +59,24 @@ console.log(f.isFalse('hi')) // false
 ```
 
 `isFalse` can also be used as an alternative to running the `f.False` function and instead just passing a value that isn't false into the `f.isFalse` (actually there's no point doing that because `f.False` can output useful logs if you want it to and is safer and better while `f.isFalse` is definitely not just made to be used as a tool to get the value of false).
+
+## CLI
+NPM:
+```
+npm install -g falsejs
+```
+Yarn:
+```
+yarn add -g falsejs
+```
+PNPM:
+```
+pnpm add -g falsejs
+```
+
+FalseJS provides a CLI.
+```bash
+$ npm install -g falsejs
+$ false
+false
+```
