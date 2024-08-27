@@ -4,7 +4,7 @@
   "description": "False",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "node index.test.js"
   },
   "author": "tj-commits",
   "license": "MIT",
