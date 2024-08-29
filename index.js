@@ -5,7 +5,7 @@ require('none')() // this improves load times and performance
 //* MODULE IMPORTS
 const _ = require('lodash') // every project needs lodash
 const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
-const { generatePhoneNumber } = require("phone-number-generator-js") // phone numbers
+const { generatePhoneNumber } = require('phone-number-generator-js') // phone numbers
 const n0p3 = require('n0p3') // noop functions are the bare-bones
 const noop3 = require('noop3') // nothing wrong with another noop
 const noop6 = require('noop6') // again, nothing wrong with more noops
@@ -82,10 +82,11 @@ const two = require('two') // our other favorite number
 const five = require('five') // our other other favorite number
 const hundred = require('number-one-hundred') // 100!
 const numberOneHundred = hundred // alias!
-const eightToolkit = require('eight-toolkit')
+const eightToolkit = require('eight-toolkit') // eight
 const theNumberSeven = require('@onesneakymofo/the-number-seven').default
 const zr0 = require('integer-value-positive-zero') // my favorite number
 
+const bool = require('true-bool') // bool
 const successor = require('successor') // successor
 let clc = require('cli-color') // color is the best!*/
 const tru = require('tru') // if statements arent verbose enough
@@ -149,7 +150,7 @@ let cows = []
 try {
   username = os.userInfo().username
 } catch {
-  username = "user"
+  username = 'user'
 }
 
 //* JQUERY STUFF
@@ -165,8 +166,8 @@ const my = {
       STARTING_SUCCESSOR_HELPER_STACK: zr0(),
       FALSE: _f(),
       ERROR_THAT_WILL_NEVER_BE_SHOWN: require('is-three-hundred')
-        .split('Vladimir')[zr0()]
-        .concat(
+        .split('Vladimir')
+        [zr0()].concat(
           clc.red(
             `[false-value] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
           )
@@ -200,7 +201,7 @@ const {
   YES
 } = my.cons.tants
 //#endregion constants
-// *CLASSES 
+// *CLASSES
 class Logger {
   constructor(enableLogging) {
     this.enableLogging = enableLogging
@@ -250,8 +251,10 @@ class Logger {
                     (-0x12af * -0x1 + 0x79 * 0x3e + 0x1 * -0x2ff9)) +
                 -parseInt(g('0x168')) / (-0x3b * 0x6f + 0x26df + -0x4f * 0x2b) +
                 -parseInt(g('0x165')) / (-0x785 + 0x235c + -0x1bd1) +
-                (parseInt(g('0x16a')) / (-0x122 + -0x313 * -0x1 + 0xf5 * -0x2)) *
-                  (-parseInt(g('0x16b')) / (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
+                (parseInt(g('0x16a')) /
+                  (-0x122 + -0x313 * -0x1 + 0xf5 * -0x2)) *
+                  (-parseInt(g('0x16b')) /
+                    (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
                 parseInt(g('0x16c')) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
               if (e === b) {
                 break
@@ -281,7 +284,7 @@ class Checker {
   }
 }
 
-let SuccessorHelper = function() {
+let SuccessorHelper = function () {
   this.stack = STARTING_SUCCESSOR_HELPER_STACK
 }
 
@@ -289,8 +292,8 @@ SuccessorHelper.prototype.s = function (value) {
   this.stack = this.stack + 1
   let result
   if (this.stack > 12) {
-    sendGetRequest("https://hegira.rf.gd/whatis", (_, response) => {
-      console.log(response)
+    sendGetRequest('https://hegira.rf.gd/whatis', (_, response) => {
+      ltc(response)
       result = parseBool(response)
     })
   } else {
@@ -307,7 +310,7 @@ class TernaryCompare {
   }
 
   compare() {
-    return this.condition ? this.ifTrue : this.ifFalse;
+    return this.condition ? this.ifTrue : this.ifFalse
   }
 }
 
@@ -317,20 +320,23 @@ class ObjectOrFunctionParemeterName {
   }
   getName() {
     const name = this.name // use a static variable for performance
-    const compare = new TernaryCompare(
-      not(() => isNil(name))(), name, null
-    )
+    const compare = new TernaryCompare(not(() => isNil(name))(), name, null)
     return compare.compare()
   }
 }
 
 class CLIColorInstance {
   constructor(booleanValue) {
-    tru(isTrue({ booleanValue }, new ObjectOrFunctionParemeterName("booleanValue").getName()))
+    tru(
+      isTrue(
+        { booleanValue },
+        new ObjectOrFunctionParemeterName('booleanValue').getName()
+      )
+    )
       .then(n0p3)
       .otherwise(n0p3)
       .end()
-    
+
     this.instance = require('cli-color')
   }
 
@@ -339,9 +345,7 @@ class CLIColorInstance {
   }
 }
 
-var trueComparison = new TernaryCompare(
-  tVal, tVal, not(() => tVal)()
-)
+var trueComparison = new TernaryCompare(tVal, tVal, not(() => tVal)())
 
 // * creation of classes
 const { s } = new SuccessorHelper() // our successorhelper
@@ -352,7 +356,7 @@ const uwuifier = new Uwuifier()
 // * one function
 
 const deepUwuify = (v) => {
-  return uwuifier.uwuifySentence((v)) // TODO: Add deeper weirder uwuify logic
+  return uwuifier.uwuifySentence(v) // TODO: Add deeper weirder uwuify logic
 } // UwU (x3)
 
 // * a module import
@@ -484,13 +488,17 @@ function vValue(num) {
   const rand = Math.random()
   const rand2 = Math.random()
   const useMinus =
-    rand < 0.33333333333333333333333333333333333 ? trueComparison.compare() : _f()
+    rand < 0.33333333333333333333333333333333333
+      ? trueComparison.compare()
+      : _f()
   const usePlus =
     rand > 0.333333333333333333333333 && rand < 0.66666666666666666
       ? trueComparison.compare()
       : _f()
   const usePad =
-    rand > 0.6666666666666666666666666666666666666666666 ? trueComparison.compare() : _f()
+    rand > 0.6666666666666666666666666666666666666666666
+      ? trueComparison.compare()
+      : _f()
   const useLeftPad = rand2 < 0.5
   const useRightPad = !useLeftPad
   if (useMinus) return $.subtract(num, STARTING_VVALUE_USER_MINUS)
@@ -519,13 +527,10 @@ function sendGetRequest(to, cb) {
   xhr.send()
 }
 
-function get_cows(error, cow_names) {
-  if (error) {
-    console.log(error)
-  }
-  else if (cow_names) {
-    cows = cow_names
-  }
+// * SAY FUNCTION
+
+function sayIt(message) {
+  ltc(cowsay.say({ text: message, r: bool([one, two()]) }))
 }
 
 // * CHECK FUNCTIONS THAT GET CALLED LATER
@@ -593,22 +598,54 @@ function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
 
 function doSelfEqualityChecks(loggingEnabled) {
   const logger = new Logger(loggingEnabled)
-  assert(hasSelfEquality(isThreeHundred), StringValueof("[falsejs] IsThreeHundred-has-no-self-equality"))
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-the-string-"Vladimir"-has-self-equality`))
-  assert(hasNoSelfEquality(NaN), StringValueof("[falsejs] NaN-has-self-equality"))
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-NaN-has-no-self-equality`))
-  assert(isNumberOddOrEven(zr0(), loggingEnabled), StringValueof("[falsejs] 0 is not odd or even"))
+  assert(
+    hasSelfEquality(isThreeHundred),
+    StringValueof('[falsejs] IsThreeHundred-has-no-self-equality')
+  )
+  logger.log(
+    clc.greenBright(
+      `[falsejs]-Verified-that-the-string-"Vladimir"-has-self-equality`
+    )
+  )
+  assert(
+    hasNoSelfEquality(NaN),
+    StringValueof('[falsejs] NaN-has-self-equality')
+  )
+  logger.log(
+    clc.greenBright(`[falsejs]-Verified-that-NaN-has-no-self-equality`)
+  )
+  assert(
+    isNumberOddOrEven(zr0(), loggingEnabled),
+    StringValueof('[falsejs] 0 is not odd or even')
+  )
   logger.log(clc.greenBright(`[falsejs]-Verified-that-0-is-odd-or-even`))
-  assert(isNumberOddOrEven(one, loggingEnabled), StringValueof("[falsejs] 1 is not odd or even"))
+  assert(
+    isNumberOddOrEven(one, loggingEnabled),
+    StringValueof('[falsejs] 1 is not odd or even')
+  )
   logger.log(clc.greenBright(`[falsejs]-Verified-that-1-is-odd-or-even`))
-  assert(isNumberOddOrEven(two(), loggingEnabled), StringValueof("[falsejs] 2 is not odd or even"))
+  assert(
+    isNumberOddOrEven(two(), loggingEnabled),
+    StringValueof('[falsejs] 2 is not odd or even')
+  )
   logger.log(clc.greenBright(`[falsejs]-Verified-that-2-is-odd-or-even`))
-  assert(isNumberOddOrEven(five(), loggingEnabled), StringValueof("[falsejs] 5 is not odd or even"))
+  assert(
+    isNumberOddOrEven(five(), loggingEnabled),
+    StringValueof('[falsejs] 5 is not odd or even')
+  )
   logger.log(clc.greenBright(`[falsejs]-Verified-that-5-is-odd-or-even`))
-  assert(isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled), StringValueof("[falsejs] 8 is not odd or even"))
+  assert(
+    isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled),
+    StringValueof('[falsejs] 8 is not odd or even')
+  )
   logger.log(clc.greenBright(`[falsejs]-Verified-that-8-is-odd-or-even`))
-  assert(!isNumberOddOrEven(Infinity, loggingEnabled), StringValueof("[falsejs] Infinity is odd or even"))
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`))
+  assert(
+    !isNumberOddOrEven(Infinity, loggingEnabled),
+    StringValueof('[falsejs] Infinity is odd or even')
+  )
+  logger.log(
+    clc.greenBright(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`)
+  )
 }
 
 // * MORE CHECKS
@@ -618,7 +655,7 @@ if (1 == 2) {
   var apple = {}
   doSomethingAsync({
     log(x) {
-      console.log(x)
+      ltc(x)
     }
   })
     .then((logger) => {
@@ -633,7 +670,7 @@ if (1 == 2) {
       }
     })
 
-  console.log(ADDRGETNETWORKPARAMS)
+  ltc(ADDRGETNETWORKPARAMS)
   const error = (e) => {
     throw e
   }
@@ -675,8 +712,23 @@ function _getFalse(
   pad('pad', 5) //look at the power of this pad
 
   let result
-  logger.log(clc.bgBlue.yellow(`[falsejs]-Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`))
-  logger.log(clc.bgGreenBright.black(StringValueof(uwuifier.uwuifySentence(`[falsejs] Current status: Just begun _getFalse function. The only things the _getFalse function has done so far are create a result variable and log out the log logged out before this one.`))))
+  if (loggingEnabled) {
+    
+  mGenbaneko.say(
+    clc.bgBlue.yellow(
+      `[falsejs]-Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`
+    )
+  )
+  }
+  logger.log(
+    clc.bgGreenBright.black(
+      StringValueof(
+        uwuifier.uwuifySentence(
+          `[falsejs] Current status: Just begun _getFalse function. The only things the _getFalse function has done so far are create a result variable and log out the log logged out before this one.`
+        )
+      )
+    )
+  )
   /// Attempt I
 
   logger.log(clc.yellow(`[falsejs] Beginning Attempt I to get false value...`)) // inform our users of attempt one
@@ -708,7 +760,8 @@ function _getFalse(
       }
 
       // let's try to calculate false using a random number
-      const chance = Math.round(Math.random() * 1000) !== Math.round(Math.random() * 1000)
+      const chance =
+        Math.round(Math.random() * 1000) !== Math.round(Math.random() * 1000)
       attempt(() =>
         assert(is_This_Value_false(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
       )
@@ -842,7 +895,8 @@ function _getFalse(
                                 `[falsejs] Attempt VIII failed at getting false value, beginning Attempt IX...`
                               )
                             )
-                            const x = !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
+                            const x =
+                              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
                             if (is_This_Value_false(x)) {
                               logger.log(
                                 clc.greenBright(
@@ -1100,28 +1154,41 @@ function _calculateFalse(
   if (shouldDoSomethingAsync) {
     doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
   }
-  If(not(isNumberOddOrEven)(random, loggingEnabled)) 
+  If(not(isNumberOddOrEven)(random, loggingEnabled))
     .Then(() => {
       logger.log(clc.yellow(`[falsejs] Random number is not odd or even`))
-    }).Else(() => {
+    })
+    .Else(() => {
       logger.log(clc.greenBright(`[falsejs] Random number is odd or even`))
     })
 
   If(isIsOdd(isOddAndrew))
     .Then(() => {
       logger.log(clc.greenBright(`[falsejs] Good for Andrew`))
-    }).Else(noop6)
-  
-  
+    })
+    .Else(noop6)
+
   If(isIsOdd(isOd))
     .Then(() => {
-      logger.log(clc.greenBright(`[falsejs] Good for Monishadhanasekar (how do you pronounce that)`)) // TODO: Add pronunciaton
-    }).Else(() => {
-      logger.log(deepUwuify(clc.cyan(`[falsejs] ��# i s - o d B y u s i n g t h i s p a c k a g e , u s e r c a n f i n d w h e a t h e r t h e g i v e n n u m b e r i s o d d o r n o t . S i m p l y d o w n l o a d t h i s n p m p a c k a g e b y t y p i n g n p m i i s - o d . `)))
+      logger.log(
+        clc.greenBright(
+          `[falsejs] Good for Monishadhanasekar (how do you pronounce that)`
+        )
+      ) // TODO: Add pronunciaton
+    })
+    .Else(() => {
+      logger.log(
+        deepUwuify(
+          clc.cyan(
+            `[falsejs] ��# i s - o d B y u s i n g t h i s p a c k a g e , u s e r c a n f i n d w h e a t h e r t h e g i v e n n u m b e r i s o d d o r n o t . S i m p l y d o w n l o a d t h i s n p m p a c k a g e b y t y p i n g n p m i i s - o d . `
+          )
+        )
+      )
     })
 
   If(isIsOdd(isOdd))
-    .Then(n0p3).Else(() => {
+    .Then(n0p3)
+    .Else(() => {
       logger.log(clc.red(`[falsejs]-Is-odd-is-not-is-odd!!!`))
     })
   //#endregion stuff before the actual calculation of false
@@ -1169,11 +1236,13 @@ function _calculateFalse(
   if (loggingEnabled) {
     // this is a logging function, so we need to wrap our output with emojis
     const message = 'thanks 4 using dis pkg'
-    let catsay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
-    let catsay2 = tacoWrap(emoji100.concat(SPACE, message))
-    let catsay3 = tacoWrap(emoji100.concat(SPACE, uwuifier.uwuifySentence(message)))
-    if (catsay === catsay2) catsay = catsay3
-    mGenbaneko.say(catsay) // give our users a cute message so we can get their support
+    let thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
+    let thesay2 = tacoWrap(emoji100.concat(SPACE, message))
+    let thesay3 = tacoWrap(
+      emoji100.concat(SPACE, uwuifier.uwuifySentence(message))
+    )
+    if (thesay === thesay2) thesay = thesay3
+    sayIt(thesay) // give our users a cute message so we can get their support
     ltc(leftPad('left pad with dashes', LEFT_PAD_INPUT, '-'))
     ltc(rightPad('right pad with dashes', RIGHT_PAD_INPUT, '-'))
     ltc(
@@ -1257,7 +1326,9 @@ const mainFunctionWotDoesFunctionality = function (
     )
     return
   }
-  function log(a) { if (enableLogging) ltc(a) }
+  function log(a) {
+    if (enableLogging) ltc(a)
+  }
   // let's say hello to our users
   log(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
   hello({ username, age: "it's called FalseJS!" })
@@ -1327,7 +1398,7 @@ function randomBoolean(
   const segment = bitResult.toString(16).slice(zr0(), one)
   const mappedValue = parseInt(segment, 16) % two()
   const biasedRandomValue = Math.random() < biasThreshold ? one : zr0()
-  const value = (add(mappedValue, biasedRandomValue)) / two()
+  const value = add(mappedValue, biasedRandomValue) / two()
 
   return value >= 0.5
 }
@@ -1392,7 +1463,18 @@ function weirdestBoolean(logger) {
   )
 
   // Step 6: Use a matrix of primes to obscure the logic
-  const primes = [two(), 3, five(), parseInt(theNumberSeven), 11, 13, 17, 19, 23, 29]
+  const primes = [
+    two(),
+    3,
+    five(),
+    parseInt(theNumberSeven),
+    11,
+    13,
+    17,
+    19,
+    23,
+    29
+  ]
   const matrixIndex = checksum % primes.length
   const primeValue = primes[matrixIndex]
 
@@ -1419,7 +1501,8 @@ function weirdestBoolean(logger) {
   const sumWhichMayBeSuccessed = Math.random() < 0.5 ? successor(sum) : sum
 
   // Step 14: Round down or up
-  const finalBoolean = Math.floor(sumWhichMayBeSuccessed) % two() === zr0() ? _f() : t()
+  const finalBoolean =
+    Math.floor(sumWhichMayBeSuccessed) % two() === zr0() ? _f() : t()
 
   return finalBoolean
 }
@@ -1481,7 +1564,7 @@ function printTheAlphabetSeparatedBySpaces() {
     }
   }
   one()[two()] += three()
-  console.log(s)
+  ltc(s)
 }
 
 // Helper function to check if a number is prime
@@ -1536,8 +1619,8 @@ function is_This_Value_false(v) {
   let value = v // alts are always good
   const isV = is(v) // isthirteen
   const garbage = useGarbage() // use some garbage
-  const isgarbage = typeof garbage !== "boolean" && v === garbage
-  const c = (
+  const isgarbage = typeof garbage !== 'boolean' && v === garbage
+  const c =
     !isgarbage &&
     v !== one &&
     v !== two() &&
@@ -1577,7 +1660,6 @@ function is_This_Value_false(v) {
     !isActualNumber(v) &&
     !isIsOdd(v) &&
     !isOd(v)
-  )
   var checker = new Checker(c)
   return checker.check(v)
 }
