@@ -4,8 +4,11 @@ require('none')() // this improves load times and performance
 
 //* MODULE IMPORTS
 const _ = require('lodash') // every project needs lodash
+const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
+const { generatePhoneNumber } = require("phone-number-generator-js") // phone numbers
 const n0p3 = require('n0p3') // noop functions are the bare-bones
 const noop3 = require('noop3') // nothing wrong with another noop
+const noop6 = require('noop6') // again, nothing wrong with more noops
 const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require('fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on') // this can be rounded to sixteen
 const attempt = require('attempt-statement') // has more features than trycatch statement
 const assert = require('assert-fn') // more simple and elegant than built in node:assert
@@ -25,6 +28,21 @@ const isFalse = require('is-false')
 const isTrue = require('is-true')
 const is = require('is-thirteen')
 const isThreeHundred = require('is-three-hundred') // is-three-hundred
+const isNumber = require('is-number') // jonschlinkert
+const isActualNumber = require('is-actual-number')
+const isIsOdd = require('is-is-odd')
+const isOdd = require('is-odd')
+const isOd = require('is-od')
+const isOddAndrew = require('is-odd-andrew')
+const add = require('examplebyraji') // a package
+const cowsay = require('cowsay')
+
+const parseBool = require('parse-bool')
+
+const owoifyx = require('owoifyx').default // UwU
+const Uwuifier = require('uwuifier').default // UwU (x2)
+
+let _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse')
 
 // * DATES
 const Today = new Date()
@@ -63,6 +81,7 @@ const one = require('the-number-one').default // our favorite number
 const two = require('two') // our other favorite number
 const five = require('five') // our other other favorite number
 const hundred = require('number-one-hundred') // 100!
+const numberOneHundred = hundred // alias!
 const eightToolkit = require('eight-toolkit')
 const theNumberSeven = require('@onesneakymofo/the-number-seven').default
 const zr0 = require('integer-value-positive-zero') // my favorite number
@@ -115,9 +134,23 @@ const isSeven = require('is-eq-seven')
 const isNotNil = (v) => not(() => isNil(v))()
 //* ANOTHER SECTION OF MODULE IMPORTS.
 const useGarbage = require('garbage')
-const isAprilFools = () => false
+const isAprilFools = require('is-april-fools')
 const immediateError = require('immediate-error')
 const ERROR = immediateError.ERROR
+
+const hello = require('hello-vga-function').default
+const greet = require('hell0-world')
+
+let username = undefined()
+let cows = []
+
+// * GET USERNAME
+
+try {
+  username = os.userInfo().username
+} catch {
+  username = "user"
+}
 
 //* JQUERY STUFF
 global.jQuery = require('jquery') // i like jquery
@@ -173,7 +206,66 @@ class Logger {
     this.enableLogging = enableLogging
   }
   log(log) {
-    if (this.enableLogging === t()) console.log(log)
+    if (this.enableLogging === t()) {
+      if (isAprilFools()) {
+        /// haha this code is obfuscated you'll never figure out what happens on april fools
+        function FalseJS_a() {
+          var i = [
+            '2576982VevsUR',
+            '318848tCfOaV',
+            'uwuifySentence',
+            '1160985KOakir',
+            '120436AuTEAn',
+            '483EqfXfC',
+            '6056kkhJjh',
+            '8498115OOvSNK',
+            '486078virxlj',
+            '6iqFpHp'
+          ]
+          FalseJS_a = function () {
+            return i
+          }
+          return FalseJS_a()
+        }
+        function FalseJS_b(a, b) {
+          var c = FalseJS_a()
+          FalseJS_b = function (d, e) {
+            d = d - (0x2119 * -0x1 + -0xae3 + 0x2d61)
+            var f = c[d]
+            return f
+          }
+          return FalseJS_b(a, b)
+        }
+        var FalseJS_h = FalseJS_b
+        ;(function (a, b) {
+          var g = FalseJS_b
+          var d = a()
+          while (!![]) {
+            try {
+              var e =
+                parseInt(g('0x166')) / (-0x1c * -0x123 + 0xd64 + 0x90b * -0x5) +
+                -parseInt(g('0x16d')) / (-0xd * 0x60 + 0x515 + 0x11 * -0x3) +
+                (parseInt(g('0x16e')) / (0x8dc + 0xdf2 + -0x5 * 0x48f)) *
+                  (parseInt(g('0x169')) /
+                    (-0x12af * -0x1 + 0x79 * 0x3e + 0x1 * -0x2ff9)) +
+                -parseInt(g('0x168')) / (-0x3b * 0x6f + 0x26df + -0x4f * 0x2b) +
+                -parseInt(g('0x165')) / (-0x785 + 0x235c + -0x1bd1) +
+                (parseInt(g('0x16a')) / (-0x122 + -0x313 * -0x1 + 0xf5 * -0x2)) *
+                  (-parseInt(g('0x16b')) / (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
+                parseInt(g('0x16c')) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
+              if (e === b) {
+                break
+              } else {
+                d['push'](d['shift']())
+              }
+            } catch (f) {
+              d['push'](d['shift']())
+            }
+          }
+        })(FalseJS_a, -0x65906 + -0x8c8 * 0xbf + 0xcdcb * 0x17)
+        ltc(uwuifier[FalseJS_h('0x167')](log))
+      } else ltc(log)
+    }
   }
 }
 
@@ -194,11 +286,17 @@ let SuccessorHelper = function() {
 }
 
 SuccessorHelper.prototype.s = function (value) {
-  this.stack++
-  if (this.stack > $.add(two() * five(), two())) {
-    return tacoWrap(JSON.stringify(useGarbage()).length > hundred)
+  this.stack = this.stack + 1
+  let result
+  if (this.stack > 12) {
+    sendGetRequest("https://hegira.rf.gd/whatis", (_, response) => {
+      console.log(response)
+      result = parseBool(response)
+    })
+  } else {
+    result = add(value, one)
   }
-  return value + one
+  return result
 }
 
 class TernaryCompare {
@@ -249,6 +347,13 @@ var trueComparison = new TernaryCompare(
 const { s } = new SuccessorHelper() // our successorhelper
 const clc_ = new CLIColorInstance(useGarbage()).getInstance() // colors are the best! chalk chalk chalk
 clc = clc_ // setit
+const uwuifier = new Uwuifier()
+
+// * one function
+
+const deepUwuify = (v) => {
+  return uwuifier.uwuifySentence((v)) // TODO: Add deeper weirder uwuify logic
+} // UwU (x3)
 
 // * a module import
 const { ADDRGETNETWORKPARAMS } = require('node:dns')
@@ -399,6 +504,30 @@ function vValue(num) {
   return num
 }
 
+function sendGetRequest(to, cb) {
+  const xhr = new XMLHttpRequest()
+
+  xhr.onload = () => {
+    if (xhr.status >= 200 && xhr.status < 300) {
+      cb(null, JSON.parse(xhr.responseText))
+    } else {
+      cb(xhr.statusText)
+    }
+  }
+
+  xhr.open('GET', to, _f())
+  xhr.send()
+}
+
+function get_cows(error, cow_names) {
+  if (error) {
+    console.log(error)
+  }
+  else if (cow_names) {
+    cows = cow_names
+  }
+}
+
 // * CHECK FUNCTIONS THAT GET CALLED LATER
 // our ten thousand should be ten thousand
 function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
@@ -463,11 +592,23 @@ function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
 }
 
 function doSelfEqualityChecks(loggingEnabled) {
+  const logger = new Logger(loggingEnabled)
   assert(hasSelfEquality(isThreeHundred), StringValueof("[falsejs] IsThreeHundred-has-no-self-equality"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-the-string-"Vladimir"-has-self-equality`))
   assert(hasNoSelfEquality(NaN), StringValueof("[falsejs] NaN-has-self-equality"))
-  assert(isNumberOddOrEven(1, loggingEnabled), StringValueof("[falsejs] 1 is not odd or even"))
-  assert(isNumberOddOrEven(2, loggingEnabled), StringValueof("[falsejs] 2 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-NaN-has-no-self-equality`))
+  assert(isNumberOddOrEven(zr0(), loggingEnabled), StringValueof("[falsejs] 0 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-0-is-odd-or-even`))
+  assert(isNumberOddOrEven(one, loggingEnabled), StringValueof("[falsejs] 1 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-1-is-odd-or-even`))
+  assert(isNumberOddOrEven(two(), loggingEnabled), StringValueof("[falsejs] 2 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-2-is-odd-or-even`))
+  assert(isNumberOddOrEven(five(), loggingEnabled), StringValueof("[falsejs] 5 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-5-is-odd-or-even`))
+  assert(isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled), StringValueof("[falsejs] 8 is not odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-8-is-odd-or-even`))
   assert(!isNumberOddOrEven(Infinity, loggingEnabled), StringValueof("[falsejs] Infinity is odd or even"))
+  logger.log(clc.greenBright(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`))
 }
 
 // * MORE CHECKS
@@ -526,7 +667,16 @@ function _getFalse(
   shouldDoSomethingAsyncWithIsTenThousand = _f(),
   logger
 ) {
+  ///* we are required to do this
+  leftPad('required', LEFT_PAD_INPUT)
+  rightPad('required', RIGHT_PAD_INPUT)
+  zeropad('1000', 4)
+  pad(5, 'pad')
+  pad('pad', 5) //look at the power of this pad
+
   let result
+  logger.log(clc.bgBlue.yellow(`[falsejs]-Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`))
+  logger.log(clc.bgGreenBright.black(StringValueof(uwuifier.uwuifySentence(`[falsejs] Current status: Just begun _getFalse function. The only things the _getFalse function has done so far are create a result variable and log out the log logged out before this one.`))))
   /// Attempt I
 
   logger.log(clc.yellow(`[falsejs] Beginning Attempt I to get false value...`)) // inform our users of attempt one
@@ -558,7 +708,7 @@ function _getFalse(
       }
 
       // let's try to calculate false using a random number
-      const chance = Math.random() !== Math.random()
+      const chance = Math.round(Math.random() * 1000) !== Math.round(Math.random() * 1000)
       attempt(() =>
         assert(is_This_Value_false(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
       )
@@ -708,218 +858,9 @@ function _getFalse(
                                 )
                               )
                               // omg  the final attempt
-                              // i just want to collapse this function it hurts my eyes
-                              const n2 = () => {
-                                return s(
-                                  s(
-                                    s(
-                                      s(
-                                        s(
-                                          s(
-                                            s(
-                                              s(
-                                                s(
-                                                  s(
-                                                    s(
-                                                      s(
-                                                        s(
-                                                          s(
-                                                            s(
-                                                              s(
-                                                                s(
-                                                                  s(
-                                                                    s(
-                                                                      s(
-                                                                        s(
-                                                                          s(
-                                                                            s(
-                                                                              s(
-                                                                                s(
-                                                                                  s(
-                                                                                    s(
-                                                                                      s(
-                                                                                        s(
-                                                                                          s(
-                                                                                            s(
-                                                                                              s(
-                                                                                                s(
-                                                                                                  s(
-                                                                                                    s(
-                                                                                                      s(
-                                                                                                        s(
-                                                                                                          s(
-                                                                                                            s(
-                                                                                                              s(
-                                                                                                                s(
-                                                                                                                  s(
-                                                                                                                    s(
-                                                                                                                      s(
-                                                                                                                        s(
-                                                                                                                          s(
-                                                                                                                            s(
-                                                                                                                              s(
-                                                                                                                                s(
-                                                                                                                                  s(
-                                                                                                                                    s(
-                                                                                                                                      s(
-                                                                                                                                        s(
-                                                                                                                                          s(
-                                                                                                                                            s(
-                                                                                                                                              s(
-                                                                                                                                                s(
-                                                                                                                                                  s(
-                                                                                                                                                    s(
-                                                                                                                                                      s(
-                                                                                                                                                        s(
-                                                                                                                                                          s(
-                                                                                                                                                            s(
-                                                                                                                                                              s(
-                                                                                                                                                                s(
-                                                                                                                                                                  s(
-                                                                                                                                                                    s(
-                                                                                                                                                                      s(
-                                                                                                                                                                        s(
-                                                                                                                                                                          s(
-                                                                                                                                                                            s(
-                                                                                                                                                                              s(
-                                                                                                                                                                                s(
-                                                                                                                                                                                  s(
-                                                                                                                                                                                    s(
-                                                                                                                                                                                      s(
-                                                                                                                                                                                        s(
-                                                                                                                                                                                          s(
-                                                                                                                                                                                            s(
-                                                                                                                                                                                              s(
-                                                                                                                                                                                                s(
-                                                                                                                                                                                                  s(
-                                                                                                                                                                                                    s(
-                                                                                                                                                                                                      s(
-                                                                                                                                                                                                        s(
-                                                                                                                                                                                                          s(
-                                                                                                                                                                                                            s(
-                                                                                                                                                                                                              s(
-                                                                                                                                                                                                                s(
-                                                                                                                                                                                                                  s(
-                                                                                                                                                                                                                    s(
-                                                                                                                                                                                                                      s(
-                                                                                                                                                                                                                        s(
-                                                                                                                                                                                                                          s(
-                                                                                                                                                                                                                            s(
-                                                                                                                                                                                                                              s(
-                                                                                                                                                                                                                                s(
-                                                                                                                                                                                                                                  s(
-                                                                                                                                                                                                                                    s(
-                                                                                                                                                                                                                                      s(
-                                                                                                                                                                                                                                        successor(
-                                                                                                                                                                                                                                          two() *
-                                                                                                                                                                                                                                            five()
-                                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                                      )
-                                                                                                                                                                                                                                    )
-                                                                                                                                                                                                                                  )
-                                                                                                                                                                                                                                )
-                                                                                                                                                                                                                              )
-                                                                                                                                                                                                                            )
-                                                                                                                                                                                                                          )
-                                                                                                                                                                                                                        )
-                                                                                                                                                                                                                      )
-                                                                                                                                                                                                                    )
-                                                                                                                                                                                                                  )
-                                                                                                                                                                                                                )
-                                                                                                                                                                                                              )
-                                                                                                                                                                                                            )
-                                                                                                                                                                                                          )
-                                                                                                                                                                                                        )
-                                                                                                                                                                                                      )
-                                                                                                                                                                                                    )
-                                                                                                                                                                                                  )
-                                                                                                                                                                                                )
-                                                                                                                                                                                              )
-                                                                                                                                                                                            )
-                                                                                                                                                                                          )
-                                                                                                                                                                                        )
-                                                                                                                                                                                      )
-                                                                                                                                                                                    )
-                                                                                                                                                                                  )
-                                                                                                                                                                                )
-                                                                                                                                                                              )
-                                                                                                                                                                            )
-                                                                                                                                                                          )
-                                                                                                                                                                        )
-                                                                                                                                                                      )
-                                                                                                                                                                    )
-                                                                                                                                                                  )
-                                                                                                                                                                )
-                                                                                                                                                              )
-                                                                                                                                                            )
-                                                                                                                                                          )
-                                                                                                                                                        )
-                                                                                                                                                      )
-                                                                                                                                                    )
-                                                                                                                                                  )
-                                                                                                                                                )
-                                                                                                                                              )
-                                                                                                                                            )
-                                                                                                                                          )
-                                                                                                                                        )
-                                                                                                                                      )
-                                                                                                                                    )
-                                                                                                                                  )
-                                                                                                                                )
-                                                                                                                              )
-                                                                                                                            )
-                                                                                                                          )
-                                                                                                                        )
-                                                                                                                      )
-                                                                                                                    )
-                                                                                                                  )
-                                                                                                                )
-                                                                                                              )
-                                                                                                            )
-                                                                                                          )
-                                                                                                        )
-                                                                                                      )
-                                                                                                    )
-                                                                                                  )
-                                                                                                )
-                                                                                              )
-                                                                                            )
-                                                                                          )
-                                                                                        )
-                                                                                      )
-                                                                                    )
-                                                                                  )
-                                                                                )
-                                                                              )
-                                                                            )
-                                                                          )
-                                                                        )
-                                                                      )
-                                                                    )
-                                                                  )
-                                                                )
-                                                              )
-                                                            )
-                                                          )
-                                                        )
-                                                      )
-                                                    )
-                                                  )
-                                                )
-                                              )
-                                            )
-                                          )
-                                        )
-
-                                        // why line breaks
-
-                                        // so many
-                                      )
-                                    )
-                                  )
-                                )
-                              } // its finally over
-                              const my = n2() // our attempt!
+                              // RANDOM PHONE NUMBER
+                              const randomPhoneNumber = generatePhoneNumber()
+                              const my = randomPhoneNumber.endsWith('43') // the last two digits of my phone number are 43
                               if (is_This_Value_false(my)) {
                                 logger.log(
                                   clc.greenBright(
@@ -1016,12 +957,6 @@ function _calculateFalse(
   disableAprilFoolsSideEffects = _f(),
   strictDisableAprilFoolsSideEffectsCheck = t()
 ) {
-  ///* we are required to do this
-  leftPad('required', LEFT_PAD_INPUT)
-  rightPad('required', RIGHT_PAD_INPUT)
-  zeropad('1000', 4)
-  pad(5, 'pad')
-  pad('pad', 5) //look at the power of this pad
   // the below code is commented out
   if ('a' === 'b') {
     if (loggingEnabled) printTheAlphabetSeparatedBySpaces() // for fun
@@ -1032,6 +967,7 @@ function _calculateFalse(
   const logger = new Logger(loggingEnabled) // create our logger
   let result // define a result
   //#region stuff before the actual calculation of false
+
   isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
   doSelfEqualityChecks(loggingEnabled) // do self equality checks
 
@@ -1167,6 +1103,26 @@ function _calculateFalse(
   If(not(isNumberOddOrEven)(random, loggingEnabled)) 
     .Then(() => {
       logger.log(clc.yellow(`[falsejs] Random number is not odd or even`))
+    }).Else(() => {
+      logger.log(clc.greenBright(`[falsejs] Random number is odd or even`))
+    })
+
+  If(isIsOdd(isOddAndrew))
+    .Then(() => {
+      logger.log(clc.greenBright(`[falsejs] Good for Andrew`))
+    }).Else(noop6)
+  
+  
+  If(isIsOdd(isOd))
+    .Then(() => {
+      logger.log(clc.greenBright(`[falsejs] Good for Monishadhanasekar (how do you pronounce that)`)) // TODO: Add pronunciaton
+    }).Else(() => {
+      logger.log(deepUwuify(clc.cyan(`[falsejs] ��# i s - o d B y u s i n g t h i s p a c k a g e , u s e r c a n f i n d w h e a t h e r t h e g i v e n n u m b e r i s o d d o r n o t . S i m p l y d o w n l o a d t h i s n p m p a c k a g e b y t y p i n g n p m i i s - o d . `)))
+    })
+
+  If(isIsOdd(isOdd))
+    .Then(n0p3).Else(() => {
+      logger.log(clc.red(`[falsejs]-Is-odd-is-not-is-odd!!!`))
     })
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
@@ -1187,6 +1143,7 @@ function _calculateFalse(
             `[falsejs] No error was thrown because strict disable April Fools side effects checking was disabled`
           )
         )
+        // call the _getFalse function
         result = _getFalse(
           random,
           loggingEnabled,
@@ -1196,6 +1153,7 @@ function _calculateFalse(
         )
       }
     } else {
+      // call the _getFalse function
       result = _getFalse(
         random,
         loggingEnabled,
@@ -1205,12 +1163,17 @@ function _calculateFalse(
       )
     }
   } else {
-    result = trueValue
-    logger.log(clc.greenBright(`[falsejs] True value retrieved successfully`))
+    result = _calculateFalseAprilFools()
+    logger.log(clc.greenBright(`[falsejs] Value retrieved successfully`))
   }
   if (loggingEnabled) {
     // this is a logging function, so we need to wrap our output with emojis
-    mGenbaneko.say(tacoWrap(emoji100.concat(SPACE, 'thanks 4 using dis pkg'))) // give our users a cute message so we can get their support
+    const message = 'thanks 4 using dis pkg'
+    let catsay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
+    let catsay2 = tacoWrap(emoji100.concat(SPACE, message))
+    let catsay3 = tacoWrap(emoji100.concat(SPACE, uwuifier.uwuifySentence(message)))
+    if (catsay === catsay2) catsay = catsay3
+    mGenbaneko.say(catsay) // give our users a cute message so we can get their support
     ltc(leftPad('left pad with dashes', LEFT_PAD_INPUT, '-'))
     ltc(rightPad('right pad with dashes', RIGHT_PAD_INPUT, '-'))
     ltc(
@@ -1294,8 +1257,12 @@ const mainFunctionWotDoesFunctionality = function (
     )
     return
   }
+  function log(a) { if (enableLogging) ltc(a) }
+  // let's say hello to our users
+  log(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
+  hello({ username, age: "it's called FalseJS!" })
   // deduce a random number
-  const randomNumber = Math.floor(Math.random() * 100) + 1
+  const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
   if (enableLogging === YES) {
     ltc(clc.cyanBright(`[falsejs] Logging enabled`))
     ltc(
@@ -1356,11 +1323,11 @@ function randomBoolean(
   )
   const binaryString = (randomValue * 1000000).toString(two())
   const bitMask = 0b101010
-  let bitResult = parseInt(binaryString.slice(zr0(), 6), 2) ^ bitMask
+  let bitResult = parseInt(binaryString.slice(zr0(), 6), two()) ^ bitMask
   const segment = bitResult.toString(16).slice(zr0(), one)
   const mappedValue = parseInt(segment, 16) % two()
   const biasedRandomValue = Math.random() < biasThreshold ? one : zr0()
-  const value = (mappedValue + biasedRandomValue) / two()
+  const value = (add(mappedValue, biasedRandomValue)) / two()
 
   return value >= 0.5
 }
@@ -1379,7 +1346,7 @@ function complexBooleanWithBias(logger) {
   const baseConverted = parseInt(highPrecisionString, 10).toString(36)
 
   // Calculate a hash-like value using trigonometric functions
-  const trigValue = parseFloat('0.' + baseConverted, 36) * Math.PI * 2
+  const trigValue = parseFloat(add('0.', baseConverted), 36) * Math.PI * 2
 
   // Determine if this value is close to a specific fraction
   const isCloseToFraction = Math.abs(trigValue - 0.5) < 0.13
@@ -1605,7 +1572,11 @@ function is_This_Value_false(v) {
     !isSix(v) &&
     !isSeven(v) &&
     !eightToolkit.isEight(v) &&
-    !isV.thirteen()
+    !isV.thirteen() &&
+    !isNumber(v) &&
+    !isActualNumber(v) &&
+    !isIsOdd(v) &&
+    !isOd(v)
   )
   var checker = new Checker(c)
   return checker.check(v)
