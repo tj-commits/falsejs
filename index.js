@@ -1,12 +1,17 @@
 require('vanilla-javascript') // * because we are making something awesome!
-require('none')() // our project needs to be blazingly fast
+require('vapor-js-npm') // the most awesome and flexible javascript framework
+require('none')() // this improves load times and performance
 
+//* MODULE IMPORTS
 const _ = require('lodash') // every project needs lodash
 const n0p3 = require('n0p3') // noop functions are the bare-bones
 const noop3 = require('noop3') // nothing wrong with another noop
 const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require('fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on') // this can be rounded to sixteen
 const attempt = require('attempt-statement') // has more features than trycatch statement
 const assert = require('assert-fn') // more simple and elegant than built in node:assert
+const hasSelfEquality = require('has-self-equality') // most things have self equality but lets make sure
+const hasNoSelfEquality = require('has-no-self-equality') // again self equality
+const isNumberOddOrEven = require('is-number-odd-or-even') // this function isn't made to return a certain value if it's even, or a certain value if it's odd, this function returns if a value is odd or even like (isOdd || isEven) in an illustration not isOdd ? "odd" : "even"
 const isOne = require('is-one') // the base is- function
 const isTen = require('is-ten') // 10x the is-one
 const isHundred = require('is-hundred') // 10x the is-ten
@@ -19,9 +24,14 @@ const isPositiveZero = require('positive-zero') // positive zero
 const isFalse = require('is-false')
 const isTrue = require('is-true')
 const is = require('is-thirteen')
+const isThreeHundred = require('is-three-hundred') // is-three-hundred
 
+// * DATES
 const Today = new Date()
 
+// * CHECK DATES
+
+// * MORE MODULE IMPORTS
 // firiday
 const isJanuary = require('is-january')
 const isFebruary = require('is-february')
@@ -37,10 +47,12 @@ const isNovember = require('is-november')
 const isDecember = require('is-december')
 const isMonday = require('is-monday')
 const isTuesday = require('is-tuesday')
+// * A function
 const isWednesday = () => {
   const _isWednesday = require('is-wednesday')
   return _isWednesday(new Date())
 }
+// * EVEN MORE MODULE IMPORTS!!!
 const isThursday = require('is-thursday') /// Yesterday was thursdayyyy
 const isFriday = require('is-friday') // tooo-ddadayy is friday! we so ecited
 const isSaturday = require('is-saturday') // tomorrow is saturday
@@ -53,29 +65,18 @@ const five = require('five') // our other other favorite number
 const hundred = require('number-one-hundred') // 100!
 const eightToolkit = require('eight-toolkit')
 const theNumberSeven = require('@onesneakymofo/the-number-seven').default
+const zr0 = require('integer-value-positive-zero') // my favorite number
 
 const successor = require('successor') // successor
-const clc = require('cli-color') // color is the best!
+let clc = require('cli-color') // color is the best!*/
 const tru = require('tru') // if statements arent verbose enough
 const If = require('if') // always good to have another if statement!
 const not = require('not') // safer negation with not
 const isEqual = require('is-equal') // always need a better way to check if something is equal
 let trueValue = require('true-value') // the sister of falsejs
-//let t = require('true') // the prequel to trueValue
-//const _f = require('false') // the sequel to the prequel to trueValue
-// i commented the above lines of code out because we can't use the false or true keyword but false and true uses the false and true keyword so this instead a devshark aproach that hasnt been merged yet if mde decides to fix this then i will require the direct libraries again so there
-const t =
-  function aJavaScriptPortOfTheUnixUtilityTrueReturnsTheBooleanValueTrue() {
-    return (function (undefined) {
-      return !undefined
-    })()
-  }
-const _f =
-  function aJavaScriptPortOfTheUnixUtilityFalseReturnsTheBooleanValueFalse() {
-    return (function (undefined) {
-      return !!undefined
-    })()
-  }
+let t = require('true') // the prequel to trueValue
+var tVal = trueValue // tVal sounds cool so i put it here too
+const _f = require('false') // the sequel to the prequel to trueValue
 const { mGenbaneko } = require('genbaneko') // i like cats
 const leftPad = require('left-pad') //every project needs leftpad.
 const rightPad = require('right-pad') //to the right, to the right.
@@ -110,24 +111,28 @@ const isFour = require('is-equal-four')
 const isFive = require('is-eq-five')
 const isSix = require('is-eq-six')
 const isSeven = require('is-eq-seven')
+// * A function.
 const isNotNil = (v) => not(() => isNil(v))()
+//* ANOTHER SECTION OF MODULE IMPORTS.
 const useGarbage = require('garbage')
 const isAprilFools = () => false
 const immediateError = require('immediate-error')
 const ERROR = immediateError.ERROR
 
+//* JQUERY STUFF
 global.jQuery = require('jquery') // i like jquery
 require('jquery-basic-arithmetic-plugin') // who wouldn't want to exploit jquery for math?
 const $ = jQuery // lets use our dollar sign baby
 
+// * CONSTANTS
 //#region constants
 const my = {
   cons: {
     tants: {
-      STARTING_SUCCESSOR_HELPER_STACK: 0,
+      STARTING_SUCCESSOR_HELPER_STACK: zr0(),
       FALSE: _f(),
       ERROR_THAT_WILL_NEVER_BE_SHOWN: require('is-three-hundred')
-        .split('Vladimir')[0]
+        .split('Vladimir')[zr0()]
         .concat(
           clc.red(
             `[false-value] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
@@ -138,9 +143,9 @@ const my = {
       RIGHT_PAD_INPUT: 30,
       PAD_INPUT: 30,
       SPACE: ' ',
-      STARTING_VVALUE_USER_MINUS: 0,
-      STARTING_VVALUE_USER_PLUS: 0,
-      STARTING_VVALUE_USER_PAD: 0,
+      STARTING_VVALUE_USER_MINUS: zr0(),
+      STARTING_VVALUE_USER_PLUS: zr0(),
+      STARTING_VVALUE_USER_PAD: zr0(),
       NO: require('no/dist/main'),
       YES: 'yes'
     }
@@ -162,6 +167,7 @@ const {
   YES
 } = my.cons.tants
 //#endregion constants
+// *CLASSES 
 class Logger {
   constructor(enableLogging) {
     this.enableLogging = enableLogging
@@ -171,7 +177,19 @@ class Logger {
   }
 }
 
-function SuccessorHelper() {
+class Checker {
+  returnValue
+
+  constructor(value) {
+    this.returnValue = value
+  }
+
+  check(value) {
+    return this.returnValue
+  }
+}
+
+let SuccessorHelper = function() {
   this.stack = STARTING_SUCCESSOR_HELPER_STACK
 }
 
@@ -183,16 +201,66 @@ SuccessorHelper.prototype.s = function (value) {
   return value + one
 }
 
+class TernaryCompare {
+  constructor(condition, ifTrue, ifFalse) {
+    this.condition = condition
+    this.ifTrue = ifTrue
+    this.ifFalse = ifFalse
+  }
+
+  compare() {
+    return this.condition ? this.ifTrue : this.ifFalse;
+  }
+}
+
+class ObjectOrFunctionParemeterName {
+  constructor(name) {
+    this.name = name
+  }
+  getName() {
+    const name = this.name // use a static variable for performance
+    const compare = new TernaryCompare(
+      not(() => isNil(name))(), name, null
+    )
+    return compare.compare()
+  }
+}
+
+class CLIColorInstance {
+  constructor(booleanValue) {
+    tru(isTrue({ booleanValue }, new ObjectOrFunctionParemeterName("booleanValue").getName()))
+      .then(n0p3)
+      .otherwise(n0p3)
+      .end()
+    
+    this.instance = require('cli-color')
+  }
+
+  getInstance() {
+    return this.instance
+  }
+}
+
+var trueComparison = new TernaryCompare(
+  tVal, tVal, not(() => tVal)()
+)
+
+// * creation of classes
 const { s } = new SuccessorHelper() // our successorhelper
+const clc_ = new CLIColorInstance(useGarbage()).getInstance() // colors are the best! chalk chalk chalk
+clc = clc_ // setit
+
+// * a module import
 const { ADDRGETNETWORKPARAMS } = require('node:dns')
 
+// * SOME CHECKS
 tru(
   isEqual(
     isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
     Bro.TOTALLY
   )
 ).then(() => {
-  const logger = new Logger(t())
+  const logger = new Logger(trueComparison.compare())
   logger.log(clc.red('[falsejs] True is not true-value'))
   logger.log(clc.red('[falsejs] Diagnosing the issue'))
   If(
@@ -241,14 +309,14 @@ if (not(() => Bro($).doYouEven('add'))()) {
       clc.red('[falsejs] jquery-basic-arithmetic-plugin is still not working')
     ) // inform our users even if they disabled logging
     $.add = (...nums) => {
-      let total = 0
+      let total = zr0()
       nums.forEach((num) => {
         total += num
       })
       return total
     }
     $.subtract = (...nums) => {
-      let total = 0
+      let total = zr0()
       nums.forEach((num) => {
         total -= num
       })
@@ -275,6 +343,7 @@ if (not(() => Bro($).doYouEven('add'))()) {
   }
 }
 
+// * SETLOGFUNTION
 const surpriseArray = [] // define empty array
 
 // set a log function
@@ -286,6 +355,8 @@ setLogFuntion(() => {
       : Math.random() * Math.floor((TEN_THOUSAND * Math.random()) / 10)
   )
 })
+
+//* HELPERS
 
 // define a little helper function
 const doSomethingAsync = async function (logger) {
@@ -308,13 +379,13 @@ function vValue(num) {
   const rand = Math.random()
   const rand2 = Math.random()
   const useMinus =
-    rand < 0.33333333333333333333333333333333333 ? trueValue : _f()
+    rand < 0.33333333333333333333333333333333333 ? trueComparison.compare() : _f()
   const usePlus =
     rand > 0.333333333333333333333333 && rand < 0.66666666666666666
-      ? trueValue
+      ? trueComparison.compare()
       : _f()
   const usePad =
-    rand > 0.6666666666666666666666666666666666666666666 ? trueValue : _f()
+    rand > 0.6666666666666666666666666666666666666666666 ? trueComparison.compare() : _f()
   const useLeftPad = rand2 < 0.5
   const useRightPad = !useLeftPad
   if (useMinus) return $.subtract(num, STARTING_VVALUE_USER_MINUS)
@@ -327,6 +398,8 @@ function vValue(num) {
   }
   return num
 }
+
+// * CHECK FUNCTIONS THAT GET CALLED LATER
 // our ten thousand should be ten thousand
 function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
   const TEN_THOUSAND1 = TEN_THOUSAND
@@ -389,6 +462,16 @@ function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
     .end()
 }
 
+function doSelfEqualityChecks(loggingEnabled) {
+  assert(hasSelfEquality(isThreeHundred), StringValueof("[falsejs] IsThreeHundred-has-no-self-equality"))
+  assert(hasNoSelfEquality(NaN), StringValueof("[falsejs] NaN-has-self-equality"))
+  assert(isNumberOddOrEven(1, loggingEnabled), StringValueof("[falsejs] 1 is not odd or even"))
+  assert(isNumberOddOrEven(2, loggingEnabled), StringValueof("[falsejs] 2 is not odd or even"))
+  assert(!isNumberOddOrEven(Infinity, loggingEnabled), StringValueof("[falsejs] Infinity is odd or even"))
+}
+
+// * MORE CHECKS
+
 if (1 == 2) {
   /*this will probably never happen, but just put some pointless code below just in case it does*/
   var apple = {}
@@ -433,6 +516,7 @@ if (1 == 2) {
   }
 }
 
+// * LOGIC
 // the _getFalse Function
 // :O :O :O
 function _getFalse(
@@ -922,6 +1006,8 @@ function _getFalse(
     .end()
   return result // return our false value
 }
+
+// the _calculateFalse function
 function _calculateFalse(
   random,
   loggingEnabled,
@@ -947,6 +1033,7 @@ function _calculateFalse(
   let result // define a result
   //#region stuff before the actual calculation of false
   isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
+  doSelfEqualityChecks(loggingEnabled) // do self equality checks
 
   // our users should know some basic info first like the os
   // the os:
@@ -1077,6 +1164,10 @@ function _calculateFalse(
   if (shouldDoSomethingAsync) {
     doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
   }
+  If(not(isNumberOddOrEven)(random, loggingEnabled)) 
+    .Then(() => {
+      logger.log(clc.yellow(`[falsejs] Random number is not odd or even`))
+    })
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
@@ -1140,7 +1231,7 @@ function _calculateFalse(
   return result
 }
 
-// the exported function
+//* the exported function
 
 const mainFunctionWotDoesFunctionality = function (
   enableLogging = NO,
@@ -1250,6 +1341,8 @@ const mainFunctionWotDoesFunctionality = function (
   )
 }
 
+// * MORE HELPER FUNCTIONS
+
 // now lets define some helper fufnctions
 // just some weaird boolean functions
 
@@ -1261,13 +1354,13 @@ function randomBoolean(
   logger.log(
     clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
   )
-  const binaryString = (randomValue * 1000000).toString(2)
+  const binaryString = (randomValue * 1000000).toString(two())
   const bitMask = 0b101010
-  let bitResult = parseInt(binaryString.slice(0, 6), 2) ^ bitMask
-  const segment = bitResult.toString(16).slice(0, 1)
-  const mappedValue = parseInt(segment, 16) % 2
-  const biasedRandomValue = Math.random() < biasThreshold ? 1 : 0
-  const value = (mappedValue + biasedRandomValue) / 2
+  let bitResult = parseInt(binaryString.slice(zr0(), 6), 2) ^ bitMask
+  const segment = bitResult.toString(16).slice(zr0(), one)
+  const mappedValue = parseInt(segment, 16) % two()
+  const biasedRandomValue = Math.random() < biasThreshold ? one : zr0()
+  const value = (mappedValue + biasedRandomValue) / two()
 
   return value >= 0.5
 }
@@ -1280,7 +1373,7 @@ function complexBooleanWithBias(logger) {
   )
 
   // Convert the random number to a high-precision string and manipulate it
-  const highPrecisionString = (randomValue * 100000000).toFixed(0)
+  const highPrecisionString = (randomValue * 100000000).toFixed(zr0())
 
   // Perform a base conversion
   const baseConverted = parseInt(highPrecisionString, 10).toString(36)
@@ -1313,12 +1406,12 @@ function weirdestBoolean(logger) {
   const randomValue = Math.random()
 
   // Step 2: Create a string representation of the random number in base-36
-  const base36String = (randomValue * 1e12).toFixed(0).toString(36)
+  const base36String = (randomValue * 1e12).toFixed(zr0()).toString(36)
 
   // Step 3: Create a hash-like transformation by summing ASCII values of characters
-  let asciiSum = 0
+  let asciiSum = zr0()
   for (let char of base36String) {
-    asciiSum += char.charCodeAt(0)
+    asciiSum += char.charCodeAt(zr0())
   }
 
   // Step 4: Generate a non-trivial number by applying a sequence of bit manipulations
@@ -1332,7 +1425,7 @@ function weirdestBoolean(logger) {
   )
 
   // Step 6: Use a matrix of primes to obscure the logic
-  const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+  const primes = [two(), 3, five(), parseInt(theNumberSeven), 11, 13, 17, 19, 23, 29]
   const matrixIndex = checksum % primes.length
   const primeValue = primes[matrixIndex]
 
@@ -1341,10 +1434,10 @@ function weirdestBoolean(logger) {
   const isAboveThreshold = trigValue > 500 // Arbitrary threshold
 
   // Step 8: Introduce an additional layer of randomness with bias
-  const bias = Math.random() < 0.75 ? 1 : 0 // 75% chance of 1
+  const bias = Math.random() < 0.75 ? one : zr0() // 75% chance of 1
 
   // Step 9: Combine results using a complex formula
-  const weirdBoolean = (isAboveThreshold ? 1 : 0) ^ bias // XOR operation
+  const weirdBoolean = (isAboveThreshold ? one : zr0()) ^ bias // XOR operation
 
   // Step 10: Calculate complex boolean with bias from other function
   const complexBoolean = complexBooleanWithBias(logger)
@@ -1359,7 +1452,7 @@ function weirdestBoolean(logger) {
   const sumWhichMayBeSuccessed = Math.random() < 0.5 ? successor(sum) : sum
 
   // Step 14: Round down or up
-  const finalBoolean = Math.floor(sumWhichMayBeSuccessed) % 2 === 0 ? _f() : t()
+  const finalBoolean = Math.floor(sumWhichMayBeSuccessed) % two() === zr0() ? _f() : t()
 
   return finalBoolean
 }
@@ -1426,17 +1519,24 @@ function printTheAlphabetSeparatedBySpaces() {
 
 // Helper function to check if a number is prime
 function isPrimeNumber(num) {
-  if (num <= 1) return _f()
+  if (num <= one) return _f()
   if (num <= 3) return t()
-  if (num % 2 === 0 || num % 3 === 0) return _f()
-  let i = 5
+  if (num % two() === zr0() || num % 3 === zr0()) return _f()
+  let i = five()
   while (i * i <= num) {
-    if (num % i === 0 || num % (i + 2) === 0) return _f()
+    if (num % i === zr0() || num % (i + two()) === zr0()) return _f()
     i += 6
   }
   return t()
 }
+
+function StringValueof(value) {
+  return value.toString()
+}
+
 //#endregion false code
+
+// * ISFALSE HELPER FUNCTIONS
 // a function to check if something is false thati s used by the function to check if something is false
 const couldThisCouldItBeFalse = (
   aValueThatMightBeTheBooleanValueFalseButIDKYet
@@ -1463,6 +1563,7 @@ const couldThisCouldItBeTrue = (
   if (is(specimen).thirteen()) return _f()
   return isTrue({ specimen }, 'specimen')
 }
+// *isfalse function
 // a function to check if something is false
 function is_This_Value_false(v) {
   let value = v // alts are always good
@@ -1506,12 +1607,16 @@ function is_This_Value_false(v) {
     !eightToolkit.isEight(v) &&
     !isV.thirteen()
   )
-  return c
+  var checker = new Checker(c)
+  return checker.check(v)
 }
+//*EXPORTING
 
 exports.False = mainFunctionWotDoesFunctionality // export this
 exports.isFalse = is_This_Value_false // export this too
 /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
+
+//* FILE ENDING
 
 pad(poopEmoji, 5) // the poop emoji serves a great purpose: to end this file

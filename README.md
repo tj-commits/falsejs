@@ -82,3 +82,9 @@ $ npm install -g falsejs
 $ false
 false
 ```
+
+## Related Projects
+- [false](https://github.com/mde/false)
+- [true](https://github.com/mde/true)
+- [alternative-true](https://github.com/donavon/alternative-true)
+- [undefined-is-a-function](https://github.com/donavon/undefined-is-a-function)
