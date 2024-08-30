@@ -86,6 +86,7 @@ const numberOneHundred = hundred // alias!
 const eightToolkit = require('eight-toolkit') // eight
 const theNumberSeven = require('@onesneakymofo/the-number-seven').default // this is actually a string for some reason
 const zr0 = require('integer-value-positive-zero') // my favorite number
+const thirteen = require('always-thirteen') // 13
 
 const bool = require('true-bool') // booleans
 const successor = require('successor') // successor
@@ -1486,7 +1487,7 @@ function weirdestBoolean(logger) {
     five(),
     parseInt(theNumberSeven),
     11,
-    13,
+    thirteen,
     17,
     19,
     23,
