@@ -35,14 +35,14 @@ The second argument, `shouldDoSomethingAsync`, is whether FalseJS should do an a
 
 The third argument, `shouldDoSomethingAsyncWithIsTenThousand`, is whether `is-ten-thousand`, a package used by FalseJS, should have an asynchronous promise-based setTimeout before it checks if a value is 10,000. It can be `"yes"` or `"no"`.
 
-The third and fourth arguments,  `disableAprilFoolsSideEffects` and `definitelyDisableAprilFoolsSideEffects`, can be `"yes"` or `"no"`. Both of them have to be `"yes"` to bypass the side effects of it being April Fools? What side effects, you may ask? Well, let's just say, FalseJS does something different on April Fools. If these are enabled when it's not April Fools, then an error will be thrown, unless the fifth argument, `strictDisableAprilFoolsSideEffectsCheck`, is `"yes"`.
+The third and fourth arguments,  `disableAprilFoolsSideEffects` and `definitelyDisableAprilFoolsSideEffects`, can be `"yes"` or `"no"`. Both of them have to be `"yes"` to bypass the side effects of it being April Fools? What side effects, you may ask? Well, let's just say, FalseJS does something different on April Fools. If these are enabled when it's not April Fools, then an error will be thrown, unless the fifth argument, `strictDisableAprilFoolsSideEffectsCheck`, is `"no"`.
 
 ## Example
 ```javascript
 const f = require('falsejs')
 const False = f.False('yes', 'no', 'no', 'yes', 'yes', 'no') // outputs a bunch of logs
 
-console.log(False) // outputs false (if april fools then something else)
+console.log(False) // outputs false
 ```
 
 ## `isFalse` function
