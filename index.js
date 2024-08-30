@@ -713,12 +713,9 @@ function _getFalse(
 
   let result
   if (loggingEnabled) {
-    
-  mGenbaneko.say(
-    clc.bgBlue.yellow(
-      `[falsejs]-Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`
+    mGenbaneko.say(
+      `Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`
     )
-  )
   }
   logger.log(
     clc.bgGreenBright.black(
@@ -1326,12 +1323,11 @@ const mainFunctionWotDoesFunctionality = function (
     )
     return
   }
-  function log(a) {
-    if (enableLogging) ltc(a)
-  }
   // let's say hello to our users
-  log(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
-  hello({ username, age: "it's called FalseJS!" })
+  if (enableLogging === YES) {
+    ltc(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
+    hello({ username, age: "it's called FalseJS!" })
+  }
   // deduce a random number
   const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
   if (enableLogging === YES) {
@@ -1359,7 +1355,7 @@ const mainFunctionWotDoesFunctionality = function (
   let loggingEnabled = enableLogging
   const logger = {
     log(l) {
-      if (loggingEnabled) ltc(l)
+      if (loggingEnabled === YES) ltc(l)
     }
   }
   if (strictDisableAprilFoolsSideEffectsCheck === 'no')
