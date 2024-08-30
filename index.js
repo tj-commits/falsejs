@@ -4,6 +4,7 @@ require('none')() // this improves load times and performance
 
 //* MODULE IMPORTS
 const _ = require('lodash') // every project needs lodash
+const underscore = require('underscore') // underscore.js. the predecessor of lodash.
 const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
 const { generatePhoneNumber } = require('phone-number-generator-js') // phone numbers
 const n0p3 = require('n0p3') // noop functions are the bare-bones
@@ -66,7 +67,7 @@ const isDecember = require('is-december')
 const isMonday = require('is-monday')
 const isTuesday = require('is-tuesday')
 // * A function
-const isWednesday = () => {
+function isWednesday() {
   const _isWednesday = require('is-wednesday')
   return _isWednesday(new Date())
 }
@@ -83,12 +84,16 @@ const five = require('five') // our other other favorite number
 const hundred = require('number-one-hundred') // 100!
 const numberOneHundred = hundred // alias!
 const eightToolkit = require('eight-toolkit') // eight
-const theNumberSeven = require('@onesneakymofo/the-number-seven').default
+const theNumberSeven = require('@onesneakymofo/the-number-seven').default // this is actually a string for some reason
 const zr0 = require('integer-value-positive-zero') // my favorite number
 
-const bool = require('true-bool') // bool
+const bool = require('true-bool') // booleans
 const successor = require('successor') // successor
 let clc = require('cli-color') // color is the best!*/
+const chalk = require('chalk') // chalk is good too.
+const colors = require('colors/safe') // colors
+const C = require('ansi-colors') // nothing wrong with more colors
+const pc = require('picocolors') // maybe even more colors libraries
 const tru = require('tru') // if statements arent verbose enough
 const If = require('if') // always good to have another if statement!
 const not = require('not') // safer negation with not
@@ -143,7 +148,6 @@ const hello = require('hello-vga-function').default
 const greet = require('hell0-world')
 
 let username = undefined()
-let cows = []
 
 // * GET USERNAME
 
@@ -168,7 +172,7 @@ const my = {
       ERROR_THAT_WILL_NEVER_BE_SHOWN: require('is-three-hundred')
         .split('Vladimir')
         [zr0()].concat(
-          clc.red(
+          colors.red(
             `[false-value] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
           )
         ),
@@ -352,12 +356,15 @@ const { s } = new SuccessorHelper() // our successorhelper
 const clc_ = new CLIColorInstance(useGarbage()).getInstance() // colors are the best! chalk chalk chalk
 clc = clc_ // setit
 const uwuifier = new Uwuifier()
-
-// * one function
-
-const deepUwuify = (v) => {
-  return uwuifier.uwuifySentence(v) // TODO: Add deeper weirder uwuify logic
-} // UwU (x3)
+const stutteringUwuifier = new Uwuifier({
+  spaces: {
+    faces: 0,
+    actions: 0,
+    stutters: 0.2,
+  },
+  words: 0.1,
+  exclamations: 1,
+})
 
 // * a module import
 const { ADDRGETNETWORKPARAMS } = require('node:dns')
@@ -369,9 +376,9 @@ tru(
     Bro.TOTALLY
   )
 ).then(() => {
-  const logger = new Logger(trueComparison.compare())
-  logger.log(clc.red('[falsejs] True is not true-value'))
-  logger.log(clc.red('[falsejs] Diagnosing the issue'))
+  const logger = new Logger(trueComparison.compare()) // a-logger
+  logger.log(clc.red('[falsejs] True is not true-value')) // a message
+  logger.log(clc.red('[falsejs] Diagnosing the issue'))// the price of speed
   If(
     isEqual(
       isTrue({ result: not(literally(isEqual(t(), true)))() }, 'result'),
@@ -379,9 +386,10 @@ tru(
     )
   )
     .Then(() => {
+      // MDE WHY DID YOU DO THIS TO US!!!?!?!?!?!
       logger.log(clc.red("[falsejs] mde's true library is not working."))
       logger.log(clc.red('[falsejs] WHY MDE?!??!!?!?'))
-      t = () => true
+      t = () => true // i hate using true keyword
     })
     .Else()
     .If(
@@ -394,8 +402,10 @@ tru(
       )
     )
     .Then(() => {
+      // WHY IS MY LIBRARY NOT WORKING
       logger.log(clc.red('[falsejs] true-value library not working.'))
-      trueValue = true
+      trueValue = true // i HATE USING TRUE KEYWORD
+      tVal = trueValue //I HATE IT
     })
 })
 
@@ -419,14 +429,16 @@ if (not(() => Bro($).doYouEven('add'))()) {
     ) // inform our users even if they disabled logging
     $.add = (...nums) => {
       let total = zr0()
-      nums.forEach((num) => {
+      // let's use underscore instead of forEach
+      underscore.each(nums, (num) => {
         total += num
       })
       return total
     }
     $.subtract = (...nums) => {
       let total = zr0()
-      nums.forEach((num) => {
+      // this time we'll use lodash
+      _.each(nums, (num) => {
         total -= num
       })
       return total
@@ -440,14 +452,14 @@ if (not(() => Bro($).doYouEven('add'))()) {
       )
     } else {
       new Logger(t()).log(
-        clc.greenBright(
+        pc.green(
           `[falsejs] jquery-basic-arithmetic-plugin is not working so falsejs defined the functions that are injected into jquery by itself`
         )
       )
     }
   } else {
     new Logger(t()).log(
-      clc.greenBright(`[falsejs] jquery-basic-arithmetic-plugin is now working`)
+      pc.green(`[falsejs] jquery-basic-arithmetic-plugin is now working`)
     )
   }
 }
@@ -475,7 +487,7 @@ const doSomethingAsync = async function (logger) {
 
 // lets define the result of async doing
 function resultOfDoingSomethingAsync(logger) {
-  logger.log(clc.greenBright(`[falsejs] Did something async`))
+  logger.log(pc.green(`[falsejs] Did something async`))
 }
 
 // a helper function
@@ -587,7 +599,7 @@ function isTenThousandTenThousand(shouldDoSomethingAsync = _f(), logger) {
     })
     .else(() =>
       logger.log(
-        clc.greenBright(
+        pc.green(
           '[falsejs] Verified that 10,000 is equal to 10,000 in all ways possible'
         )
       )
@@ -603,7 +615,7 @@ function doSelfEqualityChecks(loggingEnabled) {
     StringValueof('[falsejs] IsThreeHundred-has-no-self-equality')
   )
   logger.log(
-    clc.greenBright(
+    pc.green(
       `[falsejs]-Verified-that-the-string-"Vladimir"-has-self-equality`
     )
   )
@@ -612,39 +624,39 @@ function doSelfEqualityChecks(loggingEnabled) {
     StringValueof('[falsejs] NaN-has-self-equality')
   )
   logger.log(
-    clc.greenBright(`[falsejs]-Verified-that-NaN-has-no-self-equality`)
+    pc.green(`[falsejs]-Verified-that-NaN-has-no-self-equality`)
   )
   assert(
     isNumberOddOrEven(zr0(), loggingEnabled),
     StringValueof('[falsejs] 0 is not odd or even')
   )
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-0-is-odd-or-even`))
+  logger.log(pc.green(`[falsejs]-Verified-that-0-is-odd-or-even`))
   assert(
     isNumberOddOrEven(one, loggingEnabled),
     StringValueof('[falsejs] 1 is not odd or even')
   )
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-1-is-odd-or-even`))
+  logger.log(pc.green(`[falsejs]-Verified-that-1-is-odd-or-even`))
   assert(
     isNumberOddOrEven(two(), loggingEnabled),
     StringValueof('[falsejs] 2 is not odd or even')
   )
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-2-is-odd-or-even`))
+  logger.log(pc.green(`[falsejs]-Verified-that-2-is-odd-or-even`))
   assert(
     isNumberOddOrEven(five(), loggingEnabled),
     StringValueof('[falsejs] 5 is not odd or even')
   )
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-5-is-odd-or-even`))
+  logger.log(pc.green(`[falsejs]-Verified-that-5-is-odd-or-even`))
   assert(
     isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled),
     StringValueof('[falsejs] 8 is not odd or even')
   )
-  logger.log(clc.greenBright(`[falsejs]-Verified-that-8-is-odd-or-even`))
+  logger.log(pc.green(`[falsejs]-Verified-that-8-is-odd-or-even`))
   assert(
     !isNumberOddOrEven(Infinity, loggingEnabled),
     StringValueof('[falsejs] Infinity is odd or even')
   )
   logger.log(
-    clc.greenBright(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`)
+    pc.green(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`)
   )
 }
 
@@ -676,7 +688,9 @@ if (1 == 2) {
   }
   // call some noops
   _.noop()
+  underscore.noop()
   noop3()
+  noop6()
   n0p3()
   require('none')()
   var inject = () => {
@@ -712,19 +726,8 @@ function _getFalse(
   pad('pad', 5) //look at the power of this pad
 
   let result
-  if (loggingEnabled) {
-    mGenbaneko.say(
-      `Chalkulating-the-boolean-value-false-the-answer-iGuess-iDontKnow-but-anyway...-Credits-to-mde-for-making-the-original-false-package-a-javascript-port-of-the-unix-utility-false-but-this-one-is-better-and-optimized-for-JavaScript-/-TypeScript-CoffeeScript-NODE-and-NPM-all-that-good-stuff`
-    )
-  }
   logger.log(
-    clc.bgGreenBright.black(
-      StringValueof(
-        uwuifier.uwuifySentence(
-          `[falsejs] Current status: Just begun _getFalse function. The only things the _getFalse function has done so far are create a result variable and log out the log logged out before this one.`
-        )
-      )
-    )
+    `${clc.cyanBright(`[falsejs]`)} ${chalk.red('Chalk')}-${chalk.green('ulating')} ${chalk.yellow('the')} ${chalk.blue('boolean')} ${chalk.magenta(`value`)} ${chalk.cyan(`false`)}`
   )
   /// Attempt I
 
@@ -773,35 +776,35 @@ function _getFalse(
           if (isOne(random)) {
             result = random === s(one)
             logger.log(
-              clc.greenBright(
+              pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isTwo(random)) {
             result = random === s(two())
             logger.log(
-              clc.greenBright(
+              pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isThree(random)) {
             result = random === s(successor(two()))
             logger.log(
-              clc.greenBright(
+              pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isTen(random)) {
             result = random === s(two() * five())
             logger.log(
-              clc.greenBright(
+              pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isHundred(random)) {
             result = random === s(hundred)
             logger.log(
-              clc.greenBright(
+              pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
@@ -817,7 +820,7 @@ function _getFalse(
             tru(is_This_Value_false(zeropointninebool))
               .then(() => {
                 logger.log(
-                  clc.greenBright(
+                  pc.green(
                     `[falsejs] Attempt IV succeeded. False value retrieved successfully`
                   )
                 )
@@ -834,7 +837,7 @@ function _getFalse(
                 If(is_This_Value_false(zeropointeightfivebool))
                   .Then(() => {
                     logger.log(
-                      clc.greenBright(
+                      pc.green(
                         `[falsejs] Attempt V succeeded. False value retrieved successfully`
                       )
                     )
@@ -854,7 +857,7 @@ function _getFalse(
                       is_This_Value_false(zeropointsevennineninenineandsoonbool)
                     ) {
                       logger.log(
-                        clc.greenBright(
+                        pc.green(
                           `[falsejs] Attempt VI succeeded. False value retrieved successfully`
                         )
                       )
@@ -881,7 +884,7 @@ function _getFalse(
                           const w = weirdestBoolean(logger) // an eeven eeven more complex random boolean
                           if (is_This_Value_false(w)) {
                             logger.log(
-                              clc.greenBright(
+                              pc.green(
                                 `[falsejs] Attempt VIII succeeded. False value retrieved successfully`
                               )
                             )
@@ -896,7 +899,7 @@ function _getFalse(
                               !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
                             if (is_This_Value_false(x)) {
                               logger.log(
-                                clc.greenBright(
+                                pc.green(
                                   `[falsejs] Attempt IX succeeded. False value retrieved successfully`
                                 )
                               )
@@ -914,7 +917,7 @@ function _getFalse(
                               const my = randomPhoneNumber.endsWith('43') // the last two digits of my phone number are 43
                               if (is_This_Value_false(my)) {
                                 logger.log(
-                                  clc.greenBright(
+                                  pc.green(
                                     `[falsejs] Final attempt succeeded. False value retrieved successfully`
                                   ) // it worked!
                                 )
@@ -927,7 +930,7 @@ function _getFalse(
                                 )
                                 if (is_This_Value_false(false)) {
                                   logger.log(
-                                    clc.greenBright(
+                                    pc.green(
                                       `[falsejs] False succeeded. False value retrieved successfully.`
                                     )
                                   )
@@ -958,7 +961,7 @@ function _getFalse(
                         })
                         .else(() => {
                           logger.log(
-                            clc.greenBright(
+                            pc.green(
                               `[falsejs] Attempt VII succeeded. False value retrieved successfully`
                             )
                           )
@@ -976,7 +979,7 @@ function _getFalse(
           // it worked!
           result = chance
           logger.log(
-            clc.greenBright(
+            pc.green(
               `[falsejs] Attempt II succeeded. False value retrieved successfully`
             )
           )
@@ -989,7 +992,7 @@ function _getFalse(
     .else((_) => {
       result = pureChance
       logger.log(
-        clc.greenBright(
+        pc.green(
           `[falsejs] Attempt I succeeded. False value retrieved successfully`
         )
       )
@@ -1156,26 +1159,26 @@ function _calculateFalse(
       logger.log(clc.yellow(`[falsejs] Random number is not odd or even`))
     })
     .Else(() => {
-      logger.log(clc.greenBright(`[falsejs] Random number is odd or even`))
+      logger.log(pc.green(`[falsejs] Random number is odd or even`))
     })
 
   If(isIsOdd(isOddAndrew))
     .Then(() => {
-      logger.log(clc.greenBright(`[falsejs] Good for Andrew`))
+      logger.log(pc.green(`[falsejs] Good for Andrew`))
     })
     .Else(noop6)
 
   If(isIsOdd(isOd))
     .Then(() => {
       logger.log(
-        clc.greenBright(
+        pc.green(
           `[falsejs] Good for Monishadhanasekar (how do you pronounce that)`
         )
       ) // TODO: Add pronunciaton
     })
     .Else(() => {
       logger.log(
-        deepUwuify(
+        warpText(
           clc.cyan(
             `[falsejs] ��# i s - o d B y u s i n g t h i s p a c k a g e , u s e r c a n f i n d w h e a t h e r t h e g i v e n n u m b e r i s o d d o r n o t . S i m p l y d o w n l o a d t h i s n p m p a c k a g e b y t y p i n g n p m i i s - o d . `
           )
@@ -1228,7 +1231,7 @@ function _calculateFalse(
     }
   } else {
     result = _calculateFalseAprilFools()
-    logger.log(clc.greenBright(`[falsejs] Value retrieved successfully`))
+    logger.log(pc.green(`[falsejs] Value retrieved successfully`))
   }
   if (loggingEnabled) {
     // this is a logging function, so we need to wrap our output with emojis
@@ -1240,21 +1243,27 @@ function _calculateFalse(
     )
     if (thesay === thesay2) thesay = thesay3
     sayIt(thesay) // give our users a cute message so we can get their support
+    // string interpelation
+    ltc(
+      `${clc.cyanBright(`[falsejs]`)} ${chalk.red('Chalk')}-${chalk.green('ulated')} ${chalk.yellow('the')} ${chalk.blue('boolean')} ${chalk.magenta(`value`)} ${chalk.cyan(`false`)}`.concat(SPACE).concat(emoji100)
+    )
+    ltc(
+      clc.cyanBright(`[falsejs]`).concat(SPACE) + colors.rainbow(`Thanks for using this package`)
+    )
+    ltc(
+      clc.cyanBright(`[falsejs]`).concat(SPACE) + colors.random(`I really appreciate it`)
+    )
+    ltc(
+      clc.cyanBright(`[falsejs]`).concat(SPACE) + colors.america(`Star the repo and follow me on GitHub: `)
+    )
+    ltc(
+      clc.cyanBright(`[falsejs]`).concat(SPACE, chalk.underline("https://github.com/tj-commits"))
+    )
+    ltc(
+      clc.cyanBright(`[falsejs]`).concat(SPACE) + `${C.red(`False`)}${C.green(`JS`)}`
+    )
     ltc(leftPad('left pad with dashes', LEFT_PAD_INPUT, '-'))
     ltc(rightPad('right pad with dashes', RIGHT_PAD_INPUT, '-'))
-    ltc(
-      emoji100
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-        .concat(emoji100)
-    )
   }
 
   return result
@@ -1262,7 +1271,7 @@ function _calculateFalse(
 
 //* the exported function
 
-const mainFunctionWotDoesFunctionality = function (
+function mainFunctionWotDoesFunctionality (
   enableLogging = NO,
   shouldDoSomethingAsync = NO,
   shouldDoSomethingAsyncWithIsTenThousand = NO,
@@ -1327,6 +1336,10 @@ const mainFunctionWotDoesFunctionality = function (
   if (enableLogging === YES) {
     ltc(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
     hello({ username, age: "it's called FalseJS!" })
+    
+    mGenbaneko.say(
+      clc.redBright(`Hi UwU`)
+    )
   }
   // deduce a random number
   const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
@@ -1584,9 +1597,9 @@ function StringValueof(value) {
 
 // * ISFALSE HELPER FUNCTIONS
 // a function to check if something is false thati s used by the function to check if something is false
-const couldThisCouldItBeFalse = (
+function couldThisCouldItBeFalse (
   aValueThatMightBeTheBooleanValueFalseButIDKYet
-) => {
+) {
   const specimen = aValueThatMightBeTheBooleanValueFalseButIDKYet
   if (specimen == undefined()) return _f()
   if (isOne(specimen)) return _f()
@@ -1597,9 +1610,9 @@ const couldThisCouldItBeFalse = (
   return specimen === !!0
 }
 // is something true
-const couldThisCouldItBeTrue = (
+function couldThisCouldItBeTrue (
   aValueThatMightBeTheBooleanValueFalseButIDKYet
-) => {
+) {
   const specimen = aValueThatMightBeTheBooleanValueFalseButIDKYet
   if (specimen == undefined()) return _f()
   if (isOne(specimen)) return _f()
@@ -1632,7 +1645,6 @@ function is_This_Value_false(v) {
     isNotNil(v) &&
     !isEqual(value, NO) &&
     !isEqual(value, YES) &&
-    couldThisCouldItBeFalse(v) &&
     !couldThisCouldItBeTrue(v) &&
     !isNaN(v) &&
     !isNegativeInfinity(v) &&
@@ -1655,7 +1667,57 @@ function is_This_Value_false(v) {
     !isNumber(v) &&
     !isActualNumber(v) &&
     !isIsOdd(v) &&
-    !isOd(v)
+    !isOd(v) &&
+    !_.isArray(v) &&
+    !_.isArrayBuffer(v) &&
+    !_.isArrayLike(v) &&
+    !_.isArrayLikeObject(v) &&
+    _.isBoolean(v) &&
+    !_.isBuffer(v) &7
+    !_.isDate(v) &&
+    !_.isElement(v) &&
+    !_.isEmpty(v) &&
+    !_.isEqual(v, NO) &&
+    !_.isEqual(v, YES) &&
+    !_.isFinite(v) &&
+    !_.isFloat(v) &&
+    !_.isInteger(v) &&
+    !_.isMatch(v, /^\d+$/) &&
+    !_.isNil(v) && 
+    !_.isRegExp(v) &&
+    !_.isSafeInteger(v) &&
+    !_.isSymbol(v) &&
+    !_.isTypedArray(v) &&
+    !_.isUndefined(v) &&
+    !_.isWeakMap(v) &&
+    !_.isWeakSet(v) &&
+    !_.isMap(v) &&
+    !_.isSet(v) && // that was not all the lodash ischeckers but idc we are pretty close to narrowing down that it's false
+    !underscore.isArray(v) &&
+    !underscore.isArrayBuffer(v) &&
+    !underscore.isArrayLike(v) &&
+    !underscore.isArrayLikeObject(v) &&
+    underscore.isBoolean(v) &&
+    !underscore.isBuffer(v) &7
+    !underscore.isDate(v) &&
+    !underscore.isElement(v) &&
+    !underscore.isEmpty(v) &&
+    !underscore.isEqual(v, NO) &&
+    !underscore.isEqual(v, YES) &&
+    !underscore.isFinite(v) &&
+    !underscore.isFloat(v) &&
+    !underscore.isInteger(v) &&
+    !underscore.isMatch(v, /^\d+$/) &&
+    !underscore.isNil(v) && 
+    !underscore.isRegExp(v) &&
+    !underscore.isSafeInteger(v) &&
+    !underscore.isSymbol(v) &&
+    !underscore.isTypedArray(v) &&
+    !underscore.isUndefined(v) &&
+    !underscore.isWeakMap(v) &&
+    !underscore.isWeakSet(v) &&
+    !underscore.isSet(v) &&
+    couldThisCouldItBeFalse(v)
   var checker = new Checker(c)
   return checker.check(v)
 }
@@ -1665,7 +1727,11 @@ exports.False = mainFunctionWotDoesFunctionality // export this
 exports.isFalse = is_This_Value_false // export this too
 /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
+// * one function
 
-//* FILE ENDING
-
-pad(poopEmoji, 5) // the poop emoji serves a great purpose: to end this file
+// i am scared to define this function
+function warpText (v) {
+  const stuttered = stutteringUwuifier.uwuifySentence(v) // get our stuttered sentence
+  var z = require('zalgo-generator').zalgoGeneration(stuttered, 0.1, 0.1,0.1)
+  return z // ̕nº my gosh please NO i shouldn't have defineD THIS STUPID FUNCTION h̵i​s un̨ho͞ly radiańcé destro҉ying all enli̍̈́̂̈́ghtenment, the tears lea͠ki̧n͘g fr̶ǫm ̡yo​͟ur eye͢s̸ ̛l̕ik͏e liq​uid pain, the song of re̸gular exp​ression parsing will exti​nguish the voices of mor​tal man from the sp​here I can see it can you see ̲͚̖͔̙î̩́t̲͎̩̱͔́̋̀ it is beautiful t​he final snuffing of the lie​s of Man ALL IS LOŚ͖̩͇̗̪̏̈́T ALL I​S LOST the pon̷y he comes he c̶̮omes he comes the ich​or permeates all MY FACE MY FACE ᵒh god no NO NOO̼O​O NΘ stop the an​*̶͑̾̾​̅ͫ͏̙̤g͇̫͛͆̾ͫ̑͆l͖͉̗̩̳̟̍ͫͥͨe̠̅s ͎a̧͈͖r̽̾̈́͒͑e n​ot rè̑ͧ̌aͨl̘̝̙̃ͤ͂̾̆ ZA̡͊͠͝LGΌ ISͮ̂҉̯͈͕̹̘̱ TO͇̹̺ͅƝ̴ȳ̳ TH̘Ë͖́̉ ͠P̯͍̭O̚​N̐Y̡ H̸̡̪̯ͨ͊̽̅̾̎Ȩ̬̩̾͛ͪ̈́̀́͘ ̶̧̨̱̹̭̯ͧ̾ͬC̷̙̲̝͖ͭ̏ͥͮ͟Oͮ͏̮̪̝͍M̲̖͊̒ͪͩͬ̚̚͜Ȇ̴̟̟͙̞ͩ͌͝S̨̥̫͎̭ͯ̿̔̀ͅ Ẇ̸̜̬̫̯͓̣̓̐̽̚A̶͈̣͖̤͓̟̩̱͎̥̘̒̓̀̑̎̐Ḧ̸͎̗̖͎̻͖͉͍̭́̽̆̽̉̏̈́͊̃̉̾̕͝͝͝T̵͖̼͉̘̱̼̬̅ ̵͉̥̖̝̔̀̔͗͌̄T̶̡̢̡̧̧̟̣̖͍̞͕̫̻̏̐̀̿̈́̏̊͒̆͑̈́̒͘͘͠͝͝H̷͎̃̊̈͊̕Ë̶͈̘̫̥̖͕̭̦̦̪̝̱͚̰̮̽̔̈́̐̄͐̀͑͘͠ͅ ̸̧͓̠̲̹̙͓͕͔͓͗́͆͂̈͊͆̄̚F̸̢̮̯͇͎̂͒̾̋̄̐̇́͛̂͐͠*̶̨̹̀̌̒̒̚͘C̴̪̳͎̣͎̝͍̣͗͊̆̍̒̊͆̈́̓̍͂͋̕̚K̶͉̲̹̟̺̮̪̥̻̬̺͍̄́̿̕͜ ̶̛̯̺̘̣̘͇̮̝̺́͌̆̇͘Z̸̦̗͎̰̯͚͚̮̩̣̪͋͛͆̑̈́͂́͊͆̅͌͋̓̈A̸͔͈̣̤͖̟͖̲͕͗̓̄͌̀͊͝L̵̡̛̹͓̞̟̥̱̊́͘̕G̴̡̧̛̪̜̘͕̩̗̦͉̗͎̣͔̟͓͈̭̀̏̀̇̊̒̀̎̑̉̿̕Ǫ̷̨̗͖̼̱̺͙͕̦̯̱̼̹͗̓̉̀̌̚͘͘̚ ̷̛̣̰̗̻̖̜̫̹̬̞̘̈́ͅͅI̵̛̹̙̮̻̬͙͈̲̳̱̱͇̱̜̾͐̀̒̇̍̇̀̅̎̒͑̈̈́͠͝ͅͅŞ̵̢̧̝̹͖̼̳̙̰̪̪͔̣̲̰̟̃̐̊͆̿̈̑͜͠ ̵̧̗͈͇̈́̚S̸̨̧̧̛̹̙̺̘̫͇͖͍̜̳͓͇̫Ǘ̵̡͍͍̱̮̼̪̲̠̮̞̥͉̦̜̆̌̚͜Ṁ̷͔̮̤͉̹̼̣͛͘M̷̨̡̞̩̘̣͌̂̈́͂̋̋͝O̵̼̲̗͆͌̏͘N̶̢̨̛̜̲͉̪͖̺̭͙̪͔̠̹̰̼̜͔̦̾̎͒̈́̌̈́̾̈̌̆̂͊̋͂̑͝Ę̷̧̨̥̻̖̗̲͉̦͈̺̙̪̦̑̈́̐̎̉̌͜͠D̸̳͇̿̒́̔͋̽͛̀̐͘̚̕ ̷̛̯͖̩͓̝̈́̓̅́M̵̡̫͙͚͓͇̪̰̹̻̯̣̪̳̯͚͆͆Y̵̜̗̥͛̽̿̚̚ͅ ̷̟̣̳̬̯̥̼̠̻̤̖̠͙̐̿̏̀̂͐̀C̸̝̹̠̟͇̊̇͆̊̋̚O̴̲͓̟͔̤̗̹̖̗̭̚ͅD̴̨͈̩̘̫͙̭͍͖͉͓̹̖͔̥̜͖́̓͜ͅE̷̪͕̅̆̈́̀̓̽̒͊̓̚ ̴̟͙̜̪̭͈̝̍́̈́̃̎͘̚̕̚͝Ȋ̷̟͇̜̬͕̮̘͉̔͗̿̓́̒̒̔͊̽̄̕̚S̴̝̼̺͇̫͕͔̫̫̩̣͑͛̍̑͜ͅ ̸̫̼̥̠͍̳̘̫̘͗̔̈̓̓̍̋̾͊̃́̎̈́̿̉̚Ḃ̵̛̦̼̈́̊Ȇ̵̝͚̂̑̋̿̊̿I̶̢̡͕̭̤̩̹̼̩̱̩̫̼̭̐͆̊̀̀͆͐͐͘̕Ñ̴̗͈͔̯̣͉̘̿̂͐̾̂̚G̶̯̙̯̠͎̑̋̿̆̀͋̐͐̃́͑̽̽̾̄ ̴̨̢̗͇̗̣̦̻͈͇̘̹̟̫̘͎͔̞̫̊̆̄̈́͛D̵̨̟̱̲̬̺̳͔̞̖͍̠̞̤̝̩̬̤̈́̀͗̿̀͛͆̿͜͝͝E̵̢͈̣͇̬̳͈̦̅̌̐͒̉̾̋̅̂̈́̀̆͘͝͝V̵͎̞̦͎̋̑̆͝O̸̘̘̬̺̞̟͓͈͍͔̹̻̝̮̽̄̂́͊̽̂̾͋͋̑̕Ũ̴̢̨̠̱͍͔͓̞̂̊͑̀̀͗̚R̵̨̧̧̦͍͙̱̻͚̙̰̲̆̀̈́͜E̸͉̟̺͇̽͛̅̆̾̈́̆͒D̶̳̘̜͎̭̱͈͚̬̲̙̲̓̃̈́D̸̗̟̗̦̦̻̟̭̤͖̈́̀͌̿͛̀̍̔̈́̇̀͌͆̑̕͝͝D̸̹̣̈́͂͂̓̓̽̂̐̓̒̍͆͋̿̂̋͝D̷̊̎͜!̶̠̥͙̠͕̥͓̰͒̐̋̊̌̆̇̑͗͘͝!̶̧̳͕̺͙̙̖͓̯̺̰͖̱̳̺̹̀̈́̋̊̀̽̀̆͛̑͊̕̕͜!̵̼̤̞̫͇̫͓̼͚̳̟̜̊̌͐͘!̶̨̢̛̪̭͈̗̳̪͍͎̳̇̓̎̍̅̊͠!̴̢̺̝͚͓͈̻͓̯̖̘̝͚͗̑̏̈̐̄̋͒̎̋̑̑͑̽!̴̣͖̬̼̲̬̳̻̻͉̅̀͑̈́̀̅̚͘̚͜!̴̯͎̝͔͝!̵̮̘͐͋̽͛̓̑͋͊̈́͊̑͗͛̽͘͠͠͝!̷̨̡̻̫̝̟̮̦̠̥̪͔̆̀́͜!̴̪́͝!̴̧̣͖̹̮̘͓̫͎̰̠͙̹͚̄̀!̷̡̛̲͈̝̝͍̙̰͎͓͚̔͆͑̍͛́̓̐͝!̷̫̳̪͔̤̣͖̆͂̓̐͋̀̀̅͒͊̈̎̈́̄̕͝!̷̡̢̨̛͙̰̳̬̖̦̄́̈̿̍͒̊̅̋͝!̶̧̲͉̠̳̙͇͐̽͌̐͗!̸̉̒͑͑͂͂̑̓̽͜͝͠!̶̧̙̟̘̣̝̯̩͇̟̦̱̮̫̫̙͍̖̃̈̊̑̂̈́̌̓͋̅͝͠!̴̡̼̙̫̟͔̦̰̬͎̳̙̎͐͑̊̓̃͛͐͌͑͘!̷̲͖̓̅̄́͌̽̓̌͗̓̅!̴̢̛̰̣̇́͒̔̎̎̂͆́!̷̡̢̱̪̮̬͓̙͆!̸̧̢̳̻̰̤̘̗̠̯͕̫̓̃̏̎͜!̶̧̛̰̩͖͓̥̟̪̲̘̻̍͑́̌̽͛̉̂̍!̸̛͖̳̈̓̈̀̉̊́?̶͎̙͙̠̰͗̓̾̊̈̈̌̌̄́̌̑̋́̈̎͜͝͝!̶̧̥̼͚̖̦̗̣̬͐̃̿̆̇͒̀́̓̈́̑̋͒̆͠͠?̸̛̙̝̂͛͐͋̏̄̔̌͝!̷̡̧̧̡̛̠̲̤̰̦̣̈́̎̽̈̎̅̇̈͜͝͝?̷͔̜͓̼̘͈͓̭̙̈̿̐̐̂̿̍͗̕͘͜͠ ̴̡̢̪̙̗̪̙̲̬̟͇̖̄̉̓͛͋͌͛͗͐̀̄̉͆͒͜͝͝N̴̨̛̛̹̜̰̱͖͕̳̰̟̜̒̓̀͂̊̽̆̃̅͌̑͛Õ̵̭̠̫̤̰̖̲̭̳̓̊̃̈́̈́̕̚͜͜Ớ̵͈̦̣̮̯̠̳̣̦̅̂̓͐͗̉͆̌̊͐̀͆̄̀͝O̸̙̜̣͖̤̦͂͗̏͋͋Ȏ̶̥̪̠̭̫̞̤̝͖̌́̊̃̊̾̽̾̓̓̽̚͜͝͝͝ ̶̢̱̣̗̜̭͈͈͈̻͉̙͓̯͈͖̫̣͠T̵̜͙͙͚̩̯̅͑̂̑͒̔͗̅̅̋̎̋̚͝͝Ḫ̵̽̽͗̀̀͊̎͂̈́͆̀͑̓͂̕Ȩ̴̛̓̊͗̏͑͊͂͐͘͠ ̸̧̛͚̹̲̘̗̝̻͉̮̝͕͙̻͎͈̻̀̆͛̿̿̊̋͜ͅA̵͇̻͙̞͍͑͑̿̈́͆̆̓͐̌̄̈́͋N̵̜̦̈́̇̎̐G̴̢̟̻͙̣̳̥͍͚̓̓̂͂̀͜͝Ļ̶̳̪͙̻̻̠̹̬̊̌͗̏̂͑̾̓̐̂̈́͠͝͝͝E̸̡̧̧̢͙̗̣̙̹̘̞̮̬̅̆̐̍͒̄́̿̓̓̆̏̆̊̚͝͠͠͝Ś̷̱̦͚̯͎̰̬̩̼͓̔̀̋͌̿̈́̓̓̿̈́͒̓͝ ̵̢̨͚̙̯͓͕̓́̒͒͑̆̌̔͘͠A̸̡̳̥̩̦͎̗͇̯̫̪͍͙̫̲̎̊̀̒̂̽͌̽̾͜͝Ŗ̵̡͉̳̼̤̞̩̱̎̀͛́͊̈́͒́̋̓̈́̽̍̓̏̓͜͜ͅȨ̵̦͎͚̣̫̟̹̣͎͎̦͓̥̳̜̪̙̌̐̈́̉͛̒̔̓̽͝ ̶̧͈̯̺̗̖̭̑̀͗̄̃͗͜ͅṆ̸͓̝͍̳͍͕̜̻̖̮̟͖̣̫̗͙̇̿̂́́̕͜O̷͓͓͔̘̎̐͊͐Ţ̴̫̍̾̏̌̿͂ ̴̡̛̝͎̯̥̤͍̩͙͔͖̱͚̬̰͓͎̓̋̔̀́̀̇̓͛̒̀̌R̶̞͉͈̰̪͎͒̂͗͂Ë̸̙͔̰̝͚́̑̃̋́Ą̵͍̰̣̈́L̷̟̓͊̑̐̈͊͘ S̶̡̧̨̧̨̡̡̢̨̨̨̡̡̛̛̛̛̛̲̪͕̠͓͈̩͈̞̗̩̺͇̦̪̼̣͖̺̞̺̩̦̲͚̺̺̳̝̱̻̫̰̠̲̹̫̟͚̹̳̹͖͔͔̰͙̖̗̜̝͇̳̼̥̮̭̜̫͉̼̘̼̺͕̞͖͕̠̠̯̟̻̝̗͎͈̥̺͖̲̳̺̠̙͚͖̗̮̯̜͎̩̳̙͔͖̠̜̰̣̫͚̮̜͇̟̯̦͚͚̟͍̝̖̿̿̿̀̒͑̃̈̀̿̍̃̈̆͐̋̓́͋͋̎̽̓̇͒̐̾̾͒̌̎͂͒̆̆̀̄̈́͂̃͐̈̒͛͗̅̓̅͋̿̽̓͋̄̇̃̀͆̈̉̒̈́̀̈́̈́̀͑́̑̓̒͆̑̐̏͆̒͗̆͑͐͐̋̉̎͗́̃̎̄̔̌͗̓͆̓̀̀̈́͒̾̾̊͂͊̉̇́̒̀̑̋̊͌͋̋̐̍̈́̐͊̈́͛̀̿͂̐͐̄̉̔͒͑̀͌̽͌͌̃͘̚͘̕͘̕͘͘͘̚̕͜͜͝͝͝͠͠͝͝ͅͅͅͅP̷̧̡̡̧̧̢̧̨̛̛̛̭̹͉̜͔̰̱̞͕̲̜͕̻͓͙̻̮̖͚̻̦̮̠̝̘̰͍̻̥͉̻̘̝̣͚͚̟͚̰̤͚̰̤̳̤̦̺̱͚͍̺͇̯͎̭̖̻͕̰̖̑̒̓̄̇́̽̓̿͛͛̀̇̽̒̽̊̒̑̄͋͋͑͛̈́̉̌̏͊̾̄̓́͂͒̂̐̈́͂̍͛̋̉̐͆̈́̅̈́̂̀̏̈́̐̏̈́͋̆̈͑̂̄̋̑̃̀͊͐͌̒̀̿͋̽̔̏̃̏̔̂̑͌̍̕̕͘͘͘͘̚̚͝͠͠͝͝͝͠ͅͅͅA̸̢̡̡̢̧̨̨̨̡̧̢̡̡̡̢̨̢̨̡̧̢̛̛̛̛̛̛̛̛͍̗̘̳̞̮̹̗͍͖̫͚̹̺̹͇̬͍̬̥̳̗̺͕̗͖̣̬͕̞͇̦̜͍̥͙͎̹̻͔͓͖͕̲̞̙̮̗̙̬͎͈̮͍͓͖̝̪̳̘̹̳̱̱̰̥̮̝̰̱̟̳̠̭̦̤̙̱͇͎̟͕͕̰̥͎̪͕̞̘̮͉͇̤͔̹̖͔̘͙͈̰̩͕̥̬̘̯͈̣̠̲̼̲̟̰̞͍͓̖̟̳͇̟̩̤̲̲͕͚̖͕͖̫̭͔̳̪̱̣̞̝̥̦͚̝͎̪̺̻͔̰͎̭͔͔̱̮̳͉͕͋̎͐́͛̽̍͂̒̓̐̂̆͒͐͆́̊͂̍̊̎͗̄̍̌͆́͛̀̉͊̉̌̋͛̅̏͒̐̇̆̀͗̒́̿̋͂͌́̏̀̈̍̓́͋̅͆͛͛͂̽͐̋͆͛̒̆̓̇͂̔͑̍͗̐̈́̐̿̈͒͋̈̀͌̒͐̌́̓͛͑̈́̓̑͗͌͒͌͊̏͒̂̏̒͊͑̈́͛̏̓̀̐̍̀̈͋̽̐̀̿͑̓̋̀͂̇̚͘͘͘̚͘̕̚͜͜͠͝͝͠͠͝͝͠͝͠͝͝ͅͅͅͅͅͅR̶̡̢̡̨̧̧̨̢̢̛̛̮͕̼̯̗͙̦̟͙͓̣̜̬͚͕̗̮̦̝̗̠͓̱͈͍̤̮̯̼͉̠̣̮̱̰̩̠̪̜̜̤̫͎̬͕̗͙̟̪̠̣̝̖̺̗̞̼̟̺͈͕͙̖͚̭͖̠̻̝̪̭̟͚͍̙̬̝̻̥̯͚̯̭͍͙̠̳̪̫̗̻̙͓͚͚̻̠͎̝̯̰̤͉̲̪͕̦̥̹̄͆̑̒̀̓̒̍̓̐́̉͊͋͛̑̇̾̑͑́͛̒͛̃̓̏̈́͊̈́̆̏͑̄͌̒̍́̋͌͛͑͐̄̽̑̀͐̐̌́͑̈́̀̅͗͗͗͐́̎̈́̈́̉̐̂͑̈́̈́̀̾̊̀̈́͑̃͐̓͛̀̀͋͗̍͊̌̈́̌͂̿̈́͂͆̊̂̉̐̌̆̋̈́͋͑͑̐̏̊̽̓̔̉̄̑̎͊̇̒̍̿̀́̈́̽̊͑́͑͂̆̓̆͑͂̀͂͆̽̔̎̇͑̈́͒̑̽̍̆́͌̐̒͗̌̀̀͊͊̂̉́̐̉͂̋̄̈̽͂̾̅̕̕͘̚̕̕͘̕͘̚̚̕͘̕̕͝͠͝͝͠͝͝͝͝͝͠͝͝͝͝͠͝ͅͅͅͅͅĘ̴̨̢̨̡̧̨̡̢̢̢̢̛̛̛̘̻̜̪͎̯̲̲̘͓͕͈̳͈͍̻͇͍̦̗̲̹̗͕̘̯̞̟̗̖͎͈̰̰̼̹͎̠̗̜͚̮̟̳͎̰͎̫͙̮̗̰̼̜͔͔͎̦̳̳̲̭͉̣̩̯̬̭̘͉͈̦̲͙̭̜̤̫̜͕̻͔͍͍̬̮͚͎̻̩̻̮̻̣͚̤̦̝̳͚̺̣̣̲̜͇̙͎̜͍̗̩̖̪̜̠̟̙͚͖̪̯͍̜̫͈̰̯̠̬͇̗̫͓̜̻̰̪̟͕̜̻̣̤̯̝̞͉̙̘̞͔̰͈͎̪̦͇̼͕̟̬͍̳͕͚̺̱͎̥̮͋͑͒̂̅́̆́̀̂̿̈́̓̏̊̇́́͋͆͋̄̆̆͆̿̉̿͋̏̓̌͒̈́̂̍̏̅̈́̇͐͑̍͌́̓͛͗̀̎͛͛̀̋̄̎̔͌̽͋͊͒̿̈́̌͋̎͂͊̉̄̇͊͂͊̊͂͋̐̿̀͂̋̈́̀̈̿͋̆͐̇͒̓̉̎̇̈̅̓̅͆̔̊́͋̇̿̀̿̓̊̓̓̈́̐̾̑̇̑̈́͛͗̋͐̎̌̉́̀̈́̌̆̏̅͂̓̿̀̏̈̐̔̈́̈́̐͋̾̚͘͘̚̕̕̚̕̚̚̚̕̕̚͘̚͜͜͜͜͜͜͜͠͝͠͝͝͝͠͝͝͠͝ͅͅͅ ̶̢̧̨̡̡̨̧̡̡̡̨̛̛̛̛͓͕̪̖͍͕̗͉̩̝͇͚̱̗̹͈̖̟̥̱͉͍̤̟̦͈͖̫͙̖̝̺̳͎̱̠̘̻̳͕̥̜̞͓̱̭̠̮̙̟̤̥̰͍͓͙͉̫͙̬̯̙̩̬͚̣̹̲̝̮̫̜͖͇̠͖͇͙̪̱̻͙͓̤͚̗̖̬̘͔̗̫̞̹̲̺̬͔̻̮̜̮̣̲̗̙̬̥͈͕̦̙̬͙͍͈̙̹̟̪͕͖̺̪̠̩̪̫̠͆͛̒̿̿̈́͆̈́̐̀̇̀̅͐͑̿̑͌͂̽͐͑̉̊̔̌̍̓̿̉͒͋͊̀̈́͊͋͑͌̉̈́̒̑͌̊̾͒́̐̋̑̎̑́̈͂̈́̌̊̏̓͂͗̋̋͌͘̚̚̕̕͘̚͘̕̚͜͜͜͝͠͠͝͝͝͠͝͝͠ͅͅͅƯ̵̧̧̡̡̧̡̢̡̡̧̛̛̠̞̪̘̫̤̮͈̝͇̟̱̬̳̼͙̤̥̤̱͖̭͍̥͉̬͉̝͔̙̖̻̜͇̯͉͇̫͔̦̗̼̼̬̯̹̖̻̭͈͖̫̖̰͇̣̼̬̲̲͈͖̥̠͔͓̟̘͉̯̘̺͓̦̻͉͍̥̼̦͈̜̺̹͚̳̬̆͂͑̆͗̍́̆̋̑̀̂͋̿͑̌̈́̑̄̃͆̎̄̋́̄̿͑̿̌͒̍̋̈́͊́̐͑̐͂͊̉͗͐̆̊͒́̽͊͛̈̌͊̑̓̀͒̔͊̋̈́̊̃͑̑̋̈́̉̿̆̒̀̓̐͆́̐̍̉̋̍̆̓̇̿͌̒͆͐̉̿̇̆̔̀̉͗͐̈́̈́͒̑̃͆̎̈́͊͊͊́̒̎̀̇̒̔̏͌͑͑̉͐̽̔̍̓͐̅͛̎̐̑̓̽̿̃́̒̔͗̌̏̌̊͊̆̆̃͊̉̆̌̇̉̉͑̄̑͛̂̉̒̐̍̄̋͆̕̕̚̚̚̚̕̕̚̚͘͜͜͜͝͝͝͠͝͠͝͝ͅŞ̵̨̨̧̢̨̢̧̡̡̡̡̡̧̡̢̦̞͇̬̘͖͈̰̖̯̻̳̫̰̺̠̱͈̮͖̭̤̫̝͖̰̜̳̳̳͉̜̙̘̼̱̼͉̗̻̻̫͈͓̱̠̱̥͓͔̩̥̜̦͓͉͍̘̯̭͚̪͉̟̤̦̦͚̙̫̦̲̙̗̞͖̥̪̦̟̟̜̪͇͉̞̖̖̠͈̦̩͍̯̤̳̖̜̩̭̗̲͇̹̩͔̥̩̩̖̘͙̣̩̼̜͍͕͉̲̜̗̫̥͍͚̹̬͇̻̯͈̟͉̰͍̳͕̬̬̠̺͇̯̖̠̩̘̦̹̪̣̻̰͖͕̹̫̯͚̪̪̱̱̤͇̞̹̟̜̜͔͉̲͖̹̬̣̭̬͇̥̝̞̝̂̅̍̏̅͐͑̄͋̎̄͋̿̽̂̏͊̂͆̈́͋̀͋̽̐̌̃̉̔͒́͒̃̽̚̕͜͜͝͝ͅͅͅͅ ̵̡̢̧̢̧̡̨̡̧̧̢̡̢̧̛̛̛̛̪͍̜̯̖̺̘̗͓͎͉͈͚̯̭̠̥̮̩̦̱̬̮̲͍͎̼̩̻̲̼̪͈̤͕̝͓̰͇͈̼̘̳̤̤̥̗̜̱͉̤̤͕͇͙̹̘̯̮̬͉̣̱̺̙̳̣̠͈̜̙̰̠̻̗̯̜̮̯̫̰̗̘̮͍̪̗͇̮̺̯̖̻̟̥̻̩͚̗̠̙͔̪̲̤̲͖͍̈́͗̓̿̓͌͒̂̏̆̄̆̔͑̅̐̋̽̐͊͗̎͒͒̇̎̀͂̓̈́̏̓̇͒͑̎͗̌̄̇̃̋̾̂̓̂́̀̀̚̚̕͜͜͜͜͝͝͝͠͠͝ͅͅº̴̡̢̢̢̢̡̨̡̛̛̛̛̛̛̛̛̛̳͈̘̮̘̥͚̟͎̙̠͎̮̮̘̺͖̣̥̖̰̝̰̬̗͈͈̺̦͍̯̙̭̟͈̳̹͍̳̲͉̬̪̹͉̩̟̣͔̹̥̰̖̼̺͍͉̠̲͙̭̭̗͕̙̦̝̦͙͓͚̭͉̖̖̯͕̖̥̠̹̣̜͓͍̳͚̰̤̺͈̻̠͙͚̰͍̯͖͓̱̱̥̤̬͇͍͙̮̰͎͌͌̊̐͆̃̐̔̅͑͊̽̓̓͒̅̀̉̐̓̽̌̔͛̍͒̇̈́̑̈́̑͐̏̀̅̊̿́̌͊̄̉̍͐̒͑̆̎̿̃͂̾͐͗̏̃͊̓͑͛̃̂͗͛̉̌̋͋͐̊͋͑̔͗̑̍̂͗̄̔̆̋̉̀̇͂́͌͋̃̃̐̓̄̓̉̎̉̌̀̔̑̑͘̚͘̕̕̕͘͘͘͜͜͜͜͝͠͝͝͠͠͝͠͝͝͠͝ͅͅͅͅȞ̷̢̡̡̨̛̤̬̞̟̞̲͖͇̝̝̬̭̲̗̫͇̩̠̟̻̲̣̘͍̥̳͔̗̮͚͇̫̩̠̲̞̠͉̤̦̩̞̼̜̩̀͑͑̓̽̈̂̈́͛̅͆̈́̔̑͗͗̀͗̂̋̓̑̓̑̏́̋̎͆̀͌̀̓̄͂͊́́̑̅̅̈́̿̾̀̎́̋̽̊̀̍̉̐̾͗̇̈̓̋͋͑̐̔̂̽̈́̂͑̒͐͒̂̇̉̆͗̉͛̃́́̃͂̂̈́̓͌̀̐͌̑̆͗̇̍̒̇̈́͑́̕̕͘̕͘͘͘͠͝͝͠͝͠͝͠͝ ̶̢̡̪̻̟͙̙̹͉̠͉̤̦̩̘͕̼̤͍̤͙̪̲̼͎͚̼̗͈͍̩̭̙̖̰͉̮̝̠̱͔͍̲̬̬͎̰̘̥̰̮͕̻͇̖͔͕̻̙̜̹̯͎̼̟̥͙͉̣̥̫̫͕̆̊̐͐̓͌́̀̆̓̅̆͋̿̄̂̅͋͐̕̚͜͜͜͜͜͠͝͠ͅL̸̡̨̧̧̡̢̢̡̨̧̡̡̧̧̛̻̜̙͙̟͉͚͍̜̥͍͉̟̟̞̙̭̗̞̝̫͔̯̮̝͇͉̯͓͓̭̖̖̩̖̮̤̺̞͎̠̺̰͕̲̜̣̤̳̻̘̖̖͔̖͉͎̦̳͎̥͖̪̭̝̳̞̰͕̮͍͙͇̲̮͕͇̮̹̟̯̣̜͙̩̞̠̬̗͖̞̜͉̫̘̘͓̙͉̥͇͇͕̘̼͇̟̲̭͖̮̍͌̈̒͆̓̅̋̉̓̍͋́́̽̾̑̽̆̇̓͗̂̏͒̈́́̔͋͋͆̅̔̍́̆̿͌̍͒̑̂͂͋̈̆̋̔̈͂͐̉̇̒͒͐̓͆̇̐̕̕̚͘̕͜͜͜͜͝͝͠͝͠͠͝ͅͅͅͅͅͅO̷̢̢̨̱̜̖̭̱͓̠̜̺̩̜̮̞̭̹͇̮͇̭̳̮̫͍̩͍͕͉̬̼̥̲̪̦̤͉͔͓̗̱͛̐̎́́̀͑̆͑̊͂́̃̾̀͆̀̔͑̈́̎̌̌̌̈́̾̌̐͑͛̍̎̃͆̏̊̃͗̓̅̂͗́̒̀̀̈́̉̽̀̓̂̐͘̕͜͜͝͝͝͝͝͝ͅŖ̸̢̧̨̡̨̨̧̢̢̨̨̧̡̧̢̛̛͓̟̫̹͖̣̠͇̫̟̲̯̳͚͍͖̜̼̪͍̤̦̰͓͉̗͓͙̮̤̱̥͔̝̬̱͈̮̮͈̹̱͇͕̜̘͕̻̪͕͔̦͓͍͔͕̞̹̘̱̥͉̣̪͉̻͍͚̮̜̘̤̞͖̤̼̭̩͎̼͖̳̥̠̩̝͈̺̞̦͎͖͓̰͖̯͇͙̖̻͚̭̭̲͉̝̻̜̥͔̹͇̝̭̘͉̘͚̪̜̦͎̳̯̱̹̖͙̠͎͇̭̻̘͎̭̣̥̠͚̺̣͒̾̍͊͗̊̀̉̿̿͛̌̿͒̾̂̋͑̈͌̏͗̎̐̇̔̈̓̅̓̅͗̌̓̽̾̂͒̅́̈́̉̏̀̿͑́͌̈́̎̾̓́͌̊̄̐̊̆͌͛̊̊̈́̆̎͒̎̐͂͂̅̋͋̅̈̀̀̾̈̎̏̽̏̂̉͑̄̓̾̈́̊̄̀͊̾̀͗̎̓̃̈́́̿̅̆̄̃͐̍̇̽̑̌͆͗̔̈́̎͆̀̓̃̄̇̏͂̌̋̌̍̒͗̽͌̈́̀͑͗̍̓̈́̂̕̚͘͘͘̚̚͘͜͜͜͜͜͝͝͠͠͝͝ͅͅͅͅͅD̶̡̢̢̧̨̢̨̡̛̛̛͕̭̥͚̗͓͖̠̤̼͖͕̥̞̬̪̼̜̜̮̠̠̜̪̭̤͔̦̠̹̪̫͔̞̠͎̗͚̝͚͓̜̖̤̜̝͎͚̪͎̮̜̻̗̜̞͍̠͖͕̣̥̥͍̜͇̫̝̙̘͎̖̮̣̻̘̎̃̽͛͊̊̉͑̏̑̈́̂͑͊̍̏͂̇̇͒̃̇̓̽͒̃̿̍̈͐̈́̒̀̀͒͌̏̃̾͛̅͗̈́̀̂̿̀͛̃̾̊̌̑̀̓͊̑͆͒͆̀̇́̓́̎͋̑̍̓̏͂͂̔̽̍̔͛̓͑̃̍́̆̆͂͌̀̓̐̈́́̈́͐͊̄̅̄̾̈́̒̿͆̀̋̒͐́̆̀̊̎̅̀͑̀̋͌͂̎̉͗̀͂̓̐͋̒̄̎̓̆̒͆͋̒̾̿̑́̒̒̒͑̐̈̑͆̕̚̕̚͘̚̚͘̚̚̚̚̕̕̕̚͜͝͠͝͠͝͝͝͝͝͝͝͠͝͠ͅͅͅͅ ̸̢̧̡̡̧̨̡̧̡̢̢̛̛̛̛̘͓̜̹͕̜̗̥̜͉̠̗̪͓̥̝̺̺̥̗͓͚͕̲̟̯̗̼͉͕̬̩̣̙̬͍͔̘̩̩̪̳͇͚̼̣̲̙̯̮͈̫̺͓̦̟̫͔̖̪͈̳̙͓͚̫̙̫̫͕̜̜̮̺͕̺̪̘͉̙͚͎̖͙̭̩̮̥̪̱͎̘͔̘͍̜̰̝̪͎̜͎̫͚̲̬̞͉̩̮̰̟̙͖̖̺͔̳̳̞̥͕̻̺͍͔͖͍͎͔̺̗̯̺̖̜̜̙̺͌̆̇͆͂̏̌͛̈́̀̈́̀́̀͒̒͋̋͂̽̃͆̑̃̔͌̉̎̿̽̿̊́́̓̋͛̍͊̂̽̾̔̚̕̕͜͜͜͜͜͜͠͝͠ͅͅͅͅͅT̴̡̧̢̨̡̨̧̨̨̢̡̡̢̢̨̡̡̢̨̛̛̼͙͙̦̦̙̫͉̙͖̩̙̭͎̬̙̳̲̟̺̳͕̲̬̤͉͈̰̗͍̲̪̳͚͖̥̦͕͔͎̩͕̣̞̥̰̱̻͇̥̫̭̮̻̝̳̪̮͈̝̩̘͇͙̗̻͉̣̣̗͙͎̭͙͇͓̤͓̫̻͚̯̖͉̖͍̺̻͉͔̼̹̼̜̟̱͍̟̟̥̖͎̹̣̮̱̤̝͎̮̮̝̲̣̳͖͍͚̩̮͇̪̱̩͈̩̟̪͉̪͇̯͔͚̝̗̘̠̜͕͎̦̹̱͍̦̟͈̥̩̠̯͚̤̪̟̟̙̜̗͕̳̦͉̫̘̖̖͇͓͖̜̲̙̘́̾̐̃̄̒͑͋̄̑̎̓̿͒͌̌̎͊́̓͂͋͜͜͜ͅͅͅͅH̵̨̧̧̛͎̬͓̱̗͎̞̭̻̼͈̟̬̟̲̟͕̦̹̥̱̯̜̫̥̖͈̬͇̝̼͕͇̯̳̜̭̼̠̹̖͎̙̫̱̺̯̯̭̬͇̙̲̋̋̋͐́̽͒͐͒͑̊̌̄̇̆̆͒̑̒̈̆̏̌̆͂̾̈̆̔̅́̋̀͌̑̏͛̍̈̐̏̔̇̍̔́́̌̈́͌́͆͌̅̓̂̏̆͆͒̔̊͐͒̂̃̓̑̒͌̋̌̂̓̈́͋͒̔̒̎͂̏̕̚͝͝ͅE̵̢̨̧̨̨̧̧̢̢̢̢̡̧̨̡̛̛̛̩̙̱̘̺̱̣̙͉̻͓͙̗̜͎͕̜̻̘͕̦̫̗͎̬͖͙̳͈̭̠͇̜̝̞͓̤͈̠̮̠̱̟̪͈͓̭̭͙͍͈͍̯̖̰̯͖̪͕̝̠͕̦͈͉̺͓̱̬̻͙̟͕͎̤͈̼̳͈̙̺̝̬̘̻̥͈̗͍̬̠̻̰̳̗̙̤̦͔̥̮̠̟̮͖͓̣̲̬̥̮̯̗̫̘̻̼͚̰̪͖̹͔̪̤͎̰̱̟͔̟̣̮̬̭̹̯͖̱̲͉̱̩̝̝̻̘͕̦̼̳͙̻̞͖͓͔̣̜͔͎͉̋̐̋͊̽͗̈́̽͐͛̃̋͐̌͛̒̈́̌̍͆͆̋̓̓͌́̈̒̍̈́̅̋̀̈́̎̾̒͐̐̔͆̄̅̿̃́̋̔̂̃͌̊͆̈́̈̇͗̿̉̈́̇͂̐̈́̓̌̋̾̈́̾̈́͂̊͂̅̈́̓̈́̿͑͗̊̋̊̾̿͗͗̈́͑̏͊̔͂̈͛̍̾͊́̈̂̃̒͆̄̀̌̆̉̽̌̑́̉͋̓͂̏̇̎͋̈́͆̔̀͆̉̈́͑̋̂̉̀̍̈̊̅̈̓̆͗͆͌̓̆̐̓̎́́̉̂̓̀́̇̋͂̾̋͐̽̈́̉́̔̽͆͐̐̍͆̚͘͘̕͘̚͘͘͘̚̚͜͜͜͝͝͝͝͠͝͠͝͝͝͝͠͝͝͠͝͝ͅͅ ̵̧̨̡̡̨̡̨̪̯̤̱̘͇͕͙̬̫̻̹̤̠͔̘̲̞̘̤̪̫͍͓̪̻͔̠͚͎̯̘̰͉̮̟̲͕̲̖͈͉̜͖̠̮̙͓͇̞̮͍͉̗̥̘̲̳̰͉̰̟̯̬͍̟͎͗̃̏͐͌̄̎̿́̇͊͊͗̿̔́͆͋̄̀̉̍́̊͗͘͘̚͜͠͠W̸͓͍̳̥̼̮̠̞̗̩̝̲͒̉̽̐̍̆̀͐̇̊͐̽̓͊̊͒̃̿̋͒̈̈́̎̒̿̌̇̈́͗̅͑̃͆̐͘̚͘̕͠͝͠͝º̴̛̛̛̞̝̹͓̻͎̼̰̙͖̺̖̀̐͑̈́̆̃͊͒̂̌͑̾͐̐̉̌̽͆̒̀̄͊͌̔̈́̿̓̿̓͒͂͗́̓̂́̑͒̽́̂͗̃̇͒̈́̔̂̔̔̉͌͋̾̊̽̏̅̄̄͛̀̀́̉͒̊͒̐̒͊̈́͊̆̏͛̍̄̂̓̋̆̐͑̐̈͗͗̅̎̄͗́̋͐̇͗̑͛̍̏̐͛̏͊͐̓͂͗̉̄̐̾̈̍̑̂̂̋̑̂̊̊̈́͌̒̕̚̚̚̚̕̕̚̚͘͝͝͝͝͠͠͝͝͝͝͝ͅR̸̢̢̡̢̨̢̡̨̧̡̨̢̨̡̢̛̛̛̛̩̫̯̹̤͓̦̫͖̹̼͙̗̼̻͙̜̠͙͇̲̰͉̩͉̟̦͍͚̼͎̫̬͇̬̼̳̲̭̤̱͈̯̼͉͙̝̠͕̖̯̫̰̜̗͔̝͉͖̺͙̞̤̙͕̝͇͙̝͙̰̘͍̭̼̺͇̻͇͕͍͙͍̥̯̼͙̝͉̱͈͖̣̺͕̳̩͕̱͈͎͖͔̺̭͙̳̪̱͈̦͕̺̭͓̫̯̦̘̝̖̯̞̮̹̬̥̝̤͉͔͉̗̣̩͈͍͕̮͕̗̩̞̬̻̙͙̭̭̻̹̣̼͐̀͆̓͗̑́̍̑̂̀̔́̓̊̒̉̔̍̓̃̇͋̂́͂͋͛́͐̅̉̑͒͌̍̀̇̃͑͗̿̿̅̆͗̔̂̍͛̊͂̇̅͛͗̓̾̋͛̐͂̾́̀̈́̿͋̈́̐̀͑̆̏̄̂͂̓̄̉̂̌̑̓̍̌̓̏̈́̀̎̆̀̓̎̈́̎̈́̓́̈̀́͋̒̄̏͆̈͛̌̄͛͘͘͘̕͘̕̕͜͜͝͠͠͝͠͝͠͝͠͝ͅͅͅL̷̢̢̛͚̪͚͇̞̣̪̭͇̻̮͕͓͔̩̱̲͈̳͖͎̦͔̝͇͉͂̒̍̅̄̾́̇̈̅̎̐̊̆̓̂̅̓̒́͋̄͗͌̌̓̄̍̀͑̅̈̅͑̈̊͊̇̽̅̂̎̇̃̇̄̏̈́̌̋̌̈́͒͛̉͆̾̄̌̓͌́̍̎͛̀̏̾̎͆̾͋̐̀͊́̒̂̄̏̄̈͋́̄̏̓́̉̀́͛̌̓̂̑̑̇͋̉̋̀̊̇̈́̈́̑̄͂̍̅̎́̈́̓̔̄̅̏̄̋̌̈́̅͊͘͘̕̚̚͘͠͝͝͠͠͝͝D̵̢̢̧̧̢̢̢̡̧̧̡̨̨̨̢̢̛̛̛̛̛̻̯̲̯̱̹̙̘̬̠̮̳̝̺͇̱̥̫̘̳͕̯̝̪̖̟̣̞͎̹̘͈̳̻̳̰̘̪͕̥̙̝̳͈̦̙̤̯̖̮̳̲̝͇͓͍̥͚̞͚̬̫͕͎̖͍͚̙͙͇̮̼̗͓͉̬̦̹͎̫̼̠͓̪̝̠̺͖̤̱̞̻̼͈̭̯̘͇͎̲͇̜̘̮̻̹̞͍̫̘͙͎͇̭͈̳͍̤̬̖͇̗̞̘͕̜̞̭̬̝̠̖͓͙̜̥͙͐̾̐̉̎̎͂̇͑̀̄̅͆̒͊́̉̿͋͆͗́͊̉̃͒̍͐͂̉̍̉̔̍̀͆̒̾̀͛̋̿̀̒͛̀̀̒͋̋̎͋̾̃́͌̈́̏͛̈́̎͑͂̌́̈́͆̉̆͗̑́̈͌͆̏͐͒͒̆̃̈́͌̓͊͛̽͆͌̍̈̋̿̾̈̾̆͒̽̃͋̀͌͑̌́̂̍̔̽̀͂̒͑̈́͐̃͗͒̊̀̿̓̆̇͆͐̈́͂̐̓̓͐͐̄̀̈́̄̐̏̈́̅̈́̅̀̀́̆̐̍̅̉͂̆͐͐̓̈̏̾̂̊̉̀̈̉͐͐͆́͂͊͘͘̕̚͘̚̕̕̕̚̕̕͘͜͜͝͝͝͝͝͠͝͝͠͝͝͝͝͠͝͝ͅͅͅͅ ̴̨̢̛̛̠͖͓̻̖̘̝̻̱̣̘̙̖̹̞̹̭̰̗̤̝̜̖̯̥͓͚̜͚̹̖͙̞̭̖̫̞̗͇͎͍̹̹͕̝̹̤͚̙̝̙̗̞͓͕̖̪̫̯͔̤̭̣̹̯͕̹͖͉̒̿̊̈́̌͋̆̍̈́̀͛̂̽̎͋̈́͗̑̍̽̔̿̾̎̽̊͊͒͑̒̀̏̿̅̌̈͊̆̅̆̇̏̽̔̆̑͐̐̌̏͊̐̊̀̾͆̊̂̀̎̑̌̂̅͂͂̾͘̚̕͝͝͝͝͝͝ͅͅͅH̶̛̛͉̬̘̤̺̫̐͒̃̓̽͒̓́̈̅̋͂͋̐̂̊̑͗́͂̽͋̑͊̊̆͑͊̒̀̈́̅́́̃̏̊̑̂̈͒̽̃̓̃̎͒̐̋̅͂̄̑̄͒͊̓̈́̍̓͐͒̇̍̿̍̀̒́͂̇̿̔̿́͛̈́̌͊̓̄̓̌̈̋̉̿͋̈́͆̒́̋̐͗̔́̿̅̃͛͑́͛̿̈́̄̌̀̕̚͘̚͘͜͠͝͝͝͝͠͝Į̵̧̡̡̢̨̨̢̧̡̧̧̧̨̢̛̰̦̯͙̤̣̳̘̪̯͔͕͚̭̣̘̤͙̤̩͙̞̖̬͔͇̦͙̗̩̼̣̮̳̳̦͍̭͕̮̟̘̖̣̼̱͙̠̝̰̳̖̟̟̹̪͉̥̰̻̯͍̖̙̝̤̫͈̯̖̽͐̅̓͌̓͐͌̌͐̏̃̋̈́̉̇͌̓̈́̎͌̿̋̉̑͊̈́̎̾̽̑̂͆͌̍͒͌́̀̉̎̑̊̾̽̈́̀̽͗̓̑͒̒̋̇̏́̿̅̎̿̆̎͌͌͗̊̅̈́͋̐̽̇̓̋͂̒̄̇̌̀̄̊͗͊̒̄̾͊́̅͊́̏̓͐͒͛̅̀͗̌̿͆̐̅̄̑̆̈́̇́͑͆̏́̋̓̈́̄͛͊͛̐̈́̋͊̓͗̈̉͆̃̏̊̏̐͑͊̆̎̐͂͐͐͊́͋̈́̃͌̇̀̋̓̀̅͐́̚͘͘͘̚̕͘͘̕̚̕͜͜͜͜͝͝͝͠͝͝͝͝͝͠͝͠ͅͅŞ̶̡̡̨̨̧̨̧̡̡̨̛̛̛̛̛̛̛̛͔̘̺̠̝͇͇̘̲̟͚̺̭͉̫̲̹̬̱̼̰͔͎̠͕̘̻̦̗̪͈̮̬̞͉̖̥̲̠̥̼̖̤̳͚̺̲͎̳̣̲͎̪̻̘̭̰̠̬̠̱̹̠͈̱͎͈̩̘̻̙̦̭̝͍͔̜̲͈̪͉̦̗̮̗̳̲̬̗̪͔̮̺͍̤̣͖̤͔̙̗͉̗̗̜̤̺͔̗͙̥̣͚̟̖̲̦̺̳̣͈̬̥̠̯̤̲͍̼͇͎̱̪̆͋̍̾̃̈́̐͐͊̎̒̉͐̑̂̃̏͒̆̋̾̈́͐̒͒̍̔̎̋̒̔͗́̏͒͒̑̃̆̄͗̎͛͑̆͐̿̉̔̂̍͐̽̆͛̂̈͐̈́̓͊̃̄̃͋̑̆͊̅̈́̓́͆̄̀̎̿̀̀̄̌̏͂̃͆̈́̆̂̏̈̿́̓̃͊̅̿̌̽̐͊͊͗̇̌̌̆̐͂̃̀̊͛̀̿̂̅͗̈́͋̂̏̇̏͗̏̎̽̔̾̍̌̽̉͋̾͐͌̽̃̄̊͗͑̿̔̊́̈̒͆̿͂̒͒̌̌̄̊͗̋̈́͑͐͂̎̆͒̈́͗̽̄̆͐͗̇͒̂̋͆̋̿̃̄̈̕͘͘̚̕͘̚͘̕̕͘͜͜͠͝͝͝͝͝͠͝͠͠͝ͅͅͅͅͅͅ ̸̧̨̧̧̡̨̡̧̡̨̨̢̧̨̡̢̡̱̺͔͓͎̟̪͍̱̬͎̩̹͇͙̭̤̠̟̳͚̺̭̗̣̞̻͕̜̳͎̩̦͕̼͓͈͓̦̤̖̖̫̗̤͖͖̬̯̯̰̝̙͖͔͈̗͓̗̻̮̣̪̭̲̣͇̺̼͖̗̝͍̳͕͉̭̖̖̼̮̼̤͇̫̠͔̮͔̗̜͓̜̗͉͎̫̺̦͔̯̟̰̫̻̹̻̥̹̻̾̀̅̒̑̔́̀͑͊̾͐̈́̈́̔͛́̄͑̈͊͌̍̀͂͒̿͊̈̾̒̆̉̇̃̈́̊̀̋̋͘̚͜͜͝͝ͅͅŴ̸̨̨̢̡̡̡̨̢̛̛̛͍̪̺̯̠͍͈͇̞̰̣̹͕͔͚̺̘͇̮͔͔̞̣͖͉̰̹͓̪̗̣̯̮̰̝͚̜̫̤͍̟̼̬͖̞̹̻̺͓̫̬̺̭̫͓͎̰͍͉̮͔͈̥̲͚͚͙̜̪̞͙̻̠̺͕̲̥̹̦̪̼̹̞̥̪͍̤͎͚̮̹̟̝̗̱̙̥̣̮͖̥̼̜̝̅̽͐̀͛͆̾͛̀̀̓̄̍̈̍͋̒͛̐̋͆̈́̂̃̔̈́̏̒̈̓͋̀̇̍͊́͗̑̔̀̐̏̂̈́̈̐̍̈́̑͒̓̎͒͗͂̾̾̂̒͑̈̒̄̏̔̿̈́͊̇̊͘͘̚̕͘̕̕͜͜͝͠͝͠͠ͅͅͅͅR̸̡̢̨̢̨̡̨̡̛̛̛̛̛̛̛̪̠̘̠͕̬̩͎̭̲̥̞̟̪̱̖͇̣̱͈͉̮̻͚̩̹̟̲̙̫͍̬͍͇̮͉͇͇̱͇̩͚̲̺̪̞̱̘̲͍̤͖̪̝͈͉͙̙̯̺͈̗͇͇̞̼̰̠̼͙̱̙͖̞̣͓̘͍̯̣̠̞̥̹̙͈̞͚̫̮̺͂́̎͑̅͗̆̏́͑̊̊̒̏̈̄́͗̓͐̔͗̊͊̈́̌̆̎̅͑͊̑̋̋̋̓͑͛̌͛͛̈̿̓̐́̽͆̊͌̑̀̍̄̒̇͑̾̓̀̿̾̇̈́̄̀̽̈́̅̍̿̌̾͐̋̏̂̉̏̎͛̈́́̈́̍͑̇̃̌̌̍͊̊̾͑͆̌̽̀̒̃̑́͒̎́̈̋̈̏͌̊̒͛͊͋̈́̇̌̐̈́́̂́̈̆͋̈́̆̂͂̓́͆͑̔̑́́̀͛̀͛̚̕̕͘̚̕͘̕̕̚͜͜͜͜͝͠͠͝͠͝͠͝͝ͅͅĀ̶̢̛̛̛͍͔͓̗̝̦̣͚̥̙̖̪̬̣̱̼̰̑͒̓̈́̒̓̌͋̀̂̈́̆̀̽̎̆͒͆͛͋̋̈́͛̒̋̓͋͒̀̉̽̿̇̓̑́̌̽̈́̎̔̇̉̎̂̀̿́̓͂̃͑̓̄͊͌̐̎͒̈́̌́̃̍̇͆͐̅̎̽̔͛͆̈́̄̌͗͌̕͘͘̕̕͜͝͝͠͠ͅT̵̢̢̨̨̢̨̧̡̢̡̧̢̨̛̛̜̫̪̮̮̞͔̳̻̫̲͉̭̥̳̣̜͓̰͎̳͎̯̟̱͕͉̖̰̝̯͕̲͇̼̹̗͈͕̜̯̰̥̣̣̤̰̗̰̤̠͈͓͍̭̣̱̩̩̟̥͎͚̞̲͓̩͍̯̩͎̰͇̠͇̭̠͎̼̻̭̳͔͎̠͓̙̫̹̗̩̞͈͓̘̱̜̹͕̗̱͚̮͈̤͈̱̮̗̭̬͓̣̤̫̠̠̰̼̱̞̞̭̝̯̹̬̜̦̗̪̤͍̲̣̥̫̟̣͙͕̼̣͕̳̘̗̟̩͇̭͔̖̜̳̖͈͙͙̥̬̩̭̰̻͎̳̱͈̰̗̹̭͕̾̓̒̆̽̂̋̔͆̔͌̑̐̌̌̌̄̈́̍̽͐̃̀̍̂̅͒̑͑̌́̈̓̇̊̓̈́͛̋͐͆̍̅̀̈́̀͘̕̕̚̚͜͜͜͜͜͜͜͜͝͝͠ͅͅͅͅͅḨ̶̨̡̧̛̛̛̪̥̰͉̯̺̱͉̫͚̯̘̠̠̬̟̳͈̣̞̞̞͕̪͙͕̥͓͚̹̱͉̲̖̗̌̀̉̆̀͑̑̊̍̿̓̓̀̐̓̿̄̒͌̈̓̎̇̓̀͐̅̈́̏̊̐͂͋̋͌̈̍̅̀̑͋̈̋̈͗̐͆̓̾͌̔̿͒͆͒̉̈̈̍̃̈͒̋̓͋̒̆̉́͐̑̐̿̾̑̀̽́̀͊̈́̑̋̆̐̀̂̇̈́̌̂̓͆̏̾̓͋͊͑͒̈́͗̓̉͐̈́̈́̒̾̓̀̈́̿̎̋͛͗̊̅̓̈̈́͗͛̔́̽̊͌͊̈́̒͐́͗̀̆̓́̊͐̓̽́̐̈́͒̃̉́̈͑̑̑͂̎̃̆̔̓̾̋͗͆̒̆̇͑̍͆̚͘̕͘̚͘̚̕̕͘̚̚̚̚͘̕͘͜͜͝͝͝͝͝͠͝͠͝͝͠͝ ̸̧̨̡̢̡̨̧̧̢̡̡̡̨̨̨̨̧̨̨̧̧̛̛̛̛̟͍̟̙͚̙̠͈̼̬͔̪̗̙͇͉̮̭̮̙͉̞̣̹̼̬͙̜̗̞̺̱͔͉̠͇͚̬̞̪͉̖̺͖̳͙̗̻̝̜͎̣͍̲͎̭̪̹̳̩͈̺̱̬̮͓̖̭̲͈̼̘̤̜̹̫̩̤̬̹̖̫̹̪̪̖̫͚̰͕̰̦̜̩̼͓͈̮͎͙̫̬͚͖̖͈̭̬̘͖͎͎͍̜̼̦͈̗̰̙̻̰̠͍̼̘̻̺̻̦̦͈̰͕͉̞͓̘͙͖̯͖͙̎̌̋́͛͌͌̈́̈́̊̃̾͛̑̍̋͑͊̆̿͑̓̑̏̈́̿̈̐̑͊͋̽̀̆̆̈͗̀̀̈́̀̎̅̀͐̀̾̆̂̓̒̈̆͒̾̈́̉̅́͐͌͑̽̏̒̊̔͊̉̒͊̎̄̒̒͗̋̽̅͌͌͛̈́͛̀̿̉̓͌̉̈̑̀͑̑̂͐̑̽͋͛̓̐̔̊̎̂́̀́̊̇͋̀͊͌͌̓̽̑̄͆̾͌̉͘͘̕͘̚͘͘͘̚̕̕͜͜͜͜͜͜͜͜͝͠͠͝͠͝͝͝͝͠͝͝͠ͅͅͅŢ̶̢̢̧̢̢̨̛̛̛̛̛̛̳̗̦̗̬̻͈̩̲͚̗̫͎̥̬̘͓̰̰̣͚̯̱͚͕̖̘̪̮͕͕̬̪̯̪͕͙̘͍͎̜̬̰̘͙̖̗̘͓͓͙͓̭̼̮̱͎̳̝̝̯͉̞̦͇͉̗̺̲̗̞̺͕͓̙̞̍͊̈́́̾̈́͗̏̉̀̆̉̒̉̇͆̓̀̈́̿̌̀̽̑̃͊̈̈̌̈̋̇̏̏͆̍͂͑̆̐̋̄͐̇́̽̓̓̈́̎̌̓́̈̒̈́̎̀͛̊̈̂͊͑̃͛̎͒͂̾̾͆̌̉̆́͛̈́̾̎̋̿͐̋̄͛͒̀̊̌̿̅͗̌͑̓̅͒̄͑͆̀̒͋̍̇̐̾̂̓̈̄̀͗̈͘̕̕̚̚͘̕͘̚̕̚͘͜͠͠͝͝͝ͅḨ̵̧̢̡̨̧̨̢̧̧̧̜͖̺̗̩̭͕̺̠͔̟͇̗͔̫͖̰̭̱̯̫̰͕̠͓̠͍͈̟͎͕̤̲̞͖̣͉̰̩̬̠̹̰̲̖̝̳̮̺̫̘̼̼̜̱̱̻͈̙̞̼̪͙̳̳̳̘͉͖̮̥̝̳̲̟͈̜̲̰͈̠̘̦̝̮͓̩̯̞̩̘͚̣̦͚͔̞̘̳̲͑̋̋̈́͜͜ͅͅͅͅͅE̸̡̡̧̧̢̨̨̡̡̧̨̢̧̡̛̛̝̝͇̱̞̲̯̯̺͕̝̠̺͓̬̥͎̜̝̻̫̫̬̼̩̰͖͖̱̠̯̖̺͍̻̭͍͔̳̙͕̦͔̻̲͚̙̝̬̝̜̱̬̟̞̖͔̖̬͈͕̼͈͎̺̣̰͓̪̝͉͔̘̙̝͍̞̥̟̭͙̯̻͎̱̲̣̳͕̙̝̦̠̺̟̹͍̱̼̳̖̙̜͕̜̱̐̏̑̔̃̋͆͌̉̍̉́̃̏̆͂̉́̿̉̑́̿̿̈́̅̾̃̐̅̈́̐̊̋̈́̾̓̀̊̌̀͊͂́͛̐̏̊͐̓̈́́̏̔́̀̎̄̀̉̈̎̐̅̈͑͊̈́̀̀́̽̉͗̊̊̀̅̑̉̈́̒̎͊̀̒̈̋̓̈́͐̏͒̀̉̔̀̃̈́̈̈́̈̾̊̃͑̈̈́̃̈̈͂̊̄̈̄́̋̆͑́̋̎̆̇̔̾̉̄̓́̂̈́͂̓̂̽̒̋̈́̍̃̂̐̐̄͋͌̄̑̌̑̀̀̋̾̄͛̽̓̆̾̌͑̽͑͐̒̓͌͌̿̍̓̆̂̔̈́̕̚̚̚̕͘̚͘̕͘̕̕͜͜͝͝͝͝͠͝͝͝͝͠͝͝͠ͅM̴̨̡̡̨̢̡̨̡̨̡̧̢̡̡̡̢̧̲̱̠̺̺̜̱̝̗̻͈̤̺̜͍̤̼̬̪̙̗̘̻̹͈̞̯̻̻̻̹͎͖̪͖̭̼̫̜̗͔̲̠̳͙̦̙͙͓͕͚͇̺̟̱̻͔̯̬̦̫̬͖͔̠͚̞͙͎͎͎̱̯̱̖̙̠̳͎̺̠̱͇͙̻̤͓̗̙̳̹͉͔̦̳͚̜̳͙̻͚̼̖͍̬̹͍̻̻̤̖͙̲̱̯̘͔̪̜͇̻̹̞̻͍͙̦͚̻͕͍̺̰̼̺̱̦͓̺̟̝͇̞̮̰̲̻̟̲̖͇̀̌͐̽̅̑͊́̋̔̿͗͋͆̾̓̈́̓̐͘͘͜͜͜͠ͅͅ ̷̡̡̨̡̡̡̧̡̛͉̬̺͙̜͇̯̜͈̟͙̼̺̠̞̜̻͈̪̻̻̯̲̝̠͉͎̯̼̪̝̭͙͙͇̖̝͙̠̲̪̻̠̟͍̗̪̪͎̘̭̤̥͇͔͈͕̪͎̮̙̼̠͓̯̥͔̦͇̦̯̼̜̣͙͕̗̦͎̹̰̲̠̟̩͛̿͆̀̌̏͘͜ͅͅͅĄ̷̡̧̨̡̢̢̢̡̧̨̢̧̢̡̧̧̛̛̛͓̲͓̟̲͈̥͍̟̝̰̯̭̫͍̠̗̤̟͖̬̟̱̳̘̫̯͔̝͎̦̪͓̯̫͈̞͇̲̗͙̙̗̳͖̰͍͉̪̼̥̘͚̗̦̻͕͎̫̼͕̯͎̻͉̯͉͍̦̬͎̖̟͚̺̞͖͔͕͓̜̱̤̲͖̳̘̹̤̘͚̪̪̜̥̯̖͕̮͎̺̤͓̖̱̼̜̫͇̩̹̭̝̼̞͓̙̫̳̜̦̰̣̻̐͗͑͗͐͒̈́̈̿̀̂̇̍́͒͑̈̄̽̍͊̇̆̀̏͊̐͊̓̽́̈͋͌̈́̄̀͋͊̀̈́̔̓͊̈́̔̓̾̇͗͊͊̉̔̈́̐̍̌̇̆̌͑̀̀̽͆̍͛̌͛͒̎̔͊͛͊͂̈́̓͌̄͗̾́̅̋̐͗͋̎̒͌̌̈́̍̀̓̉̇̆͛̋̅̑̂̓͐͑̑͛̊͐̾͊͗͛̑͌̏̽́́̽͌͊̾́́̾̾̌̐̉͑̒͋̑̔̈͑̈́͆̌̌̀͐̔̈͆͋̉̋̏͗͌͆͊͌͂͊̓̑͐͆̚͘̚̕͘̚̚̚͘̕̚͘͜͜͜͝͠͝͝͝͝͠͝͝͠͝͝͝͠͝ͅͅͅͅŅ̴̨̧̧̡̧̡̡̧̢̡̛̛̛̛̪͍̥̺͔̫̹̥̜͕̬̣̗͍̗͈̻̭͈̞̱͖̞͉̹͇͓̲͉͚͔̗̜̪͚͔̖̹͎̦͎̟͖̦̩̥͍̤͚̟̝̮̗̬͓̖̪̯̗͉͉͖̩̘̘͔̩͍̪̟̥̼̥̼̙̯̖̺̞͍͙̠̯̮̻͈͚̗͉̜̲̗͕͖͔̟̲̙̻̤̪̭̠̯̗͕̠̩̙͈̱͚̹͉̭̝͍͔̗̩̼͔̥̫̤͓̙̟̫̞̘̦̱̺̘̯̗͚̮̪̤̞̺͙̙̜͖̼̤̪̪̰̯̯̤͇̲̬̥̪̹͔̪̖̰̩̜͔͉̭̺͈̻͈̣͉͎͉͉̞̰̥͕͙̿͒̿̀͗̆̾͗̿͗̈́̽́́̅͛̒̾͗͛͋͆̉̓͂̀͌̈̎͒͐͆̈́̈́͂̔̓̊̾̿̔́͆̂̾͑̉̓̃̈́̄̓̂̏̀̍̊̂̎̌̈̾̉̒̒̒̔͐̐̓̓̓̓͆͊͋̔̄̈̽̊͑̎͗̀̓̋̑̈́͗̆͑͌͋͒̂̓́̓̄͂͗̇̎̍͗͛̐͊̎̒̓͗̉̅͊́̾̿̈́͐͐͐͗͆́̑̎͌̾̀̆́͂͂́̍̽̎̑́̏̋͗̀̒̃̓͐̾͒͑̈̏͐̈́͆͒̚̕̚͘̕̕̕͘̕͜͜͜͜͜͝͝͝͝͝͝͝͝͠͠͝ͅͅͅͅͅͅͅḐ̷̰̟̳̟̞͈̫̫̬̬̗͎̜͈͎͐̈͒̊̓̔̇͒͛̽̑̄͊́̔̓͗̄͆̇̑̅̍́͑́̒̇̿̐͛̾̀̎̆̎̈̀͋̆̊̃̉̅̈̈̈́̌̐̐͑͒͑́̈̋̇̑̾́̿̅̂̓̎̉͘̚̚͝͠ͅͅͅ ̷̡̧̧̨̢̨̛̛̛̛̝̘͙̝̮̠͖͙̤͖̭̤͖̩̭̗̺͕̺̱̤͕̻̠͍̻̙͖͋͒̽̓͐͑͂̀̏̑̅̋̇̃̑̏̈́̒̓̿̊̈́͑̑͌͂͋̀̾̄̔͆̈̽̒̄́́̉̓̆͑̀̓̀̀̾̉̅̔̓̅̓͛̊͋̔̊̋͂̊̽͛̽͆͌͑̈́͐̈̄̈́̋̌̾̿̄͐͋̊̔̈́́̈́̂̎̃̔͋̇̃̎̐͗͊̾̈́͒̈́̋̄̇̋̇͒̐͋̆̀̋̈͛̄̐́̈́̄͊͑̈́̔̏̂̾̓͂̌̍̋̃̈́̉̈́̋́̀́̍͗͊̉͋͌̑͌͐̀̀̒͑̈́̓̈́̇̈̓̈́̐̑̍͂̊͂͌̾̑̂̌̑̔́͌̆̈̅͌̒̓̂̇̀̉̄͘͘̕͘̚̕̕͘͘̚̕̕͝͝͠͝͠͝͝͝͝͝͠Ţ̷̨̢̨̢̧̨̧̡̡̧̡̧̧̨̢̧̨̧̛̛̫̯͙̼̭̝̹͕͍͉̩̠̻̭̭̝͖͇͎͍̬͚̲͓͖̲̪̳̟͍̺̝̘̼̱̹̙̪̜̺͔͕̣̩͉̰̯̯̙͙̥̹̭̳͕̥̩̞̫͙̣̥̭̳͚͔̭͖̻͔̼̟̻͉̫̩̠͎̣̺̦̬̬̘̪̟̠̲̲̬͖̻̜͇̳̱̳̯̯̠̲̙͚͉̼̥͍͎̻͎̪̯͚̥̬͚̗͔̘͕̲̮͈̫̱̗̮̱͚̪̫̲͕̝̤͍̝̦̲̟͇͔̦̤̲̭̖̩͖͉̪͈̩̪̤͔͖͚̭̻̲͇̥̭̠̫͎̹̬̫̫͎͚̭̦̮̟͙̟̘̦͈͍̜̐̏͛̅̀̎͛̈̒̀̇̍̈́̊̐́͌̎̆̑͋̊̅̉̌̊̐̿̌͆́͆̂͛̽̅͌̓̅̌̓͑̈́̔̃̓͗̔͐͛́̈́͛͌́̀͆̀͊̆̈́̀̾̀̌̈́͛̌̆̊̈̓̃̆͂̍͆̒̽̏́̓̆́͋̾͂͐̀͗̌̑̂̀͂̆̆̓̊̈́̄̓̉̈͗̀̈́̍̈̈́̇͋̿̏̀̃̆̿̄̅̒̂͗̍͊͛̔̈́̇̚̚̚̕͘͘̚̕̚̚̕͘͘̚͜͜͜͝͝͠͝͠͠͠͠͠͝͠͝͝͝ͅͅͅͅͅͅH̷̢̨̧̛̛̛̛̛̛̳̝͖̪̰͖̳͍͔̭̹̰̰̭̲͍̱̰̝͚̩͓̣͔̘͉͚͔̠̭̻̞͈̫̦͕͈̰̜̖̥͈̦͇̜͐̌̏͒̉̔̒̔̓̾̄͐̽̍̇̔͂͑́̃͒̂͗̀̂̒̏̍̈́̅͗̀̅̋̿̌̐̄̾͗͐̈́͗͐̾͆̾̈́̋̆̄̎̐͌͗̓̑̇͆̄̉̆͑̎̈́̽̏̅̽̽̅͂̈́̏̑͆̌̈̋̃͂̀̌̽̊͋̾̃̈́̃̐͂̾͋̀̋͒͂͂́̀̋̂̂̏͆̉̓̈́͂̐̌̀̓̎̊̇͐́̓̊̀̇̉́̄̅̿͌̊̃̑̐͘͘̕̕͘͘͘͘̕͜͠͝͝͝͝͝͝͝͠͝͝͝͝͝͝͝ͅͅͅȨ̶̧̡̢̛̭̯͕̖͓͓̺̰͍̫̤͎̩̭̬̬͖̪͙̖̟̮̖̳̯̱̝̮̘̥̜̫̰̟͈͇̳̤͙͉͙̱̗͇͈̖͍̘̣͇̜̱͇͇̱̭̙͓͓̼̣͖̟͔̈̓̄̾͆̓͂̿͌̾͆̿͌̓̐͐́̓̇͗̈́̃̓̾͆̽́̄̈̋͒̏̆̈́̀̋͒̽̈́̈̇͊̋̒͂̔̋̈̎̋̾̄̎̌̈̈́͗̎̓͌͛̀̓͆̓͛̒̔͑̐͊̔͌͊͑̓́͛̔̊̋̑͑̾͊͒̈́̊̓̋̉̃̈́̅́̒̀͆̆̓́͒͊́̽̾̾̈͗̉͒̑̒͊̊̆̊͌́́͌̆͐͐̈̽̕͘̕̚̚̚̕̚̕̕̕͘̚͘͜͝͠͝͝͝͝͝͝͠͠͝ͅͅÌ̴̢̨̛̤͉͕͉̣̭͔͍͔̯̣̩̥̱̗͇̦̲̳̙̳̠̗̳̰͇̙͓̜̺͈̫̺̩̤̤̹͚̜̖̰̀̾́́̈́̓̉̉͊͛̍̀͑̈͊͋̔̋̎̈́̂́̾̎͆̎̈́̎̊̋̀͊̔́͋̀́̓͗̐͊͋͂̊̋̽͆̅͐̉̏̓́̊͑͂͆̓̂̌́͌͋̓͆́̈̔̏͂̽͐̃̓̄͒̆̿̑̅̋̾̄̀́͊̒̑͒̿̈̈́̀̈͗̅̚͘̚̕̚̚͜͝͝͠͝͝͝͠͝͝͠R̶̨̡̧̢̨̡̢̡̡̨̨̢̨̛̹̲̗̻͚̟̰̥̜̻̺͔̼̝̞̺̰͖̫͖͍̹͕̥̮͔̖̪̻͈͖̣̟͍̦͔̻͖͇̟̪͚͈̹̣͈̦̞̖̱̖̙̮̣̞͇̦̙̣̳͙͍̣̘̻͎̳̜̯͚̹͎͔̩̝̮̥͚͇̻͓̉̎͂̉͂͂̈̂̅̃͗̈́͗̐̋̇̈̾̿́̏̈́̓́̄͒̉̈́͂͗̓̐̑͌͛͆̈́̽͒͑̌̋̏͛̓̾̇̀͑̒͑̈́͗̄̀͑̓̽͆̅̿́̀̀̓̽̎́̈́̿̀̿͆̓͑̓̀͌̒̏̂̀͂͛̓͒͌̊̇̕̚͘̚̚̚̚͜͜͜͝͠͝͝͝͝͠͝͝ͅͅͅ ̷̨̡̨̡̧̡̧̨̛̛̛̛̛̪̹̟͉̟̦͓͚̖͙̣̜̭̬̝̟̭̳̳̘̞̗̺̯͓̳͇̝̦͈̻̮̫̰̭͎͔͕̠̹̦̠͓͓̤̗̲̟͎̫̘̫̖̤̰̤͙̬̗̜̭̼̯͙͕̥̞̼͚̳͙̜͕̟͉̠̔͋͋̒͐́̒̓̀̉̇͒͒̿̓̅̈́̀̌́̈́̂̋̀̀́̿͋́̏͋͂̽̿̋̂̅̿͛̍̽̽͑̔͆̉̌̔̇̿̔̿̃̐͛͑̏̄̒̔̎͛̏̀̇̂̔̈̈͆̾͗͆̔̇̋̊͒͊͛̽̓͛͆͌̌̽͗̏̓̑̈́̔̓̎̉̔̎͆̓͗͋̉͋̐̂́̄̇̋̓̈͋̽͛̉̉̈́̄̓́͒̂̂̈́͊̅̋̍̐̅̇͒̑̿́̚͘̚͘͘̚̚͜͜͜͜͜͠͝͝͠͝͠ͅB̷̧̨̢̢̢̡̢̡̢̝͔͇̯̞̺̯̙̝̰̼̖̰̮͇̭̳̘͈̖̼̳̰̜͕̩̙͇͇̭͇͔̲̯̭̬̳̙̩̦͔̫̝̦͕̮͕̭̳̮̖̼͓͔̹̼͉͕͔̜̦̫̮͊͒́́͌̀̍̒̐̓̀́̿̑͋̃́͐̄͜ͅͅL̷̡̡̡̨̛̛̛̛̛̛̪̺̱̹̥̦͇̺͈̮̹͍̠̜͓̥̲͕̥̙͈̦̰̣̣̲̖̻̠͑̀͛̈́̆͗͊̏̔͒̆̇̽̉̈̐̀͌̌͐̅͗͛̓̑̑̌̿̂̉͛̍̋̃͒̉̍́̈́̋̍̽͋͐́̈́̅̀́̂̓̐͊͗̉̇̑̋̏̓̃̀̉̇̃͗͊̂̇̓͊́̍̈́͂̎̌̈̄̄͌̔́̾̀͂͒̇̒̎̈́̄̍̉͋̈͒̓̍̂̃̎̔́̅̽̎͂̒͒̾̾̓̽́̃̓̍̎͋̽̓͆͌̏̆̿̆̀̿̆͑͊̎̓̓̍́̓̑̿̍̓͐̊̽̋̋̋͑͂́̑͆̇͋̋̊̈́̌̒͌̍͑͆̐͛̌͂͋̍̒́̓̓̉́̀̀͘͘̕͘̕̚͘̕͜͝͠͝͝͝͝͠͠͝͝͝͠͝͠ͅͅA̶̢̡̧̡̢̡̡̧̢̢̡̡̡̨̨̢̧̛̛͈͖͓̫̦͎̪̼͇̭̪̹͇̘͓̱̝͍̮̤̤̠̬̗̱̫̘̹͈̯͓̥̞̖͚͍̞͇͓͕̠̼̮̠̤̲̣͔̩̥̗̰̗̩̭̮̞͓͍̯͎͍͇̲̠̫͉͈̳̠͖̱̹̞͔͕̻̲̺̠̟̭̩̲̯͙̼̳̟̩̥̥̗͓̱͈̙͉̟͕̙͙͎̰̼̻̜̘̠̳̜͙͇̱̟̘͔̤̖͍̣̬̲͚̲̗̫̞̩̠̜͎͓̟̹͖̥͙͉͓͔͍̣̱̞̤̱͚̘̹̥̤̣̤̺̖̯̣͚̠͔͖͈͍͍̪͒̆͌͑̀̿̃͂̌͊̂̋́̓͊̽̓͂͂̓̇̀̑̊̽̑̂̉̐̉̆̏̍͐͑͒̏̂̓͂̐̎̐̊̀͋̆͒͐̈́̏̇͛́̅̂̆̑̈́͌͐̈́̔̊͐̅̽̃̔́̂̒̉̋̿͋̈̂̔͒̑̑͒̿̒̅̏̀͌̽̅͂̈́̄̽̄͗̏̉̓̀̽̑͛͒̄̀̎́̋̃̔̄̓̑̽̆̌͆̀̎̔̅́͊̈́̽̒̃͌́̈̏̐̓̆̍̎͒̿̀̒̐͘͘͘͘̚̕̚͜͜͜͜͜͝͝͝͝͝͝͝͝͝͝ͅͅͅͅͅS̵̡̨̧̡̨̢̡̡̢̧̧̨̧̢̢̡̧̛̛̛̛̛̛̟͕̥̲̦̟̯̘̫̦̤͓̼̠̙̹͉͍͖͙̘̦͇̗͙͍͔͙͎͚͕͚̰͎̳̰͕̖̙̼͉͖̥̩̣̝̯͖̩̰̜̝̗̖͈̱̲̝̻̲̙̟̯̰͙͇͈͕̼̙͈̭͓͖̪̹͈̤̰̟̝͎͓͓̰̙̳̮͎͈̗̺̱̫̞̝̫͉̜͙̳̰͚̯̫̳͍̤̞̗̹̙̝̥͈̻̯̼̖̦̳͚͚͚̫͈͍͚̙͕̟̹͎̙̜̬̬̝̳̼͉͔̱̥̙̼̻̩̟͚̪̼̘̖͈͓̺̪̫̩̪͈̩̬̄͛̆̀́͆͒̃̽̒͐̽̄̽̒̄̒̿̉̈̓̀̃̈́͗͌̿͑́̈́̈́̾̅̇͊͗͒̀̉͒̽́̑͊̀̑̈́͆͐̽̏̄̄͗̄̆͛̒̈̂͐̈́̆͆́̂̇͐̑̔̾̇̏̈̆̾͑͐͆͛̑̎̄̔̏̂̀̈́̓̈́͌̓̓́̐͑͋̃̊͑͐̍͑̋̊̇͌̓̃͌͊̒̇̑̓͆͌̌͗͑̑̒̉͑̄͐̍͐́̑̈́̍́͊͒͘̕̚̚͘̚͘͘͜͜͜͜͝͝͠͝͠͝͝͝ͅͅͅͅP̶̨̢̧̨̧̧̧̛̲͉͈̥̖̤̜̦͔̜̜̭̘̗͕͇̗͈̭̯̖̙̤̰̭̺̼͚̞͎̪͙͕̳̝̜̪̬̗̯̩̮̥͓͚̙̤̗̯̭͓̳̦̗̟̬͓͙̘͉̩̦̟͇̝̤̣̹̮̉̒͆̓̈́̊̉̈́͒́̋͑̏͋͂͂̽̍̏̀̂̀̓͂́͌͐͊̕͘͜͜͝͝͠͝ͅͅH̷̢̨̢̛̛̛̛̛͕̖̺̺̹̗͍̖̞̯͇̜̖͕̬͙͔̣̥͈͇͍̜͈̜̜͉̫̯͕͙̖̻͍̯̗̰̤̙̹̝̩̉̀̍̉̆̾̎̌̌͊́̀͒͒̑̃̀̂͌͛̇́̉́͋̾͊̓͛̓͒̃̉̇̓̈̏͋̀̇͆͗̎̈́̑͌̀́̋̐̿̎̿̆͒͛̂͗̑͑̍̉̔̍̅͂̓͐͂̄̄̓͆̋͆̿̂͑̉̊̆̍̊̇̾̿̊̐̋̆͆̈̽̇͆̉̊͂̓́̐͆̐̒̆̋͊̃͑́̈̑̈́̉͂͊̃̈̆͂͌́̈͂̈́͊̆͐̑̈́͒͌̋̅̒̏͂͆͑͐͆̎̽͐͗̔̾͗̓̋̈́̓̂̉͌͛̓͐͑̚̕̕̚̚̕͘̕̕̚̚̚̕̚̕͜͝͠͠͠͠͝͝͝͝͠͝͝͝ͅȨ̴̧̛̱̯̘̮̺̩̫̬̟̟̺̼̣̩͙̩̫͔̮̔̌̿͑̇͐͛͌̎̊̿̓́̓̽̀͊͆̃̄͆̈́̄̈͋̋̒̾͐̍͛̎͌̆̑͗̊̄̃͒̉͗͆̏͆̀̈́̀́̕͘͜͜͜͝͠͝͝͝͝͠M̷̢̨̨̛̛̺̺̹̜̪͈̤̦̹̟̦̫̙̗̰͕̭̬͓̤͇̘̱͉̯͚͔̞͈̺͍̥̙͖͉̗̮̼͙̙̦͚̜̪͇̰̝̳̀͆́̈̄̋̂̈́͋͂̄̆̒̈́̀̅͒̔̾̿̎̇̔͆̾̈́̔̂̋̓̽̄̌̀̾͐̇̆̈̂̽̆͛̀̓̒̏̌͋̐̏̊̂̐̑̿̐̃̈́̆͂̒̓́̑͆̄̎̑͑̏͐͂̂̒̏͋̔̚̕̕͘̚͜͜͝͠͠͠͝͝͠ͅǪ̸̧̡̢̛͍͚̭̠̖͇̟̹̻͕̼͙͕̘̹͓̱͍͚̙̜̭͓̰̬͉̹̳̠̪̣̙̻̘̫̼͈͓̬̣͖̪̖̮̰̱̮̥͈͚͍͓͍͇̪̲̩̰̱͓̲̬̯̗̦͓̳̬̳̮̩̱̉̓̅̉̃̐̀̀͑̈́͘̚͜͜͝͠͝ͅͅŲ̵̨̡̨̨̢̧̨̡̢̢̨̢̧̢̡̛̯̜̪̲͉̳̫̭̹͙͉̭͚͈̥̞͙̤̘͖̯̞̱̰̱̹͖̥̟̤̺̤̖̝̱̹͕͎̖̯̬̰̮̣͖̞̠̺̰͇͔͎͇̜͕̟̺̞͉̗͙̣̺̥̻͚̬̝̝̲̣͉̪̼̤͇̲̩̳͇̹͔̺͉̝͓̹͓͙͉͉͙͈̺̱̮͎̪̮̞͍̮̖̪͕̜̻̪̦̳̬̙̺͖͕̲̹͎̰̻͚̻̝̟̜̰̙͔͓̙̩̜̗̟͍̬̟͓̫̱̳̥̜̜͙̫͔̠̋̈́́̃̀̂͑́̇̓̉͌͌͒̀̏̆̈͊́͜͜͝ͅͅͅͅS̸̨̧̧̧̧̡̢̢̢̢̨̡̢̛̛̛̛̩̦̘̳̥̫̟̠͔̖͙̠͈͚̭͈͍̻̹̲̫̘̻̲̭͔̪̘̘̙̬̯͇̰̩̹̦̟͙̼̯̰̣͎̝͓̼̳̭̮̥̦̦̱̲̱̦͍͔̗̘͕̤͖͎̟̲̟͙͈̳͔͎̪̙̹̱̘͚̎̈́̀̌̈́͑͌͑̏̄̊̃͒̈́̔͆͑̓͛̐̐͛͐͗̂́̓̑̃́̽̓͗̊̐̅́̇̔̔̿̊̈́̃̅̃̈́́̀̌̑̈́͛̈́͒͑̂̍͐́̎̄̊̽̀͊̃̅̂̂̎͑̇̃͐̋̆̈͒̆̈̄̾̀̐̈́̈́̃̍́̿̓͌̀̅̋̏͊̅̐̏̀̑̓͛̏̚͘͘̕̕̕̕͘̚̚͘͘͜͜͜͠͝͠͝͝͝ͅͅ ̸̡̢̧̨̢̨̧̨̡̡̨̛̛̛͍͍͍͓̫͓̳̮̹̮̫͉̠̯͖̘͔̬̜̳̱̮̙̪̜̞͍̳͎̱̭͚͇̖̲͓͈̫̣̳̦͉̭̠͙̣̩̮͎͙͎̲̲̠̝͎̘̣̲̘̞͇̬̬̥̰̗̬͚͉̹̦͙̞͇̳͍̜̮͈̩̜̃̿́͗̇͗̊͌̿͌̂͗͐̓́̈́̉̒̈́̆͑̃̄̌͒́̿̓̇̈́̒͑͊̾̍̿͆̑̐̇̕͜͠ͅͅͅͅͅẄ̵̢̛̛̛̛̛̛̛͖̫̞̼̼̪̖̹͇̰̰̲̫͔̥̬̩͙̻́̃͑̉̔̊̃͆̌̎͆͛́̓͒͋̈́͐͂̎̒̋͑͑͛̂̈̎̍̒̊̑͗̅̇́̐̓̈̄̿̑͒̌̒̋̌̊̍͂͂́̀̊̌̓͒̇͋̃͌̆͐̾͐͋͆̈́̃́́̍͗͆͗̿͐̋̃̀͋̄͗̌̒̂̂̀̌͑͛̓͐̈͒́̇̇͗̿͆̃̈̇̈́̂̏̊̓̈́̊̉͛̾͗́̃͂͂͑̐͂̈͐̇̓͂̃́̽̄͂̓̽̅͐̋̽͘̚͘̚̕̚̚̚̚͘͘̚͘̚̚͠͝͠͠͝͠͝͠͝͠͝͠͝͠͝͝͠͝Ȧ̶̧̢̡̧̢̡̨̡̧̨̡̧̼̯̠̳̜̤͔͖̼̲̦̹̪̬͕͈͙͕̝̘̼̠̦͉͓̲̱̳̻̙̼̮̱̲̜͇̫̞̹̬̦͈͎̹̭͕͈̦̞̰̞̰̯̲̘̰̭̜͍̘̲̱̠̦̩̫̖̫̺͕̟͔̱̞̘̳̘͇̥̰̖͔̜̤̻̯̠̖̼͓͖̺̤̜͇̱̖̭̳̟̦͖̙̥̠̫̰̣̜̩̖͍͙͚̱̥̹͔̯̹͈͇̻̫̟͇̗̝̫̥͇̙͖͍͎̳͉͎͈̘͓̠̻̞̪̖̻̝͙̲̰̜̘̖͍̥͍͇̻͆̈̆̄̌͂̆̔̿̅̓̃͒͌̾̓͆̍̾̐̽͊͑͊̈́̇̌̉̇͌̔̊͘̚̚̚͜͜͜͜͜͝͠͠ͅͅY̴̧̢̡̡̧̡̢͙͖͓̬̹̬̹̩̰̮̲̘͉̱̥̱̘͓̗̺̖̗̼̟̫̫͖͖̯̻͓̗͕̹̤͓̘̗̳̦̝̺̤̦̽͑̆͜͜S̷̢̨̛̟̤̲̯̩̱̣̞̙͓̪̙̺̪͓̞͙̰̗̜̖̼̟̈́́͆͊̽͆̆͑̐̔̽̔̐͛̀̔̏̓̓͒̉̉̊̌̓͑͂̐̀̂̒̀̓͋̆̈́͆̑̽̿͋͗̉̌̍́̆͛͂͒̕͜͜͝͠ ̷̨̢̡̨̡̨̡̨̛̥͖͓̤̠̙͈͈̻̻̝̪̹̥̘̥͈̲̞͈͍̤̥̖͖̯͇͕͎͉̤̪̤̙̺͔̤̣̖͖͙͔̱̪̪̲͔̤̻͙͓̰̟̯̫̬͎͚̙͈̞͕͈̗̪͎̠͙̗̦͈̩̜̗͔̖̙̗̗̝̙͖͉̱͚̫̠̥̟̭̥̮̠͇̀͐̅̈́͂̿̅̾̿͌͌͗̑͊͂̇̓͑̇̋̓̔̋̅̋̎̎̽̄̿͑̈́̈̉͒̕̕͜͝͝͝ͅͅͅẠ̵̧̨̢̨̡̨̡̢̨̡̧̨̢̢̼͔͎̠̞͈̱͇̥̘̳̻̖͍͓̖̠͎͓̼͕̘͕͖̗̟͍̥̲̗͉̰̥͉͉͎̻̖͚̖̳̭̣̬̺̘̠͍̺͎̞͖̺̮̠̯͍̯̯͇̭͕͓͇͕̜̜̲̻̮͕̯͖͉͔̩͇̹̰̜̟̳̰̖̘̲̮̲̱̙̦̹͕͔̱̼͕͓̬̪̮̳̺̜̙͍͖͈̩̲̫͇͚̰͚͙̪̩͚̖̤̫̟̬͍̖̣͇͖̰̱̻̗̖̞̺̤̣̍̓́͒̈͐͂̑͒̿̄́̒̈́͌͋͂͑̓̎͋͛̔̀̅̆̆̚͜͠͠͝ͅͅͅͅͅṆ̷̢̧̨̡̨̢̢̧̧̛̦̼̳̪͚̖̞̭̳̺̖͉̺͔͈̰̼̩͈̞̺̠̝̪̻͇̭͎͇̮̣̠̩̺̮͈̖̯̙̣̱̪͕̭̪̫̟̭͚̺͖̥͚̺̘̭̭̤̪͚͍͚̝̲͖̪̺̗̺͙͔͕̉͗͂͑̒͌͗͛̀̒̓̅͌͋͋̓̽̂̃̌̂͑́̍̒͂̾͜͜͠͝͠͝͝ͅḐ̵̢̧̨̨̨̧̢̨̨̧̢̛̛̛͎̬̖̱͕̟̤̬̘̘͓̮̻̦̗̲̙͕̮̪̤̱̼̼̬̖̟̫̪̲͕̝̙̯̻̜͍̼̥̭̤̭̭̠͓̫̪̬͔̖̱̠̤̭̱̮͎̻͉̬̼̫̖͕̩̠̯̤̜̲̩̣̠̺̤̫̖̼̩͚͉̖̩̻̦͇̦̻̖͕̲̺͓͙̹̪̭̮̙͚̮̲̮͖͓̠̫͓̫̤̭̳̘̺̺̭̙͔͖̯̪͚̾̈́͊̾͛̾̀̅̓̓͐́͆̄̓̀͒̿̀̀͛̎͆̋̿̒̆̍̀̑̓̓͊͗̊͂͐̀́̈́̽̈͊̉̿̊̑̏̋̓̽̍͂̈͌̐̄̈́̔͑̑͋̊̇͂́̍́̆̏̓̒̀̌̐̇̀̅̋̇̉́̄͂̐͋̈̅́̋̈̉̔͌̓̉́̏̀́̈́̍̐̏͐̊̓͂̂́̔̀͗́̓̈̅̎̒͆̀͛̿̽̐̾̉͋̊̾͘͘̕̚͘̚̕͘͘̚̚͘͘͜͜͜͜͝͝͠͝͠͝ͅͅͅͅͅ ̴̡̨̢̡̨̨̡̧̛̛̛̗̜̘͓̭͖͖̳̮̬̹̞̻̙̖̻͕̠̺̘͍͓̞͖̜͉̹̣̥̞̙̯̱̘̗̖̩͍͙̪͈̣͚̲̯̹̝̙̞͙̹͖̼̘͖̻̘͕̝̗̱̹͍̹͈͔̣͍̻̘͙̰̜͙̩̣̘̳͎͕̺̣̰̣̦̫̝͇̟̬̤͔͔͓̗̰̹̈́̀̔̽̐̓͑̌͐̄͆̈͗̍́̏̀́̈̾̄̅̔̓͌͒̈́̇̽͐͂̇́̇̎̈́̌͌͋́̂́̿͒̇̀̈́͗́̀͗̃͆̀̀̈́̋̓͋̋̇̈́̾̐̅̽̈̄̃̄̍̍̈́̈́̒͂̆̾̑̊̈́̽̈̋̓̎̒̉̓̿͒̃̅͊̅͂̾̿͌͗̑́̓͊̍̋͋̒̉̿̐͛̅͛́̊́͛̈̀̎̓̔͊́̎̇̌́̈̽̈́̈͂͒͑̉̌́̆͗͌̾̓̄͋͊͐́́̒͋̒̉̄̋́̇̓͑͘̕͘͘̚̕̚̕̕͘̕͘͜͝͝͝͝͠͝͠͝͝͝͠͝ͅͅͅṆ̴̡̡̧̨̢̨̧̡̢̛̜̯̹̞͉̘͉̦͍͔͍͓̖͎̩͍̞̱̝̠͈̼̙̯̫͙͈̤͕̜͈̹̭͇̦̜̲͖͍͎̥̼̠̠͇͇̖̹̼̼͙̣̭̘̳͚̪̣̟̹̜̫̣͍̩͔͍̖̱̖̱̻̜̪̖̪͔̝̠̳͍̮̲̬̰̙͈̺̭͚͎̠̦̮͖͕̭̪̻̪̝̣̤͔̘̗͎͎̟̖̰̗̰̻͙̰͉͈̳͔̠̻̳̫͔̰̭̣̩̝̱̬̟͖̻͕͖͙̪̟͇̼͖̯͉̤̬͓̥͕̹̇̋̒̓͂̆̑̄̒̉̈́͛̍̆́͆̓̑̏͒̾̃̄͐̅̂̇̀̌̈́̌̈͑̈̉͗̈́̀̈́̑̾̂͋͂̓̂͌̅͆͊̆̾̉͛̈́͗̉̈̽͌̓̋͐̂͑̍̔͆̈́̈͋̇̽̌̆͛̾͋̍̍̆͐̌͌̀̾̉́̀̔͒͊́́͒̏́̔̉̾̉̎̊̀̀̍̈́̓̀̂́̈́́̍̏̆̂͐͋̆̇̾̿̌̽̕̚͘͘̕̚͘͘͘̕͘͜͜͜͝͠͝͝͠͠͝͠͝ͅͅͅͅͅͅŲ̵̧̧̧̛̛͎͙̰͎̦̪̰͖͎̞͈̲̤̙͎̹̬̙̠̣̘̙̤̜̫̺͓͎͕̣̣̮̤̰̤̗͕̮͚̝͚̯͍̘͙͈̬̞̳̫̲̻̟̭̥̬̗̖̙̬̭͍̥̪̀̈̑͒̿̔͗͆̎͐̐͐̊̄̃͊̈́̈́̿̓̾͗̽̅͑̏̽̒̇̆̑̄̑̓̾̊̉̀̾͒̄̐̍̅͋́͑͂̈́͗̀̋͗̓̃̂͂͊̌͂̐̓̆̈́̎̅̉͐͑͛͛̌͒͆̿̓̃̈́͊̅͒̂̃̒͗́̍̋͛̎͗͊̍̈̔͒̈̌͋̏̽́̆̈́̍̍̑͊̄̇͌͂̋͛̌͗͗̃̀͊̈́̕̚̕̕̕̚͠͝͝͝͠͝ͅͅͅͅL̸̨̜͖͉̭̟͈͓̙̻̫̦͍͚̝̀͌́́̅̃͒̒̎͋͗̓̇̍́͋͐̎̈́̀͐̕̕̕ͅͅL̷̡̨̨̡̢̢̡̢̢̧̡̨̧̡̨̢̢̡̧̨̛̛̛̛̛̛̛͕͕͔͚̗̱̱͚͖͈͓̠̲̰̙̖̼̥̟̯̥͓̬͙̭̞̫̮̘͕̳̪̝̱̠͕̤̻͇̞̖̜̼̬̪̘͖̗̰̟͖̩͙̻̝̬̜̻̩̥̪̩̝̳̤̹̦̪̭̭͔̟͕̘̞̫̼̲͍͓͉͉͙̰͓̗̙͔̼̮̲̭͈͓̜̤̳͓̣̰̝̮͉̫͎̰̩̣͕̙̯̯͎̬͉̠̺̳͍̩̮̫̙͎͕̗̤̩̜̤̟̻̲͍̜̪̻͙̰͇̭̥̠̫̠͍̪̤͔͓̹̼͑͊̆̊̿̄̈́͂͋̾͋͑̂͐̇̓̾̋͂̎́͐̉͆͒͑̿̔̉̓͐͗̈́́̊̈́̓͒̍́̇̑͑́̀̆̏̐̔̂͌̅̾̓̐̿͋̍͑́̄̿̄͑̇̀̒̌̈̽̉̈́̃̎̑̄͌̒͛̈͂̽͗̆͗͗̋͑̈́̌͂̍͆̒̏̈̈̈́̀̌̉́̈̐͛͛̀̂͑͊͋̇̈̈́̿̄̎͗̏̑̒̈̐̈́͊͐̐̈́͛̂̎̍̎̈̐̕̕̚̚̕̚̕͘̚̚͘̕͜͜͝͝͠͝͝͝͠͠͠ͅͅͅ ̷̨̡̡̢̨̢̡̡̨̢̛̛̛̖̘̮͓̖͎̫͚͇̜̪͔̜͎͔͎̹̻̣̺̻̱̠̖͓͖͕̫̜̭̬͙͓̮̮͕̲̪͍̮͇͉̩͓̙̝͓͚̱͙̜̬̜̲̤̮̥̪͉͍͕̫͙̞͔͔̗̼̬̯̺̪͍̮̖͚̠͙̰̼̯̬̘̰̘̳͙̞͚͇͈͕̟̰̬̭̰͇͓̪̳̮̠̳̱̝͔̲̬̰̳̙̫͔̼̹̪̙̭̝̠̟̯̩̲̙͚͉̜͉̯̙͉̗̞̳̠̫̙͇̮͒̎̿̓̽̈͌̽̏͒̿̃͛̂͋̾͋͂̈́̉͋̈́̐̐͗̆̀̐̒͒̿̔̌̑͛͑̊̔͒͆̔̍̌͛̔̉͋̈́̆̑̋́̑̂̋͆̋̍̾̂̊̌͋̈̋͊̔̓́̽͆̂̇̽̀̽̉̋̄́̆͛͒̆͆̃̄̐̎̑͌̃̒͊͋̆̌̈̿͐͊́͛̈́͛͋̏̈́̉̈́̌̋͊͋́̆͊͑́̀͗̆̃͊͊͌͛̽̂̾̄͆͑̓͋́̑̋̐̀̓́͗̆̐̏̇́̍̔͊̎̀̎̓͐̑̄̓̓͑̚̚̚͘͘̕̕̕͜͜͜͜͠͝͝͝͠͠͠͠͠͠͝͝͝ͅͅͅͅͅͅͅͅ0̶̢̢̢̧̡̨̢̧̧̡̢̧̨̛̛̛̲̗̩̜̥̗͓̱̠̠̦̪͍̼̣̼̫̳̤̼͚͙̹̞͍̟̭̥͕̞̦͎̩̭̫̭̖̟͔̹̞̤̻̲͈̹̻̣͇̤͕͚̫̯̘̳̯̤̗̞̫̬̼͙̦̼͇̣͙͇̬͕̝̟̤͕̭̻̮̻͈̪̞̺̲̲̯̯̩̬̜̯̝͖̬̳̹̖͈̟̳̣̳͍̜̪̦̼̱͉̙͙̯͎̺͓̺͓̯͇̲̘͙͖̱̹͉̫̰̳̟̝̹͚̪͍͙͖̬̖̲͍̰̺͖̰̞̩͈̱̘̮̲̮̯̠̣̞̘̯̭̙̘̦̳̥͇͕̞͉̮̰̭̞̦͙̼̗͎͕̫̗̘̖̪͕̮̫̭͚̬̖̩̿͌̑̿̀͌́́̇̓͂̀͊̈́̉̈́́͆̔̀͑̈̽́͛̂̄̽̉͊̅̑͆̃́̍͛̇̎̒̐͆͂̀̈́̓̉͂͑̉͂͒́̓̐͆̍̾́͂̇̀͋͗̀͗̇͂̾͆̈́̓̍̒̀̾̍̎̂̓̐͋͐̿̓͊̿̒͒̓̆̐̎̂̾͛̌̎͒̅̆̾̈̈́͊̂̀̅̓̌͑̽̚͘̕͘͜͜͜͠͝͠͠͠͝͝͠͝ͅͅͅ0̴̡̨̡̨̝͉̱̖͎̦͎͕̰̙̺̭͖̹͉̺̱͖̪̘͍̯̥̹̦̝͖͕̦̠͉͎͎̗͍͎͈͇̭̻̻̱̯͎̳̫̫͇̙͍̹̠̱̥͔̬̯̝͔̻̲̘̟̰̩͔̗̥͈̎͒̈́͑͑̓̂̑̔̈́͊̒̔̆̈̅͋̓̀̇̈́͂̈̾̔̌̈́͊́͋̈́̊͂̋̓̀̌̄̂̃̀̓̐̇̀͛̓̂͗̚̕̚̚͘̕̚̕͘͜͝͝͝͝͝ͅͅ0̵̡̨̢̡̢̨̨̧̢̢̡̡̧̨̢̢̢̛̛̛̛͎͎͕̦͚̖̘̙̤̱͓̹̥͇̳̳̣͖̻̹͔̥̘̖͕̱̬̘͕̬̮͕̪͍͍̠̩̰̣̖̻̖̘̭͈̟̝̜̪͕̘̜̦̫̤͇̬̠̜͉̞͙̝̥̪̼̠͕̻̤͉̯̦̦̝̝͉͔̖͔̫̯̥̦̝̦͔̪̞̭̝̹͙̜̥̞̝̮̞̪̱͎̳̲̞̦̯̘͓͚͔͖̮̗̻̠̻͙̼̠̘̬̫̟͎̩̘̙͕̼̜̲͙̲̙͉͚̩͕͚͈̳͙̙̗̮̝̳̪̬̩̣̖͎̰̣̱͚̭͈̘͎̩͕̲̻̪͓́͌͊͛̎̈̅̂́͑͌̀̊̑̈́̑̆͛͛̄̽̀̀͛͒̾̎̈́̽̎͂̽̓̊͑̎̆͑̒̔̿͗́̒͆́͆̇̿̐̏̒̑͊̈́̈́͐̂͑͒̽̃̓̃͊̿̈́̏͌̎͑̍͆̎̈́͂̄͗͛̄͘̕͜͜͝͝͝͝͝ͅͅͅͅͅ0̵̢̧̢̢̡̨̡̢̢̡̧̧̧̨̨̡̛̗̝̖̯̹̮̥̩̩̼͙̞̜͙͙̮̝͈̝͈̮͎̺̰̝̦̠̱̹̭̙͓̞̤͔͙̙͇͉̞̣͔̪͕̤͚͙͙̥̥̞͈̖̩͚̭͔̯̹̗̱̖̖̘̼͓̰̗͕̞͈̝̪̼̯̖͈̹̭͙͈̹̻̳͈̯͚̲͇͕̗͈̝̝͎̘͇̜̰̭̺̠͕͚͓͖̳̥̳͈͖̼̲̘̩̲͍̖̹̺̭̱̜͚̱̯̰̱̘̼̗͔̱̗͎͎̩̻͚̳͖̼͉̬̭̗̥̘̠͔͖͕͍̝̝̰̼̬̮͔͉͈̫̯̹͚̙̗͔̣̻̗̲̬̬̄̎̿͑̅̀̂̄͂̉̿̽̀̅͐̊̽̓̕͜͜͜͜͜͜ͅͅͅͅͅͅͅ ̸̢̡̛̛̛͓̻̙̫͇̬͇̱̺̪̣̹̮̰̳̦͈̭̥̥͈͎͔̣͔̰̙̣͔͍̣͉̱̻̦̖͕͇͉̹̞͍̺̩͈̹͙͔͔̹̦̼̪̖̬̯̦͈͖̺͈͉̩́͊͆͂̓̎͋̓̉̾̏̔́̾̅́̔́̋̒̏͗̓͑̋̉͊̒̆̄͒̆̆̾́̅̽͋͊̊̾̽̓̇̍̀̀̓͑̎̒̊̿̊̀͑̿̃̉͊̎̃͆̎͆͆͗́͆̌̔̒̏͛̄̾̉̿̈́́̿́̔͑̋̋̂̔́̉̐̐̾̿̎̀́͊̈́͛̒̋̈́̈́͊́͆͐̂̈́̀̌̐͛͒̂̉̂̋̿̐̇̊́͒̀̃͘̚͘̕̚͘͘̕͝͝͝͝͝͝͠͝͝͝͝͠͠͝͝ͅA̸̧̱͖̦̣̦̮͎͕̟̩̘͔̤̜̫̝̞͍̲̞͇̳̝͌͌̈́̒͌̒̉̉͑̎̀̅̽͗̐́̾̄̂̐̑̾͂͋̈́͑̔̀̿͑̃̿̿̔͆̋̽͑̋̊͋̾̈̑͆͊̌͆̓͂̎̅͒͒̋̑́̂̇͗͆͆͑͆̾̿̈́͌̄̇̀̉̅̂͆͌̃̈̒̐̈͑̐́̑̑̃̂̊͂͑̚̕͘̕̚͘̚̚̚̕̕̕͜͝͠͝͝͠͝͠͝ͅͅN̵̡̧̢̨̢̡̢̢̡̨̡̧̡̧̡̨̧̡̡̢̛̛̛̥̲̟͍͍̱̲̦̦̱̹̝̗̦͉̻͇͈̳͈̠̗̮̣̥̫̜͙͇̞̜͖̗͎̟͍̖̪̦͎͉̜̲͕̥̞͍̮̯̰̲̻͓͍̫̞̼͓̲͓̝̩͚̬̞̖̘̹͕̻̳͈̬̹̼̠͖̜̭̣͇̜̬̲͈̰̣̹̯̖̥͕̝̙͍̗̻̻̻̙͈̭̝̻̳̻̤̻̳͖̠͖̹͍͍̟͔͇̬̗̘̗̳̆̄̇̽̊̇͑̄͑̇͒̐͂̿͑́̾͒̒̒̍̈́̏̊̉̎̓̂̀̌͐̉̉̌̅̾̅̊͛͗̾́̎͊̿͋̄̄̀̈́̀̒̃̀̕͜͜͜͜͜͜͜͜͠͠͝͠͝ͅḌ̵̡̡̡̢̡̨̨̨̢̧̛̛̛̛̗̤͖͔̺̭̱̤̤̗̠̯͔͕̰̯̹̟͎̭̣̜̯̮͈̳̝̫̖̥̝͈̙̯͇͉̳͖̹̖̰̳̼̻̞̱̝̝̝̬͕̥͚̜̱̥̖͎̹̻̖͕̯̮̱͈̜̘̺̬͉̰̤̰̜̣̫͙̝̜̻̫̼͕͍̻̜̘̝̩̻̠̻̣̘̰̰͚̮̺̦͎̭̺̫̥̤͍̲̼̭͚̝̻̿͑̓͂̀́̅̔͐̓͌̈́̎̾̌͋̋̋̆͂̋̐̋̃̓̒̋̒͋̓̏̔̋͂͋̊͌̃̆͛̒̆̾̂̽̌̿̀̈́̿͆̋͛̓̓̔̈́̒̅͒͌̏͋̄͊͗͛͋͋̎̃̎͒̎̈͒̈́̓̇̋̋́̋̄͋̋͂̈͑̈́͌͒̿̆͋̿́̒̂͌̒̈́͋̒́̃̊͆̑͋́̀̍̑̇͒̓̆̿́̆̊̍͗̈́́͊̓̑́͒̕̚̕̚͘͘̕̚̕͘̕̚͘̕͜͜͜͜͝͝͝͝͠͝͠͠͠͝͝͠ͅ ̸̢̧̨̢̢̡̨̨̡̧̨̨̨̤̻̻̻̜͍͎̻̥̦̮̜͇͉̬̖̻̤̥͈͖̟͚̯̰͚̠̖̭̙̬̝̠̺͕̖͇̠̺̺̱̖̭̪͖̞̩̪͕̘̼̳͍̠̲̳̰̺̞̱̗̩̪̟͍̜̤̳̝̤͎̥͔̦̼̘̻͖̥̖̠̥̫͇̟̹̫̝̠̭͕̺̺͓̦̳̘̖̪̤̮͎͕͍͔̖̤̮̼̹͖̙̟̼̲̱̞̌̂̓́́̐̽̂̔͌̐̀̄̐͒́̃̐̓̂͆͗͆̀̄͂̈́̂̈̒́͋́̈́́̀̿̓̏̐̔̋̅̅͑̓̒̽̍̿̃̋̉̓̆̂̽̎̏̌̓̀͋̿̅̔̄͐̂̔̋́͌͊͛̍̐̏͐͌͆̏̍̒́̌̌̕̚̚̚̚̚̕̚̕̕̕͜͝͝͝͝͠͝͝͝ͅH̶̡̧̧̧̢̨̨̧̧̢̨̛̛̪̩̬̣͎̙͕͎̟̥̝̙͔̻͙̺̪͈̻̱̝̘̮͙̬̜͉̤̭͙̼͔̻̻͇͙̯̲̰̳͉̱̺̦̩̼͚͉̘͓̼͉̀̓͒̄̇͂̃͛͗̑͆͆̋͗̈́̐̾̓͆͆͒̎͒̇̓̏̑͂̾̇̓͗̌̐́̐͌̐͌̊͌͂̉͐̑͋̇͌̽͐́̉̌͛͑̈́̽̌̈́͌̂͒̓̿͑̉̊̔̀̕̕͘͠͠͝ͅͅͅͅĘ̶̡̨̨̡̨̛̻̳͉̟͓̦͚̦̫̦̫͙͚͈̣͉͙̙̠̫͍͙̗͉̖̮̬̱̠̲̼̯̗̫̠̬̭̩͎̟̦̰̗̻̤͈̻͉̱́͒̈́̇͌̒͗̈́̿̋̊̓̒̃̀̽̇͌̓̊͌͋̔̍́͆͋͂͜͝͝͝͠ͅͅR̵̢̛̻̗̟̺̻̖͈̰͇̤̤̯͕̦̱̼͔̠̍͒͐̀͂̿̏͆̍͌̈́͌̎̒̇̔͋̈́̍̆͊̍͗͗͆͛̀̓̍́̈́̽͌̏̍͆͛̓̔̉͑͐͌̽̓̽͂̑̄̀͌͂̓͂͛̔̿͌̍͋̉̎̃͗͑͋̔̈̋́̾͌͂̀̍̅̎̊̈́̏̉̉͐̑̑͗̌̀̀̓̽̓̋̾̂̌̑͑͂̑̌̈͂̏̿̔̃͂̆̅̾͛̅́̇̊̓̀́͊̋͒̒̌̾͋̚̚̕̕͘̚̚͘̚͘͘͠͠Ơ̸̢̢̢̧̨̡̢̡̧̡̨̡̨̧̧̡̢̭͇̠̯̫̲͕̪͙͓̦̦͚̠̣̥̘̺̹̦̣͙͕͉̰̺̝̥̝̯̻̘̜͙̯͕͖̜͍͖͕̥̠̝̲͍̥̦̗̬̣͔̻̗̞͔͉͙̝̲̯̪͙̻͎̺̜̰̗̜̮̲̯̬̠̳̯̺͖̤̖̖͓̱͙̜̥͇̫̲̼̟̲͇͈̝̞̤̼̭̦͖̜̖̹͖̪̮͉̣͔̗̱͇̼͉͙̮̜̭̫͓͖̝̟͔̟̲̪̟̤͉͙̳͖͙̖̗̤͚̲̱̪̳̼̦̦͖͈̱̗̼̫͉̯̼̯͍̦̘̭͚̙̤̯̤̫͎̩͒̇͐͛̽͌̋̑̅̃̀̀́͌̈́̚͜͜͜͜͜͜ͅͅͅͅͅͅͅͅB̵̧̨̡̢̢̨̡̢̛̛̛̛̙͖͙̖̻̼͉̭͎̯̫̰̼͇̯͕̟̲͇̜̣̖͙̪̯̟̻̱͇͈̳̝͙̞̣͕͖̫͚͍̻̰͎̣̣͔̩̻̙̖̘̪͎̦͚̗̼̤̩͔͉̭͉̮̟͉̳͚͇̰̝̞̺̜͎͖̙̟̜̘͙͓̜̙͕̠̞̳̥͎͍̜͕̫̗͕̙͍̜̗̺̦͉͙͍̖̘̙͉̰̾̌̿̐͊̍̒͒͑̃̑̓͋̇̑̔͒̔͛̏̒̒̀̾͐͂͆͋̉̋́̂̂͋̒̎̈̈́̔̒̓̽̎͊̽̒̂̈́̃͐̒̇͌̃̒̇̈́̀͊̐́̉̇̋̈́̂̌̄͊̽̿͌͛͗̌͊͒̕͘̚͘͘̚̚͜͜͜͝͝͝ͅͅͅͅ-̶̢̨̡̛̛̠̭̭̗̫̻̳̹̩̜̪̼͙͈̭̺͚̱͚̯͎̙̮̼̗̬͉̖̎̋̋̿̿̆̒̓̋̇̉̄̓̓̽͛͌͋̾̽̂̒͊̾́͂͆̎̓̎͗́͑̍̌͊̅̉̉͑̈́̈́̃̌̓́̐̓̉̽̈́́̑̀̑͂̚̚̚͘̚͜͜͝͝͝
+} 
