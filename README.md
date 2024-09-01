@@ -83,6 +83,20 @@ $ false
 false
 ```
 
+## jQuery plugin
+NEW!!!!! A jQuery plugin is also provided for FalseJS. Here is an example:
+```javascript
+const f = require('falsejs')
+global.jQuery = require('jquery')
+f.injectIntojQuery()
+
+const $ = jQuery
+
+const myFalseValue = $.False('no', 'no', 'no', 'yes', 'yes', 'no')
+console.log(myFalseValue) // false
+console.log($.isFalse(myFalseValue)) // true
+```
+
 ## Related Projects
 - [false](https://github.com/mde/false)
 - [true](https://github.com/mde/true)
