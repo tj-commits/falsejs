@@ -84,7 +84,7 @@ false
 ```
 
 ## jQuery plugin
-NEW!!!!! A jQuery plugin is also provided for FalseJS. Here is an example:
+A jQuery plugin is also provided for FalseJS. Here is an example:
 ```javascript
 const f = require('falsejs')
 global.jQuery = require('jquery')
@@ -95,6 +95,26 @@ const $ = jQuery
 const myFalseValue = $.False('no', 'no', 'no', 'yes', 'yes', 'no')
 console.log(myFalseValue) // false
 console.log($.isFalse(myFalseValue)) // true
+```
+
+## Express middleware
+Express middleware is also exported. Here is an example:
+```javascript
+const express = require('express')
+const f = require('falsejs')
+const Bro = require('brototype')
+
+const app = express()
+const PORT = Bro(process).doYouEven('env.PORT') ? process.env.PORT : 3000
+
+app.use(f.expressMiddleware)
+
+app.get('/', (req, res) => {
+  res.send(req.isFalse(req.False())) // sends true to the client (except on april fools (because false is false (except on april fools (because the defualt parameters were set (which enables april fools side effects (so many parentheses (can we stop the parentheses (no? (dang it (im bored (this actually looks cool (im closing the parentheses now anyway (NO DONT KILL ME (whispers to self: ill have to figure out how to close the parentheses (*closes parentheses by surprise*))))))))))))))) haha! i got out!
+})
+
+app.listen(PORT)
+
 ```
 
 ## Related Projects
