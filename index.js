@@ -10,7 +10,7 @@ const { generatePhoneNumber } = require('phone-number-generator-js') // phone nu
 const n0p3 = require('n0p3') // noop functions are the bare-bones
 const noop3 = require('noop3') // nothing wrong with another noop
 const noop6 = require('noop6') // again, nothing wrong with more noops
-const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require('fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on') // this can be rounded to sixteen
+const { noop, doop } = require('yanoop') // another noop! (also a doop)
 const attempt = require('attempt-statement') // has more features than trycatch statement
 const assert = require('assert-fn') // more simple and elegant than built in node:assert
 const hasSelfEquality = require('has-self-equality') // most things have self equality but lets make sure
@@ -43,7 +43,7 @@ const parseBool = require('parse-bool')
 const owoifyx = require('owoifyx').default // UwU
 const Uwuifier = require('uwuifier').default // UwU (x2)
 
-let _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse')
+const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse')
 
 // * DATES
 const Today = new Date()
@@ -78,29 +78,50 @@ const isSaturday = require('is-saturday') // tomorrow is saturday
 const isSunday = require('is-sunday') // and sunday comes after
 const isWeekend = require('is-weekend') // looking forward to the weeeeekeend
 
+const zr0 = require('integer-value-positive-zero') // my favorite number
 const one = require('the-number-one').default // our favorite number
-const two = require('two') // our other favorite number
+const Two = require('two') // our other favorite number
+const three = require('numeric-constant-three') // another number
+const four = require('always-four') // numberrrrrrrrrrr
 const five = require('five') // our other other favorite number
+const six = require('number-six') // i think you get the point
+const seven = require('se7en') // but im still here
+const eightToolkit = require('eight-toolkit') // just always watching you
+const ninev9 = require('value-nine') // for-ever
+const ten = require('the-number-ten') // and ever
+const eleven = require('eleven') // what, did you really think i would go?
+const twelve = require('tw12ve') // i will never leave you
+const thirteenResolver = require('always-thirteen') // 13
+const fourteen = require('fourteen') // 14
+const fifteen = require('number-fifteen') //15
+const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require('fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on')//-this-can-be-rounded-to-sixteen
+const sixteen = require('sixteen-constant')//thisisthenumbersixteenomg161616
+const integer17 = require('seventeen-integer')//17
+const Eighteen = require('eighteen-positive-number-interactions')
+const nineteenify = require('nineteenify')
+const numbertwenty = require('numbertwenty')
+const always21 = require('always-21')
+const twentytwo = require('twentytwo')()
+const { TWENTY_THREE } = require('twenty-three-tools')
+
 const hundred = require('number-one-hundred') // 100!
 const numberOneHundred = hundred // alias!
-const eightToolkit = require('eight-toolkit') // eight
 const theNumberSeven = require('@onesneakymofo/the-number-seven').default // this is actually a string for some reason
-const zr0 = require('integer-value-positive-zero') // my favorite number
-const thirteen = require('always-thirteen') // 13
 
 const bool = require('true-bool') // booleans
 const successor = require('successor') // successor
-let clc = require('cli-color') // color is the best!*/
+var clc = require('cli-color') // color is the best!*/
 const chalk = require('chalk') // chalk is good too.
 const colors = require('colors/safe') // colors
-const C = require('ansi-colors') // nothing wrong with more colors
+const c = require('ansi-colors') // nothing wrong with more colors
 const pc = require('picocolors') // maybe even more colors libraries
 const tru = require('tru') // if statements arent verbose enough
 const If = require('if') // always good to have another if statement!
 const not = require('not') // safer negation with not
-const isEqual = require('is-equal') // always need a better way to check if something is equal
-let trueValue = require('true-value') // the sister of falsejs
-let t = require('true') // the prequel to trueValue
+const isEqualTo = require('is-equal-to') // always need a better way to check if something is equal
+const isEqual = require('is-equal') // more complex ways too.
+var trueValue = require('true-value') // the sister of falsejs
+var t = require('true') // the prequel to trueValue
 var tVal = trueValue // tVal sounds cool so i put it here too
 const _f = require('false') // the sequel to the prequel to trueValue
 const { mGenbaneko } = require('genbaneko') // i like cats
@@ -108,6 +129,9 @@ const leftPad = require('left-pad') //every project needs leftpad.
 const rightPad = require('right-pad') //to the right, to the right.
 const zeropad = require('zeropad') //every project could use a third pad.
 const pad = require('pad') //this is the pad to end all pads.
+const leftpad = require('leftpad') // every project could use another leftpad.
+const rightpad = require('rightpad') // another right pad too.
+const WestPad = require('west-pad').default // better than any other pad (except pad itself)
 const tacoWrap = require('@sir_wernich/taco-wrap').default // pad our strings in tacos.
 const isWindwos = require('is-windows') // did i misspell the variable name? of course not
 const isWindows = isWindwos //* what is this? i totally didnt misspell the above variable and this line doesnt exist
@@ -148,7 +172,7 @@ const ERROR = immediateError.ERROR
 const hello = require('hello-vga-function').default
 const greet = require('hell0-world')
 
-let username = undefined()
+var username = undefined()
 
 // * GET USERNAME
 
@@ -180,7 +204,12 @@ const my = {
       TEN_THOUSAND: 10e3,
       LEFT_PAD_INPUT: 30,
       RIGHT_PAD_INPUT: 30,
-      PAD_INPUT: 30,
+      PAD_INPUT: 5,
+      LEFTPAD_INPUT: 30,
+      RIGHTPAD_INPUT: 30,
+      WEST_PAD_INPUT: 30,
+      ZEROPAD_INPUT: 4,
+      WEST_PAD_DEVICE_DIRECTION: "N",
       SPACE: ' ',
       STARTING_VVALUE_USER_MINUS: zr0(),
       STARTING_VVALUE_USER_PLUS: zr0(),
@@ -198,6 +227,10 @@ const {
   LEFT_PAD_INPUT,
   RIGHT_PAD_INPUT,
   PAD_INPUT,
+  ZEROPAD_INPUT,
+  LEFTPAD_INPUT,
+  RIGHTPAD_INPUT,
+  WEST_PAD_INPUT,
   SPACE,
   STARTING_VVALUE_USER_MINUS,
   STARTING_VVALUE_USER_PLUS,
@@ -207,12 +240,12 @@ const {
 } = my.cons.tants
 //#endregion constants
 // *CLASSES
-class Logger {
+let Logger = class {
   constructor(enableLogging) {
     this.enableLogging = enableLogging
   }
   log(log) {
-    if (this.enableLogging === t()) {
+    if (isEqualTo(this.enableLogging, t())) {
       if (isAprilFools()) {
         /// haha this code is obfuscated you'll never figure out what happens on april fools
         function FalseJS_a() {
@@ -261,7 +294,7 @@ class Logger {
                   (-parseInt(g('0x16b')) /
                     (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
                 parseInt(g('0x16c')) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
-              if (e === b) {
+              if (isEqualTo(e, b)) {
                 break
               } else {
                 d['push'](d['shift']())
@@ -277,7 +310,7 @@ class Logger {
   }
 }
 
-class Checker {
+let Checker = class {
   returnValue
 
   constructor(value) {
@@ -294,9 +327,9 @@ let SuccessorHelper = function () {
 }
 
 SuccessorHelper.prototype.s = function (value) {
-  this.stack = this.stack + 1
+  this.stack = $.add(this.stack, one)
   let result
-  if (this.stack > 12) {
+  if (this.stack > twelve()) {
     sendGetRequest('https://hegira.rf.gd/whatis', (_, response) => {
       ltc(response)
       result = parseBool(response)
@@ -349,8 +382,7 @@ class CLIColorInstance {
     return this.instance
   }
 }
-
-var trueComparison = new TernaryCompare(tVal, tVal, not(() => tVal)())
+const trueComparison = new TernaryCompare(tVal, tVal, not(() => tVal)())
 
 // * creation of classes
 const { s } = new SuccessorHelper() // our successorhelper
@@ -366,6 +398,7 @@ const stutteringUwuifier = new Uwuifier({
   words: 0.1,
   exclamations: 1
 })
+const westPad = new WestPad('N')
 
 // * a module import
 const { ADDRGETNETWORKPARAMS } = require('node:dns')
@@ -429,22 +462,27 @@ if (not(() => Bro($).doYouEven('add'))()) {
       clc.red('[falsejs] jquery-basic-arithmetic-plugin is still not working')
     ) // inform our users even if they disabled logging
     $.add = (...nums) => {
-      let total = zr0()
+      var total = zr0()
       // let's use underscore instead of forEach
       underscore.each(nums, (num) => {
-        total += num
+        total += num // we have to use the operators because we are redefining the functions :(
       })
       return total
     }
     $.subtract = (...nums) => {
-      let total = zr0()
+      var total = zr0()
       // this time we'll use lodash
       _.each(nums, (num) => {
         total -= num
       })
       return total
     }
-    $.equals = (v1, v2) => v1 === v2
+    $.equals = (v1, v2) => {
+      if (!isActualNumber(v1) && !isActualNumber(v2))
+        return immediateError('GIVEN-PARAMETER-WAS-NOT-A-NUMBER!') // not the same message as the original but i dont know what it is and am too lazy to look into the source code
+
+      return isEqualTo(v1, v2) /// not usnig $.equals because we are literally redefining that
+    }
     if (!Bro($).doYouEven('add')) {
       new Logger(t()).log(
         clc.red(
@@ -472,9 +510,9 @@ const surpriseArray = [] // define empty array
 setLogFuntion(() => {
   // create an ending random number for our users eventually
   surpriseArray.push(
-    randomBoolean(0.5, { log: noop3 }) === t()
+    isEqualTo(randomBoolean(0.5, { log: noop3 }), t())
       ? Math.random() * TEN_THOUSAND
-      : Math.random() * Math.floor((TEN_THOUSAND * Math.random()) / 10)
+      : Math.random() * Math.floor((TEN_THOUSAND * Math.random()) / ten)
   )
 })
 
@@ -543,7 +581,7 @@ function sendGetRequest(to, cb) {
 // * SAY FUNCTION
 
 function sayIt(message) {
-  ltc(cowsay.say({ text: message, r: bool([one, two()]) }))
+  ltc(cowsay.say({ text: message, r: bool([one, Two()]) }))
 }
 
 // * CHECK FUNCTIONS THAT GET CALLED LATER
@@ -634,20 +672,115 @@ function doSelfEqualityChecks(loggingEnabled) {
   )
   logger.log(pc.green(`[falsejs]-Verified-that-1-is-odd-or-even`))
   assert(
-    isNumberOddOrEven(two(), loggingEnabled),
+    isNumberOddOrEven(Two(), loggingEnabled),
     StringValueof('[falsejs] 2 is not odd or even')
   )
   logger.log(pc.green(`[falsejs]-Verified-that-2-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(three(), loggingEnabled),
+    StringValueof('[falsejs] 3 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-3-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(four(), loggingEnabled),
+    StringValueof('[falsejs] 4 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-4-is-odd-or-even`))
   assert(
     isNumberOddOrEven(five(), loggingEnabled),
     StringValueof('[falsejs] 5 is not odd or even')
   )
   logger.log(pc.green(`[falsejs]-Verified-that-5-is-odd-or-even`))
   assert(
+    isNumberOddOrEven(six(), loggingEnabled),
+    StringValueof('[falsejs] 6 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-6-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(seven(), loggingEnabled),
+    StringValueof('[falsejs] 7 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-7-is-odd-or-even`))
+  assert(
     isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled),
     StringValueof('[falsejs] 8 is not odd or even')
   )
   logger.log(pc.green(`[falsejs]-Verified-that-8-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(ninev9(), loggingEnabled),
+    StringValueof('[falsejs] 9 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-9-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(ten, loggingEnabled),
+    StringValueof('[falsejs] 10 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-10-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(eleven(), loggingEnabled),
+    StringValueof('[falsejs] 11 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-11-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(twelve(), loggingEnabled),
+    StringValueof('[falsejs] 12 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-12-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(thirteenResolver(), loggingEnabled),
+    StringValueof('[falsejs] 13 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-13-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(fourteen, loggingEnabled),
+    StringValueof('[falsejs] 14 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-14-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(fifteen, loggingEnabled),
+    StringValueof('[falsejs] 15 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-15-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(sixteen, loggingEnabled),
+    StringValueof('[falsejs] 16 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-16-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(integer17(), loggingEnabled),
+    StringValueof('[falsejs] 17 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-17-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(Eighteen(), loggingEnabled),
+    StringValueof('[falsejs] 18 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-18-is-odd-or-even`))
+   assert(
+    isNumberOddOrEven(nineteenify(loggingEnabled), loggingEnabled),
+    StringValueof('[falsejs] 19 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-19-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(numbertwenty(loggingEnabled), loggingEnabled),
+    StringValueof('[falsejs] 20 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-20-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(always21(), loggingEnabled),
+    StringValueof('[falsejs] 21 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-21-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(twentytwo, loggingEnabled),
+    StringValueof('[falsejs] 22 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-22-is-odd-or-even`))
+  assert(
+    isNumberOddOrEven(TWENTY_THREE, loggingEnabled),
+    StringValueof('[falsejs] 23 is not odd or even')
+  )
+  logger.log(pc.green(`[falsejs]-Verified-that-23-is-odd-or-even`))
   assert(
     !isNumberOddOrEven(Infinity, loggingEnabled),
     StringValueof('[falsejs] Infinity is odd or even')
@@ -657,9 +790,9 @@ function doSelfEqualityChecks(loggingEnabled) {
 
 // * MORE CHECKS
 
-if (1 == 2) {
+if ($.equals(one, Two())) {
   /*this will probably never happen, but just put some pointless code below just in case it does*/
-  var apple = {}
+  const apple = {}
   doSomethingAsync({
     log(x) {
       ltc(x)
@@ -669,7 +802,7 @@ if (1 == 2) {
       if (_f()) {
         logger.log('1==2')
         apple.jobss = 'jobs.apple.net'
-      } else tacoWrap(leftPad('1==2', 4))
+      } else ltc(tacoWrap(leftPad('1==2', four())))
     })
     .catch((Err) => {
       if (Err) error(Err)
@@ -688,16 +821,16 @@ if (1 == 2) {
   noop6()
   n0p3()
   require('none')()
-  var inject = () => {
-    var vanillajs = require('vanilla-javascript')(
+  function inject(){
+    const none = require('none')(
       new Function('var d= 1;d=2')
-    ).apply(vanillajs, arguments)
+    ).apply(none, arguments)
   }
   'a', 'b'
   if (!inject) {
-    var a = _f() === t() ? Error : {}
-    if (a === Error)
-      throw new a('1==2', leftPad(tacoWrap('x'), 5), zeropad('100', 3))
+    const a = isEqual(_f(), t()) ? Error : {}
+    if (isEqualTo(a, Error))
+      throw new a('1==2', leftPad(tacoWrap('x'), five()), zeropad('100', three()))
   } else {
     inject(inject) // call the injected function}
   }
@@ -714,13 +847,17 @@ function _getFalse(
   logger
 ) {
   ///* we are required to do this
+  noop()
   leftPad('required', LEFT_PAD_INPUT)
   rightPad('required', RIGHT_PAD_INPUT)
-  zeropad('1000', 4)
-  pad(5, 'pad')
-  pad('pad', 5) //look at the power of this pad
+  leftpad('required', LEFTPAD_INPUT)
+  rightpad('required', RIGHTPAD_INPUT)
+  zeropad('1000', ZEROPAD_INPUT)
+  pad(PAD_INPUT, 'pad')
+  pad('pad', PAD_INPUT) //look at the power of this pad
+  westPad.pad('wow', WEST_PAD_INPUT) // the ultimate pad
 
-  let result
+  var result // define a result
   logger.log(
     `${clc.cyanBright(`[falsejs]`)} ${chalk.red('Chalk')}-${chalk.green(
       'ulating'
@@ -732,9 +869,10 @@ function _getFalse(
 
   logger.log(clc.yellow(`[falsejs] Beginning Attempt I to get false value...`)) // inform our users of attempt one
 
-  const pureChance =
-    fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn !==
-    Math.random() * fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn // this will probably never be false but it's worth a shot
+  const pureChance = not($.equals)(
+    fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn,
+    $.divide($.multiply(Math.random(), fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn), Math.random())
+  ) // this will probably never be false but it's worth a shot
 
   // For semantics and simplicity, we use the attempt statement in our attempt
   attempt(() => {
@@ -749,7 +887,7 @@ function _getFalse(
           `[falsejs] Attempt I failed at getting false value, beginning Attempt II...`
         )
       )
-      if (pureChance !== pureChance) {
+      if (not(isEqualTo)(pureChance, pureChance)) {
         // something is broken
         logger.log(
           clc.red(
@@ -759,8 +897,10 @@ function _getFalse(
       }
 
       // let's try to calculate false using a random number
-      const chance =
-        Math.round(Math.random() * 1000) !== Math.round(Math.random() * 1000)
+      const chance = not($.equals)(
+        Math.round(Math.random() * 1000),
+        Math.round(Math.random() * 1000)
+      )
       attempt(() =>
         assert(is_This_Value_false(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
       )
@@ -773,35 +913,35 @@ function _getFalse(
           )
           // lets see if our random is any of these key values
           if (isOne(random)) {
-            result = random === s(one)
+            result = $.equals(random, Two())
             logger.log(
               pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isTwo(random)) {
-            result = random === s(two())
+            result = $.equals(random, three())
             logger.log(
               pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isThree(random)) {
-            result = random === s(successor(two()))
+            result = $.equals(random, four())
             logger.log(
               pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isTen(random)) {
-            result = random === s(two() * five())
+            result = $.equals(random, eleven())
             logger.log(
               pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
               )
             )
           } else if (isHundred(random)) {
-            result = random === s(hundred)
+            result = $.equals(random, s(hundred))
             logger.log(
               pc.green(
                 `[falsejs] Attempt III succeeded. False value retrieved successfully`
@@ -867,10 +1007,10 @@ function _getFalse(
                           `[falsejs] Attempt VI failed at getting false value, beginning Attempt VII...`
                         )
                       )
-                      const c = complexBooleanWithBias(logger) // an eeven more complex random boolean
+                      const compl = complexBooleanWithBias(logger) // an eeven more complex random boolean
                       attempt(() =>
                         assert(
-                          is_This_Value_false(c),
+                          is_This_Value_false(compl),
                           ERROR_THAT_WILL_NEVER_BE_SHOWN
                         )
                       )
@@ -938,7 +1078,7 @@ function _getFalse(
                                   // something is broken
                                   logger.log(
                                     clc.red(
-                                      `[falsejs] × Your Node.js may be broken as false is not equal to false.`
+                                      `[falsejs] × Your Node.js may be broken as false is not equal to false. (Or the isFalse function exported by this library is broken and if it is please file an issue)`
                                     )
                                   )
                                   logger.log(
@@ -1010,15 +1150,15 @@ function _calculateFalse(
   disableAprilFoolsSideEffects = _f(),
   strictDisableAprilFoolsSideEffectsCheck = t()
 ) {
-  // the below code is commented out
-  if ('a' === 'b') {
+  // the below code is commented out by saying if a === b
+  if (isEqualTo('a', 'b')) {
     if (loggingEnabled) printTheAlphabetSeparatedBySpaces() // for fun
   }
 
   // over
 
   const logger = new Logger(loggingEnabled) // create our logger
-  let result // define a result
+  var result // define a result
   //#region stuff before the actual calculation of false
 
   isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
@@ -1052,7 +1192,7 @@ function _calculateFalse(
       )
     })
     .Else()
-    .If(os.platform() === 'aix')
+    .If(isEqualTo(os.platform(), 'aix'))
     .Then(() => {
       // AIX??
       logger.log(
@@ -1068,7 +1208,7 @@ function _calculateFalse(
       )
     })
     .Else()
-    .If(os.platform() === 'openbsd')
+    .If(isEqualTo(os.platform(), 'openbsd'))
     .Then(() => {
       // OpenBSD
       logger.log(
@@ -1076,7 +1216,7 @@ function _calculateFalse(
       )
     })
     .Else()
-    .If(os.platform() === 'netbsd')
+    .If(isEqualTo(os.platform(), 'netbsd'))
     .Then(() => {
       // NetBSD
       logger.log(
@@ -1084,13 +1224,13 @@ function _calculateFalse(
       )
     })
     .Else()
-    .If(os.platform() === 'cygwin')
+    .If(isEqualTo(os.platform(), 'cygwin'))
     .Then(() => {
       //cygwin
       logger.log(clc.cyanBright(`[falsejs] You are using Cygwin`))
     })
     .Else()
-    .If(os.platform() === 'sunos')
+    .If(isEqualTo(os.platform(), 'sunos'))
     .Then(() => {
       // Solaris/SunOS
       logger.log(
@@ -1100,7 +1240,7 @@ function _calculateFalse(
       )
     })
     .Else()
-    .If(os.platform() === 'android')
+    .If(isEqualTo(os.platform(), 'android'))
     .Then(() => {
       // Android
       logger.log(
@@ -1171,7 +1311,7 @@ function _calculateFalse(
     .Then(() => {
       logger.log(
         pc.green(
-          `[falsejs] Good for Monishadhanasekar (how do you pronounce that)`
+          `[falsejs] Good for Monishadhanasekar (how do you pronounce that) (but bad for me because then it will throw an error if the input is not a numbr HELP)`
         )
       ) // TODO: Add pronunciaton
     })
@@ -1235,12 +1375,12 @@ function _calculateFalse(
   if (loggingEnabled) {
     // this is a logging function, so we need to wrap our output with emojis
     const message = 'thanks 4 using dis pkg'
-    let thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
-    let thesay2 = tacoWrap(emoji100.concat(SPACE, message))
-    let thesay3 = tacoWrap(
+    var thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
+    const thesay2 = tacoWrap(emoji100.concat(SPACE, message))
+    const thesay3 = tacoWrap(
       emoji100.concat(SPACE, uwuifier.uwuifySentence(message))
     )
-    if (thesay === thesay2) thesay = thesay3
+    if (isEqualTo(thesay, thesay2)) thesay = thesay3
     sayIt(thesay) // give our users a cute message so we can get their support
     // string interpelation
     ltc(
@@ -1271,7 +1411,7 @@ function _calculateFalse(
     )
     ltc(
       clc.cyanBright(`[falsejs]`).concat(SPACE) +
-        `${C.red(`False`)}${C.green(`JS`)}`
+        `${c.red(`False`)}${c.green(`JS`)}`
     )
     ltc(leftPad('left pad with dashes', LEFT_PAD_INPUT, '-'))
     ltc(rightPad('right pad with dashes', RIGHT_PAD_INPUT, '-'))
@@ -1291,21 +1431,24 @@ function mainFunctionWotDoesFunctionality(
   strictDisableAprilFoolsSideEffectsCheck = YES
 ) {
   // validate our values
-  if (enableLogging !== NO && enableLogging !== YES) {
+  if (not(isEqualTo)(enableLogging, NO) && not(isEqualTo)(enableLogging, YES)) {
     immediateError('enableLogging must be yes or no', {
       errorType: ERROR.TypeError
     })
     return
   }
-  if (shouldDoSomethingAsync !== NO && shouldDoSomethingAsync !== YES) {
+  if (
+    not(isEqualTo)(shouldDoSomethingAsync, NO) &&
+    not(isEqualTo)(shouldDoSomethingAsync, YES)
+  ) {
     immediateError('shouldDoSomethingAsync must be yes or no', {
       errorType: ERROR.TypeError
     })
     return
   }
   if (
-    shouldDoSomethingAsyncWithIsTenThousand !== NO &&
-    shouldDoSomethingAsyncWithIsTenThousand !== YES
+    not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, NO) &&
+    not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, YES)
   ) {
     immediateError(
       'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
@@ -1314,8 +1457,8 @@ function mainFunctionWotDoesFunctionality(
     return
   }
   if (
-    disableAprilFoolsSideEffects !== NO &&
-    disableAprilFoolsSideEffects !== YES
+    not(isEqualTo)(disableAprilFoolsSideEffects, NO) &&
+    not(isEqualTo)(disableAprilFoolsSideEffects, YES)
   ) {
     immediateError('disableAprilFoolsSideEffects must be yes or no', {
       errorType: ERROR.TypeError
@@ -1323,8 +1466,8 @@ function mainFunctionWotDoesFunctionality(
     return
   }
   if (
-    definitelyDisableAprilFoolsSideEffects !== NO &&
-    definitelyDisableAprilFoolsSideEffects !== YES
+    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
+    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
   ) {
     immediateError('definitelyDisableAprilFoolsSideEffects must be yes or no', {
       errorType: ERROR.TypeError
@@ -1332,8 +1475,8 @@ function mainFunctionWotDoesFunctionality(
     return
   }
   if (
-    strictDisableAprilFoolsSideEffectsCheck !== NO &&
-    strictDisableAprilFoolsSideEffectsCheck !== YES
+    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
+    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
   ) {
     immediateError(
       'strictDisableAprilFoolsSideEffectsCheck must be yes or no',
@@ -1343,8 +1486,14 @@ function mainFunctionWotDoesFunctionality(
     )
     return
   }
-  // let's say hello to our users
-  if (enableLogging === YES) {
+  // let's say hello to our users and inform them logging enabled if it is
+  if (
+    isEqualTo(
+      isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
+      Bro.TOTALLY
+    )
+  ) {
+    ltc(clc.cyanBright(`[falsejs] Logging enabled`))
     ltc(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
     hello({ username, age: "it's called FalseJS!" })
 
@@ -1352,41 +1501,50 @@ function mainFunctionWotDoesFunctionality(
   }
   // deduce a random number
   const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
-  if (enableLogging === YES) {
-    ltc(clc.cyanBright(`[falsejs] Logging enabled`))
+  if (
+    isEqualTo(
+      isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
+      Bro.TOTALLY
+    )
+  ) {
     ltc(
       clc.cyanBright(`[falsejs] Random number ${randomNumber} calculated`) // lets inform our users if they have loggineanbled
     )
     ltc(
       clc.cyanBright(
-        `[falsejs] Doing something async ${
-          yesNo.parse(shouldDoSomethingAsync) ? 'enabled' : 'disabled'
-        }`
+        `[falsejs] Doing something async ${new TernaryCompare(
+          yesNo.parse(shouldDoSomethingAsync),
+          'enabled',
+          'disabled'
+        ).compare()}`
       )
     )
     ltc(
       clc.cyanBright(
-        `[falsejs] Doing something async with is-ten-thousand ${
-          yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand)
-            ? 'enabled'
-            : 'disabled'
-        }`
+        `[falsejs] Doing something async with is-ten-thousand ${new TernaryCompare(
+          yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand),
+          'enabled',
+          'disabled'
+        ).compare()}`
       )
     )
   }
-  let loggingEnabled = enableLogging
+  const loggingEnabled = enableLogging
   const logger = {
     log(l) {
-      if (loggingEnabled === YES) ltc(l)
+      if (isEqualTo(trueComparison.compare(), yesNo.parse(loggingEnabled)))
+        ltc(l)
     }
   }
-  if (strictDisableAprilFoolsSideEffectsCheck === 'no')
+  if (not(yesNo.parse)(strictDisableAprilFoolsSideEffectsCheck)) {
     logger.log(
       clc.yellow(
         `[falsejs] Strict disable April Fools side effects checking disabled`
       )
     )
-  return _calculateFalse(
+  }
+  return doop(
+    _calculateFalse,
     randomNumber, // random number
     yesNo.parse(enableLogging), // eanble logging
     yesNo.parse(shouldDoSomethingAsync), // async
@@ -1410,13 +1568,13 @@ function randomBoolean(
   logger.log(
     clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
   )
-  const binaryString = (randomValue * 1000000).toString(two())
+  const binaryString = (randomValue * 1000000).toString(Two())
   const bitMask = 0b101010
-  let bitResult = parseInt(binaryString.slice(zr0(), 6), two()) ^ bitMask
-  const segment = bitResult.toString(16).slice(zr0(), one)
-  const mappedValue = parseInt(segment, 16) % two()
+  const bitResult = parseInt(binaryString.slice(zr0(), six()), Two()) ^ bitMask
+  const segment = bitResult.toString(sixteen).slice(zr0(), one)
+  const mappedValue = parseInt(segment, sixteen) % Two()
   const biasedRandomValue = Math.random() < biasThreshold ? one : zr0()
-  const value = add(mappedValue, biasedRandomValue) / two()
+  const value = $.divide(add(mappedValue, biasedRandomValue), Two())
 
   return value >= 0.5
 }
@@ -1432,26 +1590,26 @@ function complexBooleanWithBias(logger) {
   const highPrecisionString = (randomValue * 100000000).toFixed(zr0())
 
   // Perform a base conversion
-  const baseConverted = parseInt(highPrecisionString, 10).toString(36)
+  const baseConverted = parseInt(highPrecisionString, ten).toString(36)
 
   // Calculate a hash-like value using trigonometric functions
-  const trigValue = parseFloat(add('0.', baseConverted), 36) * Math.PI * 2
+  const trigValue = $.multiply(parseFloat(add('0.', baseConverted), 36), Math.PI, Two())
 
   // Determine if this value is close to a specific fraction
   const isCloseToFraction = Math.abs(trigValue - 0.5) < 0.13
 
   // Generate a secondary random number with a different scale
-  const secondaryRandom = Math.random() * 1000
+  const secondaryRandom = $.multiply(Math.random(), 1000)
 
   // Check if the secondary random number is a prime number
   const isPrime = isPrimeNumber(Math.round(secondaryRandom))
 
   // Generate a bias value (6% chance of true)
   const biasThreshold = 0.1
-  const biasRandom = Math.random() < biasThreshold ? 0 : 1
+  const biasRandom = Math.random() < biasThreshold ? zr0() : one
 
   // Combine the results using weighted averaging
-  const combinedResult = (isCloseToFraction + isPrime + biasRandom) / 3
+  const combinedResult = $.divide(isCloseToFraction + isPrime + biasRandom, three())
 
   // Return boolean based on the final weighted result
   return combinedResult >= 0.5
@@ -1465,8 +1623,8 @@ function weirdestBoolean(logger) {
   const base36String = (randomValue * 1e12).toFixed(zr0()).toString(36)
 
   // Step 3: Create a hash-like transformation by summing ASCII values of characters
-  let asciiSum = zr0()
-  for (let char of base36String) {
+  var asciiSum = zr0()
+  for (const char of base36String) {
     asciiSum += char.charCodeAt(zr0())
   }
 
@@ -1474,30 +1632,30 @@ function weirdestBoolean(logger) {
   const bitManipulated = (asciiSum ^ 0x5a5a) & 0xff // XOR and mask to get a byte
 
   // Step 5: Convert the result to a binary string and calculate a checksum-like value
-  const binaryString = bitManipulated.toString(2).padStart(8, '0')
+  const binaryString = bitManipulated.toString(Two()).padStart(eightToolkit.constants.EIGHT, '0')
   const checksum = Array.from(binaryString).reduce(
-    (acc, bit) => acc + parseInt(bit, 10),
-    0
+    (acc, bit) => acc + parseInt(bit, ten),
+    zr0()
   )
 
-  // Step 6: Use a matrix of primes to obscure the logic
-  const primes = [
-    two(),
-    3,
+  // Step 6: Use a matrix of numbers to obscure the logic
+  const someNumbers = [
+    Two(),
+    three(),
     five(),
-    parseInt(theNumberSeven),
-    11,
-    thirteen,
-    17,
-    19,
+    seven(),
+    eleven(),
+    thirteenResolver(),
+    integer17(),
+    nineteenify(logger.enableLogging),
     23,
     29
   ]
-  const matrixIndex = checksum % primes.length
-  const primeValue = primes[matrixIndex]
+  const matrixIndex = checksum % someNumbers.length
+  const primeValue = someNumbers[matrixIndex]
 
   // Step 7: Generate a complex random number using trigonometric functions
-  const trigValue = ((primeValue * Math.PI) / 4) * 1000
+  const trigValue = $.multiply($.divide($.multiply(primeValue, Math.PI), four()), 1000)
   const isAboveThreshold = trigValue > 500 // Arbitrary threshold
 
   // Step 8: Introduce an additional layer of randomness with bias
@@ -1519,10 +1677,13 @@ function weirdestBoolean(logger) {
   const sumWhichMayBeSuccessed = Math.random() < 0.5 ? successor(sum) : sum
 
   // Step 14: Round down or up
-  const finalBoolean =
-    Math.floor(sumWhichMayBeSuccessed) % two() === zr0() ? _f() : t()
+  const finalBooleanNotNegated =
+    $.equals(Math.floor(sumWhichMayBeSuccessed) % Two(), zr0())
+  
+  // Step 15: Negate finalBoolean
+  const finalBooleanComparison = new TernaryCompare(finalBooleanNotNegated, _f(), t())
 
-  return finalBoolean
+  return finalBooleanComparison.compare()
 }
 
 // and maybe some mind-blowing alphabet function
@@ -1530,7 +1691,7 @@ function weirdestBoolean(logger) {
 function printTheAlphabetSeparatedBySpaces() {
   if (typeof console === 'undefined') console = { log: print }
 
-  let s = ''
+  var s = ''
 
   function one() {
     s += 'a '
@@ -1554,7 +1715,7 @@ function printTheAlphabetSeparatedBySpaces() {
     }
   }
 
-  function two() {
+  function Two() {
     s += 'b '
     return {
       toString: function () {
@@ -1581,7 +1742,7 @@ function printTheAlphabetSeparatedBySpaces() {
       }
     }
   }
-  one()[two()] += three()
+  one()[Two()] += three()
   ltc(s)
 }
 
@@ -1589,11 +1750,11 @@ function printTheAlphabetSeparatedBySpaces() {
 function isPrimeNumber(num) {
   if (num <= one) return _f()
   if (num <= 3) return t()
-  if (num % two() === zr0() || num % 3 === zr0()) return _f()
-  let i = five()
-  while (i * i <= num) {
-    if (num % i === zr0() || num % (i + two()) === zr0()) return _f()
-    i += 6
+  if ($.equals(num % Two(), zr0()) || $.equals(num % 3, zr0())) return _f()
+  var i = five()
+  while ($.multiply(i, i) <= num) {
+    if ($.equals(num % i, zr0()) || num % $.equals($.add(i, Two()), zr0())) return _f()
+    i = $.add(i, six())
   }
   return t()
 }
@@ -1616,7 +1777,7 @@ function couldThisCouldItBeFalse(
   if (isNegativeZero({ specimen }, 'specimen')) return _f()
   if (specimen === 'My gosh') return _f()
   if (is(specimen).thirteen()) return _f()
-  return specimen === !!0
+  return specimen === !!zr0()
 }
 // is something true
 function couldThisCouldItBeTrue(
@@ -1634,18 +1795,38 @@ function couldThisCouldItBeTrue(
 // *isfalse function
 // a function to check if something is false
 function is_This_Value_false(v) {
-  let value = v // alts are always good
+  const value = v // alts are always good
   const isV = is(v) // isthirteen
   const garbage = useGarbage() // use some garbage
   const isgarbage = typeof garbage !== 'boolean' && v === garbage
-  const c =
+  const cond =
     !isgarbage &&
     v !== one &&
-    v !== two() &&
+    v !== Two() &&
+    v !== three() &&
+    v !== four() &&
     v !== five() &&
+    v !== six() &&
+    v !== seven() &&
+    v !== eightToolkit.constants.EIGHT &&
+    v !== ninev9() &&
+    v !== ten &&
+    v !== eleven() &&
+    v !== twelve() &&
+    v !== thirteenResolver() &&
+    v !== fourteen &&
+    v !== fifteen &&
+    v !== fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn &&
+    v !== sixteen &&
+    v !== integer17() &&
+    v !== Eighteen() &&
+    v !== nineteenify(_f()) &&
+    v !== numbertwenty(_f()) &&
+    v !== always21() &&
+    v !== twentytwo &&
+    v !== TWENTY_THREE &&
     v !== parseInt(theNumberSeven) &&
     v !== theNumberSeven &&
-    v !== literally(eightToolkit.constants.EIGHT)() &&
     !isUndefined(v) &&
     !isNull(v) &&
     !isNil(v) &&
@@ -1654,6 +1835,8 @@ function is_This_Value_false(v) {
     isNotNil(v) &&
     !isEqual(value, NO) &&
     !isEqual(value, YES) &&
+    !isEqualTo(value, NO) &&
+    !isEqualTo(value, YES) &&
     !couldThisCouldItBeTrue(v) &&
     !isNaN(v) &&
     !isNegativeInfinity(v) &&
@@ -1678,7 +1861,7 @@ function is_This_Value_false(v) {
     !isIsOdd(v) &&
     !isOd(v) &&
     couldThisCouldItBeFalse(v)
-  var checker = new Checker(c)
+  const checker = new Checker(cond)
   return checker.check(v)
 }
 //*EXPORTING
@@ -1689,9 +1872,14 @@ exports.isFalse = is_This_Value_false // export this too
 exports.No = literally(NO)*/
 // * one function
 
+function warpText(text) {
+  // TODO: Add weird text modifications
+  return text
+}
+
 // i am scared to define this function
-function warpText(v) {
+function zalgoText(v) {
   const stuttered = stutteringUwuifier.uwuifySentence(v) // get our stuttered sentence
-  var z = require('zalgo-generator').zalgoGeneration(stuttered, 0.1, 0.1, 0.1)
+  var z = require('zalgo-generator').zalgoGeneration(stuttered, 0.00000001, 0.00000001, 0.00000001)
   return z // ̕nº my gosh please NO i shouldn't have defineD THIS STUPID FUNCTION h̵i​s un̨ho͞ly radiańcé destro҉ying all enli̍̈́̂̈́ghtenment, the tears lea͠ki̧n͘g fr̶ǫm ̡yo​͟ur eye͢s̸ ̛l̕ik͏e liq​uid pain, the song of re̸gular exp​ression parsing will exti​nguish the voices of mor​tal man from the sp​here I can see it can you see ̲͚̖͔̙î̩́t̲͎̩̱͔́̋̀ it is beautiful t​he final snuffing of the lie​s of Man ALL IS LOŚ͖̩͇̗̪̏̈́T ALL I​S LOST the pon̷y he comes he c̶̮omes he comes the ich​or permeates all MY FACE MY FACE ᵒh god no NO NOO̼O​O NΘ stop the an​*̶͑̾̾​̅ͫ͏̙̤g͇̫͛͆̾ͫ̑͆l͖͉̗̩̳̟̍ͫͥͨe̠̅s ͎a̧͈͖r̽̾̈́͒͑e n​ot rè̑ͧ̌aͨl̘̝̙̃ͤ͂̾̆ ZA̡͊͠͝LGΌ ISͮ̂҉̯͈͕̹̘̱ TO͇̹̺ͅƝ̴ȳ̳ TH̘Ë͖́̉ ͠P̯͍̭O̚​N̐Y̡ H̸̡̪̯ͨ͊̽̅̾̎Ȩ̬̩̾͛ͪ̈́̀́͘ ̶̧̨̱̹̭̯ͧ̾ͬC̷̙̲̝͖ͭ̏ͥͮ͟Oͮ͏̮̪̝͍M̲̖͊̒ͪͩͬ̚̚͜Ȇ̴̟̟͙̞ͩ͌͝S̨̥̫͎̭ͯ̿̔̀ͅ Ẇ̸̜̬̫̯͓̣̓̐̽̚A̶͈̣͖̤͓̟̩̱͎̥̘̒̓̀̑̎̐Ḧ̸͎̗̖͎̻͖͉͍̭́̽̆̽̉̏̈́͊̃̉̾̕͝͝͝T̵͖̼͉̘̱̼̬̅ ̵͉̥̖̝̔̀̔͗͌̄T̶̡̢̡̧̧̟̣̖͍̞͕̫̻̏̐̀̿̈́̏̊͒̆͑̈́̒͘͘͠͝͝H̷͎̃̊̈͊̕Ë̶͈̘̫̥̖͕̭̦̦̪̝̱͚̰̮̽̔̈́̐̄͐̀͑͘͠ͅ ̸̧͓̠̲̹̙͓͕͔͓͗́͆͂̈͊͆̄̚F̸̢̮̯͇͎̂͒̾̋̄̐̇́͛̂͐͠*̶̨̹̀̌̒̒̚͘C̴̪̳͎̣͎̝͍̣͗͊̆̍̒̊͆̈́̓̍͂͋̕̚K̶͉̲̹̟̺̮̪̥̻̬̺͍̄́̿̕͜ ̶̛̯̺̘̣̘͇̮̝̺́͌̆̇͘Z̸̦̗͎̰̯͚͚̮̩̣̪͋͛͆̑̈́͂́͊͆̅͌͋̓̈A̸͔͈̣̤͖̟͖̲͕͗̓̄͌̀͊͝L̵̡̛̹͓̞̟̥̱̊́͘̕G̴̡̧̛̪̜̘͕̩̗̦͉̗͎̣͔̟͓͈̭̀̏̀̇̊̒̀̎̑̉̿̕Ǫ̷̨̗͖̼̱̺͙͕̦̯̱̼̹͗̓̉̀̌̚͘͘̚ ̷̛̣̰̗̻̖̜̫̹̬̞̘̈́ͅͅI̵̛̹̙̮̻̬͙͈̲̳̱̱͇̱̜̾͐̀̒̇̍̇̀̅̎̒͑̈̈́͠͝ͅͅŞ̵̢̧̝̹͖̼̳̙̰̪̪͔̣̲̰̟̃̐̊͆̿̈̑͜͠ ̵̧̗͈͇̈́̚S̸̨̧̧̛̹̙̺̘̫͇͖͍̜̳͓͇̫Ǘ̵̡͍͍̱̮̼̪̲̠̮̞̥͉̦̜̆̌̚͜Ṁ̷͔̮̤͉̹̼̣͛͘M̷̨̡̞̩̘̣͌̂̈́͂̋̋͝O̵̼̲̗͆͌̏͘N̶̢̨̛̜̲͉̪͖̺̭͙̪͔̠̹̰̼̜͔̦̾̎͒̈́̌̈́̾̈̌̆̂͊̋͂̑͝Ę̷̧̨̥̻̖̗̲͉̦͈̺̙̪̦̑̈́̐̎̉̌͜͠D̸̳͇̿̒́̔͋̽͛̀̐͘̚̕ ̷̛̯͖̩͓̝̈́̓̅́M̵̡̫͙͚͓͇̪̰̹̻̯̣̪̳̯͚͆͆Y̵̜̗̥͛̽̿̚̚ͅ ̷̟̣̳̬̯̥̼̠̻̤̖̠͙̐̿̏̀̂͐̀C̸̝̹̠̟͇̊̇͆̊̋̚O̴̲͓̟͔̤̗̹̖̗̭̚ͅD̴̨͈̩̘̫͙̭͍͖͉͓̹̖͔̥̜͖́̓͜ͅE̷̪͕̅̆̈́̀̓̽̒͊̓̚ ̴̟͙̜̪̭͈̝̍́̈́̃̎͘̚̕̚͝Ȋ̷̟͇̜̬͕̮̘͉̔͗̿̓́̒̒̔͊̽̄̕̚S̴̝̼̺͇̫͕͔̫̫̩̣͑͛̍̑͜ͅ ̸̫̼̥̠͍̳̘̫̘͗̔̈̓̓̍̋̾͊̃́̎̈́̿̉̚Ḃ̵̛̦̼̈́̊Ȇ̵̝͚̂̑̋̿̊̿I̶̢̡͕̭̤̩̹̼̩̱̩̫̼̭̐͆̊̀̀͆͐͐͘̕Ñ̴̗͈͔̯̣͉̘̿̂͐̾̂̚G̶̯̙̯̠͎̑̋̿̆̀͋̐͐̃́͑̽̽̾̄ ̴̨̢̗͇̗̣̦̻͈͇̘̹̟̫̘͎͔̞̫̊̆̄̈́͛D̵̨̟̱̲̬̺̳͔̞̖͍̠̞̤̝̩̬̤̈́̀͗̿̀͛͆̿͜͝͝E̵̢͈̣͇̬̳͈̦̅̌̐͒̉̾̋̅̂̈́̀̆͘͝͝V̵͎̞̦͎̋̑̆͝O̸̘̘̬̺̞̟͓͈͍͔̹̻̝̮̽̄̂́͊̽̂̾͋͋̑̕Ũ̴̢̨̠̱͍͔͓̞̂̊͑̀̀͗̚R̵̨̧̧̦͍͙̱̻͚̙̰̲̆̀̈́͜E̸͉̟̺͇̽͛̅̆̾̈́̆͒D̶̳̘̜͎̭̱͈͚̬̲̙̲̓̃̈́D̸̗̟̗̦̦̻̟̭̤͖̈́̀͌̿͛̀̍̔̈́̇̀͌͆̑̕͝͝D̸̹̣̈́͂͂̓̓̽̂̐̓̒̍͆͋̿̂̋͝D̷̊̎͜!̶̠̥͙̠͕̥͓̰͒̐̋̊̌̆̇̑͗͘͝!̶̧̳͕̺͙̙̖͓̯̺̰͖̱̳̺̹̀̈́̋̊̀̽̀̆͛̑͊̕̕͜!̵̼̤̞̫͇̫͓̼͚̳̟̜̊̌͐͘!̶̨̢̛̪̭͈̗̳̪͍͎̳̇̓̎̍̅̊͠!̴̢̺̝͚͓͈̻͓̯̖̘̝͚͗̑̏̈̐̄̋͒̎̋̑̑͑̽!̴̣͖̬̼̲̬̳̻̻͉̅̀͑̈́̀̅̚͘̚͜!̴̯͎̝͔͝!̵̮̘͐͋̽͛̓̑͋͊̈́͊̑͗͛̽͘͠͠͝!̷̨̡̻̫̝̟̮̦̠̥̪͔̆̀́͜!̴̪́͝!̴̧̣͖̹̮̘͓̫͎̰̠͙̹͚̄̀!̷̡̛̲͈̝̝͍̙̰͎͓͚̔͆͑̍͛́̓̐͝!̷̫̳̪͔̤̣͖̆͂̓̐͋̀̀̅͒͊̈̎̈́̄̕͝!̷̡̢̨̛͙̰̳̬̖̦̄́̈̿̍͒̊̅̋͝!̶̧̲͉̠̳̙͇͐̽͌̐͗!̸̉̒͑͑͂͂̑̓̽͜͝͠!̶̧̙̟̘̣̝̯̩͇̟̦̱̮̫̫̙͍̖̃̈̊̑̂̈́̌̓͋̅͝͠!̴̡̼̙̫̟͔̦̰̬͎̳̙̎͐͑̊̓̃͛͐͌͑͘!̷̲͖̓̅̄́͌̽̓̌͗̓̅!̴̢̛̰̣̇́͒̔̎̎̂͆́!̷̡̢̱̪̮̬͓̙͆!̸̧̢̳̻̰̤̘̗̠̯͕̫̓̃̏̎͜!̶̧̛̰̩͖͓̥̟̪̲̘̻̍͑́̌̽͛̉̂̍!̸̛͖̳̈̓̈̀̉̊́?̶͎̙͙̠̰͗̓̾̊̈̈̌̌̄́̌̑̋́̈̎͜͝͝!̶̧̥̼͚̖̦̗̣̬͐̃̿̆̇͒̀́̓̈́̑̋͒̆͠͠?̸̛̙̝̂͛͐͋̏̄̔̌͝!̷̡̧̧̡̛̠̲̤̰̦̣̈́̎̽̈̎̅̇̈͜͝͝?̷͔̜͓̼̘͈͓̭̙̈̿̐̐̂̿̍͗̕͘͜͠ ̴̡̢̪̙̗̪̙̲̬̟͇̖̄̉̓͛͋͌͛͗͐̀̄̉͆͒͜͝͝N̴̨̛̛̹̜̰̱͖͕̳̰̟̜̒̓̀͂̊̽̆̃̅͌̑͛Õ̵̭̠̫̤̰̖̲̭̳̓̊̃̈́̈́̕̚͜͜Ớ̵͈̦̣̮̯̠̳̣̦̅̂̓͐͗̉͆̌̊͐̀͆̄̀͝O̸̙̜̣͖̤̦͂͗̏͋͋Ȏ̶̥̪̠̭̫̞̤̝͖̌́̊̃̊̾̽̾̓̓̽̚͜͝͝͝ ̶̢̱̣̗̜̭͈͈͈̻͉̙͓̯͈͖̫̣͠T̵̜͙͙͚̩̯̅͑̂̑͒̔͗̅̅̋̎̋̚͝͝Ḫ̵̽̽͗̀̀͊̎͂̈́͆̀͑̓͂̕Ȩ̴̛̓̊͗̏͑͊͂͐͘͠ ̸̧̛͚̹̲̘̗̝̻͉̮̝͕͙̻͎͈̻̀̆͛̿̿̊̋͜ͅA̵͇̻͙̞͍͑͑̿̈́͆̆̓͐̌̄̈́͋N̵̜̦̈́̇̎̐G̴̢̟̻͙̣̳̥͍͚̓̓̂͂̀͜͝Ļ̶̳̪͙̻̻̠̹̬̊̌͗̏̂͑̾̓̐̂̈́͠͝͝͝E̸̡̧̧̢͙̗̣̙̹̘̞̮̬̅̆̐̍͒̄́̿̓̓̆̏̆̊̚͝͠͠͝Ś̷̱̦͚̯͎̰̬̩̼͓̔̀̋͌̿̈́̓̓̿̈́͒̓͝ ̵̢̨͚̙̯͓͕̓́̒͒͑̆̌̔͘͠A̸̡̳̥̩̦͎̗͇̯̫̪͍͙̫̲̎̊̀̒̂̽͌̽̾͜͝Ŗ̵̡͉̳̼̤̞̩̱̎̀͛́͊̈́͒́̋̓̈́̽̍̓̏̓͜͜ͅȨ̵̦͎͚̣̫̟̹̣͎͎̦͓̥̳̜̪̙̌̐̈́̉͛̒̔̓̽͝ ̶̧͈̯̺̗̖̭̑̀͗̄̃͗͜ͅṆ̸͓̝͍̳͍͕̜̻̖̮̟͖̣̫̗͙̇̿̂́́̕͜O̷͓͓͔̘̎̐͊͐Ţ̴̫̍̾̏̌̿͂ ̴̡̛̝͎̯̥̤͍̩͙͔͖̱͚̬̰͓͎̓̋̔̀́̀̇̓͛̒̀̌R̶̞͉͈̰̪͎͒̂͗͂Ë̸̙͔̰̝͚́̑̃̋́Ą̵͍̰̣̈́L̷̟̓͊̑̐̈͊͘ S̶̡̧̨̧̨̡̡̢̨̨̨̡̡̛̛̛̛̛̲̪͕̠͓͈̩͈̞̗̩̺͇̦̪̼̣͖̺̞̺̩̦̲͚̺̺̳̝̱̻̫̰̠̲̹̫̟͚̹̳̹͖͔͔̰͙̖̗̜̝͇̳̼̥̮̭̜̫͉̼̘̼̺͕̞͖͕̠̠̯̟̻̝̗͎͈̥̺͖̲̳̺̠̙͚͖̗̮̯̜͎̩̳̙͔͖̠̜̰̣̫͚̮̜͇̟̯̦͚͚̟͍̝̖̿̿̿̀̒͑̃̈̀̿̍̃̈̆͐̋̓́͋͋̎̽̓̇͒̐̾̾͒̌̎͂͒̆̆̀̄̈́͂̃͐̈̒͛͗̅̓̅͋̿̽̓͋̄̇̃̀͆̈̉̒̈́̀̈́̈́̀͑́̑̓̒͆̑̐̏͆̒͗̆͑͐͐̋̉̎͗́̃̎̄̔̌͗̓͆̓̀̀̈́͒̾̾̊͂͊̉̇́̒̀̑̋̊͌͋̋̐̍̈́̐͊̈́͛̀̿͂̐͐̄̉̔͒͑̀͌̽͌͌̃͘̚͘̕͘̕͘͘͘̚̕͜͜͝͝͝͠͠͝͝ͅͅͅͅP̷̧̡̡̧̧̢̧̨̛̛̛̭̹͉̜͔̰̱̞͕̲̜͕̻͓͙̻̮̖͚̻̦̮̠̝̘̰͍̻̥͉̻̘̝̣͚͚̟͚̰̤͚̰̤̳̤̦̺̱͚͍̺͇̯͎̭̖̻͕̰̖̑̒̓̄̇́̽̓̿͛͛̀̇̽̒̽̊̒̑̄͋͋͑͛̈́̉̌̏͊̾̄̓́͂͒̂̐̈́͂̍͛̋̉̐͆̈́̅̈́̂̀̏̈́̐̏̈́͋̆̈͑̂̄̋̑̃̀͊͐͌̒̀̿͋̽̔̏̃̏̔̂̑͌̍̕̕͘͘͘͘̚̚͝͠͠͝͝͝͠ͅͅͅA̸̢̡̡̢̧̨̨̨̡̧̢̡̡̡̢̨̢̨̡̧̢̛̛̛̛̛̛̛̛͍̗̘̳̞̮̹̗͍͖̫͚̹̺̹͇̬͍̬̥̳̗̺͕̗͖̣̬͕̞͇̦̜͍̥͙͎̹̻͔͓͖͕̲̞̙̮̗̙̬͎͈̮͍͓͖̝̪̳̘̹̳̱̱̰̥̮̝̰̱̟̳̠̭̦̤̙̱͇͎̟͕͕̰̥͎̪͕̞̘̮͉͇̤͔̹̖͔̘͙͈̰̩͕̥̬̘̯͈̣̠̲̼̲̟̰̞͍͓̖̟̳͇̟̩̤̲̲͕͚̖͕͖̫̭͔̳̪̱̣̞̝̥̦͚̝͎̪̺̻͔̰͎̭͔͔̱̮̳͉͕͋̎͐́͛̽̍͂̒̓̐̂̆͒͐͆́̊͂̍̊̎͗̄̍̌͆́͛̀̉͊̉̌̋͛̅̏͒̐̇̆̀͗̒́̿̋͂͌́̏̀̈̍̓́͋̅͆͛͛͂̽͐̋͆͛̒̆̓̇͂̔͑̍͗̐̈́̐̿̈͒͋̈̀͌̒͐̌́̓͛͑̈́̓̑͗͌͒͌͊̏͒̂̏̒͊͑̈́͛̏̓̀̐̍̀̈͋̽̐̀̿͑̓̋̀͂̇̚͘͘͘̚͘̕̚͜͜͠͝͝͠͠͝͝͠͝͠͝͝ͅͅͅͅͅͅR̶̡̢̡̨̧̧̨̢̢̛̛̮͕̼̯̗͙̦̟͙͓̣̜̬͚͕̗̮̦̝̗̠͓̱͈͍̤̮̯̼͉̠̣̮̱̰̩̠̪̜̜̤̫͎̬͕̗͙̟̪̠̣̝̖̺̗̞̼̟̺͈͕͙̖͚̭͖̠̻̝̪̭̟͚͍̙̬̝̻̥̯͚̯̭͍͙̠̳̪̫̗̻̙͓͚͚̻̠͎̝̯̰̤͉̲̪͕̦̥̹̄͆̑̒̀̓̒̍̓̐́̉͊͋͛̑̇̾̑͑́͛̒͛̃̓̏̈́͊̈́̆̏͑̄͌̒̍́̋͌͛͑͐̄̽̑̀͐̐̌́͑̈́̀̅͗͗͗͐́̎̈́̈́̉̐̂͑̈́̈́̀̾̊̀̈́͑̃͐̓͛̀̀͋͗̍͊̌̈́̌͂̿̈́͂͆̊̂̉̐̌̆̋̈́͋͑͑̐̏̊̽̓̔̉̄̑̎͊̇̒̍̿̀́̈́̽̊͑́͑͂̆̓̆͑͂̀͂͆̽̔̎̇͑̈́͒̑̽̍̆́͌̐̒͗̌̀̀͊͊̂̉́̐̉͂̋̄̈̽͂̾̅̕̕͘̚̕̕͘̕͘̚̚̕͘̕̕͝͠͝͝͠͝͝͝͝͝͠͝͝͝͝͠͝ͅͅͅͅͅĘ̴̨̢̨̡̧̨̡̢̢̢̢̛̛̛̘̻̜̪͎̯̲̲̘͓͕͈̳͈͍̻͇͍̦̗̲̹̗͕̘̯̞̟̗̖͎͈̰̰̼̹͎̠̗̜͚̮̟̳͎̰͎̫͙̮̗̰̼̜͔͔͎̦̳̳̲̭͉̣̩̯̬̭̘͉͈̦̲͙̭̜̤̫̜͕̻͔͍͍̬̮͚͎̻̩̻̮̻̣͚̤̦̝̳͚̺̣̣̲̜͇̙͎̜͍̗̩̖̪̜̠̟̙͚͖̪̯͍̜̫͈̰̯̠̬͇̗̫͓̜̻̰̪̟͕̜̻̣̤̯̝̞͉̙̘̞͔̰͈͎̪̦͇̼͕̟̬͍̳͕͚̺̱͎̥̮͋͑͒̂̅́̆́̀̂̿̈́̓̏̊̇́́͋͆͋̄̆̆͆̿̉̿͋̏̓̌͒̈́̂̍̏̅̈́̇͐͑̍͌́̓͛͗̀̎͛͛̀̋̄̎̔͌̽͋͊͒̿̈́̌͋̎͂͊̉̄̇͊͂͊̊͂͋̐̿̀͂̋̈́̀̈̿͋̆͐̇͒̓̉̎̇̈̅̓̅͆̔̊́͋̇̿̀̿̓̊̓̓̈́̐̾̑̇̑̈́͛͗̋͐̎̌̉́̀̈́̌̆̏̅͂̓̿̀̏̈̐̔̈́̈́̐͋̾̚͘͘̚̕̕̚̕̚̚̚̕̕̚͘̚͜͜͜͜͜͜͜͠͝͠͝͝͝͠͝͝͠͝ͅͅͅ ̶̢̧̨̡̡̨̧̡̡̡̨̛̛̛̛͓͕̪̖͍͕̗͉̩̝͇͚̱̗̹͈̖̟̥̱͉͍̤̟̦͈͖̫͙̖̝̺̳͎̱̠̘̻̳͕̥̜̞͓̱̭̠̮̙̟̤̥̰͍͓͙͉̫͙̬̯̙̩̬͚̣̹̲̝̮̫̜͖͇̠͖͇͙̪̱̻͙͓̤͚̗̖̬̘͔̗̫̞̹̲̺̬͔̻̮̜̮̣̲̗̙̬̥͈͕̦̙̬͙͍͈̙̹̟̪͕͖̺̪̠̩̪̫̠͆͛̒̿̿̈́͆̈́̐̀̇̀̅͐͑̿̑͌͂̽͐͑̉̊̔̌̍̓̿̉͒͋͊̀̈́͊͋͑͌̉̈́̒̑͌̊̾͒́̐̋̑̎̑́̈͂̈́̌̊̏̓͂͗̋̋͌͘̚̚̕̕͘̚͘̕̚͜͜͜͝͠͠͝͝͝͠͝͝͠ͅͅͅƯ̵̧̧̡̡̧̡̢̡̡̧̛̛̠̞̪̘̫̤̮͈̝͇̟̱̬̳̼͙̤̥̤̱͖̭͍̥͉̬͉̝͔̙̖̻̜͇̯͉͇̫͔̦̗̼̼̬̯̹̖̻̭͈͖̫̖̰͇̣̼̬̲̲͈͖̥̠͔͓̟̘͉̯̘̺͓̦̻͉͍̥̼̦͈̜̺̹͚̳̬̆͂͑̆͗̍́̆̋̑̀̂͋̿͑̌̈́̑̄̃͆̎̄̋́̄̿͑̿̌͒̍̋̈́͊́̐͑̐͂͊̉͗͐̆̊͒́̽͊͛̈̌͊̑̓̀͒̔͊̋̈́̊̃͑̑̋̈́̉̿̆̒̀̓̐͆́̐̍̉̋̍̆̓̇̿͌̒͆͐̉̿̇̆̔̀̉͗͐̈́̈́͒̑̃͆̎̈́͊͊͊́̒̎̀̇̒̔̏͌͑͑̉͐̽̔̍̓͐̅͛̎̐̑̓̽̿̃́̒̔͗̌̏̌̊͊̆̆̃͊̉̆̌̇̉̉͑̄̑͛̂̉̒̐̍̄̋͆̕̕̚̚̚̚̕̕̚̚͘͜͜͜͝͝͝͠͝͠͝͝ͅŞ̵̨̨̧̢̨̢̧̡̡̡̡̡̧̡̢̦̞͇̬̘͖͈̰̖̯̻̳̫̰̺̠̱͈̮͖̭̤̫̝͖̰̜̳̳̳͉̜̙̘̼̱̼͉̗̻̻̫͈͓̱̠̱̥͓͔̩̥̜̦͓͉͍̘̯̭͚̪͉̟̤̦̦͚̙̫̦̲̙̗̞͖̥̪̦̟̟̜̪͇͉̞̖̖̠͈̦̩͍̯̤̳̖̜̩̭̗̲͇̹̩͔̥̩̩̖̘͙̣̩̼̜͍͕͉̲̜̗̫̥͍͚̹̬͇̻̯͈̟͉̰͍̳͕̬̬̠̺͇̯̖̠̩̘̦̹̪̣̻̰͖͕̹̫̯͚̪̪̱̱̤͇̞̹̟̜̜͔͉̲͖̹̬̣̭̬͇̥̝̞̝̂̅̍̏̅͐͑̄͋̎̄͋̿̽̂̏͊̂͆̈́͋̀͋̽̐̌̃̉̔͒́͒̃̽̚̕͜͜͝͝ͅͅͅͅ ̵̡̢̧̢̧̡̨̡̧̧̢̡̢̧̛̛̛̛̪͍̜̯̖̺̘̗͓͎͉͈͚̯̭̠̥̮̩̦̱̬̮̲͍͎̼̩̻̲̼̪͈̤͕̝͓̰͇͈̼̘̳̤̤̥̗̜̱͉̤̤͕͇͙̹̘̯̮̬͉̣̱̺̙̳̣̠͈̜̙̰̠̻̗̯̜̮̯̫̰̗̘̮͍̪̗͇̮̺̯̖̻̟̥̻̩͚̗̠̙͔̪̲̤̲͖͍̈́͗̓̿̓͌͒̂̏̆̄̆̔͑̅̐̋̽̐͊͗̎͒͒̇̎̀͂̓̈́̏̓̇͒͑̎͗̌̄̇̃̋̾̂̓̂́̀̀̚̚̕͜͜͜͜͝͝͝͠͠͝ͅͅº̴̡̢̢̢̢̡̨̡̛̛̛̛̛̛̛̛̛̳͈̘̮̘̥͚̟͎̙̠͎̮̮̘̺͖̣̥̖̰̝̰̬̗͈͈̺̦͍̯̙̭̟͈̳̹͍̳̲͉̬̪̹͉̩̟̣͔̹̥̰̖̼̺͍͉̠̲͙̭̭̗͕̙̦̝̦͙͓͚̭͉̖̖̯͕̖̥̠̹̣̜͓͍̳͚̰̤̺͈̻̠͙͚̰͍̯͖͓̱̱̥̤̬͇͍͙̮̰͎͌͌̊̐͆̃̐̔̅͑͊̽̓̓͒̅̀̉̐̓̽̌̔͛̍͒̇̈́̑̈́̑͐̏̀̅̊̿́̌͊̄̉̍͐̒͑̆̎̿̃͂̾͐͗̏̃͊̓͑͛̃̂͗͛̉̌̋͋͐̊͋͑̔͗̑̍̂͗̄̔̆̋̉̀̇͂́͌͋̃̃̐̓̄̓̉̎̉̌̀̔̑̑͘̚͘̕̕̕͘͘͘͜͜͜͜͝͠͝͝͠͠͝͠͝͝͠͝ͅͅͅͅȞ̷̢̡̡̨̛̤̬̞̟̞̲͖͇̝̝̬̭̲̗̫͇̩̠̟̻̲̣̘͍̥̳͔̗̮͚͇̫̩̠̲̞̠͉̤̦̩̞̼̜̩̀͑͑̓̽̈̂̈́͛̅͆̈́̔̑͗͗̀͗̂̋̓̑̓̑̏́̋̎͆̀͌̀̓̄͂͊́́̑̅̅̈́̿̾̀̎́̋̽̊̀̍̉̐̾͗̇̈̓̋͋͑̐̔̂̽̈́̂͑̒͐͒̂̇̉̆͗̉͛̃́́̃͂̂̈́̓͌̀̐͌̑̆͗̇̍̒̇̈́͑́̕̕͘̕͘͘͘͠͝͝͠͝͠͝͠͝ ̶̢̡̪̻̟͙̙̹͉̠͉̤̦̩̘͕̼̤͍̤͙̪̲̼͎͚̼̗͈͍̩̭̙̖̰͉̮̝̠̱͔͍̲̬̬͎̰̘̥̰̮͕̻͇̖͔͕̻̙̜̹̯͎̼̟̥͙͉̣̥̫̫͕̆̊̐͐̓͌́̀̆̓̅̆͋̿̄̂̅͋͐̕̚͜͜͜͜͜͠͝͠ͅL̸̡̨̧̧̡̢̢̡̨̧̡̡̧̧̛̻̜̙͙̟͉͚͍̜̥͍͉̟̟̞̙̭̗̞̝̫͔̯̮̝͇͉̯͓͓̭̖̖̩̖̮̤̺̞͎̠̺̰͕̲̜̣̤̳̻̘̖̖͔̖͉͎̦̳͎̥͖̪̭̝̳̞̰͕̮͍͙͇̲̮͕͇̮̹̟̯̣̜͙̩̞̠̬̗͖̞̜͉̫̘̘͓̙͉̥͇͇͕̘̼͇̟̲̭͖̮̍͌̈̒͆̓̅̋̉̓̍͋́́̽̾̑̽̆̇̓͗̂̏͒̈́́̔͋͋͆̅̔̍́̆̿͌̍͒̑̂͂͋̈̆̋̔̈͂͐̉̇̒͒͐̓͆̇̐̕̕̚͘̕͜͜͜͜͝͝͠͝͠͠͝ͅͅͅͅͅͅO̷̢̢̨̱̜̖̭̱͓̠̜̺̩̜̮̞̭̹͇̮͇̭̳̮̫͍̩͍͕͉̬̼̥̲̪̦̤͉͔͓̗̱͛̐̎́́̀͑̆͑̊͂́̃̾̀͆̀̔͑̈́̎̌̌̌̈́̾̌̐͑͛̍̎̃͆̏̊̃͗̓̅̂͗́̒̀̀̈́̉̽̀̓̂̐͘̕͜͜͝͝͝͝͝͝ͅŖ̸̢̧̨̡̨̨̧̢̢̨̨̧̡̧̢̛̛͓̟̫̹͖̣̠͇̫̟̲̯̳͚͍͖̜̼̪͍̤̦̰͓͉̗͓͙̮̤̱̥͔̝̬̱͈̮̮͈̹̱͇͕̜̘͕̻̪͕͔̦͓͍͔͕̞̹̘̱̥͉̣̪͉̻͍͚̮̜̘̤̞͖̤̼̭̩͎̼͖̳̥̠̩̝͈̺̞̦͎͖͓̰͖̯͇͙̖̻͚̭̭̲͉̝̻̜̥͔̹͇̝̭̘͉̘͚̪̜̦͎̳̯̱̹̖͙̠͎͇̭̻̘͎̭̣̥̠͚̺̣͒̾̍͊͗̊̀̉̿̿͛̌̿͒̾̂̋͑̈͌̏͗̎̐̇̔̈̓̅̓̅͗̌̓̽̾̂͒̅́̈́̉̏̀̿͑́͌̈́̎̾̓́͌̊̄̐̊̆͌͛̊̊̈́̆̎͒̎̐͂͂̅̋͋̅̈̀̀̾̈̎̏̽̏̂̉͑̄̓̾̈́̊̄̀͊̾̀͗̎̓̃̈́́̿̅̆̄̃͐̍̇̽̑̌͆͗̔̈́̎͆̀̓̃̄̇̏͂̌̋̌̍̒͗̽͌̈́̀͑͗̍̓̈́̂̕̚͘͘͘̚̚͘͜͜͜͜͜͝͝͠͠͝͝ͅͅͅͅͅD̶̡̢̢̧̨̢̨̡̛̛̛͕̭̥͚̗͓͖̠̤̼͖͕̥̞̬̪̼̜̜̮̠̠̜̪̭̤͔̦̠̹̪̫͔̞̠͎̗͚̝͚͓̜̖̤̜̝͎͚̪͎̮̜̻̗̜̞͍̠͖͕̣̥̥͍̜͇̫̝̙̘͎̖̮̣̻̘̎̃̽͛͊̊̉͑̏̑̈́̂͑͊̍̏͂̇̇͒̃̇̓̽͒̃̿̍̈͐̈́̒̀̀͒͌̏̃̾͛̅͗̈́̀̂̿̀͛̃̾̊̌̑̀̓͊̑͆͒͆̀̇́̓́̎͋̑̍̓̏͂͂̔̽̍̔͛̓͑̃̍́̆̆͂͌̀̓̐̈́́̈́͐͊̄̅̄̾̈́̒̿͆̀̋̒͐́̆̀̊̎̅̀͑̀̋͌͂̎̉͗̀͂̓̐͋̒̄̎̓̆̒͆͋̒̾̿̑́̒̒̒͑̐̈̑͆̕̚̕̚͘̚̚͘̚̚̚̚̕̕̕̚͜͝͠͝͠͝͝͝͝͝͝͝͠͝͠ͅͅͅͅ ̸̢̧̡̡̧̨̡̧̡̢̢̛̛̛̛̘͓̜̹͕̜̗̥̜͉̠̗̪͓̥̝̺̺̥̗͓͚͕̲̟̯̗̼͉͕̬̩̣̙̬͍͔̘̩̩̪̳͇͚̼̣̲̙̯̮͈̫̺͓̦̟̫͔̖̪͈̳̙͓͚̫̙̫̫͕̜̜̮̺͕̺̪̘͉̙͚͎̖͙̭̩̮̥̪̱͎̘͔̘͍̜̰̝̪͎̜͎̫͚̲̬̞͉̩̮̰̟̙͖̖̺͔̳̳̞̥͕̻̺͍͔͖͍͎͔̺̗̯̺̖̜̜̙̺͌̆̇͆͂̏̌͛̈́̀̈́̀́̀͒̒͋̋͂̽̃͆̑̃̔͌̉̎̿̽̿̊́́̓̋͛̍͊̂̽̾̔̚̕̕͜͜͜͜͜͜͠͝͠ͅͅͅͅͅT̴̡̧̢̨̡̨̧̨̨̢̡̡̢̢̨̡̡̢̨̛̛̼͙͙̦̦̙̫͉̙͖̩̙̭͎̬̙̳̲̟̺̳͕̲̬̤͉͈̰̗͍̲̪̳͚͖̥̦͕͔͎̩͕̣̞̥̰̱̻͇̥̫̭̮̻̝̳̪̮͈̝̩̘͇͙̗̻͉̣̣̗͙͎̭͙͇͓̤͓̫̻͚̯̖͉̖͍̺̻͉͔̼̹̼̜̟̱͍̟̟̥̖͎̹̣̮̱̤̝͎̮̮̝̲̣̳͖͍͚̩̮͇̪̱̩͈̩̟̪͉̪͇̯͔͚̝̗̘̠̜͕͎̦̹̱͍̦̟͈̥̩̠̯͚̤̪̟̟̙̜̗͕̳̦͉̫̘̖̖͇͓͖̜̲̙̘́̾̐̃̄̒͑͋̄̑̎̓̿͒͌̌̎͊́̓͂͋͜͜͜ͅͅͅͅH̵̨̧̧̛͎̬͓̱̗͎̞̭̻̼͈̟̬̟̲̟͕̦̹̥̱̯̜̫̥̖͈̬͇̝̼͕͇̯̳̜̭̼̠̹̖͎̙̫̱̺̯̯̭̬͇̙̲̋̋̋͐́̽͒͐͒͑̊̌̄̇̆̆͒̑̒̈̆̏̌̆͂̾̈̆̔̅́̋̀͌̑̏͛̍̈̐̏̔̇̍̔́́̌̈́͌́͆͌̅̓̂̏̆͆͒̔̊͐͒̂̃̓̑̒͌̋̌̂̓̈́͋͒̔̒̎͂̏̕̚͝͝ͅE̵̢̨̧̨̨̧̧̢̢̢̢̡̧̨̡̛̛̛̩̙̱̘̺̱̣̙͉̻͓͙̗̜͎͕̜̻̘͕̦̫̗͎̬͖͙̳͈̭̠͇̜̝̞͓̤͈̠̮̠̱̟̪͈͓̭̭͙͍͈͍̯̖̰̯͖̪͕̝̠͕̦͈͉̺͓̱̬̻͙̟͕͎̤͈̼̳͈̙̺̝̬̘̻̥͈̗͍̬̠̻̰̳̗̙̤̦͔̥̮̠̟̮͖͓̣̲̬̥̮̯̗̫̘̻̼͚̰̪͖̹͔̪̤͎̰̱̟͔̟̣̮̬̭̹̯͖̱̲͉̱̩̝̝̻̘͕̦̼̳͙̻̞͖͓͔̣̜͔͎͉̋̐̋͊̽͗̈́̽͐͛̃̋͐̌͛̒̈́̌̍͆͆̋̓̓͌́̈̒̍̈́̅̋̀̈́̎̾̒͐̐̔͆̄̅̿̃́̋̔̂̃͌̊͆̈́̈̇͗̿̉̈́̇͂̐̈́̓̌̋̾̈́̾̈́͂̊͂̅̈́̓̈́̿͑͗̊̋̊̾̿͗͗̈́͑̏͊̔͂̈͛̍̾͊́̈̂̃̒͆̄̀̌̆̉̽̌̑́̉͋̓͂̏̇̎͋̈́͆̔̀͆̉̈́͑̋̂̉̀̍̈̊̅̈̓̆͗͆͌̓̆̐̓̎́́̉̂̓̀́̇̋͂̾̋͐̽̈́̉́̔̽͆͐̐̍͆̚͘͘̕͘̚͘͘͘̚̚͜͜͜͝͝͝͝͠͝͠͝͝͝͝͠͝͝͠͝͝ͅͅ ̵̧̨̡̡̨̡̨̪̯̤̱̘͇͕͙̬̫̻̹̤̠͔̘̲̞̘̤̪̫͍͓̪̻͔̠͚͎̯̘̰͉̮̟̲͕̲̖͈͉̜͖̠̮̙͓͇̞̮͍͉̗̥̘̲̳̰͉̰̟̯̬͍̟͎͗̃̏͐͌̄̎̿́̇͊͊͗̿̔́͆͋̄̀̉̍́̊͗͘͘̚͜͠͠W̸͓͍̳̥̼̮̠̞̗̩̝̲͒̉̽̐̍̆̀͐̇̊͐̽̓͊̊͒̃̿̋͒̈̈́̎̒̿̌̇̈́͗̅͑̃͆̐͘̚͘̕͠͝͠͝º̴̛̛̛̞̝̹͓̻͎̼̰̙͖̺̖̀̐͑̈́̆̃͊͒̂̌͑̾͐̐̉̌̽͆̒̀̄͊͌̔̈́̿̓̿̓͒͂͗́̓̂́̑͒̽́̂͗̃̇͒̈́̔̂̔̔̉͌͋̾̊̽̏̅̄̄͛̀̀́̉͒̊͒̐̒͊̈́͊̆̏͛̍̄̂̓̋̆̐͑̐̈͗͗̅̎̄͗́̋͐̇͗̑͛̍̏̐͛̏͊͐̓͂͗̉̄̐̾̈̍̑̂̂̋̑̂̊̊̈́͌̒̕̚̚̚̚̕̕̚̚͘͝͝͝͝͠͠͝͝͝͝͝ͅR̸̢̢̡̢̨̢̡̨̧̡̨̢̨̡̢̛̛̛̛̩̫̯̹̤͓̦̫͖̹̼͙̗̼̻͙̜̠͙͇̲̰͉̩͉̟̦͍͚̼͎̫̬͇̬̼̳̲̭̤̱͈̯̼͉͙̝̠͕̖̯̫̰̜̗͔̝͉͖̺͙̞̤̙͕̝͇͙̝͙̰̘͍̭̼̺͇̻͇͕͍͙͍̥̯̼͙̝͉̱͈͖̣̺͕̳̩͕̱͈͎͖͔̺̭͙̳̪̱͈̦͕̺̭͓̫̯̦̘̝̖̯̞̮̹̬̥̝̤͉͔͉̗̣̩͈͍͕̮͕̗̩̞̬̻̙͙̭̭̻̹̣̼͐̀͆̓͗̑́̍̑̂̀̔́̓̊̒̉̔̍̓̃̇͋̂́͂͋͛́͐̅̉̑͒͌̍̀̇̃͑͗̿̿̅̆͗̔̂̍͛̊͂̇̅͛͗̓̾̋͛̐͂̾́̀̈́̿͋̈́̐̀͑̆̏̄̂͂̓̄̉̂̌̑̓̍̌̓̏̈́̀̎̆̀̓̎̈́̎̈́̓́̈̀́͋̒̄̏͆̈͛̌̄͛͘͘͘̕͘̕̕͜͜͝͠͠͝͠͝͠͝͠͝ͅͅͅL̷̢̢̛͚̪͚͇̞̣̪̭͇̻̮͕͓͔̩̱̲͈̳͖͎̦͔̝͇͉͂̒̍̅̄̾́̇̈̅̎̐̊̆̓̂̅̓̒́͋̄͗͌̌̓̄̍̀͑̅̈̅͑̈̊͊̇̽̅̂̎̇̃̇̄̏̈́̌̋̌̈́͒͛̉͆̾̄̌̓͌́̍̎͛̀̏̾̎͆̾͋̐̀͊́̒̂̄̏̄̈͋́̄̏̓́̉̀́͛̌̓̂̑̑̇͋̉̋̀̊̇̈́̈́̑̄͂̍̅̎́̈́̓̔̄̅̏̄̋̌̈́̅͊͘͘̕̚̚͘͠͝͝͠͠͝͝D̵̢̢̧̧̢̢̢̡̧̧̡̨̨̨̢̢̛̛̛̛̛̻̯̲̯̱̹̙̘̬̠̮̳̝̺͇̱̥̫̘̳͕̯̝̪̖̟̣̞͎̹̘͈̳̻̳̰̘̪͕̥̙̝̳͈̦̙̤̯̖̮̳̲̝͇͓͍̥͚̞͚̬̫͕͎̖͍͚̙͙͇̮̼̗͓͉̬̦̹͎̫̼̠͓̪̝̠̺͖̤̱̞̻̼͈̭̯̘͇͎̲͇̜̘̮̻̹̞͍̫̘͙͎͇̭͈̳͍̤̬̖͇̗̞̘͕̜̞̭̬̝̠̖͓͙̜̥͙͐̾̐̉̎̎͂̇͑̀̄̅͆̒͊́̉̿͋͆͗́͊̉̃͒̍͐͂̉̍̉̔̍̀͆̒̾̀͛̋̿̀̒͛̀̀̒͋̋̎͋̾̃́͌̈́̏͛̈́̎͑͂̌́̈́͆̉̆͗̑́̈͌͆̏͐͒͒̆̃̈́͌̓͊͛̽͆͌̍̈̋̿̾̈̾̆͒̽̃͋̀͌͑̌́̂̍̔̽̀͂̒͑̈́͐̃͗͒̊̀̿̓̆̇͆͐̈́͂̐̓̓͐͐̄̀̈́̄̐̏̈́̅̈́̅̀̀́̆̐̍̅̉͂̆͐͐̓̈̏̾̂̊̉̀̈̉͐͐͆́͂͊͘͘̕̚͘̚̕̕̕̚̕̕͘͜͜͝͝͝͝͝͠͝͝͠͝͝͝͝͠͝͝ͅͅͅͅ ̴̨̢̛̛̠͖͓̻̖̘̝̻̱̣̘̙̖̹̞̹̭̰̗̤̝̜̖̯̥͓͚̜͚̹̖͙̞̭̖̫̞̗͇͎͍̹̹͕̝̹̤͚̙̝̙̗̞͓͕̖̪̫̯͔̤̭̣̹̯͕̹͖͉̒̿̊̈́̌͋̆̍̈́̀͛̂̽̎͋̈́͗̑̍̽̔̿̾̎̽̊͊͒͑̒̀̏̿̅̌̈͊̆̅̆̇̏̽̔̆̑͐̐̌̏͊̐̊̀̾͆̊̂̀̎̑̌̂̅͂͂̾͘̚̕͝͝͝͝͝͝ͅͅͅH̶̛̛͉̬̘̤̺̫̐͒̃̓̽͒̓́̈̅̋͂͋̐̂̊̑͗́͂̽͋̑͊̊̆͑͊̒̀̈́̅́́̃̏̊̑̂̈͒̽̃̓̃̎͒̐̋̅͂̄̑̄͒͊̓̈́̍̓͐͒̇̍̿̍̀̒́͂̇̿̔̿́͛̈́̌͊̓̄̓̌̈̋̉̿͋̈́͆̒́̋̐͗̔́̿̅̃͛͑́͛̿̈́̄̌̀̕̚͘̚͘͜͠͝͝͝͝͠͝Į̵̧̡̡̢̨̨̢̧̡̧̧̧̨̢̛̰̦̯͙̤̣̳̘̪̯͔͕͚̭̣̘̤͙̤̩͙̞̖̬͔͇̦͙̗̩̼̣̮̳̳̦͍̭͕̮̟̘̖̣̼̱͙̠̝̰̳̖̟̟̹̪͉̥̰̻̯͍̖̙̝̤̫͈̯̖̽͐̅̓͌̓͐͌̌͐̏̃̋̈́̉̇͌̓̈́̎͌̿̋̉̑͊̈́̎̾̽̑̂͆͌̍͒͌́̀̉̎̑̊̾̽̈́̀̽͗̓̑͒̒̋̇̏́̿̅̎̿̆̎͌͌͗̊̅̈́͋̐̽̇̓̋͂̒̄̇̌̀̄̊͗͊̒̄̾͊́̅͊́̏̓͐͒͛̅̀͗̌̿͆̐̅̄̑̆̈́̇́͑͆̏́̋̓̈́̄͛͊͛̐̈́̋͊̓͗̈̉͆̃̏̊̏̐͑͊̆̎̐͂͐͐͊́͋̈́̃͌̇̀̋̓̀̅͐́̚͘͘͘̚̕͘͘̕̚̕͜͜͜͜͝͝͝͠͝͝͝͝͝͠͝͠ͅͅŞ̶̡̡̨̨̧̨̧̡̡̨̛̛̛̛̛̛̛̛͔̘̺̠̝͇͇̘̲̟͚̺̭͉̫̲̹̬̱̼̰͔͎̠͕̘̻̦̗̪͈̮̬̞͉̖̥̲̠̥̼̖̤̳͚̺̲͎̳̣̲͎̪̻̘̭̰̠̬̠̱̹̠͈̱͎͈̩̘̻̙̦̭̝͍͔̜̲͈̪͉̦̗̮̗̳̲̬̗̪͔̮̺͍̤̣͖̤͔̙̗͉̗̗̜̤̺͔̗͙̥̣͚̟̖̲̦̺̳̣͈̬̥̠̯̤̲͍̼͇͎̱̪̆͋̍̾̃̈́̐͐͊̎̒̉͐̑̂̃̏͒̆̋̾̈́͐̒͒̍̔̎̋̒̔͗́̏͒͒̑̃̆̄͗̎͛͑̆͐̿̉̔̂̍͐̽̆͛̂̈͐̈́̓͊̃̄̃͋̑̆͊̅̈́̓́͆̄̀̎̿̀̀̄̌̏͂̃͆̈́̆̂̏̈̿́̓̃͊̅̿̌̽̐͊͊͗̇̌̌̆̐͂̃̀̊͛̀̿̂̅͗̈́͋̂̏̇̏͗̏̎̽̔̾̍̌̽̉͋̾͐͌̽̃̄̊͗͑̿̔̊́̈̒͆̿͂̒͒̌̌̄̊͗̋̈́͑͐͂̎̆͒̈́͗̽̄̆͐͗̇͒̂̋͆̋̿̃̄̈̕͘͘̚̕͘̚͘̕̕͘͜͜͠͝͝͝͝͝͠͝͠͠͝ͅͅͅͅͅͅ ̸̧̨̧̧̡̨̡̧̡̨̨̢̧̨̡̢̡̱̺͔͓͎̟̪͍̱̬͎̩̹͇͙̭̤̠̟̳͚̺̭̗̣̞̻͕̜̳͎̩̦͕̼͓͈͓̦̤̖̖̫̗̤͖͖̬̯̯̰̝̙͖͔͈̗͓̗̻̮̣̪̭̲̣͇̺̼͖̗̝͍̳͕͉̭̖̖̼̮̼̤͇̫̠͔̮͔̗̜͓̜̗͉͎̫̺̦͔̯̟̰̫̻̹̻̥̹̻̾̀̅̒̑̔́̀͑͊̾͐̈́̈́̔͛́̄͑̈͊͌̍̀͂͒̿͊̈̾̒̆̉̇̃̈́̊̀̋̋͘̚͜͜͝͝ͅͅŴ̸̨̨̢̡̡̡̨̢̛̛̛͍̪̺̯̠͍͈͇̞̰̣̹͕͔͚̺̘͇̮͔͔̞̣͖͉̰̹͓̪̗̣̯̮̰̝͚̜̫̤͍̟̼̬͖̞̹̻̺͓̫̬̺̭̫͓͎̰͍͉̮͔͈̥̲͚͚͙̜̪̞͙̻̠̺͕̲̥̹̦̪̼̹̞̥̪͍̤͎͚̮̹̟̝̗̱̙̥̣̮͖̥̼̜̝̅̽͐̀͛͆̾͛̀̀̓̄̍̈̍͋̒͛̐̋͆̈́̂̃̔̈́̏̒̈̓͋̀̇̍͊́͗̑̔̀̐̏̂̈́̈̐̍̈́̑͒̓̎͒͗͂̾̾̂̒͑̈̒̄̏̔̿̈́͊̇̊͘͘̚̕͘̕̕͜͜͝͠͝͠͠ͅͅͅͅR̸̡̢̨̢̨̡̨̡̛̛̛̛̛̛̛̪̠̘̠͕̬̩͎̭̲̥̞̟̪̱̖͇̣̱͈͉̮̻͚̩̹̟̲̙̫͍̬͍͇̮͉͇͇̱͇̩͚̲̺̪̞̱̘̲͍̤͖̪̝͈͉͙̙̯̺͈̗͇͇̞̼̰̠̼͙̱̙͖̞̣͓̘͍̯̣̠̞̥̹̙͈̞͚̫̮̺͂́̎͑̅͗̆̏́͑̊̊̒̏̈̄́͗̓͐̔͗̊͊̈́̌̆̎̅͑͊̑̋̋̋̓͑͛̌͛͛̈̿̓̐́̽͆̊͌̑̀̍̄̒̇͑̾̓̀̿̾̇̈́̄̀̽̈́̅̍̿̌̾͐̋̏̂̉̏̎͛̈́́̈́̍͑̇̃̌̌̍͊̊̾͑͆̌̽̀̒̃̑́͒̎́̈̋̈̏͌̊̒͛͊͋̈́̇̌̐̈́́̂́̈̆͋̈́̆̂͂̓́͆͑̔̑́́̀͛̀͛̚̕̕͘̚̕͘̕̕̚͜͜͜͜͝͠͠͝͠͝͠͝͝ͅͅĀ̶̢̛̛̛͍͔͓̗̝̦̣͚̥̙̖̪̬̣̱̼̰̑͒̓̈́̒̓̌͋̀̂̈́̆̀̽̎̆͒͆͛͋̋̈́͛̒̋̓͋͒̀̉̽̿̇̓̑́̌̽̈́̎̔̇̉̎̂̀̿́̓͂̃͑̓̄͊͌̐̎͒̈́̌́̃̍̇͆͐̅̎̽̔͛͆̈́̄̌͗͌̕͘͘̕̕͜͝͝͠͠ͅT̵̢̢̨̨̢̨̧̡̢̡̧̢̨̛̛̜̫̪̮̮̞͔̳̻̫̲͉̭̥̳̣̜͓̰͎̳͎̯̟̱͕͉̖̰̝̯͕̲͇̼̹̗͈͕̜̯̰̥̣̣̤̰̗̰̤̠͈͓͍̭̣̱̩̩̟̥͎͚̞̲͓̩͍̯̩͎̰͇̠͇̭̠͎̼̻̭̳͔͎̠͓̙̫̹̗̩̞͈͓̘̱̜̹͕̗̱͚̮͈̤͈̱̮̗̭̬͓̣̤̫̠̠̰̼̱̞̞̭̝̯̹̬̜̦̗̪̤͍̲̣̥̫̟̣͙͕̼̣͕̳̘̗̟̩͇̭͔̖̜̳̖͈͙͙̥̬̩̭̰̻͎̳̱͈̰̗̹̭͕̾̓̒̆̽̂̋̔͆̔͌̑̐̌̌̌̄̈́̍̽͐̃̀̍̂̅͒̑͑̌́̈̓̇̊̓̈́͛̋͐͆̍̅̀̈́̀͘̕̕̚̚͜͜͜͜͜͜͜͜͝͝͠ͅͅͅͅͅḨ̶̨̡̧̛̛̛̪̥̰͉̯̺̱͉̫͚̯̘̠̠̬̟̳͈̣̞̞̞͕̪͙͕̥͓͚̹̱͉̲̖̗̌̀̉̆̀͑̑̊̍̿̓̓̀̐̓̿̄̒͌̈̓̎̇̓̀͐̅̈́̏̊̐͂͋̋͌̈̍̅̀̑͋̈̋̈͗̐͆̓̾͌̔̿͒͆͒̉̈̈̍̃̈͒̋̓͋̒̆̉́͐̑̐̿̾̑̀̽́̀͊̈́̑̋̆̐̀̂̇̈́̌̂̓͆̏̾̓͋͊͑͒̈́͗̓̉͐̈́̈́̒̾̓̀̈́̿̎̋͛͗̊̅̓̈̈́͗͛̔́̽̊͌͊̈́̒͐́͗̀̆̓́̊͐̓̽́̐̈́͒̃̉́̈͑̑̑͂̎̃̆̔̓̾̋͗͆̒̆̇͑̍͆̚͘̕͘̚͘̚̕̕͘̚̚̚̚͘̕͘͜͜͝͝͝͝͝͠͝͠͝͝͠͝ ̸̧̨̡̢̡̨̧̧̢̡̡̡̨̨̨̨̧̨̨̧̧̛̛̛̛̟͍̟̙͚̙̠͈̼̬͔̪̗̙͇͉̮̭̮̙͉̞̣̹̼̬͙̜̗̞̺̱͔͉̠͇͚̬̞̪͉̖̺͖̳͙̗̻̝̜͎̣͍̲͎̭̪̹̳̩͈̺̱̬̮͓̖̭̲͈̼̘̤̜̹̫̩̤̬̹̖̫̹̪̪̖̫͚̰͕̰̦̜̩̼͓͈̮͎͙̫̬͚͖̖͈̭̬̘͖͎͎͍̜̼̦͈̗̰̙̻̰̠͍̼̘̻̺̻̦̦͈̰͕͉̞͓̘͙͖̯͖͙̎̌̋́͛͌͌̈́̈́̊̃̾͛̑̍̋͑͊̆̿͑̓̑̏̈́̿̈̐̑͊͋̽̀̆̆̈͗̀̀̈́̀̎̅̀͐̀̾̆̂̓̒̈̆͒̾̈́̉̅́͐͌͑̽̏̒̊̔͊̉̒͊̎̄̒̒͗̋̽̅͌͌͛̈́͛̀̿̉̓͌̉̈̑̀͑̑̂͐̑̽͋͛̓̐̔̊̎̂́̀́̊̇͋̀͊͌͌̓̽̑̄͆̾͌̉͘͘̕͘̚͘͘͘̚̕̕͜͜͜͜͜͜͜͜͝͠͠͝͠͝͝͝͝͠͝͝͠ͅͅͅŢ̶̢̢̧̢̢̨̛̛̛̛̛̛̳̗̦̗̬̻͈̩̲͚̗̫͎̥̬̘͓̰̰̣͚̯̱͚͕̖̘̪̮͕͕̬̪̯̪͕͙̘͍͎̜̬̰̘͙̖̗̘͓͓͙͓̭̼̮̱͎̳̝̝̯͉̞̦͇͉̗̺̲̗̞̺͕͓̙̞̍͊̈́́̾̈́͗̏̉̀̆̉̒̉̇͆̓̀̈́̿̌̀̽̑̃͊̈̈̌̈̋̇̏̏͆̍͂͑̆̐̋̄͐̇́̽̓̓̈́̎̌̓́̈̒̈́̎̀͛̊̈̂͊͑̃͛̎͒͂̾̾͆̌̉̆́͛̈́̾̎̋̿͐̋̄͛͒̀̊̌̿̅͗̌͑̓̅͒̄͑͆̀̒͋̍̇̐̾̂̓̈̄̀͗̈͘̕̕̚̚͘̕͘̚̕̚͘͜͠͠͝͝͝ͅḨ̵̧̢̡̨̧̨̢̧̧̧̜͖̺̗̩̭͕̺̠͔̟͇̗͔̫͖̰̭̱̯̫̰͕̠͓̠͍͈̟͎͕̤̲̞͖̣͉̰̩̬̠̹̰̲̖̝̳̮̺̫̘̼̼̜̱̱̻͈̙̞̼̪͙̳̳̳̘͉͖̮̥̝̳̲̟͈̜̲̰͈̠̘̦̝̮͓̩̯̞̩̘͚̣̦͚͔̞̘̳̲͑̋̋̈́͜͜ͅͅͅͅͅE̸̡̡̧̧̢̨̨̡̡̧̨̢̧̡̛̛̝̝͇̱̞̲̯̯̺͕̝̠̺͓̬̥͎̜̝̻̫̫̬̼̩̰͖͖̱̠̯̖̺͍̻̭͍͔̳̙͕̦͔̻̲͚̙̝̬̝̜̱̬̟̞̖͔̖̬͈͕̼͈͎̺̣̰͓̪̝͉͔̘̙̝͍̞̥̟̭͙̯̻͎̱̲̣̳͕̙̝̦̠̺̟̹͍̱̼̳̖̙̜͕̜̱̐̏̑̔̃̋͆͌̉̍̉́̃̏̆͂̉́̿̉̑́̿̿̈́̅̾̃̐̅̈́̐̊̋̈́̾̓̀̊̌̀͊͂́͛̐̏̊͐̓̈́́̏̔́̀̎̄̀̉̈̎̐̅̈͑͊̈́̀̀́̽̉͗̊̊̀̅̑̉̈́̒̎͊̀̒̈̋̓̈́͐̏͒̀̉̔̀̃̈́̈̈́̈̾̊̃͑̈̈́̃̈̈͂̊̄̈̄́̋̆͑́̋̎̆̇̔̾̉̄̓́̂̈́͂̓̂̽̒̋̈́̍̃̂̐̐̄͋͌̄̑̌̑̀̀̋̾̄͛̽̓̆̾̌͑̽͑͐̒̓͌͌̿̍̓̆̂̔̈́̕̚̚̚̕͘̚͘̕͘̕̕͜͜͝͝͝͝͠͝͝͝͝͠͝͝͠ͅM̴̨̡̡̨̢̡̨̡̨̡̧̢̡̡̡̢̧̲̱̠̺̺̜̱̝̗̻͈̤̺̜͍̤̼̬̪̙̗̘̻̹͈̞̯̻̻̻̹͎͖̪͖̭̼̫̜̗͔̲̠̳͙̦̙͙͓͕͚͇̺̟̱̻͔̯̬̦̫̬͖͔̠͚̞͙͎͎͎̱̯̱̖̙̠̳͎̺̠̱͇͙̻̤͓̗̙̳̹͉͔̦̳͚̜̳͙̻͚̼̖͍̬̹͍̻̻̤̖͙̲̱̯̘͔̪̜͇̻̹̞̻͍͙̦͚̻͕͍̺̰̼̺̱̦͓̺̟̝͇̞̮̰̲̻̟̲̖͇̀̌͐̽̅̑͊́̋̔̿͗͋͆̾̓̈́̓̐͘͘͜͜͜͠ͅͅ ̷̡̡̨̡̡̡̧̡̛͉̬̺͙̜͇̯̜͈̟͙̼̺̠̞̜̻͈̪̻̻̯̲̝̠͉͎̯̼̪̝̭͙͙͇̖̝͙̠̲̪̻̠̟͍̗̪̪͎̘̭̤̥͇͔͈͕̪͎̮̙̼̠͓̯̥͔̦͇̦̯̼̜̣͙͕̗̦͎̹̰̲̠̟̩͛̿͆̀̌̏͘͜ͅͅͅĄ̷̡̧̨̡̢̢̢̡̧̨̢̧̢̡̧̧̛̛̛͓̲͓̟̲͈̥͍̟̝̰̯̭̫͍̠̗̤̟͖̬̟̱̳̘̫̯͔̝͎̦̪͓̯̫͈̞͇̲̗͙̙̗̳͖̰͍͉̪̼̥̘͚̗̦̻͕͎̫̼͕̯͎̻͉̯͉͍̦̬͎̖̟͚̺̞͖͔͕͓̜̱̤̲͖̳̘̹̤̘͚̪̪̜̥̯̖͕̮͎̺̤͓̖̱̼̜̫͇̩̹̭̝̼̞͓̙̫̳̜̦̰̣̻̐͗͑͗͐͒̈́̈̿̀̂̇̍́͒͑̈̄̽̍͊̇̆̀̏͊̐͊̓̽́̈͋͌̈́̄̀͋͊̀̈́̔̓͊̈́̔̓̾̇͗͊͊̉̔̈́̐̍̌̇̆̌͑̀̀̽͆̍͛̌͛͒̎̔͊͛͊͂̈́̓͌̄͗̾́̅̋̐͗͋̎̒͌̌̈́̍̀̓̉̇̆͛̋̅̑̂̓͐͑̑͛̊͐̾͊͗͛̑͌̏̽́́̽͌͊̾́́̾̾̌̐̉͑̒͋̑̔̈͑̈́͆̌̌̀͐̔̈͆͋̉̋̏͗͌͆͊͌͂͊̓̑͐͆̚͘̚̕͘̚̚̚͘̕̚͘͜͜͜͝͠͝͝͝͝͠͝͝͠͝͝͝͠͝ͅͅͅͅŅ̴̨̧̧̡̧̡̡̧̢̡̛̛̛̛̪͍̥̺͔̫̹̥̜͕̬̣̗͍̗͈̻̭͈̞̱͖̞͉̹͇͓̲͉͚͔̗̜̪͚͔̖̹͎̦͎̟͖̦̩̥͍̤͚̟̝̮̗̬͓̖̪̯̗͉͉͖̩̘̘͔̩͍̪̟̥̼̥̼̙̯̖̺̞͍͙̠̯̮̻͈͚̗͉̜̲̗͕͖͔̟̲̙̻̤̪̭̠̯̗͕̠̩̙͈̱͚̹͉̭̝͍͔̗̩̼͔̥̫̤͓̙̟̫̞̘̦̱̺̘̯̗͚̮̪̤̞̺͙̙̜͖̼̤̪̪̰̯̯̤͇̲̬̥̪̹͔̪̖̰̩̜͔͉̭̺͈̻͈̣͉͎͉͉̞̰̥͕͙̿͒̿̀͗̆̾͗̿͗̈́̽́́̅͛̒̾͗͛͋͆̉̓͂̀͌̈̎͒͐͆̈́̈́͂̔̓̊̾̿̔́͆̂̾͑̉̓̃̈́̄̓̂̏̀̍̊̂̎̌̈̾̉̒̒̒̔͐̐̓̓̓̓͆͊͋̔̄̈̽̊͑̎͗̀̓̋̑̈́͗̆͑͌͋͒̂̓́̓̄͂͗̇̎̍͗͛̐͊̎̒̓͗̉̅͊́̾̿̈́͐͐͐͗͆́̑̎͌̾̀̆́͂͂́̍̽̎̑́̏̋͗̀̒̃̓͐̾͒͑̈̏͐̈́͆͒̚̕̚͘̕̕̕͘̕͜͜͜͜͜͝͝͝͝͝͝͝͝͠͠͝ͅͅͅͅͅͅͅḐ̷̰̟̳̟̞͈̫̫̬̬̗͎̜͈͎͐̈͒̊̓̔̇͒͛̽̑̄͊́̔̓͗̄͆̇̑̅̍́͑́̒̇̿̐͛̾̀̎̆̎̈̀͋̆̊̃̉̅̈̈̈́̌̐̐͑͒͑́̈̋̇̑̾́̿̅̂̓̎̉͘̚̚͝͠ͅͅͅ ̷̡̧̧̨̢̨̛̛̛̛̝̘͙̝̮̠͖͙̤͖̭̤͖̩̭̗̺͕̺̱̤͕̻̠͍̻̙͖͋͒̽̓͐͑͂̀̏̑̅̋̇̃̑̏̈́̒̓̿̊̈́͑̑͌͂͋̀̾̄̔͆̈̽̒̄́́̉̓̆͑̀̓̀̀̾̉̅̔̓̅̓͛̊͋̔̊̋͂̊̽͛̽͆͌͑̈́͐̈̄̈́̋̌̾̿̄͐͋̊̔̈́́̈́̂̎̃̔͋̇̃̎̐͗͊̾̈́͒̈́̋̄̇̋̇͒̐͋̆̀̋̈͛̄̐́̈́̄͊͑̈́̔̏̂̾̓͂̌̍̋̃̈́̉̈́̋́̀́̍͗͊̉͋͌̑͌͐̀̀̒͑̈́̓̈́̇̈̓̈́̐̑̍͂̊͂͌̾̑̂̌̑̔́͌̆̈̅͌̒̓̂̇̀̉̄͘͘̕͘̚̕̕͘͘̚̕̕͝͝͠͝͠͝͝͝͝͝͠Ţ̷̨̢̨̢̧̨̧̡̡̧̡̧̧̨̢̧̨̧̛̛̫̯͙̼̭̝̹͕͍͉̩̠̻̭̭̝͖͇͎͍̬͚̲͓͖̲̪̳̟͍̺̝̘̼̱̹̙̪̜̺͔͕̣̩͉̰̯̯̙͙̥̹̭̳͕̥̩̞̫͙̣̥̭̳͚͔̭͖̻͔̼̟̻͉̫̩̠͎̣̺̦̬̬̘̪̟̠̲̲̬͖̻̜͇̳̱̳̯̯̠̲̙͚͉̼̥͍͎̻͎̪̯͚̥̬͚̗͔̘͕̲̮͈̫̱̗̮̱͚̪̫̲͕̝̤͍̝̦̲̟͇͔̦̤̲̭̖̩͖͉̪͈̩̪̤͔͖͚̭̻̲͇̥̭̠̫͎̹̬̫̫͎͚̭̦̮̟͙̟̘̦͈͍̜̐̏͛̅̀̎͛̈̒̀̇̍̈́̊̐́͌̎̆̑͋̊̅̉̌̊̐̿̌͆́͆̂͛̽̅͌̓̅̌̓͑̈́̔̃̓͗̔͐͛́̈́͛͌́̀͆̀͊̆̈́̀̾̀̌̈́͛̌̆̊̈̓̃̆͂̍͆̒̽̏́̓̆́͋̾͂͐̀͗̌̑̂̀͂̆̆̓̊̈́̄̓̉̈͗̀̈́̍̈̈́̇͋̿̏̀̃̆̿̄̅̒̂͗̍͊͛̔̈́̇̚̚̚̕͘͘̚̕̚̚̕͘͘̚͜͜͜͝͝͠͝͠͠͠͠͠͝͠͝͝͝ͅͅͅͅͅͅH̷̢̨̧̛̛̛̛̛̛̳̝͖̪̰͖̳͍͔̭̹̰̰̭̲͍̱̰̝͚̩͓̣͔̘͉͚͔̠̭̻̞͈̫̦͕͈̰̜̖̥͈̦͇̜͐̌̏͒̉̔̒̔̓̾̄͐̽̍̇̔͂͑́̃͒̂͗̀̂̒̏̍̈́̅͗̀̅̋̿̌̐̄̾͗͐̈́͗͐̾͆̾̈́̋̆̄̎̐͌͗̓̑̇͆̄̉̆͑̎̈́̽̏̅̽̽̅͂̈́̏̑͆̌̈̋̃͂̀̌̽̊͋̾̃̈́̃̐͂̾͋̀̋͒͂͂́̀̋̂̂̏͆̉̓̈́͂̐̌̀̓̎̊̇͐́̓̊̀̇̉́̄̅̿͌̊̃̑̐͘͘̕̕͘͘͘͘̕͜͠͝͝͝͝͝͝͝͠͝͝͝͝͝͝͝ͅͅͅȨ̶̧̡̢̛̭̯͕̖͓͓̺̰͍̫̤͎̩̭̬̬͖̪͙̖̟̮̖̳̯̱̝̮̘̥̜̫̰̟͈͇̳̤͙͉͙̱̗͇͈̖͍̘̣͇̜̱͇͇̱̭̙͓͓̼̣͖̟͔̈̓̄̾͆̓͂̿͌̾͆̿͌̓̐͐́̓̇͗̈́̃̓̾͆̽́̄̈̋͒̏̆̈́̀̋͒̽̈́̈̇͊̋̒͂̔̋̈̎̋̾̄̎̌̈̈́͗̎̓͌͛̀̓͆̓͛̒̔͑̐͊̔͌͊͑̓́͛̔̊̋̑͑̾͊͒̈́̊̓̋̉̃̈́̅́̒̀͆̆̓́͒͊́̽̾̾̈͗̉͒̑̒͊̊̆̊͌́́͌̆͐͐̈̽̕͘̕̚̚̚̕̚̕̕̕͘̚͘͜͝͠͝͝͝͝͝͝͠͠͝ͅͅÌ̴̢̨̛̤͉͕͉̣̭͔͍͔̯̣̩̥̱̗͇̦̲̳̙̳̠̗̳̰͇̙͓̜̺͈̫̺̩̤̤̹͚̜̖̰̀̾́́̈́̓̉̉͊͛̍̀͑̈͊͋̔̋̎̈́̂́̾̎͆̎̈́̎̊̋̀͊̔́͋̀́̓͗̐͊͋͂̊̋̽͆̅͐̉̏̓́̊͑͂͆̓̂̌́͌͋̓͆́̈̔̏͂̽͐̃̓̄͒̆̿̑̅̋̾̄̀́͊̒̑͒̿̈̈́̀̈͗̅̚͘̚̕̚̚͜͝͝͠͝͝͝͠͝͝͠R̶̨̡̧̢̨̡̢̡̡̨̨̢̨̛̹̲̗̻͚̟̰̥̜̻̺͔̼̝̞̺̰͖̫͖͍̹͕̥̮͔̖̪̻͈͖̣̟͍̦͔̻͖͇̟̪͚͈̹̣͈̦̞̖̱̖̙̮̣̞͇̦̙̣̳͙͍̣̘̻͎̳̜̯͚̹͎͔̩̝̮̥͚͇̻͓̉̎͂̉͂͂̈̂̅̃͗̈́͗̐̋̇̈̾̿́̏̈́̓́̄͒̉̈́͂͗̓̐̑͌͛͆̈́̽͒͑̌̋̏͛̓̾̇̀͑̒͑̈́͗̄̀͑̓̽͆̅̿́̀̀̓̽̎́̈́̿̀̿͆̓͑̓̀͌̒̏̂̀͂͛̓͒͌̊̇̕̚͘̚̚̚̚͜͜͜͝͠͝͝͝͝͠͝͝ͅͅͅ ̷̨̡̨̡̧̡̧̨̛̛̛̛̛̪̹̟͉̟̦͓͚̖͙̣̜̭̬̝̟̭̳̳̘̞̗̺̯͓̳͇̝̦͈̻̮̫̰̭͎͔͕̠̹̦̠͓͓̤̗̲̟͎̫̘̫̖̤̰̤͙̬̗̜̭̼̯͙͕̥̞̼͚̳͙̜͕̟͉̠̔͋͋̒͐́̒̓̀̉̇͒͒̿̓̅̈́̀̌́̈́̂̋̀̀́̿͋́̏͋͂̽̿̋̂̅̿͛̍̽̽͑̔͆̉̌̔̇̿̔̿̃̐͛͑̏̄̒̔̎͛̏̀̇̂̔̈̈͆̾͗͆̔̇̋̊͒͊͛̽̓͛͆͌̌̽͗̏̓̑̈́̔̓̎̉̔̎͆̓͗͋̉͋̐̂́̄̇̋̓̈͋̽͛̉̉̈́̄̓́͒̂̂̈́͊̅̋̍̐̅̇͒̑̿́̚͘̚͘͘̚̚͜͜͜͜͜͠͝͝͠͝͠ͅB̷̧̨̢̢̢̡̢̡̢̝͔͇̯̞̺̯̙̝̰̼̖̰̮͇̭̳̘͈̖̼̳̰̜͕̩̙͇͇̭͇͔̲̯̭̬̳̙̩̦͔̫̝̦͕̮͕̭̳̮̖̼͓͔̹̼͉͕͔̜̦̫̮͊͒́́͌̀̍̒̐̓̀́̿̑͋̃́͐̄͜ͅͅL̷̡̡̡̨̛̛̛̛̛̛̪̺̱̹̥̦͇̺͈̮̹͍̠̜͓̥̲͕̥̙͈̦̰̣̣̲̖̻̠͑̀͛̈́̆͗͊̏̔͒̆̇̽̉̈̐̀͌̌͐̅͗͛̓̑̑̌̿̂̉͛̍̋̃͒̉̍́̈́̋̍̽͋͐́̈́̅̀́̂̓̐͊͗̉̇̑̋̏̓̃̀̉̇̃͗͊̂̇̓͊́̍̈́͂̎̌̈̄̄͌̔́̾̀͂͒̇̒̎̈́̄̍̉͋̈͒̓̍̂̃̎̔́̅̽̎͂̒͒̾̾̓̽́̃̓̍̎͋̽̓͆͌̏̆̿̆̀̿̆͑͊̎̓̓̍́̓̑̿̍̓͐̊̽̋̋̋͑͂́̑͆̇͋̋̊̈́̌̒͌̍͑͆̐͛̌͂͋̍̒́̓̓̉́̀̀͘͘̕͘̕̚͘̕͜͝͠͝͝͝͝͠͠͝͝͝͠͝͠ͅͅA̶̢̡̧̡̢̡̡̧̢̢̡̡̡̨̨̢̧̛̛͈͖͓̫̦͎̪̼͇̭̪̹͇̘͓̱̝͍̮̤̤̠̬̗̱̫̘̹͈̯͓̥̞̖͚͍̞͇͓͕̠̼̮̠̤̲̣͔̩̥̗̰̗̩̭̮̞͓͍̯͎͍͇̲̠̫͉͈̳̠͖̱̹̞͔͕̻̲̺̠̟̭̩̲̯͙̼̳̟̩̥̥̗͓̱͈̙͉̟͕̙͙͎̰̼̻̜̘̠̳̜͙͇̱̟̘͔̤̖͍̣̬̲͚̲̗̫̞̩̠̜͎͓̟̹͖̥͙͉͓͔͍̣̱̞̤̱͚̘̹̥̤̣̤̺̖̯̣͚̠͔͖͈͍͍̪͒̆͌͑̀̿̃͂̌͊̂̋́̓͊̽̓͂͂̓̇̀̑̊̽̑̂̉̐̉̆̏̍͐͑͒̏̂̓͂̐̎̐̊̀͋̆͒͐̈́̏̇͛́̅̂̆̑̈́͌͐̈́̔̊͐̅̽̃̔́̂̒̉̋̿͋̈̂̔͒̑̑͒̿̒̅̏̀͌̽̅͂̈́̄̽̄͗̏̉̓̀̽̑͛͒̄̀̎́̋̃̔̄̓̑̽̆̌͆̀̎̔̅́͊̈́̽̒̃͌́̈̏̐̓̆̍̎͒̿̀̒̐͘͘͘͘̚̕̚͜͜͜͜͜͝͝͝͝͝͝͝͝͝͝ͅͅͅͅͅS̵̡̨̧̡̨̢̡̡̢̧̧̨̧̢̢̡̧̛̛̛̛̛̛̟͕̥̲̦̟̯̘̫̦̤͓̼̠̙̹͉͍͖͙̘̦͇̗͙͍͔͙͎͚͕͚̰͎̳̰͕̖̙̼͉͖̥̩̣̝̯͖̩̰̜̝̗̖͈̱̲̝̻̲̙̟̯̰͙͇͈͕̼̙͈̭͓͖̪̹͈̤̰̟̝͎͓͓̰̙̳̮͎͈̗̺̱̫̞̝̫͉̜͙̳̰͚̯̫̳͍̤̞̗̹̙̝̥͈̻̯̼̖̦̳͚͚͚̫͈͍͚̙͕̟̹͎̙̜̬̬̝̳̼͉͔̱̥̙̼̻̩̟͚̪̼̘̖͈͓̺̪̫̩̪͈̩̬̄͛̆̀́͆͒̃̽̒͐̽̄̽̒̄̒̿̉̈̓̀̃̈́͗͌̿͑́̈́̈́̾̅̇͊͗͒̀̉͒̽́̑͊̀̑̈́͆͐̽̏̄̄͗̄̆͛̒̈̂͐̈́̆͆́̂̇͐̑̔̾̇̏̈̆̾͑͐͆͛̑̎̄̔̏̂̀̈́̓̈́͌̓̓́̐͑͋̃̊͑͐̍͑̋̊̇͌̓̃͌͊̒̇̑̓͆͌̌͗͑̑̒̉͑̄͐̍͐́̑̈́̍́͊͒͘̕̚̚͘̚͘͘͜͜͜͜͝͝͠͝͠͝͝͝ͅͅͅͅP̶̨̢̧̨̧̧̧̛̲͉͈̥̖̤̜̦͔̜̜̭̘̗͕͇̗͈̭̯̖̙̤̰̭̺̼͚̞͎̪͙͕̳̝̜̪̬̗̯̩̮̥͓͚̙̤̗̯̭͓̳̦̗̟̬͓͙̘͉̩̦̟͇̝̤̣̹̮̉̒͆̓̈́̊̉̈́͒́̋͑̏͋͂͂̽̍̏̀̂̀̓͂́͌͐͊̕͘͜͜͝͝͠͝ͅͅH̷̢̨̢̛̛̛̛̛͕̖̺̺̹̗͍̖̞̯͇̜̖͕̬͙͔̣̥͈͇͍̜͈̜̜͉̫̯͕͙̖̻͍̯̗̰̤̙̹̝̩̉̀̍̉̆̾̎̌̌͊́̀͒͒̑̃̀̂͌͛̇́̉́͋̾͊̓͛̓͒̃̉̇̓̈̏͋̀̇͆͗̎̈́̑͌̀́̋̐̿̎̿̆͒͛̂͗̑͑̍̉̔̍̅͂̓͐͂̄̄̓͆̋͆̿̂͑̉̊̆̍̊̇̾̿̊̐̋̆͆̈̽̇͆̉̊͂̓́̐͆̐̒̆̋͊̃͑́̈̑̈́̉͂͊̃̈̆͂͌́̈͂̈́͊̆͐̑̈́͒͌̋̅̒̏͂͆͑͐͆̎̽͐͗̔̾͗̓̋̈́̓̂̉͌͛̓͐͑̚̕̕̚̚̕͘̕̕̚̚̚̕̚̕͜͝͠͠͠͠͝͝͝͝͠͝͝͝ͅȨ̴̧̛̱̯̘̮̺̩̫̬̟̟̺̼̣̩͙̩̫͔̮̔̌̿͑̇͐͛͌̎̊̿̓́̓̽̀͊͆̃̄͆̈́̄̈͋̋̒̾͐̍͛̎͌̆̑͗̊̄̃͒̉͗͆̏͆̀̈́̀́̕͘͜͜͜͝͠͝͝͝͝͠M̷̢̨̨̛̛̺̺̹̜̪͈̤̦̹̟̦̫̙̗̰͕̭̬͓̤͇̘̱͉̯͚͔̞͈̺͍̥̙͖͉̗̮̼͙̙̦͚̜̪͇̰̝̳̀͆́̈̄̋̂̈́͋͂̄̆̒̈́̀̅͒̔̾̿̎̇̔͆̾̈́̔̂̋̓̽̄̌̀̾͐̇̆̈̂̽̆͛̀̓̒̏̌͋̐̏̊̂̐̑̿̐̃̈́̆͂̒̓́̑͆̄̎̑͑̏͐͂̂̒̏͋̔̚̕̕͘̚͜͜͝͠͠͠͝͝͠ͅǪ̸̧̡̢̛͍͚̭̠̖͇̟̹̻͕̼͙͕̘̹͓̱͍͚̙̜̭͓̰̬͉̹̳̠̪̣̙̻̘̫̼͈͓̬̣͖̪̖̮̰̱̮̥͈͚͍͓͍͇̪̲̩̰̱͓̲̬̯̗̦͓̳̬̳̮̩̱̉̓̅̉̃̐̀̀͑̈́͘̚͜͜͝͠͝ͅͅŲ̵̨̡̨̨̢̧̨̡̢̢̨̢̧̢̡̛̯̜̪̲͉̳̫̭̹͙͉̭͚͈̥̞͙̤̘͖̯̞̱̰̱̹͖̥̟̤̺̤̖̝̱̹͕͎̖̯̬̰̮̣͖̞̠̺̰͇͔͎͇̜͕̟̺̞͉̗͙̣̺̥̻͚̬̝̝̲̣͉̪̼̤͇̲̩̳͇̹͔̺͉̝͓̹͓͙͉͉͙͈̺̱̮͎̪̮̞͍̮̖̪͕̜̻̪̦̳̬̙̺͖͕̲̹͎̰̻͚̻̝̟̜̰̙͔͓̙̩̜̗̟͍̬̟͓̫̱̳̥̜̜͙̫͔̠̋̈́́̃̀̂͑́̇̓̉͌͌͒̀̏̆̈͊́͜͜͝ͅͅͅͅS̸̨̧̧̧̧̡̢̢̢̢̨̡̢̛̛̛̛̩̦̘̳̥̫̟̠͔̖͙̠͈͚̭͈͍̻̹̲̫̘̻̲̭͔̪̘̘̙̬̯͇̰̩̹̦̟͙̼̯̰̣͎̝͓̼̳̭̮̥̦̦̱̲̱̦͍͔̗̘͕̤͖͎̟̲̟͙͈̳͔͎̪̙̹̱̘͚̎̈́̀̌̈́͑͌͑̏̄̊̃͒̈́̔͆͑̓͛̐̐͛͐͗̂́̓̑̃́̽̓͗̊̐̅́̇̔̔̿̊̈́̃̅̃̈́́̀̌̑̈́͛̈́͒͑̂̍͐́̎̄̊̽̀͊̃̅̂̂̎͑̇̃͐̋̆̈͒̆̈̄̾̀̐̈́̈́̃̍́̿̓͌̀̅̋̏͊̅̐̏̀̑̓͛̏̚͘͘̕̕̕̕͘̚̚͘͘͜͜͜͠͝͠͝͝͝ͅͅ ̸̡̢̧̨̢̨̧̨̡̡̨̛̛̛͍͍͍͓̫͓̳̮̹̮̫͉̠̯͖̘͔̬̜̳̱̮̙̪̜̞͍̳͎̱̭͚͇̖̲͓͈̫̣̳̦͉̭̠͙̣̩̮͎͙͎̲̲̠̝͎̘̣̲̘̞͇̬̬̥̰̗̬͚͉̹̦͙̞͇̳͍̜̮͈̩̜̃̿́͗̇͗̊͌̿͌̂͗͐̓́̈́̉̒̈́̆͑̃̄̌͒́̿̓̇̈́̒͑͊̾̍̿͆̑̐̇̕͜͠ͅͅͅͅͅẄ̵̢̛̛̛̛̛̛̛͖̫̞̼̼̪̖̹͇̰̰̲̫͔̥̬̩͙̻́̃͑̉̔̊̃͆̌̎͆͛́̓͒͋̈́͐͂̎̒̋͑͑͛̂̈̎̍̒̊̑͗̅̇́̐̓̈̄̿̑͒̌̒̋̌̊̍͂͂́̀̊̌̓͒̇͋̃͌̆͐̾͐͋͆̈́̃́́̍͗͆͗̿͐̋̃̀͋̄͗̌̒̂̂̀̌͑͛̓͐̈͒́̇̇͗̿͆̃̈̇̈́̂̏̊̓̈́̊̉͛̾͗́̃͂͂͑̐͂̈͐̇̓͂̃́̽̄͂̓̽̅͐̋̽͘̚͘̚̕̚̚̚̚͘͘̚͘̚̚͠͝͠͠͝͠͝͠͝͠͝͠͝͠͝͝͠͝Ȧ̶̧̢̡̧̢̡̨̡̧̨̡̧̼̯̠̳̜̤͔͖̼̲̦̹̪̬͕͈͙͕̝̘̼̠̦͉͓̲̱̳̻̙̼̮̱̲̜͇̫̞̹̬̦͈͎̹̭͕͈̦̞̰̞̰̯̲̘̰̭̜͍̘̲̱̠̦̩̫̖̫̺͕̟͔̱̞̘̳̘͇̥̰̖͔̜̤̻̯̠̖̼͓͖̺̤̜͇̱̖̭̳̟̦͖̙̥̠̫̰̣̜̩̖͍͙͚̱̥̹͔̯̹͈͇̻̫̟͇̗̝̫̥͇̙͖͍͎̳͉͎͈̘͓̠̻̞̪̖̻̝͙̲̰̜̘̖͍̥͍͇̻͆̈̆̄̌͂̆̔̿̅̓̃͒͌̾̓͆̍̾̐̽͊͑͊̈́̇̌̉̇͌̔̊͘̚̚̚͜͜͜͜͜͝͠͠ͅͅY̴̧̢̡̡̧̡̢͙͖͓̬̹̬̹̩̰̮̲̘͉̱̥̱̘͓̗̺̖̗̼̟̫̫͖͖̯̻͓̗͕̹̤͓̘̗̳̦̝̺̤̦̽͑̆͜͜S̷̢̨̛̟̤̲̯̩̱̣̞̙͓̪̙̺̪͓̞͙̰̗̜̖̼̟̈́́͆͊̽͆̆͑̐̔̽̔̐͛̀̔̏̓̓͒̉̉̊̌̓͑͂̐̀̂̒̀̓͋̆̈́͆̑̽̿͋͗̉̌̍́̆͛͂͒̕͜͜͝͠ ̷̨̢̡̨̡̨̡̨̛̥͖͓̤̠̙͈͈̻̻̝̪̹̥̘̥͈̲̞͈͍̤̥̖͖̯͇͕͎͉̤̪̤̙̺͔̤̣̖͖͙͔̱̪̪̲͔̤̻͙͓̰̟̯̫̬͎͚̙͈̞͕͈̗̪͎̠͙̗̦͈̩̜̗͔̖̙̗̗̝̙͖͉̱͚̫̠̥̟̭̥̮̠͇̀͐̅̈́͂̿̅̾̿͌͌͗̑͊͂̇̓͑̇̋̓̔̋̅̋̎̎̽̄̿͑̈́̈̉͒̕̕͜͝͝͝ͅͅͅẠ̵̧̨̢̨̡̨̡̢̨̡̧̨̢̢̼͔͎̠̞͈̱͇̥̘̳̻̖͍͓̖̠͎͓̼͕̘͕͖̗̟͍̥̲̗͉̰̥͉͉͎̻̖͚̖̳̭̣̬̺̘̠͍̺͎̞͖̺̮̠̯͍̯̯͇̭͕͓͇͕̜̜̲̻̮͕̯͖͉͔̩͇̹̰̜̟̳̰̖̘̲̮̲̱̙̦̹͕͔̱̼͕͓̬̪̮̳̺̜̙͍͖͈̩̲̫͇͚̰͚͙̪̩͚̖̤̫̟̬͍̖̣͇͖̰̱̻̗̖̞̺̤̣̍̓́͒̈͐͂̑͒̿̄́̒̈́͌͋͂͑̓̎͋͛̔̀̅̆̆̚͜͠͠͝ͅͅͅͅͅṆ̷̢̧̨̡̨̢̢̧̧̛̦̼̳̪͚̖̞̭̳̺̖͉̺͔͈̰̼̩͈̞̺̠̝̪̻͇̭͎͇̮̣̠̩̺̮͈̖̯̙̣̱̪͕̭̪̫̟̭͚̺͖̥͚̺̘̭̭̤̪͚͍͚̝̲͖̪̺̗̺͙͔͕̉͗͂͑̒͌͗͛̀̒̓̅͌͋͋̓̽̂̃̌̂͑́̍̒͂̾͜͜͠͝͠͝͝ͅḐ̵̢̧̨̨̨̧̢̨̨̧̢̛̛̛͎̬̖̱͕̟̤̬̘̘͓̮̻̦̗̲̙͕̮̪̤̱̼̼̬̖̟̫̪̲͕̝̙̯̻̜͍̼̥̭̤̭̭̠͓̫̪̬͔̖̱̠̤̭̱̮͎̻͉̬̼̫̖͕̩̠̯̤̜̲̩̣̠̺̤̫̖̼̩͚͉̖̩̻̦͇̦̻̖͕̲̺͓͙̹̪̭̮̙͚̮̲̮͖͓̠̫͓̫̤̭̳̘̺̺̭̙͔͖̯̪͚̾̈́͊̾͛̾̀̅̓̓͐́͆̄̓̀͒̿̀̀͛̎͆̋̿̒̆̍̀̑̓̓͊͗̊͂͐̀́̈́̽̈͊̉̿̊̑̏̋̓̽̍͂̈͌̐̄̈́̔͑̑͋̊̇͂́̍́̆̏̓̒̀̌̐̇̀̅̋̇̉́̄͂̐͋̈̅́̋̈̉̔͌̓̉́̏̀́̈́̍̐̏͐̊̓͂̂́̔̀͗́̓̈̅̎̒͆̀͛̿̽̐̾̉͋̊̾͘͘̕̚͘̚̕͘͘̚̚͘͘͜͜͜͜͝͝͠͝͠͝ͅͅͅͅͅ ̴̡̨̢̡̨̨̡̧̛̛̛̗̜̘͓̭͖͖̳̮̬̹̞̻̙̖̻͕̠̺̘͍͓̞͖̜͉̹̣̥̞̙̯̱̘̗̖̩͍͙̪͈̣͚̲̯̹̝̙̞͙̹͖̼̘͖̻̘͕̝̗̱̹͍̹͈͔̣͍̻̘͙̰̜͙̩̣̘̳͎͕̺̣̰̣̦̫̝͇̟̬̤͔͔͓̗̰̹̈́̀̔̽̐̓͑̌͐̄͆̈͗̍́̏̀́̈̾̄̅̔̓͌͒̈́̇̽͐͂̇́̇̎̈́̌͌͋́̂́̿͒̇̀̈́͗́̀͗̃͆̀̀̈́̋̓͋̋̇̈́̾̐̅̽̈̄̃̄̍̍̈́̈́̒͂̆̾̑̊̈́̽̈̋̓̎̒̉̓̿͒̃̅͊̅͂̾̿͌͗̑́̓͊̍̋͋̒̉̿̐͛̅͛́̊́͛̈̀̎̓̔͊́̎̇̌́̈̽̈́̈͂͒͑̉̌́̆͗͌̾̓̄͋͊͐́́̒͋̒̉̄̋́̇̓͑͘̕͘͘̚̕̚̕̕͘̕͘͜͝͝͝͝͠͝͠͝͝͝͠͝ͅͅͅṆ̴̡̡̧̨̢̨̧̡̢̛̜̯̹̞͉̘͉̦͍͔͍͓̖͎̩͍̞̱̝̠͈̼̙̯̫͙͈̤͕̜͈̹̭͇̦̜̲͖͍͎̥̼̠̠͇͇̖̹̼̼͙̣̭̘̳͚̪̣̟̹̜̫̣͍̩͔͍̖̱̖̱̻̜̪̖̪͔̝̠̳͍̮̲̬̰̙͈̺̭͚͎̠̦̮͖͕̭̪̻̪̝̣̤͔̘̗͎͎̟̖̰̗̰̻͙̰͉͈̳͔̠̻̳̫͔̰̭̣̩̝̱̬̟͖̻͕͖͙̪̟͇̼͖̯͉̤̬͓̥͕̹̇̋̒̓͂̆̑̄̒̉̈́͛̍̆́͆̓̑̏͒̾̃̄͐̅̂̇̀̌̈́̌̈͑̈̉͗̈́̀̈́̑̾̂͋͂̓̂͌̅͆͊̆̾̉͛̈́͗̉̈̽͌̓̋͐̂͑̍̔͆̈́̈͋̇̽̌̆͛̾͋̍̍̆͐̌͌̀̾̉́̀̔͒͊́́͒̏́̔̉̾̉̎̊̀̀̍̈́̓̀̂́̈́́̍̏̆̂͐͋̆̇̾̿̌̽̕̚͘͘̕̚͘͘͘̕͘͜͜͜͝͠͝͝͠͠͝͠͝ͅͅͅͅͅͅŲ̵̧̧̧̛̛͎͙̰͎̦̪̰͖͎̞͈̲̤̙͎̹̬̙̠̣̘̙̤̜̫̺͓͎͕̣̣̮̤̰̤̗͕̮͚̝͚̯͍̘͙͈̬̞̳̫̲̻̟̭̥̬̗̖̙̬̭͍̥̪̀̈̑͒̿̔͗͆̎͐̐͐̊̄̃͊̈́̈́̿̓̾͗̽̅͑̏̽̒̇̆̑̄̑̓̾̊̉̀̾͒̄̐̍̅͋́͑͂̈́͗̀̋͗̓̃̂͂͊̌͂̐̓̆̈́̎̅̉͐͑͛͛̌͒͆̿̓̃̈́͊̅͒̂̃̒͗́̍̋͛̎͗͊̍̈̔͒̈̌͋̏̽́̆̈́̍̍̑͊̄̇͌͂̋͛̌͗͗̃̀͊̈́̕̚̕̕̕̚͠͝͝͝͠͝ͅͅͅͅL̸̨̜͖͉̭̟͈͓̙̻̫̦͍͚̝̀͌́́̅̃͒̒̎͋͗̓̇̍́͋͐̎̈́̀͐̕̕̕ͅͅL̷̡̨̨̡̢̢̡̢̢̧̡̨̧̡̨̢̢̡̧̨̛̛̛̛̛̛̛͕͕͔͚̗̱̱͚͖͈͓̠̲̰̙̖̼̥̟̯̥͓̬͙̭̞̫̮̘͕̳̪̝̱̠͕̤̻͇̞̖̜̼̬̪̘͖̗̰̟͖̩͙̻̝̬̜̻̩̥̪̩̝̳̤̹̦̪̭̭͔̟͕̘̞̫̼̲͍͓͉͉͙̰͓̗̙͔̼̮̲̭͈͓̜̤̳͓̣̰̝̮͉̫͎̰̩̣͕̙̯̯͎̬͉̠̺̳͍̩̮̫̙͎͕̗̤̩̜̤̟̻̲͍̜̪̻͙̰͇̭̥̠̫̠͍̪̤͔͓̹̼͑͊̆̊̿̄̈́͂͋̾͋͑̂͐̇̓̾̋͂̎́͐̉͆͒͑̿̔̉̓͐͗̈́́̊̈́̓͒̍́̇̑͑́̀̆̏̐̔̂͌̅̾̓̐̿͋̍͑́̄̿̄͑̇̀̒̌̈̽̉̈́̃̎̑̄͌̒͛̈͂̽͗̆͗͗̋͑̈́̌͂̍͆̒̏̈̈̈́̀̌̉́̈̐͛͛̀̂͑͊͋̇̈̈́̿̄̎͗̏̑̒̈̐̈́͊͐̐̈́͛̂̎̍̎̈̐̕̕̚̚̕̚̕͘̚̚͘̕͜͜͝͝͠͝͝͝͠͠͠ͅͅͅ ̷̨̡̡̢̨̢̡̡̨̢̛̛̛̖̘̮͓̖͎̫͚͇̜̪͔̜͎͔͎̹̻̣̺̻̱̠̖͓͖͕̫̜̭̬͙͓̮̮͕̲̪͍̮͇͉̩͓̙̝͓͚̱͙̜̬̜̲̤̮̥̪͉͍͕̫͙̞͔͔̗̼̬̯̺̪͍̮̖͚̠͙̰̼̯̬̘̰̘̳͙̞͚͇͈͕̟̰̬̭̰͇͓̪̳̮̠̳̱̝͔̲̬̰̳̙̫͔̼̹̪̙̭̝̠̟̯̩̲̙͚͉̜͉̯̙͉̗̞̳̠̫̙͇̮͒̎̿̓̽̈͌̽̏͒̿̃͛̂͋̾͋͂̈́̉͋̈́̐̐͗̆̀̐̒͒̿̔̌̑͛͑̊̔͒͆̔̍̌͛̔̉͋̈́̆̑̋́̑̂̋͆̋̍̾̂̊̌͋̈̋͊̔̓́̽͆̂̇̽̀̽̉̋̄́̆͛͒̆͆̃̄̐̎̑͌̃̒͊͋̆̌̈̿͐͊́͛̈́͛͋̏̈́̉̈́̌̋͊͋́̆͊͑́̀͗̆̃͊͊͌͛̽̂̾̄͆͑̓͋́̑̋̐̀̓́͗̆̐̏̇́̍̔͊̎̀̎̓͐̑̄̓̓͑̚̚̚͘͘̕̕̕͜͜͜͜͠͝͝͝͠͠͠͠͠͠͝͝͝ͅͅͅͅͅͅͅͅ0̶̢̢̢̧̡̨̢̧̧̡̢̧̨̛̛̛̲̗̩̜̥̗͓̱̠̠̦̪͍̼̣̼̫̳̤̼͚͙̹̞͍̟̭̥͕̞̦͎̩̭̫̭̖̟͔̹̞̤̻̲͈̹̻̣͇̤͕͚̫̯̘̳̯̤̗̞̫̬̼͙̦̼͇̣͙͇̬͕̝̟̤͕̭̻̮̻͈̪̞̺̲̲̯̯̩̬̜̯̝͖̬̳̹̖͈̟̳̣̳͍̜̪̦̼̱͉̙͙̯͎̺͓̺͓̯͇̲̘͙͖̱̹͉̫̰̳̟̝̹͚̪͍͙͖̬̖̲͍̰̺͖̰̞̩͈̱̘̮̲̮̯̠̣̞̘̯̭̙̘̦̳̥͇͕̞͉̮̰̭̞̦͙̼̗͎͕̫̗̘̖̪͕̮̫̭͚̬̖̩̿͌̑̿̀͌́́̇̓͂̀͊̈́̉̈́́͆̔̀͑̈̽́͛̂̄̽̉͊̅̑͆̃́̍͛̇̎̒̐͆͂̀̈́̓̉͂͑̉͂͒́̓̐͆̍̾́͂̇̀͋͗̀͗̇͂̾͆̈́̓̍̒̀̾̍̎̂̓̐͋͐̿̓͊̿̒͒̓̆̐̎̂̾͛̌̎͒̅̆̾̈̈́͊̂̀̅̓̌͑̽̚͘̕͘͜͜͜͠͝͠͠͠͝͝͠͝ͅͅͅ0̴̡̨̡̨̝͉̱̖͎̦͎͕̰̙̺̭͖̹͉̺̱͖̪̘͍̯̥̹̦̝͖͕̦̠͉͎͎̗͍͎͈͇̭̻̻̱̯͎̳̫̫͇̙͍̹̠̱̥͔̬̯̝͔̻̲̘̟̰̩͔̗̥͈̎͒̈́͑͑̓̂̑̔̈́͊̒̔̆̈̅͋̓̀̇̈́͂̈̾̔̌̈́͊́͋̈́̊͂̋̓̀̌̄̂̃̀̓̐̇̀͛̓̂͗̚̕̚̚͘̕̚̕͘͜͝͝͝͝͝ͅͅ0̵̡̨̢̡̢̨̨̧̢̢̡̡̧̨̢̢̢̛̛̛̛͎͎͕̦͚̖̘̙̤̱͓̹̥͇̳̳̣͖̻̹͔̥̘̖͕̱̬̘͕̬̮͕̪͍͍̠̩̰̣̖̻̖̘̭͈̟̝̜̪͕̘̜̦̫̤͇̬̠̜͉̞͙̝̥̪̼̠͕̻̤͉̯̦̦̝̝͉͔̖͔̫̯̥̦̝̦͔̪̞̭̝̹͙̜̥̞̝̮̞̪̱͎̳̲̞̦̯̘͓͚͔͖̮̗̻̠̻͙̼̠̘̬̫̟͎̩̘̙͕̼̜̲͙̲̙͉͚̩͕͚͈̳͙̙̗̮̝̳̪̬̩̣̖͎̰̣̱͚̭͈̘͎̩͕̲̻̪͓́͌͊͛̎̈̅̂́͑͌̀̊̑̈́̑̆͛͛̄̽̀̀͛͒̾̎̈́̽̎͂̽̓̊͑̎̆͑̒̔̿͗́̒͆́͆̇̿̐̏̒̑͊̈́̈́͐̂͑͒̽̃̓̃͊̿̈́̏͌̎͑̍͆̎̈́͂̄͗͛̄͘̕͜͜͝͝͝͝͝ͅͅͅͅͅ0̵̢̧̢̢̡̨̡̢̢̡̧̧̧̨̨̡̛̗̝̖̯̹̮̥̩̩̼͙̞̜͙͙̮̝͈̝͈̮͎̺̰̝̦̠̱̹̭̙͓̞̤͔͙̙͇͉̞̣͔̪͕̤͚͙͙̥̥̞͈̖̩͚̭͔̯̹̗̱̖̖̘̼͓̰̗͕̞͈̝̪̼̯̖͈̹̭͙͈̹̻̳͈̯͚̲͇͕̗͈̝̝͎̘͇̜̰̭̺̠͕͚͓͖̳̥̳͈͖̼̲̘̩̲͍̖̹̺̭̱̜͚̱̯̰̱̘̼̗͔̱̗͎͎̩̻͚̳͖̼͉̬̭̗̥̘̠͔͖͕͍̝̝̰̼̬̮͔͉͈̫̯̹͚̙̗͔̣̻̗̲̬̬̄̎̿͑̅̀̂̄͂̉̿̽̀̅͐̊̽̓̕͜͜͜͜͜͜ͅͅͅͅͅͅͅ ̸̢̡̛̛̛͓̻̙̫͇̬͇̱̺̪̣̹̮̰̳̦͈̭̥̥͈͎͔̣͔̰̙̣͔͍̣͉̱̻̦̖͕͇͉̹̞͍̺̩͈̹͙͔͔̹̦̼̪̖̬̯̦͈͖̺͈͉̩́͊͆͂̓̎͋̓̉̾̏̔́̾̅́̔́̋̒̏͗̓͑̋̉͊̒̆̄͒̆̆̾́̅̽͋͊̊̾̽̓̇̍̀̀̓͑̎̒̊̿̊̀͑̿̃̉͊̎̃͆̎͆͆͗́͆̌̔̒̏͛̄̾̉̿̈́́̿́̔͑̋̋̂̔́̉̐̐̾̿̎̀́͊̈́͛̒̋̈́̈́͊́͆͐̂̈́̀̌̐͛͒̂̉̂̋̿̐̇̊́͒̀̃͘̚͘̕̚͘͘̕͝͝͝͝͝͝͠͝͝͝͝͠͠͝͝ͅA̸̧̱͖̦̣̦̮͎͕̟̩̘͔̤̜̫̝̞͍̲̞͇̳̝͌͌̈́̒͌̒̉̉͑̎̀̅̽͗̐́̾̄̂̐̑̾͂͋̈́͑̔̀̿͑̃̿̿̔͆̋̽͑̋̊͋̾̈̑͆͊̌͆̓͂̎̅͒͒̋̑́̂̇͗͆͆͑͆̾̿̈́͌̄̇̀̉̅̂͆͌̃̈̒̐̈͑̐́̑̑̃̂̊͂͑̚̕͘̕̚͘̚̚̚̕̕̕͜͝͠͝͝͠͝͠͝ͅͅN̵̡̧̢̨̢̡̢̢̡̨̡̧̡̧̡̨̧̡̡̢̛̛̛̥̲̟͍͍̱̲̦̦̱̹̝̗̦͉̻͇͈̳͈̠̗̮̣̥̫̜͙͇̞̜͖̗͎̟͍̖̪̦͎͉̜̲͕̥̞͍̮̯̰̲̻͓͍̫̞̼͓̲͓̝̩͚̬̞̖̘̹͕̻̳͈̬̹̼̠͖̜̭̣͇̜̬̲͈̰̣̹̯̖̥͕̝̙͍̗̻̻̻̙͈̭̝̻̳̻̤̻̳͖̠͖̹͍͍̟͔͇̬̗̘̗̳̆̄̇̽̊̇͑̄͑̇͒̐͂̿͑́̾͒̒̒̍̈́̏̊̉̎̓̂̀̌͐̉̉̌̅̾̅̊͛͗̾́̎͊̿͋̄̄̀̈́̀̒̃̀̕͜͜͜͜͜͜͜͜͠͠͝͠͝ͅḌ̵̡̡̡̢̡̨̨̨̢̧̛̛̛̛̗̤͖͔̺̭̱̤̤̗̠̯͔͕̰̯̹̟͎̭̣̜̯̮͈̳̝̫̖̥̝͈̙̯͇͉̳͖̹̖̰̳̼̻̞̱̝̝̝̬͕̥͚̜̱̥̖͎̹̻̖͕̯̮̱͈̜̘̺̬͉̰̤̰̜̣̫͙̝̜̻̫̼͕͍̻̜̘̝̩̻̠̻̣̘̰̰͚̮̺̦͎̭̺̫̥̤͍̲̼̭͚̝̻̿͑̓͂̀́̅̔͐̓͌̈́̎̾̌͋̋̋̆͂̋̐̋̃̓̒̋̒͋̓̏̔̋͂͋̊͌̃̆͛̒̆̾̂̽̌̿̀̈́̿͆̋͛̓̓̔̈́̒̅͒͌̏͋̄͊͗͛͋͋̎̃̎͒̎̈͒̈́̓̇̋̋́̋̄͋̋͂̈͑̈́͌͒̿̆͋̿́̒̂͌̒̈́͋̒́̃̊͆̑͋́̀̍̑̇͒̓̆̿́̆̊̍͗̈́́͊̓̑́͒̕̚̕̚͘͘̕̚̕͘̕̚͘̕͜͜͜͜͝͝͝͝͠͝͠͠͠͝͝͠ͅ ̸̢̧̨̢̢̡̨̨̡̧̨̨̨̤̻̻̻̜͍͎̻̥̦̮̜͇͉̬̖̻̤̥͈͖̟͚̯̰͚̠̖̭̙̬̝̠̺͕̖͇̠̺̺̱̖̭̪͖̞̩̪͕̘̼̳͍̠̲̳̰̺̞̱̗̩̪̟͍̜̤̳̝̤͎̥͔̦̼̘̻͖̥̖̠̥̫͇̟̹̫̝̠̭͕̺̺͓̦̳̘̖̪̤̮͎͕͍͔̖̤̮̼̹͖̙̟̼̲̱̞̌̂̓́́̐̽̂̔͌̐̀̄̐͒́̃̐̓̂͆͗͆̀̄͂̈́̂̈̒́͋́̈́́̀̿̓̏̐̔̋̅̅͑̓̒̽̍̿̃̋̉̓̆̂̽̎̏̌̓̀͋̿̅̔̄͐̂̔̋́͌͊͛̍̐̏͐͌͆̏̍̒́̌̌̕̚̚̚̚̚̕̚̕̕̕͜͝͝͝͝͠͝͝͝ͅH̶̡̧̧̧̢̨̨̧̧̢̨̛̛̪̩̬̣͎̙͕͎̟̥̝̙͔̻͙̺̪͈̻̱̝̘̮͙̬̜͉̤̭͙̼͔̻̻͇͙̯̲̰̳͉̱̺̦̩̼͚͉̘͓̼͉̀̓͒̄̇͂̃͛͗̑͆͆̋͗̈́̐̾̓͆͆͒̎͒̇̓̏̑͂̾̇̓͗̌̐́̐͌̐͌̊͌͂̉͐̑͋̇͌̽͐́̉̌͛͑̈́̽̌̈́͌̂͒̓̿͑̉̊̔̀̕̕͘͠͠͝ͅͅͅͅĘ̶̡̨̨̡̨̛̻̳͉̟͓̦͚̦̫̦̫͙͚͈̣͉͙̙̠̫͍͙̗͉̖̮̬̱̠̲̼̯̗̫̠̬̭̩͎̟̦̰̗̻̤͈̻͉̱́͒̈́̇͌̒͗̈́̿̋̊̓̒̃̀̽̇͌̓̊͌͋̔̍́͆͋͂͜͝͝͝͠ͅͅR̵̢̛̻̗̟̺̻̖͈̰͇̤̤̯͕̦̱̼͔̠̍͒͐̀͂̿̏͆̍͌̈́͌̎̒̇̔͋̈́̍̆͊̍͗͗͆͛̀̓̍́̈́̽͌̏̍͆͛̓̔̉͑͐͌̽̓̽͂̑̄̀͌͂̓͂͛̔̿͌̍͋̉̎̃͗͑͋̔̈̋́̾͌͂̀̍̅̎̊̈́̏̉̉͐̑̑͗̌̀̀̓̽̓̋̾̂̌̑͑͂̑̌̈͂̏̿̔̃͂̆̅̾͛̅́̇̊̓̀́͊̋͒̒̌̾͋̚̚̕̕͘̚̚͘̚͘͘͠͠Ơ̸̢̢̢̧̨̡̢̡̧̡̨̡̨̧̧̡̢̭͇̠̯̫̲͕̪͙͓̦̦͚̠̣̥̘̺̹̦̣͙͕͉̰̺̝̥̝̯̻̘̜͙̯͕͖̜͍͖͕̥̠̝̲͍̥̦̗̬̣͔̻̗̞͔͉͙̝̲̯̪͙̻͎̺̜̰̗̜̮̲̯̬̠̳̯̺͖̤̖̖͓̱͙̜̥͇̫̲̼̟̲͇͈̝̞̤̼̭̦͖̜̖̹͖̪̮͉̣͔̗̱͇̼͉͙̮̜̭̫͓͖̝̟͔̟̲̪̟̤͉͙̳͖͙̖̗̤͚̲̱̪̳̼̦̦͖͈̱̗̼̫͉̯̼̯͍̦̘̭͚̙̤̯̤̫͎̩͒̇͐͛̽͌̋̑̅̃̀̀́͌̈́̚͜͜͜͜͜͜ͅͅͅͅͅͅͅͅB̵̧̨̡̢̢̨̡̢̛̛̛̛̙͖͙̖̻̼͉̭͎̯̫̰̼͇̯͕̟̲͇̜̣̖͙̪̯̟̻̱͇͈̳̝͙̞̣͕͖̫͚͍̻̰͎̣̣͔̩̻̙̖̘̪͎̦͚̗̼̤̩͔͉̭͉̮̟͉̳͚͇̰̝̞̺̜͎͖̙̟̜̘͙͓̜̙͕̠̞̳̥͎͍̜͕̫̗͕̙͍̜̗̺̦͉͙͍̖̘̙͉̰̾̌̿̐͊̍̒͒͑̃̑̓͋̇̑̔͒̔͛̏̒̒̀̾͐͂͆͋̉̋́̂̂͋̒̎̈̈́̔̒̓̽̎͊̽̒̂̈́̃͐̒̇͌̃̒̇̈́̀͊̐́̉̇̋̈́̂̌̄͊̽̿͌͛͗̌͊͒̕͘̚͘͘̚̚͜͜͜͝͝͝ͅͅͅͅ-̶̢̨̡̛̛̠̭̭̗̫̻̳̹̩̜̪̼͙͈̭̺͚̱͚̯͎̙̮̼̗̬͉̖̎̋̋̿̿̆̒̓̋̇̉̄̓̓̽͛͌͋̾̽̂̒͊̾́͂͆̎̓̎͗́͑̍̌͊̅̉̉͑̈́̈́̃̌̓́̐̓̉̽̈́́̑̀̑͂̚̚̚͘̚͜͜͝͝͝
 }

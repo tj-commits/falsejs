@@ -25,4 +25,4 @@ Please include as much of the information listed below as you can to help us bet
 This information will help us figure out your report more quickly.
 
 ## Supported Versions
-all versions are supported.
+Only the latest version is supported.
