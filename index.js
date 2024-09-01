@@ -1895,17 +1895,24 @@ function is_This_Value_false(v) {
   return checker.check(v)
 }
 
-// * JQUERY PLUGIN
+// * PLUGINS
 function jQueryPlugin() {
   // Inject into jQuery
   jQuery.False = mainFunctionWotDoesFunctionality
   jQuery.isFalse = is_This_Value_false
+}
+function expressMiddleware(req, res, next) {
+  // Add our function to the request object
+  req.False = mainFunctionWotDoesFunctionality
+  req.isFalse = is_This_Value_false
+  next() // Continue to the next middleware or route
 }
 //*EXPORTING
 
 exports.False = mainFunctionWotDoesFunctionality // export this
 exports.isFalse = is_This_Value_false // export this too
 exports.injectIntojQuery = jQueryPlugin
+exports.expressMiddleware = expressMiddleware
 /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
 // * one function

@@ -202,6 +202,7 @@
     "please-star"
   ],
   "devDependencies": {
+    "express": "^4.19.2",
     "stevelib": "^1.0.0",
     "twenty-four": "^25.0.0"
   }

@@ -1,4 +1,4 @@
-const { False, isFalse } = require('./index')
+const { False, isFalse, expressMiddleware, injectIntojQuery } = require('./index')
 const assert = require('assert-fn')
 const attempt = require('attempt-statement')
 const n0p3 = require('n0p3')
@@ -18,6 +18,7 @@ attempt(() => {
     ['no', 'no', 'no']
   ]
 
+  // False function testing
   combinations.forEach((params) => {
     assert(
       False(...params) === false,
@@ -26,6 +27,9 @@ attempt(() => {
   })
   assert(isFalse(false) === true, 'isFalse(false) did not return true')
   assert(isFalse(true) === false, 'isFalse(true) did not return false')
+  global.jQuery = require('jquery')
+  injectIntojQuery()
+  assert(jQuery.False == False && jQuery.isFalse == isFalse, 'jQuery injection did not work')
 })
   .rescue((error) => {
     console.log(clc.red(leftPad('× TESTS FAILED!!!!!', lpi)))
