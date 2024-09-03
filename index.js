@@ -45,6 +45,7 @@ const isOd = require('is-od') // isOd
 const isOddAndrew = require('is-odd-andrew') // isOddAndrew
 const add = require('examplebyraji') // a package
 const cowsay = require('cowsay') // let's say stuff
+const lolcatjs = require('lolcatjs') // the rainbow i tastes it
 const parseBool = require('parse-bool') // parse a boolean
 const owoifyx = require('owoifyx').default // UwU
 const Uwuifier = require('uwuifier').default // UwU (x2)
@@ -663,7 +664,7 @@ function sendGetRequest(to, cb) {
  * @returns {undefined} - This function does not return a value. It only prints the message.
  */
 function sayIt(message) {
-  ltc(cowsay.say({ text: message, r: bool([one, Two()]) }))
+  ltc(lolcatjs.fromString(cowsay.say({ text: message, r: bool([one, Two()]) })))
 }
 
 // * CHECK FUNCTIONS THAT GET CALLED LATER
@@ -2024,6 +2025,7 @@ function jQueryPlugin() {
   jQuery.False = mainFunctionWotDoesFunctionality
   jQuery.isFalse = is_This_Value_false
 }
+
 function expressMiddleware(req, res, next) {
   // Add our function to the request object
   req.False = mainFunctionWotDoesFunctionality

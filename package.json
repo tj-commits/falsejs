@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -111,6 +111,7 @@
     "literally": "^1.0.0",
     "lodash": "^4.17.21",
     "logtoconsole": "^1.0.7",
+    "lolcatjs": "^2.4.3",
     "lua-interpreter": "^0.0.3",
     "luaparse": "^0.3.1",
     "n0p3": "^1.0.2",
