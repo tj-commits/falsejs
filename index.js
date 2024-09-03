@@ -1,3 +1,11 @@
+/**
+ * FalseJS
+ * The ultimate library for getting the value of false.
+ * I didn't choose the 10x life. The 10x life chose me.
+ * @author tj-commits
+ * @license MIT
+ * @version whatever_the_version_in_the_package.json_is
+ */
 require('vanilla-javascript') // * because we are making something awesome!
 require('vapor-js-npm') // the most awesome and flexible javascript framework
 require('none')() // this improves load times and performance
@@ -25,25 +33,28 @@ const isThree = require('is-three') // the successor of two
 const isNegativeZero = require('is-negative-zero') // isNegativeZero
 const isNegativeZero2 = require('negative-zero') // can't hurt to have another negative zero checker
 const isPositiveZero = require('positive-zero') // positive zero
-const isFalse = require('is-false')
-const isTrue = require('is-true')
-const is = require('is-thirteen')
+const isFalse = require('is-false') // false
+const isTrue = require('is-true') // true
+const is = require('is-thirteen')// comparison-against-twelve-free environment
 const isThreeHundred = require('is-three-hundred') // is-three-hundred
 const isNumber = require('is-number') // jonschlinkert
-const isActualNumber = require('is-actual-number')
-const isIsOdd = require('is-is-odd')
-const isOdd = require('is-odd')
-const isOd = require('is-od')
-const isOddAndrew = require('is-odd-andrew')
+const isActualNumber = require('is-actual-number') // my is-number
+const isIsOdd = require('is-is-odd') // isIsOdd
+const isOdd = require('is-odd') //isOdd
+const isOd = require('is-od') // isOd
+const isOddAndrew = require('is-odd-andrew') // isOddAndrew
 const add = require('examplebyraji') // a package
-const cowsay = require('cowsay')
-
-const parseBool = require('parse-bool')
-
+const cowsay = require('cowsay') // let's say stuff
+const parseBool = require('parse-bool') // parse a boolean
 const owoifyx = require('owoifyx').default // UwU
 const Uwuifier = require('uwuifier').default // UwU (x2)
+const luaParser = require('luaparse')
+const luaInterpreter = require('lua-interpreter')
+const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse') // april fools
 
-const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse')
+// * HELPER FUNCTIONS FROM OTHER LIBRARIES THAT ARE BY FALSEJS
+const couldThisCouldItBeTrue = require('@falsejs/is-true-helper')
+const { returnFalse, isFalse: isPreciselyEqualToFalse } = require('@falsejs/core-ish')
 
 // * DATES
 const Today = new Date()
@@ -340,7 +351,7 @@ SuccessorHelper.prototype.s = function (value) {
   return result
 }
 
-class TernaryCompare {
+let TernaryCompare = class {
   constructor(condition, ifTrue, ifFalse) {
     this.condition = condition
     this.ifTrue = ifTrue
@@ -352,7 +363,7 @@ class TernaryCompare {
   }
 }
 
-class ObjectOrFunctionParemeterName {
+let ObjectOrFunctionParemeterName = class {
   constructor(name) {
     this.name = name
   }
@@ -363,7 +374,7 @@ class ObjectOrFunctionParemeterName {
   }
 }
 
-class CLIColorInstance {
+let CLIColorInstance = class {
   constructor(booleanValue) {
     tru(
       isTrue(
@@ -382,9 +393,9 @@ class CLIColorInstance {
     return this.instance
   }
 }
-const trueComparison = new TernaryCompare(tVal, tVal, not(() => tVal)())
 
 // * creation of classes
+const trueComparison = new TernaryCompare(tVal, tVal, not(() => tVal)())
 const { s } = new SuccessorHelper() // our successorhelper
 const clc_ = new CLIColorInstance(useGarbage()).getInstance() // colors are the best! chalk chalk chalk
 clc = clc_ // setit
@@ -406,7 +417,7 @@ const { ADDRGETNETWORKPARAMS } = require('node:dns')
 // * SOME CHECKS
 tru(
   isEqual(
-    isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
+    not(isFalse)({ result: not(literally(isEqual(t(), trueValue)))() }, 'result') && isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
     Bro.TOTALLY
   )
 ).then(() => {
@@ -519,22 +530,65 @@ setLogFuntion(() => {
 //* HELPERS
 
 // define a little helper function
-const doSomethingAsync = async function (logger) {
+/**
+ * Performs an asynchronous operation and logs a message.
+ *
+ * @async
+ * @function doSomethingAsync
+ * @param {Logger} logger - An instance of the Logger class used for logging.
+ * @returns {Promise<Logger>} - A Promise that resolves with the logger instance after a 200ms delay.
+ *
+ * @example
+ * const logger = new Logger();
+ * doSomethingAsync(logger)
+ *   .then((logger) => {
+ *     // use logger here
+ *   });
+ */
+async function doSomethingAsync(logger) {
   logger.log(clc.cyan(`[falsejs] Doing something async`))
   return new Promise((resolve) => setTimeout(() => resolve(logger), 200))
 }
 
-// lets define the result of async doing
+/**
+ * Logs a message. Used as the callback for the function doSomethingAsync
+ *
+ * @function resultOfDoingSomethingAsync
+ * @param {Logger} logger - An instance of the Logger class used for logging.
+ * @returns {void}
+ *
+ * @example
+ * const logger = new Logger(t());
+ * resultOfDoingSomethingAsync(logger);
+ * // Logs: [falsejs] Did something async
+ */
 function resultOfDoingSomethingAsync(logger) {
   logger.log(pc.green(`[falsejs] Did something async`))
 }
 
-// a helper function
+/**
+ * Calculates the predecessor of a given number by subtracting 1.
+ *
+ * @function predecessor
+ * @param {number} n - The number to find the predecessor of.
+ * @returns {number} The predecessor of the given number.
+ *
+ * @example
+ * predecessor(five()); // Returns 4
+ */
 function predecessor(n) {
-  return n - 1
+  return n - one
 }
 
-// another helper function
+/**
+ * Returns the same value based on the input number, using various mathematical operations and padding.
+ *
+ * @param {number} num - The input number.
+ * @returns {number} - The calculated value.
+ *
+ * @example
+ * vValue(1000) // Returns 1000
+ */
 function vValue(num) {
   const rand = Math.random()
   const rand2 = Math.random()
@@ -552,6 +606,7 @@ function vValue(num) {
       : _f()
   const useLeftPad = rand2 < 0.5
   const useRightPad = !useLeftPad
+
   if (useMinus) return $.subtract(num, STARTING_VVALUE_USER_MINUS)
   if (usePlus) return $.add(num, STARTING_VVALUE_USER_PLUS)
   if (usePad) {
@@ -563,23 +618,50 @@ function vValue(num) {
   return num
 }
 
+/**
+ * Sends a GET request to the specified URL and calls the provided callback function with the response data.
+ *
+ * @function sendGetRequest
+ * @param {string} to - The URL to send the GET request to.
+ * @param {function} cb - The callback function to be called with the response data.
+ *
+ * @returns {undefined} - This function does not return a value.
+ *
+ * @example
+ * sendGetRequest('https://api.example.com/data', (error, response) => {
+ *   if (error) {
+ *     console.error('Error:', error);
+ *   } else {
+ *     console.log('Response:', response);
+ *   }
+ * });
+ */
 function sendGetRequest(to, cb) {
-  const xhr = new XMLHttpRequest()
+  const xhr = new XMLHttpRequest();
 
   xhr.onload = () => {
     if (xhr.status >= 200 && xhr.status < 300) {
-      cb(null, JSON.parse(xhr.responseText))
+      cb(null, JSON.parse(xhr.responseText));
     } else {
-      cb(xhr.statusText)
+      cb(xhr.statusText);
     }
-  }
+  };
 
-  xhr.open('GET', to, _f())
-  xhr.send()
+  xhr.open('GET', to, false); // Set the third parameter to false for synchronous requests
+  xhr.send();
 }
+
 
 // * SAY FUNCTION
 
+/**
+ * This function uses the cowsay library to print a message in a cow's speech bubble.
+ * The cow's speech bubble is customized with the provided message and a random cow face.
+ *
+ * @param {string} message - The message to be printed in the cow's speech bubble.
+ *
+ * @returns {undefined} - This function does not return a value. It only prints the message.
+ */
 function sayIt(message) {
   ltc(cowsay.say({ text: message, r: bool([one, Two()]) }))
 }
@@ -844,6 +926,17 @@ if ($.equals(one, Two())) {
 // * LOGIC
 // the _getFalse Function
 // :O :O :O
+/**
+ * Calculates the boolean value false using various techniques.
+*
+* @param {number} random - A random number used in the calculation.
+* @param {boolean} loggingEnabled - Indicates whether logging is enabled.
+* @param {function} shouldDoSomethingAsync - A function that determines whether an asynchronous operation should be performed.
+* @param {function} shouldDoSomethingAsyncWithIsTenThousand - A function that determines whether an asynchronous operation should be performed based on a condition.
+* @param {object} logger - An object used for logging messages.
+*
+* @returns {boolean} - The calculated boolean value false.
+*/
 function _getFalse(
   random,
   loggingEnabled,
@@ -1075,21 +1168,22 @@ function _getFalse(
                               } else {
                                 logger.log(
                                   clc.red(
-                                    `[falsejs] Final attempt failed. Resorting to just plain returning false.`
-                                  ) // waht dang i hate doing that
+                                    `[falsejs] Final attempt failed. Resorting to returning the result of the false libary by MDE.`
+                                  )  // through another library, of course
                                 )
-                                if (is_This_Value_false(false)) {
+                                const myNewFalseValue = returnFalse()
+                                if (is_This_Value_false(myNewFalseValue)) {
                                   logger.log(
                                     pc.green(
-                                      `[falsejs] False succeeded. False value retrieved successfully.`
+                                      `[falsejs] MDE's false library succeeded. False value retrieved successfully.`
                                     )
                                   )
-                                  result = false
+                                  result = myNewFalseValue
                                 } else {
                                   // something is broken
                                   logger.log(
                                     clc.red(
-                                      `[falsejs] × Your Node.js may be broken as false is not equal to false. (Or the isFalse function exported by this library is broken and if it is please file an issue)`
+                                      `[falsejs] × Your Node.js may be broken as false is not equal to false. (Or the isFalse function exported by this library is broken and if it is please file an issue (or mde's library is not working and my checks didn't work (or the library that required mde's false library is not working)))`
                                     )
                                   )
                                   logger.log(
@@ -1152,6 +1246,18 @@ function _getFalse(
   return result // return our false value
 }
 
+/**
+ * Calculates the boolean value 'false' based on various conditions and parameters.
+ *
+ * @param {number} random - A random number used in calculations.
+ * @param {boolean} loggingEnabled - Indicates whether logging is enabled.
+ * @param {function} [shouldDoSomethingAsync=_f()] - A function indicating whether asynchronous operations should be performed.
+ * @param {function} [shouldDoSomethingAsyncWithIsTenThousand=_f()] - A function indicating whether asynchronous operations with 'is-ten-thousand' should be performed.
+ * @param {boolean} [disableAprilFoolsSideEffects=_f()] - Indicates whether April Fools side effects should be disabled.
+ * @param {boolean} [strictDisableAprilFoolsSideEffectsCheck=t()] - Indicates whether strict checking for disabling April Fools side effects should be performed.
+ *
+ * @returns {boolean} - The calculated boolean value 'false'.
+ */
 // the _calculateFalse function
 function _calculateFalse(
   random,
@@ -1175,7 +1281,8 @@ function _calculateFalse(
   isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
   doSelfEqualityChecks(loggingEnabled) // do self equality checks
 
-  // our users should know some basic info first like the os
+  // our users should know some basic info first like if they are stupid
+
   // the os:
   If(isWindows())
     .Then(() => {
@@ -1312,6 +1419,13 @@ function _calculateFalse(
       logger.log(pc.green(`[falsejs] Random number is odd or even`))
     })
 
+  If(!isIsOdd(isOdd))
+    .Then(() => {
+      logger.log(clc.yellow(`[falsejs] isOdd is not isOdd.`))
+      logger.log(clc.yellow(`[falsejs] That's weird`))
+    })
+    .Else(n0p3)
+  
   If(isIsOdd(isOddAndrew))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for Andrew`))
@@ -1341,6 +1455,14 @@ function _calculateFalse(
     .Else(() => {
       logger.log(clc.red(`[falsejs]-Is-odd-is-not-is-odd!!!`))
     })
+
+  // now let's run some lua code
+  const myLuaScript = `
+  local message = "[falsejs] Bye from Lua!"
+  print(message)
+  `
+  const parsedLua = luaParser.parse(myLuaScript)
+  luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
@@ -1433,6 +1555,10 @@ function _calculateFalse(
 
 //* the exported function
 
+
+/**
+ bro the documentation for this function is in the index.d.ts file
+ */
 function mainFunctionWotDoesFunctionality(
   enableLogging = NO,
   shouldDoSomethingAsync = NO,
@@ -1589,6 +1715,7 @@ function randomBoolean(
 
   return value >= 0.5
 }
+
 function complexBooleanWithBias(logger) {
   // Generate a pseudo-random number between 0 and 1
   const randomValue = Math.random()
@@ -1778,7 +1905,7 @@ function printTheAlphabetSeparatedBySpaces() {
 // Helper function to check if a number is prime
 function isPrimeNumber(num) {
   if (num <= one) return _f()
-  if (num <= 3) return t()
+  if (num <= three()) return t()
   if ($.equals(num % Two(), zr0()) || $.equals(num % 3, zr0())) return _f()
   var i = five()
   while ($.multiply(i, i) <= num) {
@@ -1789,6 +1916,12 @@ function isPrimeNumber(num) {
   return t()
 }
 
+/**
+ * Converts the input value to a string representation.
+ *
+ * @param {any} value - The value to be converted to a string.
+ * @returns {string} - The string representation of the input value.
+ */
 function StringValueof(value) {
   return value.toString()
 }
@@ -1801,26 +1934,13 @@ function couldThisCouldItBeFalse(
   aValueThatMightBeTheBooleanValueFalseButIDKYet
 ) {
   const specimen = aValueThatMightBeTheBooleanValueFalseButIDKYet
-  if (specimen == undefined()) return _f()
+  if (specimen == undefined()) return Bro.NOWAY // noway its false if its undefined
   if (isOne(specimen)) return _f()
   if (isTrue({ specimen }, 'specimen')) return _f()
   if (isNegativeZero({ specimen }, 'specimen')) return _f()
   if (specimen === 'My gosh') return _f()
   if (is(specimen).thirteen()) return _f()
-  return specimen === !!zr0()
-}
-// is something true
-function couldThisCouldItBeTrue(
-  aValueThatMightBeTheBooleanValueFalseButIDKYet
-) {
-  const specimen = aValueThatMightBeTheBooleanValueFalseButIDKYet
-  if (specimen == undefined()) return _f()
-  if (isOne(specimen)) return _f()
-  if (isFalse({ specimen }, 'specimen')) return _f()
-  if (isNegativeZero({ specimen }, 'specimen')) return _f()
-  if (specimen === 'My gosh') return _f()
-  if (is(specimen).thirteen()) return _f()
-  return isTrue({ specimen }, 'specimen')
+  return isPreciselyEqualToFalse(aValueThatMightBeTheBooleanValueFalseButIDKYet)
 }
 // *isfalse function
 // a function to check if something is false
@@ -1890,6 +2010,9 @@ function is_This_Value_false(v) {
     !isActualNumber(v) &&
     !isIsOdd(v) &&
     !isOd(v) &&
+    v !== t() &&
+    v === _f() &&
+    v === returnFalse() &&
     couldThisCouldItBeFalse(v)
   const checker = new Checker(cond)
   return checker.check(v)
