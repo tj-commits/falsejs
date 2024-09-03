@@ -15,10 +15,44 @@ const _ = require('lodash') // every project needs lodash
 const underscore = require('underscore') // underscore.js. the predecessor of lodash.
 const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
 const { generatePhoneNumber } = require('phone-number-generator-js') // phone numbers
-const n0p3 = require('n0p3') // noop functions are the bare-bones
-const noop3 = require('noop3') // nothing wrong with another noop
+const n0p3 = require('n0p3') // a noop
+const noop2 = require('noop2') // nothing wrong with another noop
+const noop3 = require('noop3') // nothing wrong with yet another noop
+const noop4 = require('noop4') // noop factory
 const noop6 = require('noop6') // again, nothing wrong with more noops
-const { noop, doop } = require('yanoop') // another noop! (also a doop)
+const noop7 = require('noop7') // i think you see where i'm going
+const noop8 = require('noop8') //another...
+const noop9 = require('noop9') // the ninth
+const { noop, doop } = require('yanoop') // yanoop.
+const asyncUtilNoop = require('async.util.noop') // i think you see where i'm going
+const blankSpaceFullObject = require('blank-space') // this exports two noops
+const blankSpaceNoop = blankSpaceFullObject.noop // noop one
+const blankSpace = blankSpaceFullObject._ // and noop two
+const noopGenerator = require('co-noop') // a noop generator!
+const fjNoop = require('fj-noop').FUNC // fj noop
+const lodashNoop = require('lodash.noop') // lodash noop
+const lodash_Noop = require('lodash._noop') // another lodash noop!
+const noOp = require('no-op') // noop with a dash
+const nodeNoop = require('node-noop').noop // a noop
+const noopUtility = require('@stdlib/utils-noop') // the most practical
+const trueNoop = require('true-noop') // one of few true noops.
+const noopFn = require('noop-fn') // it ends with a fn
+const noopaam = require('noopaam') // noopaaaaaaaaaaaaaaaaaaaaaaaaaammmmmmmmmmmmm
+const nop = require('nop') // just nop. what a funny name
+// nop. nop. bop bop. boop. nop. boop. nop. nop. bop. bop bop nop.
+// back to the code
+const es2015Noop = require('es2015-noop') // the future is here
+const kgryteNoop = require('@kgryte/noop') // how do you pronounce this guy's name
+const blackHole = require('a-black-hole') // OH NO WE ARE GOING IN TO THE BLACK HOLE
+const infinoop = require('infinoop') // noop. for ever. for. ev. er. FOR. EV. ER
+const mNoop = require('m.noop').noop // the only other true noop i could find besides true-noop itself
+const ahsmNoop = require('@ahsm/noop') // ahsm noop
+const { noop: qcCoreNoop, nullFn: Null } = require('qc-core') // the qc core
+const nooop = require('nooop') // someone put too many o's
+const ryotahNoop = require('@ryotah/noop') // ryotah made a noop
+const zodashNoop = require('@zodash/noop').noop // zodash made a noop
+const jacobZuma = require('jacob-zuma') // south african flavored noop
+const onceNoop = require('once-noop') // this noop can only be called once
 const attempt = require('attempt-statement') // has more features than trycatch statement
 const assert = require('assert-fn') // more simple and elegant than built in node:assert
 const hasSelfEquality = require('has-self-equality') // most things have self equality but lets make sure
@@ -370,7 +404,7 @@ let ObjectOrFunctionParemeterName = class {
   }
   getName() {
     const name = this.name // use a static variable for performance
-    const compare = new TernaryCompare(not(() => isNil(name))(), name, null)
+    const compare = new TernaryCompare(not(() => isNil(name))(), name, Null())
     return compare.compare()
   }
 }
@@ -638,18 +672,18 @@ function vValue(num) {
  * });
  */
 function sendGetRequest(to, cb) {
-  const xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest()
 
   xhr.onload = () => {
     if (xhr.status >= 200 && xhr.status < 300) {
-      cb(null, JSON.parse(xhr.responseText));
+      cb(Null(), JSON.parse(xhr.responseText))
     } else {
-      cb(xhr.statusText);
+      cb(xhr.statusText)
     }
-  };
+  }
 
-  xhr.open('GET', to, false); // Set the third parameter to false for synchronous requests
-  xhr.send();
+  xhr.open('GET', to, f()) // Set the third parameter to false for synchronous requests
+  xhr.send()
 }
 
 
@@ -945,8 +979,44 @@ function _getFalse(
   shouldDoSomethingAsyncWithIsTenThousand = _f(),
   logger
 ) {
-  ///* we are required to do this
+  ///* we are kind of required to do this
+  n0p3()
   noop()
+  noop2()
+  noop3()
+  noop4()()
+  noop6()
+  noop7()
+  noop8()
+  noop9()
+  asyncUtilNoop()
+  blankSpaceNoop()
+  blankSpace()
+  noopGenerator().next()
+  fjNoop()
+  lodashNoop()
+  lodash_Noop()
+  noOp()
+  nodeNoop()
+  noopUtility()
+  trueNoop()
+  noopFn()
+  noopaam()
+  nop()
+  es2015Noop()
+  kgryteNoop()
+  blackHole()
+  infinoop()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+  mNoop()
+  ahsmNoop()
+  qcCoreNoop()
+  nooop()
+  ryotahNoop()
+  zodashNoop()
+  jacobZuma()
+  onceNoop.doNothing()
+  _.noop()
+  underscore.noop()
   leftPad('required', LEFT_PAD_INPUT)
   rightPad('required', RIGHT_PAD_INPUT)
   leftpad('required', LEFTPAD_INPUT)
