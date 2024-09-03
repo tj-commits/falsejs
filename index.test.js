@@ -30,7 +30,12 @@ attempt(() => {
   global.jQuery = require('jquery')
   injectIntojQuery()
   assert(jQuery.False == False && jQuery.isFalse == isFalse, 'jQuery injection did not work')
-  // TODO: Add tests for express middleware
+  /// Express middlewar
+  const request = {}
+  const response = {}
+  expressMiddleware(request, response, ()=>{})
+  assert(request.False == False, 'Express middleware injection to request did not work')
+  assert(request.isFalse == isFalse, 'Express middleware injection to request did not work')
 })
   .rescue((error) => {
     console.log(clc.red(leftPad('× TESTS FAILED!!!!!', lpi)))
