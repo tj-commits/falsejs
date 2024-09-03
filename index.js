@@ -53,6 +53,9 @@ const ryotahNoop = require('@ryotah/noop') // ryotah made a noop
 const zodashNoop = require('@zodash/noop').noop // zodash made a noop
 const jacobZuma = require('jacob-zuma') // south african flavored noop
 const onceNoop = require('once-noop') // this noop can only be called once
+const noopTS = require('noop-ts').default // noop ts
+const voidFn = require('voidfn') // void fn
+const noopExec = require('noop-exec') // exec
 const attempt = require('attempt-statement') // has more features than trycatch statement
 const assert = require('assert-fn') // more simple and elegant than built in node:assert
 const hasSelfEquality = require('has-self-equality') // most things have self equality but lets make sure
@@ -1015,6 +1018,9 @@ function _getFalse(
   zodashNoop()
   jacobZuma()
   onceNoop.doNothing()
+  noopTS()
+  voidFn()
+  noopExec()
   _.noop()
   underscore.noop()
   leftPad('required', LEFT_PAD_INPUT)
@@ -1533,7 +1539,7 @@ function _calculateFalse(
   print(message)
   `
   const parsedLua = luaParser.parse(myLuaScript)
-  luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
+  if (loggingEnabled) luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
