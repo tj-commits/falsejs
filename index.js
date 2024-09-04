@@ -72,7 +72,7 @@ const isNegativeZero2 = require('negative-zero') // can't hurt to have another n
 const isPositiveZero = require('positive-zero') // positive zero
 const isFalse = require('is-false') // false
 const isTrue = require('is-true') // true
-const is = require('is-thirteen')// comparison-against-twelve-free environment
+const is = require('is-thirteen') // comparison-against-twelve-free environment
 const isThreeHundred = require('is-three-hundred') // is-three-hundred
 const isNumber = require('is-number') // jonschlinkert
 const isActualNumber = require('is-actual-number') // my is-number
@@ -80,6 +80,19 @@ const isIsOdd = require('is-is-odd') // isIsOdd
 const isOdd = require('is-odd') //isOdd
 const isOd = require('is-od') // isOd
 const isOddAndrew = require('is-odd-andrew') // isOddAndrew
+const isOddNum = require('is-odd-num') // another odd checker
+const isIntegerOdd = require('is-integer-odd') // another!!!!
+const noteven = require('not-even') // not even
+const isUneven = require('is-uneven') // whysomany
+const numberKind = require('number-kind') // this exports two fns!
+const isOddFaster = require('is-odd-faster').isOdd
+const gabrielBrotasIsOdd = require('gabriel-brotas-is-odd')
+const returnIfOddNumber = require('return-if-odd-number')
+const numberIsOdd = require('number-is-odd')
+const isNumOdd = require('is-num-odd')
+const isOddNumber = require('is-odd-number')
+const isNumberOdd = require('is_number_odd')
+const isThisNumberOdd = require('is-this-number-odd')
 const add = require('examplebyraji') // a package
 const cowsay = require('cowsay') // let's say stuff
 const lolcatjs = require('lolcatjs') // the rainbow i tastes it
@@ -88,11 +101,17 @@ const owoifyx = require('owoifyx').default // UwU
 const Uwuifier = require('uwuifier').default // UwU (x2)
 const luaParser = require('luaparse')
 const luaInterpreter = require('lua-interpreter')
+const exit = require('exit')
+const appendType = require('append-type')
+const concatenater = require('concatenater')
 const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse') // april fools
 
 // * HELPER FUNCTIONS FROM OTHER LIBRARIES THAT ARE BY FALSEJS
 const couldThisCouldItBeTrue = require('@falsejs/is-true-helper')
-const { returnFalse, isFalse: isPreciselyEqualToFalse } = require('@falsejs/core-ish')
+const {
+  returnFalse,
+  isFalse: isPreciselyEqualToFalse
+} = require('@falsejs/core-ish')
 
 // * DATES
 const Today = new Date()
@@ -243,13 +262,17 @@ const my = {
     tants: {
       STARTING_SUCCESSOR_HELPER_STACK: zr0(),
       FALSE: _f(),
-      ERROR_THAT_WILL_NEVER_BE_SHOWN: require('is-three-hundred')
-        .split('Vladimir')
-        [zr0()].concat(
-          colors.red(
-            `[false-value] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
+      ERROR_THAT_WILL_NEVER_BE_SHOWN: concatenater(
+        require('is-three-hundred')
+          .split('Vladimir')
+          [zr0()].concat(
+            colors.red(
+              `[false-value] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
+            )
           )
-        ),
+      )
+        .append(noop2.toString().split(noop2.toString())[zr0()])
+        .toString(),
       TEN_THOUSAND: 10e3,
       LEFT_PAD_INPUT: 30,
       RIGHT_PAD_INPUT: 30,
@@ -455,7 +478,11 @@ const { ADDRGETNETWORKPARAMS } = require('node:dns')
 // * SOME CHECKS
 tru(
   isEqual(
-    not(isFalse)({ result: not(literally(isEqual(t(), trueValue)))() }, 'result') && isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
+    not(isFalse)(
+      { result: not(literally(isEqual(t(), trueValue)))() },
+      'result'
+    ) &&
+      isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
     Bro.TOTALLY
   )
 ).then(() => {
@@ -527,8 +554,17 @@ if (not(() => Bro($).doYouEven('add'))()) {
       return total
     }
     $.equals = (v1, v2) => {
-      if (!isActualNumber(v1) && !isActualNumber(v2))
-        return immediateError('GIVEN-PARAMETER-WAS-NOT-A-NUMBER!') // not the same message as the original but i dont know what it is and am too lazy to look into the source code
+      if (!isActualNumber(v1) && !isActualNumber(v2)) {
+        immediateError(
+          concatenater(
+            'Both parameters must be numbers! Instead what was passed in was '
+          )
+            .append(appendType(v1))
+            .toString()
+            .concat(concatenater(' or ').append(appendType(v2)).toString())
+        ) // not the same message as the original but i dont know what it is and am too lazy to look into the source code
+        return exit(one) // just in case it doesn't exit
+      }
 
       return isEqualTo(v1, v2) /// not usnig $.equals because we are literally redefining that
     }
@@ -688,7 +724,6 @@ function sendGetRequest(to, cb) {
   xhr.open('GET', to, f()) // Set the third parameter to false for synchronous requests
   xhr.send()
 }
-
 
 // * SAY FUNCTION
 
@@ -966,15 +1001,15 @@ if ($.equals(one, Two())) {
 // :O :O :O
 /**
  * Calculates the boolean value false using various techniques.
-*
-* @param {number} random - A random number used in the calculation.
-* @param {boolean} loggingEnabled - Indicates whether logging is enabled.
-* @param {function} shouldDoSomethingAsync - A function that determines whether an asynchronous operation should be performed.
-* @param {function} shouldDoSomethingAsyncWithIsTenThousand - A function that determines whether an asynchronous operation should be performed based on a condition.
-* @param {object} logger - An object used for logging messages.
-*
-* @returns {boolean} - The calculated boolean value false.
-*/
+ *
+ * @param {number} random - A random number used in the calculation.
+ * @param {boolean} loggingEnabled - Indicates whether logging is enabled.
+ * @param {function} shouldDoSomethingAsync - A function that determines whether an asynchronous operation should be performed.
+ * @param {function} shouldDoSomethingAsyncWithIsTenThousand - A function that determines whether an asynchronous operation should be performed based on a condition.
+ * @param {object} logger - An object used for logging messages.
+ *
+ * @returns {boolean} - The calculated boolean value false.
+ */
 function _getFalse(
   random,
   loggingEnabled,
@@ -993,8 +1028,8 @@ function _getFalse(
   noop8()
   noop9()
   asyncUtilNoop()
-  blankSpaceNoop()
   blankSpace()
+  blankSpaceNoop()
   noopGenerator().next()
   fjNoop()
   lodashNoop()
@@ -1246,7 +1281,7 @@ function _getFalse(
                                 logger.log(
                                   clc.red(
                                     `[falsejs] Final attempt failed. Resorting to returning the result of the false libary by MDE.`
-                                  )  // through another library, of course
+                                  ) // through another library, of course
                                 )
                                 const myNewFalseValue = returnFalse()
                                 if (is_This_Value_false(myNewFalseValue)) {
@@ -1502,7 +1537,7 @@ function _calculateFalse(
       logger.log(clc.yellow(`[falsejs] That's weird`))
     })
     .Else(n0p3)
-  
+
   If(isIsOdd(isOddAndrew))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for Andrew`))
@@ -1526,12 +1561,76 @@ function _calculateFalse(
         )
       )
     })
-
-  If(isIsOdd(isOdd))
-    .Then(n0p3)
-    .Else(() => {
-      logger.log(clc.red(`[falsejs]-Is-odd-is-not-is-odd!!!`))
+  
+  If(isIsOdd(isOddNum))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for prasundas`))
     })
+    .Else(noop4())
+
+  If(isIsOdd(isIntegerOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for hoanduy1710`))
+    })
+    .Else(noop2)
+
+  If(isIsOdd(noteven))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for DeaSTL`))
+    })
+    .Else(noop3)
+
+  If(isIsOdd(isUneven))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for Robin`))
+    })
+    .Else(noop7)
+  
+  If(isIsOdd(numberKind.odd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for goten`))
+    }).Else(noop8)
+
+  If(isIsOdd(isOddFaster))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Bad for bvpranu97, 'cos he wanted to make a faster version but his version is literally the same LOL`))
+    }).Else(noop9)
+
+  If(isIsOdd(gabrielBrotasIsOdd.isOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for Gabriel`))
+    }).Else(blankSpace)
+  
+  If(isIsOdd(returnIfOddNumber))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for iamrahulpatel`))
+    }).Else(blankSpaceNoop)
+  
+  If(isIsOdd(numberIsOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for Scott`))
+    }).Else(asyncUtilNoop)
+  
+  If(isIsOdd(isNumOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for Shivam`))
+    }).Else(() => noopGenerator().next())
+
+  If(isIsOdd(isOddNumber))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for LinkDev`))
+    }).Else(fjNoop)
+
+  If(isIsOdd(isNumberOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for aliraza401`))
+    }).Else(lodashNoop)
+
+  If(isIsOdd(isThisNumberOdd))
+    .Then(() => {
+      logger.log(pc.green(`[falsejs] Good for makogai`))
+    }).Else(lodash_Noop)
+  
 
   // now let's run some lua code
   const myLuaScript = `
@@ -1543,7 +1642,7 @@ function _calculateFalse(
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
-  if (not(() => isAprilFools())()) {
+  if (not(isAprilFools)()) {
     if (disableAprilFoolsSideEffects) {
       if (strictDisableAprilFoolsSideEffectsCheck) {
         immediateError(
@@ -1552,7 +1651,7 @@ function _calculateFalse(
             { errorType: ERROR.Error }
           )
         )
-        return
+        return exit(one)
       } else {
         logger.log(
           clc.yellow(
@@ -1632,7 +1731,6 @@ function _calculateFalse(
 
 //* the exported function
 
-
 /**
  bro the documentation for this function is in the index.d.ts file
  */
@@ -1649,7 +1747,7 @@ function mainFunctionWotDoesFunctionality(
     immediateError('enableLogging must be yes or no', {
       errorType: ERROR.TypeError
     })
-    return
+    return exit(one)
   }
   if (
     not(isEqualTo)(shouldDoSomethingAsync, NO) &&
@@ -1658,7 +1756,7 @@ function mainFunctionWotDoesFunctionality(
     immediateError('shouldDoSomethingAsync must be yes or no', {
       errorType: ERROR.TypeError
     })
-    return
+    return exit(one)
   }
   if (
     not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, NO) &&
@@ -1668,7 +1766,7 @@ function mainFunctionWotDoesFunctionality(
       'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
       { errorType: ERROR.TypeError }
     )
-    return
+    return exit(one)
   }
   if (
     not(isEqualTo)(disableAprilFoolsSideEffects, NO) &&
@@ -1677,7 +1775,7 @@ function mainFunctionWotDoesFunctionality(
     immediateError('disableAprilFoolsSideEffects must be yes or no', {
       errorType: ERROR.TypeError
     })
-    return
+    return exit(one)
   }
   if (
     not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
@@ -1686,7 +1784,7 @@ function mainFunctionWotDoesFunctionality(
     immediateError('definitelyDisableAprilFoolsSideEffects must be yes or no', {
       errorType: ERROR.TypeError
     })
-    return
+    return exit(one)
   }
   if (
     not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
@@ -1698,7 +1796,7 @@ function mainFunctionWotDoesFunctionality(
         errorType: ERROR.TypeError
       }
     )
-    return
+    return exit(one)
   }
   // let's say hello to our users and inform them logging enabled if it is
   if (
