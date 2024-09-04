@@ -104,6 +104,8 @@ const luaInterpreter = require('lua-interpreter')
 const exit = require('exit')
 const appendType = require('append-type')
 const concatenater = require('concatenater')
+const lowercase = require('convert-to-lower-case')
+const isNodeScriptRunning = require('node-script-running')
 const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse') // april fools
 
 // * HELPER FUNCTIONS FROM OTHER LIBRARIES THAT ARE BY FALSEJS
@@ -1393,7 +1395,7 @@ function _calculateFalse(
   isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
   doSelfEqualityChecks(loggingEnabled) // do self equality checks
 
-  // our users should know some basic info first like if they are stupid
+  // our users should know some basic info first
 
   // the os:
   If(isWindows())
@@ -1561,7 +1563,7 @@ function _calculateFalse(
         )
       )
     })
-  
+
   If(isIsOdd(isOddNum))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for prasundas`))
@@ -1585,52 +1587,64 @@ function _calculateFalse(
       logger.log(pc.green(`[falsejs] Good for Robin`))
     })
     .Else(noop7)
-  
+
   If(isIsOdd(numberKind.odd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for goten`))
-    }).Else(noop8)
+    })
+    .Else(noop8)
 
   If(isIsOdd(isOddFaster))
     .Then(() => {
-      logger.log(pc.green(`[falsejs] Bad for bvpranu97, 'cos he wanted to make a faster version but his version is literally the same LOL`))
-    }).Else(noop9)
+      logger.log(
+        pc.green(
+          `[falsejs] Bad for bvpranu97, 'cos he wanted to make a faster version but his version is literally the same LOL`
+        )
+      )
+    })
+    .Else(noop9)
 
   If(isIsOdd(gabrielBrotasIsOdd.isOdd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for Gabriel`))
-    }).Else(blankSpace)
-  
+    })
+    .Else(blankSpace)
+
   If(isIsOdd(returnIfOddNumber))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for iamrahulpatel`))
-    }).Else(blankSpaceNoop)
-  
+    })
+    .Else(blankSpaceNoop)
+
   If(isIsOdd(numberIsOdd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for Scott`))
-    }).Else(asyncUtilNoop)
-  
+    })
+    .Else(asyncUtilNoop)
+
   If(isIsOdd(isNumOdd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for Shivam`))
-    }).Else(() => noopGenerator().next())
+    })
+    .Else(() => noopGenerator().next())
 
   If(isIsOdd(isOddNumber))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for LinkDev`))
-    }).Else(fjNoop)
+    })
+    .Else(fjNoop)
 
   If(isIsOdd(isNumberOdd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for aliraza401`))
-    }).Else(lodashNoop)
+    })
+    .Else(lodashNoop)
 
   If(isIsOdd(isThisNumberOdd))
     .Then(() => {
       logger.log(pc.green(`[falsejs] Good for makogai`))
-    }).Else(lodash_Noop)
-  
+    })
+    .Else(lodash_Noop)
 
   // now let's run some lua code
   const myLuaScript = `
@@ -1639,6 +1653,8 @@ function _calculateFalse(
   `
   const parsedLua = luaParser.parse(myLuaScript)
   if (loggingEnabled) luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
+
+  logger.log(StringValueof(lowercase(`[falsejs] This is in lowercase`)))
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
@@ -1742,129 +1758,141 @@ function mainFunctionWotDoesFunctionality(
   definitelyDisableAprilFoolsSideEffects = NO,
   strictDisableAprilFoolsSideEffectsCheck = YES
 ) {
-  // validate our values
-  if (not(isEqualTo)(enableLogging, NO) && not(isEqualTo)(enableLogging, YES)) {
-    immediateError('enableLogging must be yes or no', {
-      errorType: ERROR.TypeError
-    })
-    return exit(one)
-  }
-  if (
-    not(isEqualTo)(shouldDoSomethingAsync, NO) &&
-    not(isEqualTo)(shouldDoSomethingAsync, YES)
-  ) {
-    immediateError('shouldDoSomethingAsync must be yes or no', {
-      errorType: ERROR.TypeError
-    })
-    return exit(one)
-  }
-  if (
-    not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, NO) &&
-    not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, YES)
-  ) {
-    immediateError(
-      'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
-      { errorType: ERROR.TypeError }
-    )
-    return exit(one)
-  }
-  if (
-    not(isEqualTo)(disableAprilFoolsSideEffects, NO) &&
-    not(isEqualTo)(disableAprilFoolsSideEffects, YES)
-  ) {
-    immediateError('disableAprilFoolsSideEffects must be yes or no', {
-      errorType: ERROR.TypeError
-    })
-    return exit(one)
-  }
-  if (
-    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
-    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
-  ) {
-    immediateError('definitelyDisableAprilFoolsSideEffects must be yes or no', {
-      errorType: ERROR.TypeError
-    })
-    return exit(one)
-  }
-  if (
-    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
-    not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
-  ) {
-    immediateError(
-      'strictDisableAprilFoolsSideEffectsCheck must be yes or no',
-      {
+  if (isNodeScriptRunning()) {
+    // validate our values
+    if (
+      not(isEqualTo)(enableLogging, NO) &&
+      not(isEqualTo)(enableLogging, YES)
+    ) {
+      immediateError('enableLogging must be yes or no', {
         errorType: ERROR.TypeError
-      }
-    )
-    return exit(one)
-  }
-  // let's say hello to our users and inform them logging enabled if it is
-  if (
-    isEqualTo(
-      isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
-      Bro.TOTALLY
-    )
-  ) {
-    ltc(clc.cyanBright(`[falsejs] Logging enabled`))
-    ltc(clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT))))
-    hello({ username, age: "it's called FalseJS!" })
-
-    mGenbaneko.say(clc.redBright(`Hi UwU`))
-  }
-  // deduce a random number
-  const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
-  if (
-    isEqualTo(
-      isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
-      Bro.TOTALLY
-    )
-  ) {
-    ltc(
-      clc.cyanBright(`[falsejs] Random number ${randomNumber} calculated`) // lets inform our users if they have loggineanbled
-    )
-    ltc(
-      clc.cyanBright(
-        `[falsejs] Doing something async ${new TernaryCompare(
-          yesNo.parse(shouldDoSomethingAsync),
-          'enabled',
-          'disabled'
-        ).compare()}`
-      )
-    )
-    ltc(
-      clc.cyanBright(
-        `[falsejs] Doing something async with is-ten-thousand ${new TernaryCompare(
-          yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand),
-          'enabled',
-          'disabled'
-        ).compare()}`
-      )
-    )
-  }
-  const loggingEnabled = enableLogging
-  const logger = {
-    log(l) {
-      if (isEqualTo(trueComparison.compare(), yesNo.parse(loggingEnabled)))
-        ltc(l)
+      })
+      return exit(one)
     }
-  }
-  if (not(yesNo.parse)(strictDisableAprilFoolsSideEffectsCheck)) {
-    logger.log(
-      clc.yellow(
-        `[falsejs] Strict disable April Fools side effects checking disabled`
+    if (
+      not(isEqualTo)(shouldDoSomethingAsync, NO) &&
+      not(isEqualTo)(shouldDoSomethingAsync, YES)
+    ) {
+      immediateError('shouldDoSomethingAsync must be yes or no', {
+        errorType: ERROR.TypeError
+      })
+      return exit(one)
+    }
+    if (
+      not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, NO) &&
+      not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, YES)
+    ) {
+      immediateError(
+        'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
+        { errorType: ERROR.TypeError }
       )
+      return exit(one)
+    }
+    if (
+      not(isEqualTo)(disableAprilFoolsSideEffects, NO) &&
+      not(isEqualTo)(disableAprilFoolsSideEffects, YES)
+    ) {
+      immediateError('disableAprilFoolsSideEffects must be yes or no', {
+        errorType: ERROR.TypeError
+      })
+      return exit(one)
+    }
+    if (
+      not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
+      not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
+    ) {
+      immediateError(
+        'definitelyDisableAprilFoolsSideEffects must be yes or no',
+        {
+          errorType: ERROR.TypeError
+        }
+      )
+      return exit(one)
+    }
+    if (
+      not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, NO) &&
+      not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
+    ) {
+      immediateError(
+        'strictDisableAprilFoolsSideEffectsCheck must be yes or no',
+        {
+          errorType: ERROR.TypeError
+        }
+      )
+      return exit(one)
+    }
+    // let's say hello to our users and inform them logging enabled if it is
+    if (
+      isEqualTo(
+        isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
+        Bro.TOTALLY
+      )
+    ) {
+      ltc(clc.cyanBright(`[falsejs] Logging enabled`))
+      ltc(
+        clc.cyan(`[falsejs]`.concat(leftPad(greet(username), LEFT_PAD_INPUT)))
+      )
+      hello({ username, age: "it's called FalseJS!" })
+
+      mGenbaneko.say(clc.redBright(`Hi UwU`))
+    }
+    // deduce a random number
+    const randomNumber = add(Math.floor(Math.random() * numberOneHundred), one)
+    if (
+      isEqualTo(
+        isTrue({ enableLogging: yesNo.parse(enableLogging) }, 'enableLogging'),
+        Bro.TOTALLY
+      )
+    ) {
+      ltc(
+        clc.cyanBright(`[falsejs] Random number ${randomNumber} calculated`) // lets inform our users if they have loggineanbled
+      )
+      ltc(
+        clc.cyanBright(
+          `[falsejs] Doing something async ${new TernaryCompare(
+            yesNo.parse(shouldDoSomethingAsync),
+            'enabled',
+            'disabled'
+          ).compare()}`
+        )
+      )
+      ltc(
+        clc.cyanBright(
+          `[falsejs] Doing something async with is-ten-thousand ${new TernaryCompare(
+            yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand),
+            'enabled',
+            'disabled'
+          ).compare()}`
+        )
+      )
+    }
+    const loggingEnabled = enableLogging
+    const logger = {
+      log(l) {
+        if (isEqualTo(trueComparison.compare(), yesNo.parse(loggingEnabled)))
+          ltc(l)
+      }
+    }
+    if (not(yesNo.parse)(strictDisableAprilFoolsSideEffectsCheck)) {
+      logger.log(
+        clc.yellow(
+          `[falsejs] Strict disable April Fools side effects checking disabled`
+        )
+      )
+    }
+    return doop(
+      _calculateFalse,
+      randomNumber, // random number
+      yesNo.parse(enableLogging), // eanble logging
+      yesNo.parse(shouldDoSomethingAsync), // async
+      yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand), //async-is-ten-thousand
+      yesNo.parse(disableAprilFoolsSideEffects) &&
+        yesNo.parse(definitelyDisableAprilFoolsSideEffects),
+      yesNo.parse(strictDisableAprilFoolsSideEffectsCheck)
     )
+  } else {
+    return // there's no point doing anything if node is not running
   }
-  return doop(
-    _calculateFalse,
-    randomNumber, // random number
-    yesNo.parse(enableLogging), // eanble logging
-    yesNo.parse(shouldDoSomethingAsync), // async
-    yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand), //async-is-ten-thousand
-    yesNo.parse(disableAprilFoolsSideEffects) &&
-      yesNo.parse(definitelyDisableAprilFoolsSideEffects),
-    yesNo.parse(strictDisableAprilFoolsSideEffectsCheck)
-  )
 }
 
 // * MORE HELPER FUNCTIONS
