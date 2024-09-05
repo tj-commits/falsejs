@@ -118,7 +118,7 @@ app.listen(PORT)
 ```
 
 ## Related Projects
-- [true-value](https://github.com/tj-commits/falsejs) (the sister project)
+- [true-value](https://github.com/tj-commits/true-value) (the sister project)
 - [false](https://github.com/mde/false)
 - [true](https://github.com/mde/true)
 - [alternative-true](https://github.com/donavon/alternative-true)
