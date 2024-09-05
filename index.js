@@ -235,6 +235,7 @@ const isSeven = require('is-eq-seven')
 const isNotNil = (v) => not(() => isNil(v))()
 //* ANOTHER SECTION OF MODULE IMPORTS.
 const useGarbage = require('garbage')
+const isUseless = require('is-useless')
 const isAprilFools = require('is-april-fools')
 const immediateError = require('immediate-error')
 const ERROR = immediateError.ERROR
@@ -666,6 +667,9 @@ function predecessor(n) {
  * vValue(1000) // Returns 1000
  */
 function vValue(num) {
+  if (!isActualNumber(num)) {
+    return num
+  }
   const rand = Math.random()
   const rand2 = Math.random()
   const useMinus =
@@ -1654,7 +1658,7 @@ function _calculateFalse(
   const parsedLua = luaParser.parse(myLuaScript)
   if (loggingEnabled) luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
 
-  logger.log(StringValueof(lowercase(`[falsejs] This is in lowercase`)))
+  logger.log(vValue(isUseless(StringValueof(lowercase(`[falsejs] This is in lowercase`)))))
   //#endregion stuff before the actual calculation of false
   // okay we need to calculate false
 
