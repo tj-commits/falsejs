@@ -37,10 +37,12 @@ The third argument, `shouldDoSomethingAsyncWithIsTenThousand`, is whether `is-te
 
 The third and fourth arguments,  `disableAprilFoolsSideEffects` and `definitelyDisableAprilFoolsSideEffects`, can be `"yes"` or `"no"`. Both of them have to be `"yes"` to bypass the side effects of it being April Fools? What side effects, you may ask? Well, let's just say, FalseJS does something different on April Fools. If these are enabled when it's not April Fools, then an error will be thrown, unless the fifth argument, `strictDisableAprilFoolsSideEffectsCheck`, is `"no"`.
 
+The sixth argument, `openRandomImageOfDofleWhenDone`, can be `"yes"` or `"no"`. If it is `"yes"`, then a random image of Sindre Sorhus's cat Dofle will be opened after false is calculated.
+
 ## Example
 ```javascript
 const f = require('falsejs')
-const False = f.False('yes', 'no', 'no', 'yes', 'yes', 'no') // outputs a bunch of logs
+const False = f.False('yes', 'no', 'no', 'yes', 'yes', 'no', 'no') // outputs a bunch of logs
 
 console.log(False) // outputs false
 ```

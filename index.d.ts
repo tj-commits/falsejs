@@ -7,11 +7,11 @@
  * @param {"yes"|"no"} disableAprilFoolsSideEffects - Indicates whether April Fools side effects should be disabled.
  * @param {"yes"|"no"} definitelyDisableAprilFoolsSideEffects - Indicates whether April Fools side effects should be definitely disabled.
  * @param {"yes"|"no"} strictDisableAprilFoolsSideEffectsCheck - Indicates whether strict checking for disabling April Fools side effects should be enabled.
- *
+ * @param {"yes"|"no"} openRandomImageOfDofleWhenDone - Indicates whether a random image of Dofle the cat should be opened when done.
  * @returns {boolean} - The calculated boolean value 'false'.
  */
 
-export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no"): boolean;
+export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no", openRandomImageOfDofleWhenDone?: "yes" | "no"): boolean;
 /**
  * Checks if a given value is false.
  *
