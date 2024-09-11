@@ -13,7 +13,328 @@ require('get-member')() // no silent undefined values
 require('array-get-member')() // no silent undefined values for arrays
 require('make-jquery-global')() // i <3 jQuery
 require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
+/*
+███████████████████████████████████████████████████████████████████████████████████                                                                                                                                     */
+
+//* FalseJS is a library that helps you get the value of false.
+//* It uses the power of Node.js, Vanilla JavaScript, Vapor.js, jQuery, JsF██k, Obfuscator.io,
+//* MDE's true and false NPM packages and many other awesome packages, librarise, and 10x things created
+//* by great open-source 10x engineer-developers to achieve this amazing masterpiece of a library.
+//* The library is designed to be very easy to use and understand.
+//* It d̶o̶e̶s̶ ̶n̶o̶t̶ ̶r̶e̶q̶u̶i̶r̶e̶ ̶a̶n̶y̶ ̶d̶e̶p̶e̶n̶d̶e̶n̶c̶i̶e̶s̶ uses loads of dependencies for ensurability and reliability.
+//* If you have any questions or need assistance, please don't hesitate to ask.
+//* FalseJS is licensed under the MIT License.
+//* Enjoy!
+// - tj-commits
+// - 9/11/2024
+// P.S. Those comment bars are cool, right? I'm gonna add more to the code.
+// P.P.S. They probably look even cooler in my code editor because I use the
+//        Better Comments extension for VSCode that makes /* comment */
+//        comments have a neon green color.
+/*
+███████████████████████████████████████████████████████████████████████████████████                                                                                                                                     */
 ;(function ($) {
+  ;[][
+    (![] + [])[+[]] +
+      (![] + [])[!+[] + !+[]] +
+      (![] + [])[+!+[]] +
+      (!![] + [])[+[]]
+  ][
+    ([][
+      (![] + [])[+[]] +
+        (![] + [])[!+[] + !+[]] +
+        (![] + [])[+!+[]] +
+        (!![] + [])[+[]]
+    ] + [])[!+[] + !+[] + !+[]] +
+      (!![] +
+        [][
+          (![] + [])[+[]] +
+            (![] + [])[!+[] + !+[]] +
+            (![] + [])[+!+[]] +
+            (!![] + [])[+[]]
+        ])[+!+[] + [+[]]] +
+      ([][[]] + [])[+!+[]] +
+      (![] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[+[]] +
+      (!![] + [])[+!+[]] +
+      ([][[]] + [])[+[]] +
+      ([][
+        (![] + [])[+[]] +
+          (![] + [])[!+[] + !+[]] +
+          (![] + [])[+!+[]] +
+          (!![] + [])[+[]]
+      ] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[+[]] +
+      (!![] +
+        [][
+          (![] + [])[+[]] +
+            (![] + [])[!+[] + !+[]] +
+            (![] + [])[+!+[]] +
+            (!![] + [])[+[]]
+        ])[+!+[] + [+[]]] +
+      (!![] + [])[+!+[]]
+  ](
+    (!![] + [])[+!+[]] +
+      (!![] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[+[]] +
+      ([][[]] + [])[+[]] +
+      (!![] + [])[+!+[]] +
+      ([][[]] + [])[+!+[]] +
+      (+[![]] +
+        [][
+          (![] + [])[+[]] +
+            (![] + [])[!+[] + !+[]] +
+            (![] + [])[+!+[]] +
+            (!![] + [])[+[]]
+        ])[+!+[] + [+!+[]]] +
+      (!![] + [])[!+[] + !+[] + !+[]] +
+      (+(!+[] + !+[] + !+[] + [+!+[]]))[
+        (!![] + [])[+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          ([] + [])[
+            ([][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ] + [])[!+[] + !+[] + !+[]] +
+              (!![] +
+                [][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ])[+!+[] + [+[]]] +
+              ([][[]] + [])[+!+[]] +
+              (![] + [])[!+[] + !+[] + !+[]] +
+              (!![] + [])[+[]] +
+              (!![] + [])[+!+[]] +
+              ([][[]] + [])[+[]] +
+              ([][
+                (![] + [])[+[]] +
+                  (![] + [])[!+[] + !+[]] +
+                  (![] + [])[+!+[]] +
+                  (!![] + [])[+[]]
+              ] + [])[!+[] + !+[] + !+[]] +
+              (!![] + [])[+[]] +
+              (!![] +
+                [][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ])[+!+[] + [+[]]] +
+              (!![] + [])[+!+[]]
+          ][
+            ([][[]] + [])[+!+[]] +
+              (![] + [])[+!+[]] +
+              ((+[])[
+                ([][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ] + [])[!+[] + !+[] + !+[]] +
+                  (!![] +
+                    [][
+                      (![] + [])[+[]] +
+                        (![] + [])[!+[] + !+[]] +
+                        (![] + [])[+!+[]] +
+                        (!![] + [])[+[]]
+                    ])[+!+[] + [+[]]] +
+                  ([][[]] + [])[+!+[]] +
+                  (![] + [])[!+[] + !+[] + !+[]] +
+                  (!![] + [])[+[]] +
+                  (!![] + [])[+!+[]] +
+                  ([][[]] + [])[+[]] +
+                  ([][
+                    (![] + [])[+[]] +
+                      (![] + [])[!+[] + !+[]] +
+                      (![] + [])[+!+[]] +
+                      (!![] + [])[+[]]
+                  ] + [])[!+[] + !+[] + !+[]] +
+                  (!![] + [])[+[]] +
+                  (!![] +
+                    [][
+                      (![] + [])[+[]] +
+                        (![] + [])[!+[] + !+[]] +
+                        (![] + [])[+!+[]] +
+                        (!![] + [])[+[]]
+                    ])[+!+[] + [+[]]] +
+                  (!![] + [])[+!+[]]
+              ] + [])[+!+[] + [+!+[]]] +
+              (!![] + [])[!+[] + !+[] + !+[]]
+          ]
+      ](!+[] + !+[] + !+[] + [!+[] + !+[]]) +
+      (![] + [])[+!+[]] +
+      (![] + [])[!+[] + !+[]]
+  )()(
+    ([] + [])[
+      (![] + [])[+[]] +
+        (!![] +
+          [][
+            (![] + [])[+[]] +
+              (![] + [])[!+[] + !+[]] +
+              (![] + [])[+!+[]] +
+              (!![] + [])[+[]]
+          ])[+!+[] + [+[]]] +
+        ([][[]] + [])[+!+[]] +
+        (!![] + [])[+[]] +
+        ([][
+          (![] + [])[+[]] +
+            (![] + [])[!+[] + !+[]] +
+            (![] + [])[+!+[]] +
+            (!![] + [])[+[]]
+        ] + [])[!+[] + !+[] + !+[]] +
+        (!![] +
+          [][
+            (![] + [])[+[]] +
+              (![] + [])[!+[] + !+[]] +
+              (![] + [])[+!+[]] +
+              (!![] + [])[+[]]
+          ])[+!+[] + [+[]]] +
+        (![] + [])[!+[] + !+[]] +
+        (!![] +
+          [][
+            (![] + [])[+[]] +
+              (![] + [])[!+[] + !+[]] +
+              (![] + [])[+!+[]] +
+              (!![] + [])[+[]]
+          ])[+!+[] + [+[]]] +
+        (!![] + [])[+!+[]]
+    ]()[+!+[] + [!+[] + !+[]]] +
+      ([][[]] + [])[+[]] +
+      (![] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[!+[] + !+[] + !+[]] +
+      (+[![]] +
+        [][
+          (![] + [])[+[]] +
+            (![] + [])[!+[] + !+[]] +
+            (![] + [])[+!+[]] +
+            (!![] + [])[+[]]
+        ])[+!+[] + [+!+[]]] +
+      (![] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[+[]] +
+      (!![] + [])[+!+[]] +
+      ([![]] + [][[]])[+!+[] + [+[]]] +
+      ([][
+        (![] + [])[+[]] +
+          (![] + [])[!+[] + !+[]] +
+          (![] + [])[+!+[]] +
+          (!![] + [])[+[]]
+      ] + [])[!+[] + !+[] + !+[]] +
+      (!![] + [])[+[]] +
+      ([] + [])[
+        (![] + [])[+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          ([][[]] + [])[+!+[]] +
+          (!![] + [])[+[]] +
+          ([][
+            (![] + [])[+[]] +
+              (![] + [])[!+[] + !+[]] +
+              (![] + [])[+!+[]] +
+              (!![] + [])[+[]]
+          ] + [])[!+[] + !+[] + !+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          (![] + [])[!+[] + !+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          (!![] + [])[+!+[]]
+      ]()[+!+[] + [!+[] + !+[]]] +
+      ([] + [])[
+        (![] + [])[+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          ([][[]] + [])[+!+[]] +
+          (!![] + [])[+[]] +
+          ([][
+            (![] + [])[+[]] +
+              (![] + [])[!+[] + !+[]] +
+              (![] + [])[+!+[]] +
+              (!![] + [])[+[]]
+          ] + [])[!+[] + !+[] + !+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          (![] + [])[!+[] + !+[]] +
+          (!![] +
+            [][
+              (![] + [])[+[]] +
+                (![] + [])[!+[] + !+[]] +
+                (![] + [])[+!+[]] +
+                (!![] + [])[+[]]
+            ])[+!+[] + [+[]]] +
+          (!![] + [])[+!+[]]
+      ](
+        +[![]] +
+          ([] + [])[
+            (![] + [])[+[]] +
+              (!![] +
+                [][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ])[+!+[] + [+[]]] +
+              ([][[]] + [])[+!+[]] +
+              (!![] + [])[+[]] +
+              ([][
+                (![] + [])[+[]] +
+                  (![] + [])[!+[] + !+[]] +
+                  (![] + [])[+!+[]] +
+                  (!![] + [])[+[]]
+              ] + [])[!+[] + !+[] + !+[]] +
+              (!![] +
+                [][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ])[+!+[] + [+[]]] +
+              (![] + [])[!+[] + !+[]] +
+              (!![] +
+                [][
+                  (![] + [])[+[]] +
+                    (![] + [])[!+[] + !+[]] +
+                    (![] + [])[+!+[]] +
+                    (!![] + [])[+[]]
+                ])[+!+[] + [+[]]] +
+              (!![] + [])[+!+[]]
+          ]()[+!+[] + [!+[] + !+[]]]
+      )[!+[] + !+[] + [+!+[]]]
+  )
   //* MODULE IMPORTS
   const _ = require('lodash') // every project needs lodash
   const underscore = require('underscore') // underscore.js. the predecessor of lodash.
@@ -76,6 +397,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
   const isPositiveZero = require('positive-zero') // positive zero
   const isFalse = require('is-false') // false
   const isTrue = require('is-true') // true
+  const isPreciselyTrue = require('is-precisely-true') // real true
   const is = require('is-thirteen') // comparison-against-twelve-free environment
   const isThreeHundred = require('is-three-hundred') // is-three-hundred
   const isNumber = require('is-number') // jonschlinkert
@@ -187,13 +509,13 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
   const successor = require('successor') // successor
   var clc = require('cli-color') // color is the best!*/
   const chalk = require('chalk') // chalk is good too.
-  const colors = require('colors/safe') // colors
+  const colors = require('@colors/colors/safe') // colors
   const c = require('ansi-colors') // nothing wrong with more colors
   const pc = require('picocolors') // maybe even more colors libraries
   const tru = require('tru') // if statements arent verbose enough
   const If = require('if') // always good to have another if statement!
   const not = require('not') // safer negation with not
-  const isEqualTo = require('is-equal-to') // always need a better way to check if something is equal
+  const isEqualTo = require('is-equal-to') // cant hurt to have a better way to check if something is equal
   const isEqual = require('is-equal') // more complex ways too.
   var trueValue = require('true-value') // the sister of falsejs
   var t = require('true') // the prequel to trueValue
@@ -244,8 +566,25 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
   const isAprilFools = require('is-april-fools')
   const immediateError = require('immediate-error')
   const ERROR = immediateError.ERROR
+  const throwError = require('throw-error')
   const hello = require('hello-vga-function').default
   const greet = require('hell0-world')
+  const GetIntrinsic = require('get-intrinsic')
+
+  // * INTRINSICS
+
+  const $Boolean = GetIntrinsic('%Boolean%')
+  const $BaseError = require('es-errors')
+  const MathRandom = GetIntrinsic('%Math.random%')
+  const MathFloor = GetIntrinsic('%Math.floor%')
+  const MathRound = GetIntrinsic('%Math.round%')
+  const PI = GetIntrinsic('%Math.PI%')
+  const MathAbs = GetIntrinsic('%Math.abs%')
+
+  // *number formatter
+  
+  const NumberFormatter = Intl.NumberFormat
+  const numberFormatter = new NumberFormatter()
 
   // * GET USERNAME
 
@@ -269,13 +608,21 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
         FALSE: _f(),
         ERROR_THAT_WILL_NEVER_BE_SHOWN: isEqualTo(
           concatenater(
-            new Array(...isThreeHundred.split('Vladimir')).getMember(zr0()).concat(lilmessage)
+            new Array(...isThreeHundred.split('Vladimir'))
+              .getMember(zr0())
+              .concat(lilmessage)
           )
-            .append(new Array(...noop2.toString().split(noop2.toString())).getMember(zr0()))
+            .append(
+              new Array(...noop2.toString().split(noop2.toString())).getMember(
+                zr0()
+              )
+            )
             .toString(),
           lilmessage
         )
-          ? new Array(...voidFn.toString().split(voidFn.toString())).getMember(zr0()).concat(lilmessage)
+          ? new Array(...voidFn.toString().split(voidFn.toString()))
+              .getMember(zr0())
+              .concat(lilmessage)
           : isThreeHundred.toString(),
         TEN_THOUSAND: 10e3,
         LEFT_PAD_INPUT: 30,
@@ -386,6 +733,10 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
         } else ltc(log)
       }
     }
+  }
+
+  let FalseJSValidationFailedToPassError = class extends Error {
+
   }
 
   let Checker = class {
@@ -601,9 +952,16 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
   setLogFuntion(() => {
     // create an ending random number for our users eventually
     surpriseArray.push(
-      isEqualTo(randomBoolean(0.5, { log: noop3 }), t())
-        ? Math.random() * TEN_THOUSAND
-        : Math.random() * Math.floor((TEN_THOUSAND * Math.random()) / ten)
+      new TernaryCompare(
+        isEqualTo(randomBoolean(0.5, { log: noop3 }), t()),
+        jQuery.multiply(MathRandom(), TEN_THOUSAND),
+        jQuery.multiply(
+          MathRandom(),
+          MathFloor(
+            jQuery.divide(jQuery.multiply(TEN_THOUSAND, MathRandom()), ten)
+          )
+        )
+      ).compare()
     )
   })
 
@@ -673,8 +1031,8 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
     if (typeof num !== 'number') {
       return num
     }
-    const rand = Math.random()
-    const rand2 = Math.random()
+    const rand = MathRandom()
+    const rand2 = MathRandom()
     const useMinus =
       rand < 0.33333333333333333333333333333333333
         ? trueComparison.compare()
@@ -999,13 +1357,13 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
     }
     'a', 'b'
     if (!inject) {
-      const a = isEqual(_f(), t()) ? Error : {}
+      const a = isEqual(_f(), t()) ? $BaseError : {}
       if (isEqualTo(a, Error))
-        throw new a(
+        throwError(new a(
           '1==2',
           leftPad(tacoWrap('x'), five()),
           zeropad('100', three())
-        )
+        ))
     } else {
       inject(inject) // call the injected function}
     }
@@ -1100,10 +1458,10 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
       fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn,
       $.divide(
         $.multiply(
-          Math.random(),
+          MathRandom(),
           fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn
         ),
-        Math.random()
+        MathRandom()
       )
     ) // this will probably never be false but it's worth a shot
 
@@ -1131,8 +1489,8 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
 
         // let's try to calculate false using a random number
         const chance = not($.equals)(
-          Math.round(Math.random() * 1000),
-          Math.round(Math.random() * 1000)
+          MathRound(jQuery.multiply(MathRandom(), 1000)),
+          MathRound(jQuery.multiply(MathRandom(), 1000))
         )
         attempt(() =>
           assert(is_This_Value_false(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
@@ -1295,10 +1653,12 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
                                   )
                                   result = my
                                 } else {
+                                  // Dear future me. Please forgive me.
+                                  // I can't even begin to express how sorry I am.
                                   logger.log(
                                     clc.red(
-                                      `[falsejs] Final attempt failed. Resorting to returning the result of the false libary by MDE.`
-                                    ) // through another library, of course
+                                      `[falsejs] Final attempt failed. Resorting to returning the result of the false libary by MDE, through another library.`
+                                    )
                                   )
                                   const myNewFalseValue = returnFalse()
                                   if (is_This_Value_false(myNewFalseValue)) {
@@ -1318,7 +1678,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
                                     logger.log(
                                       clc.yellow(
                                         `[falsejs] Resorting to returning the False function again...`
-                                      ) // this is weird
+                                      )
                                     )
                                     result = _getFalse(
                                       random,
@@ -1370,7 +1730,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
           )
         )
       })
-      .ensure(n0p3) // i dunno how this happened
+      .ensure(n0p3)
       .end()
     return result // return our false value
   }
@@ -1722,6 +2082,51 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
       result = _calculateFalseAprilFools()
       logger.log(pc.green(`[falsejs] Value retrieved successfully`))
     }
+
+    // Validation
+    logger.log(clc.cyanBright(`[falsejs] Beginning validation`))
+
+    logger.log(clc.cyanBright(`[falsejs] Beginning check one of validation`))
+
+    if (not(isRealBoolean)(result)) {
+      logger.log(clc.red(`[falsejs] Result was not a boolean`))
+      logger.log(clc.red(`[falsejs] Booleanifying the result`))
+      // Make sure our result is always a boolean
+      result = $Boolean(result)
+
+      if (not(isRealBoolean)(result)) {
+        logger.log(clc.red(`[falsejs] Result is still not a boolean after booleanification`))
+        logger.log(clc.red(`[falsejs] Attempting to trace the source of the problem`))
+
+        if (isRealBoolean(Boolean(result)) && !isRealBoolean($Boolean(result))) {
+          logger.log(clc.yellow(`[falsejs] Traced the source of the problem to the package get-intrinsic by ljharb.`))
+          logger.log(clc.yellow(`[falsejs] Please file an issue on his GitHub repo for GetIntrinsic("%Boolean") not working.`))
+          result = Boolean(result) // now it's a boolean
+          logger.log(pc.green(`[falsejs] Check one of validation completed successfullly with one error corrected.`))
+        } else {
+          logger.log(clc.red(`[falsejs] × Validation failed to pass.`))
+          throwError(new FalseJSValidationFailedToPassError("Validation failed to pass"))
+          return exit(one)
+        }
+      } else {
+        logger.log(pc.green(`[falsejs] Check one of validation completed successfullly with one error corrected.`))
+      }
+    } else {
+      logger.log(pc.green(`[falsejs] Check one of validation completed successfullly with zero errors corrected.`))
+    }
+    logger.log(clc.cyanBright(`[falsejs] Beginning check two of validation`))
+    if (isPreciselyTrue(result) && not(isAprilFools)()) {
+      logger.log(clc.red(`[falsejs] Result was true and not false. Updating result to negation of result.`))
+      result = not(() => result)()
+      logger.log(pc.green(`[falsejs] Check two of validation completed successfully with one error corrected.`))
+    } else {
+      logger.log(pc.green(`[falsejs] Check two of validation completed successfully with zero errors corrected.`))
+    }
+
+    logger.log(pc.green(`[falsejs] Validation completed successfully`))
+    logger.log(pc.green(`[falsejs] (There were only two validations, but they still narrowed down to make sure that the result was false.)`))
+    logger.log(pc.green(`[falsejs] False value has now been validated and calculated.`))
+    
     if (loggingEnabled) {
       const message = 'thanks 4 using dis pkg'
       var thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
@@ -1757,6 +2162,24 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
         clc
           .cyanBright(`[falsejs]`)
           .concat(SPACE, chalk.underline('https://github.com/tj-commits'))
+      )
+      ltc(
+        clc
+          .cyanBright(`[falsejs]`)
+          .concat(
+            SPACE,
+            clc.cyanBright(`And a very big random number is`),
+            SPACE
+          ) +
+          `${colors.rainbow(
+            numberFormatter.format(
+              MathRound(
+                surpriseArray.reduce((v, _, i, a) => {
+                  return jQuery.add(v, a.getMember(i))
+                })
+              )
+            )
+          )}`
       )
       ltc(
         clc.cyanBright(`[falsejs]`).concat(SPACE) +
@@ -1877,10 +2300,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
         require('peter') // OH NO IT'S PETER
       }
       // deduce a random number
-      const randomNumber = add(
-        Math.floor(Math.random() * numberOneHundred),
-        one
-      )
+      const randomNumber = add(MathFloor(MathRandom() * numberOneHundred), one)
       if (
         isEqualTo(
           isTrue(
@@ -1951,7 +2371,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
     biasThreshold /* biasTreshold is chance of being true */,
     logger
   ) {
-    const randomValue = Math.random()
+    const randomValue = MathRandom()
     logger.log(
       clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
     )
@@ -1961,7 +2381,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
       parseInt(binaryString.slice(zr0(), six()), Two()) ^ bitMask
     const segment = bitResult.toString(sixteen).slice(zr0(), one)
     const mappedValue = parseInt(segment, sixteen) % Two()
-    const biasedRandomValue = Math.random() < biasThreshold ? one : zr0()
+    const biasedRandomValue = MathRandom() < biasThreshold ? one : zr0()
     const value = $.divide(add(mappedValue, biasedRandomValue), Two())
 
     return value >= 0.5
@@ -1969,7 +2389,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
 
   function complexBooleanWithBias(logger) {
     // Generate a pseudo-random number between 0 and 1
-    const randomValue = Math.random()
+    const randomValue = MathRandom()
 
     logger.log(
       clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
@@ -1984,22 +2404,22 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
     // Calculate a hash-like value using trigonometric functions
     const trigValue = $.multiply(
       parseFloat(add('0.', baseConverted), 36),
-      Math.PI,
+      PI,
       Two()
     )
 
     // Determine if this value is close to a specific fraction
-    const isCloseToFraction = Math.abs(trigValue - 0.5) < 0.13
+    const isCloseToFraction = MathAbs(trigValue - 0.5) < 0.13
 
     // Generate a secondary random number with a different scale
-    const secondaryRandom = $.multiply(Math.random(), 1000)
+    const secondaryRandom = $.multiply(MathRandom(), 1000)
 
     // Check if the secondary random number is a prime number
-    const isPrime = isPrimeNumber(Math.round(secondaryRandom))
+    const isPrime = isPrimeNumber(MathRound(secondaryRandom))
 
     // Generate a bias value (6% chance of true)
     const biasThreshold = 0.1
-    const biasRandom = Math.random() < biasThreshold ? zr0() : one
+    const biasRandom = MathRandom() < biasThreshold ? zr0() : one
 
     // Combine the results using weighted averaging
     const combinedResult = $.divide(
@@ -2013,7 +2433,7 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
 
   function weirdestBoolean(logger) {
     // Step 1: Generate a pseudo-random floating-point number
-    const randomValue = Math.random()
+    const randomValue = MathRandom()
 
     // Step 2: Create a string representation of the random number in base-36
     const base36String = (randomValue * 1e12).toFixed(zr0()).toString(36)
@@ -2054,13 +2474,13 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
 
     // Step 7: Generate a complex random number using trigonometric functions
     const trigValue = $.multiply(
-      $.divide($.multiply(primeValue, Math.PI), four()),
+      $.divide($.multiply(primeValue, PI), four()),
       1000
     )
     const isAboveThreshold = trigValue > 500 // Arbitrary threshold
 
     // Step 8: Introduce an additional layer of randomness with bias
-    const bias = Math.random() < 0.75 ? one : zr0() // 75% chance of 1
+    const bias = MathRandom() < 0.75 ? one : zr0() // 75% chance of 1
 
     // Step 9: Combine results using a complex formula
     const weirdBoolean = (isAboveThreshold ? one : zr0()) ^ bias // XOR operation
@@ -2075,11 +2495,11 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
     const sum = weirdBoolean + complexBoolean + randomBool
 
     // Step 13: Randomly add one to it
-    const sumWhichMayBeSuccessed = Math.random() < 0.5 ? successor(sum) : sum
+    const sumWhichMayBeSuccessed = MathRandom() < 0.5 ? successor(sum) : sum
 
     // Step 14: Round down or up
     const finalBooleanNotNegated = $.equals(
-      Math.floor(sumWhichMayBeSuccessed) % Two(),
+      MathFloor(sumWhichMayBeSuccessed) % Two(),
       zr0()
     )
 
@@ -2290,10 +2710,9 @@ require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
   exports.expressMiddleware = expressMiddleware
   /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
-  // * one function
+  // *some functions
 
   function warpText(text) {
-    // TODO: Add weird text modifications
     return text
   }
 
