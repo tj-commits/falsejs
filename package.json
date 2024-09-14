@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1.5.11",
+  "version": "1.5.12",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "@falsejs/core-ish": "^1.0.0",
     "@falsejs/is-true-helper": "^1.0.2",
     "@kgryte/noop": "^1.0.0",
+    "@not-js/not": "^1.0.0",
     "@onesneakymofo/the-number-seven": "^1.1.0",
     "@ryotah/noop": "^1.0.0",
     "@sir_wernich/taco-wrap": "^1.0.8",
@@ -177,7 +178,6 @@
     "noop9": "^1.0.0",
     "noopaam": "^0.0.2",
     "nop": "^1.0.0",
-    "not": "^0.1.0",
     "not-even": "^1.0.3",
     "number-fifteen": "^1.0.0",
     "number-is-odd": "^1.0.0",
