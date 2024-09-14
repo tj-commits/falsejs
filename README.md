@@ -4,7 +4,7 @@
 > #### Better than the keyword itself.
 Ever wondered what would happen if JavaScript changed the `false` keyword to something else, like `no`, `nope`, `noway`, or something else? Chaos. That is what FalseJS is for.
 
-The 10 attempts to get the value of false ensure that if one fails, it will go on to the next, so if JavaScript breaks one, there will still be more attempts. This is an alternative to the library `false` by mde, which uses the hardcoded boolean value `false` (which I believe they are trying to resolve on the sister library `true`, which will probably be passed down to the `false` library), and is way too short. FalseJS is way better. Look at the source code and be amazed.
+The 10 attempts to get the value of false ensure that if one fails, it will go on to the next, so if JavaScript breaks one, there will still be more attempts. This is an alternative to the library `false` by mde, which uses the hardcoded boolean value `false` (which I believe they are trying to resolve on the sister library `true`, which will probably be passed down to the `false` library), and is way too short. FalseJS is way better. It's even written in nocode, but the vanilla JS version is included as `index.src.js` if you want to read the source and can't read nocode. If you can read nocode, it's in the `index.no` file which includes the core logic.
 
 ## Installation
 Install FalseJS with your favorite package manager.
