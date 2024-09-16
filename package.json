@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1.5.13",
+  "version": "1.5.14",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -218,6 +218,8 @@
     "two": "^1.0.7",
     "undefined-is-a-function": "^0.1.0",
     "underscore": "^1.13.7",
+    "utf8-byte-length": "^1.0.5",
+    "uuid": "^10.0.0",
     "uwuifier": "^4.2.2",
     "value-nine": "^9.0.0",
     "vanilla-javascript": "^1.1.1",

@@ -236,6 +236,13 @@ require('-') // this is a pointless package
   // TODO: Implement is Windows 12
   const isFreeBSD = require('is-freebsd').isFreeBSD // i've never even heard of this until now.
   const os = require('node:os') // maybe node js itself can help us calculate more operating systems
+  const util = require('node:util') // maybe some built in stuff would be nice
+  const http = require('node:http') // http!
+  const http2 = require('node:http2') //http/2!
+  const https = require('node:https') // https!
+  const crypto = require('node:crypto') // crypto
+  const uuid = require('uuid') // UUID
+  const getStringLength = require('utf8-byte-length') // get string length
   const poopEmoji = require('emoji-poop')
   const emoji100 = require('emoji-100')
   const Bro = require('brototype') // Bro
@@ -243,7 +250,6 @@ require('-') // this is a pointless package
   const { log: ltc, setLogFuntion } = require('logtoconsole') // best logger
   const yesNo = require('yes-no')
   const { undefined } = require('undefined-is-a-function')
-  const util = require('node:util') // maybe some built in stuff would be nice
   const isNull = util.isNull || require('is-null')
   const isUndefined = require('is-undefined')
   const isNil = require('is-nil')
@@ -279,6 +285,7 @@ require('-') // this is a pointless package
   const MathRound = GetIntrinsic('%Math.round%')
   const PI = GetIntrinsic('%Math.PI%')
   const MathAbs = GetIntrinsic('%Math.abs%')
+  const StringCharAt = GetIntrinsic('%String.prototype.charAt%')
 
   // *number formatter
 
@@ -337,7 +344,10 @@ require('-') // this is a pointless package
         STARTING_VVALUE_USER_PLUS: zr0(),
         STARTING_VVALUE_USER_PAD: zr0(),
         NO: require('no/dist/main'),
-        YES: 'yes'
+        YES: 'yes',
+        FALSEJS_HTTP_PORT: 32573, // "FALSE" in telephone number letters
+        FALSEJS_HTTP2_PORT: 32574,
+        FALSEJS_HTTPS_PORT: 32575
       }
     }
   }
@@ -358,7 +368,10 @@ require('-') // this is a pointless package
     STARTING_VVALUE_USER_PLUS,
     STARTING_VVALUE_USER_PAD,
     NO,
-    YES
+    YES,
+    FALSEJS_HTTP_PORT,
+    FALSEJS_HTTP2_PORT,
+    FALSEJS_HTTPS_PORT
   } = my.getMember('cons').getMember('tants')
   //#endregion constants
   // *CLASSES
@@ -525,9 +538,6 @@ require('-') // this is a pointless package
     exclamations: 1
   })
   const westPad = new WestPad('N')
-
-  // * a module import
-  const { ADDRGETNETWORKPARAMS } = require('node:dns')
 
   // * SOME CHECKS
   tru(
@@ -1035,7 +1045,6 @@ require('-') // this is a pointless package
         }
       })
 
-    ltc(ADDRGETNETWORKPARAMS)
     const error = (e) => {
       throw e
     }
@@ -1080,6 +1089,7 @@ require('-') // this is a pointless package
    */
   function _getFalse(
     random,
+    randomLetterOrNumber,
     loggingEnabled,
     shouldDoSomethingAsync = _f(),
     shouldDoSomethingAsyncWithIsTenThousand = _f(),
@@ -1198,35 +1208,42 @@ require('-') // this is a pointless package
               )
             )
             // lets see if our random is any of these key values
-            if (isOne(random)) {
+            if (isOne(random) || (isNumber(randomLetterOrNumber) && isOne(parseInt(randomLetterOrNumber)))) {
               result = $.equals(random, Two())
               logger.log(
                 pc.green(
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-            } else if (isTwo(random)) {
+            } else if (isTwo(random) || (isNumber(randomLetterOrNumber) && isTwo(parseInt(randomLetterOrNumber)))) {
               result = $.equals(random, three())
               logger.log(
                 pc.green(
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-            } else if (isThree(random)) {
+            } else if (isThree(random) || (isNumber(randomLetterOrNumber) && isThree(parseInt(randomLetterOrNumber)))) {
               result = $.equals(random, four())
               logger.log(
                 pc.green(
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-            } else if (isTen(random)) {
+            } else if (eightToolkit.isEight(random) || (isNumber(randomLetterOrNumber) && eightToolkit.isEight(parseInt(randomLetterOrNumber)))) {
+              result = $.equals(random, four())
+              logger.log(
+                pc.green(
+                  `[falsejs] Attempt III succeeded. False value retrieved successfully`
+                )
+              )
+            } else if (isTen(random) || (isNumber(randomLetterOrNumber) && isTen(parseInt(randomLetterOrNumber)))) {
               result = $.equals(random, eleven())
               logger.log(
                 pc.green(
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-            } else if (isHundred(random)) {
+            } else if (isHundred(random) || (isNumber(randomLetterOrNumber) && isHundred(parseInt(randomLetterOrNumber)))) {
               result = $.equals(random, s(hundred))
               logger.log(
                 pc.green(
@@ -1375,7 +1392,9 @@ require('-') // this is a pointless package
                                         `[falsejs] Resorting to returning the False function again...`
                                       )
                                     )
-                                    result = _getFalse(
+                                    result = doop(
+                                      _getFalse,
+                                      randomLetterOrNumber,
                                       random,
                                       loggingEnabled,
                                       shouldDoSomethingAsync,
@@ -1465,6 +1484,64 @@ require('-') // this is a pointless package
 
     isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
     doSelfEqualityChecks(loggingEnabled) // do self equality checks
+
+    // we need to setup servers
+
+    // CREATE HTTP, HTTP2, AND HTTPS SERVERS
+    var httpServer = http.createServer(function (req, res) {
+      res.writeHead(200)
+      res.end('This is the FalseJS core logic HTTP server.')
+    })
+
+    var http2Server = http2.createSecureServer({allowHTTP1: true } ,function (req, res) {
+      res.writeHead(200)
+      res.end('This is the FalseJS core logic HTTP/2 server.')
+    })
+
+    var httpsServer = https.createServer({}, function (req, res) {
+      res.writeHead(200)
+      res.end('This is the FalseJS core logic HTTPS server.')
+    })
+
+    httpServer.on('error', function (err) {
+      if (err.code === 'EADDRINUSE') {
+        logger.log(clc.yellow(`[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTP_PORT} for something.`))
+      }
+    })
+
+    http2Server.on('error', function (err) {
+      if (err.code === 'EADDRINUSE') {
+        logger.log(clc.yellow(`[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTP2_PORT} for something.`))
+      }
+    })
+
+    httpsServer.on('error', function (err) {
+      if (err.code === 'EADDRINUSE') {
+        logger.log(clc.yellow(`[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTPS_PORT} for something.`))
+      }
+    })
+
+    httpServer.listen({ port: FALSEJS_HTTP_PORT }, () => {
+      logger.log(
+        pc.green(
+          `[falsejs] FalseJS HTTP server is probably listening on port ${FALSEJS_HTTP_PORT}`
+        )
+      )
+    })
+    http2Server.listen({ port: FALSEJS_HTTP2_PORT }, () => {
+      logger.log(
+        pc.green(
+          `[falsejs] FalseJS HTTP/2 server is probably listening on port ${FALSEJS_HTTP2_PORT}`
+        )
+      )
+    })
+    httpsServer.listen({ port: FALSEJS_HTTPS_PORT }, () => {
+      logger.log(
+        pc.green(
+          `[falsejs] FalseJS HTTP/2 server is probably listening on port ${FALSEJS_HTTPS_PORT}`
+        )
+      )
+    })
 
     // our users should know some basic info first
 
@@ -1755,8 +1832,10 @@ require('-') // this is a pointless package
             )
           )
           // call the _getFalse function
-          result = _getFalse(
+          result = doop(
+            _getFalse,
             random,
+            calculateRandomLetterOrNumber(loggingEnabled),
             loggingEnabled,
             shouldDoSomethingAsync,
             shouldDoSomethingAsyncWithIsTenThousand,
@@ -1765,8 +1844,10 @@ require('-') // this is a pointless package
         }
       } else {
         // call the _getFalse function
-        result = _getFalse(
+        result = doop(
+          _getFalse,
           random,
+          calculateRandomLetterOrNumber(loggingEnabled),
           loggingEnabled,
           shouldDoSomethingAsync,
           shouldDoSomethingAsyncWithIsTenThousand,
@@ -1870,6 +1951,24 @@ require('-') // this is a pointless package
     logger.log(
       pc.green(`[falsejs] False value has now been validated and calculated.`)
     )
+
+    
+
+    httpServer.close(() => {
+      logger.log(
+        pc.green(`[falsejs] HTTP server closed successfully`)
+      )
+    })
+    http2Server.close(() => {
+      logger.log(
+        pc.green(`[falsejs] HTTP/2 server closed successfully`)
+      )
+    })
+    httpsServer.close(() => {
+      logger.log(
+        pc.green(`[falsejs] HTTPS server closed successfully`)
+      )
+    })
 
     if (loggingEnabled) {
       const message = 'thanks 4 using dis pkg'
@@ -2458,6 +2557,19 @@ exports.No = literally(NO)*/
 
   function warpText(text) {
     return text
+  }
+
+  function calculateRandomLetterOrNumber(loggingEnabled) {
+    const uniqueId = uuid.v4()
+    const uniqueId2 = crypto.randomUUID()
+    const dashlessUUID = uniqueId.replaceAll("-", "")
+    const dashlessUUID2 = uniqueId2.replaceAll("-", "")
+    const combinedUUID = "".concat(dashlessUUID, dashlessUUID2)
+    const randomCharacter = StringCharAt.call(combinedUUID, $.add(MathFloor($.multiply(MathRandom(), getStringLength(combinedUUID))), one))
+    if (loggingEnabled) {
+      ltc(clc.cyanBright(`[falsejs] Random character calculated: ${randomCharacter}`))
+    }
+    return randomCharacter
   }
 
   // i am scared to define this function
