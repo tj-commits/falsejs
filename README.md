@@ -120,7 +120,9 @@ app.listen(PORT)
 ```
 
 ## Version History
-
+This is the list of all FalseJS versions:
+```
+256.256.500
 256.256.256
 255.255.255
 130.10.0
@@ -160,6 +162,7 @@ app.listen(PORT)
 1.0.5
 1.0.4
 1.0.3
+```
 
 ## Related Projects
 - [true-value](https://github.com/tj-commits/true-value) (the sister project)
