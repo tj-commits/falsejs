@@ -2661,10 +2661,13 @@ require('-') // this is a pointless package
   }
   //*EXPORTING
 
-  exports.False = mainFunctionWotDoesFunctionality // export this
-  exports.isFalse = is_This_Value_false // export this too
-  exports.injectIntojQuery = jQueryPlugin
-  exports.expressMiddleware = expressMiddleware
+  module.exports = {
+    False: mainFunctionWotDoesFunctionality,
+    isFalse: is_This_Value_false,
+    injectIntojQuery: jQueryPlugin,
+    expressMiddleware
+  }
+
   /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
   // *some functions
