@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1.5.14",
+  "version": "13.1.0",
   "description": "False",
   "main": "index.js",
   "scripts": {
