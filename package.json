@@ -1,13 +1,13 @@
 {
   "name": "falsejs",
-  "version": "13.1.0",
+  "version": "130.10.0",
   "description": "False",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js"
   },
   "author": "tj-commits",
-  "license": "MIT",
+  "license": "10xWTFPL",
   "dependencies": {
     "-": "^0.0.1",
     "@ahsm/noop": "^1.0.0",
