@@ -36,6 +36,12 @@ require('-') // this is a pointless package
   [][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((!![]+[])[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([][[]]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+!+[]]+(+[![]]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(!+[]+!+[]+!+[]+[+!+[]]))[(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([]+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]][([][[]]+[])[+!+[]]+(![]+[])[+!+[]]+((+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]+[])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]]](!+[]+!+[]+!+[]+[!+[]+!+[]])+(![]+[])[+!+[]]+(![]+[])[!+[]+!+[]])()(([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]]+([][[]]+[])[+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(+[![]]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([![]]+[][[]])[+!+[]+[+[]]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]](+[![]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]])[!+[]+!+[]+[+!+[]]])
   //* MODULE IMPORTS
   const _ = require('lodash') // every project needs lodash
+  const chalk = require('chalk') // color is the best!*/
+  var clc = require('cli-color') // another color module
+  const colors = require('@colors/colors/safe') // colors
+  const chalkbox = require('chalkbox') // with a box
+  const c = require('ansi-colors') // nothing wrong with even more colors
+  const pc = require('picocolors') // maybe even more colors libraries
   const underscore = require('underscore') // underscore.js. the predecessor of lodash.
   const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
   const { generatePhoneNumber } = require('phone-number-generator-js') // phone numbers
@@ -229,11 +235,6 @@ require('-') // this is a pointless package
 
   const bool = require('true-bool') // booleans
   const successor = require('successor') // successor
-  var clc = require('cli-color') // color is the best!*/
-  const chalk = require('chalk') // chalk is good too.
-  const colors = require('@colors/colors/safe') // colors
-  const c = require('ansi-colors') // nothing wrong with more colors
-  const pc = require('picocolors') // maybe even more colors libraries
   const tru = require('tru') // if statements arent verbose enough
   const If = require('if') // always good to have another if statement!
   const not = require('@not-js/not') // safer negation with not
@@ -594,8 +595,8 @@ require('-') // this is a pointless package
       target: Logger,
       args: [trueComparison.compare()]
     }) // a-logger
-    logger.log(clc.red('[falsejs] True is not true-value')) // a message
-    logger.log(clc.red('[falsejs] Diagnosing the issue')) // the price of speed
+    logger.log(colors.red('[falsejs] True is not true-value')) // a message
+    logger.log(colors.red('[falsejs] Diagnosing the issue')) // the price of speed
     If(
       isEqual(
         isTrue({ result: not(literally(isEqual(t(), true)))() }, 'result'),
@@ -604,8 +605,8 @@ require('-') // this is a pointless package
     )
       .Then(() => {
         // MDE WHY DID YOU DO THIS TO US!!!?!?!?!?!
-        logger.log(clc.red("[falsejs] mde's true library is not working."))
-        logger.log(clc.red('[falsejs] WHY MDE?!??!!?!?'))
+        logger.log(colors.red("[falsejs] mde's true library is not working."))
+        logger.log(colors.red('[falsejs] WHY MDE?!??!!?!?'))
         t = () => true // i hate using true keyword
       })
       .Else()
@@ -620,7 +621,7 @@ require('-') // this is a pointless package
       )
       .Then(() => {
         // WHY IS MY LIBRARY NOT WORKING
-        logger.log(clc.red('[falsejs] true-value library not working.'))
+        logger.log(colors.red('[falsejs] true-value library not working.'))
         trueValue = true // i HATE USING TRUE KEYWORD
         tVal = trueValue //I HATE IT
       })
@@ -632,7 +633,7 @@ require('-') // this is a pointless package
     var True_Logger = construct({ target: Logger, args: [t()] })
     // uh oh... jquery basic arithmetic plugin didn't work
     True_Logger.log(
-      clc.red('[falsejs] jquery-basic-arithmetic-plugin is not working')
+      colors.red('[falsejs] jquery-basic-arithmetic-plugin is not working')
     ) // inform our users even if they disabled logging
     require('jquery-basic-arithmetic-plugin')
     require('jquery-basic-arithmetic-plugin')
@@ -643,7 +644,7 @@ require('-') // this is a pointless package
     require('jquery-basic-arithmetic-plugin') // now it should work
     if (!Bro($).doYouEven('add')) {
       True_Logger.log(
-        clc.red('[falsejs] jquery-basic-arithmetic-plugin is still not working')
+        colors.red('[falsejs] jquery-basic-arithmetic-plugin is still not working')
       ) // inform our users even if they disabled logging
       $.add = (...nums) => {
         var total = zr0()
@@ -678,7 +679,7 @@ require('-') // this is a pointless package
       }
       if (!Bro($).doYouEven('add')) {
         True_Logger.log(
-          clc.red(
+          colors.red(
             `[falsejs] Either your Node.js is broken, or jQuery is immutable. Something went wrong.`
           )
         )
@@ -909,7 +910,7 @@ require('-') // this is a pointless package
     })
       .rescue((error) => {
         logger.log(
-          clc.red(
+          colors.red(
             '[falsejs] Failed to verify that 10,000 is equal to 10,000 with error '.concat(
               error
             )
@@ -1234,7 +1235,7 @@ require('-') // this is a pointless package
         if (not(isEqualTo)(pureChance, pureChance)) {
           // something is broken
           logger.log(
-            clc.red(
+            colors.red(
               `[falsejs] Your Node.js may be broken as ${pureChance} is not equal to ${pureChance}`
             )
           )
@@ -1452,7 +1453,7 @@ require('-') // this is a pointless package
                                   // Dear future me. Please forgive me.
                                   // I can't even begin to express how sorry I am.
                                   logger.log(
-                                    clc.red(
+                                    colors.red(
                                       `[falsejs] Final attempt failed. Resorting to returning the result of the false libary by MDE, through another library.`
                                     )
                                   )
@@ -1890,7 +1891,7 @@ require('-') // this is a pointless package
     if (loggingEnabled) luaInterpreter.interpret(parsedLua) // run our lua code when the program ends
 
     logger.log(
-      clc.red(
+      colors.red(
         vValue(
           isuseless(StringValueof(lowercase(`[falsejs] This is in lowercase`)))
         )
@@ -1903,7 +1904,7 @@ require('-') // this is a pointless package
       if (disableAprilFoolsSideEffects) {
         if (strictDisableAprilFoolsSideEffectsCheck) {
           immediateError(
-            clc.red(
+            colors.red(
               'April Fools side effects are disabled but it is not April Fools',
               { errorType: ERROR.Error }
             )
@@ -1953,19 +1954,19 @@ require('-') // this is a pointless package
     logger.log(clc.cyanBright(`[falsejs] Beginning check one of validation`))
 
     if (not(isRealBoolean)(result)) {
-      logger.log(clc.red(`[falsejs] Result was not a boolean`))
-      logger.log(clc.red(`[falsejs] Booleanifying the result`))
+      logger.log(colors.red(`[falsejs] Result was not a boolean`))
+      logger.log(colors.red(`[falsejs] Booleanifying the result`))
       // Make sure our result is always a boolean
       result = $Boolean(result)
 
       if (not(isRealBoolean)(result)) {
         logger.log(
-          clc.red(
+          colors.red(
             `[falsejs] Result is still not a boolean after booleanification`
           )
         )
         logger.log(
-          clc.red(`[falsejs] Attempting to trace the source of the problem`)
+          colors.red(`[falsejs] Attempting to trace the source of the problem`)
         )
 
         if (
@@ -1989,7 +1990,7 @@ require('-') // this is a pointless package
             )
           )
         } else {
-          logger.log(clc.red(`[falsejs] × Validation failed to pass.`))
+          logger.log(colors.red(`[falsejs] × Validation failed to pass.`))
           throwError(
             construct({ target: FalseJSValidationFailedToPassError, args: ['Validation failed to pass'] })
           )
@@ -2012,7 +2013,7 @@ require('-') // this is a pointless package
     logger.log(clc.cyanBright(`[falsejs] Beginning check two of validation`))
     if (isPreciselyTrue(result) && not(isAprilFools)()) {
       logger.log(
-        clc.red(
+        colors.red(
           `[falsejs] Result was true and not false. Updating result to negation of result.`
         )
       )
@@ -2072,20 +2073,20 @@ require('-') // this is a pointless package
       if (succeededAttempt != null) {
         ltc(
           clc.cyanBright(`[falsejs]`).concat(SPACE) +
-            colors.magenta('The attempt that succeeded was attempt ' + succeededAttempt)
+            chalkbox.magenta('The attempt that succeeded was attempt ' + succeededAttempt)
         )
       }
       ltc(
         clc.cyanBright(`[falsejs]`).concat(SPACE) +
-          colors.rainbow(`Thanks for using this package`)
+          chalkbox.rainbow(`Thanks for using this package`)
       )
       ltc(
         clc.cyanBright(`[falsejs]`).concat(SPACE) +
-          colors.random(`I really appreciate it`)
+          chalkbox.random(`I really appreciate it`)
       )
       ltc(
         clc.cyanBright(`[falsejs]`).concat(SPACE) +
-          colors.america(`Star the repo and follow me on GitHub: `)
+          chalkbox.america(`Star the repo and follow me on GitHub: `)
       )
       ltc(
         clc
@@ -2100,7 +2101,7 @@ require('-') // this is a pointless package
             clc.cyanBright(`And a very big random number is`),
             SPACE
           ) +
-          `${colors.rainbow(
+          `${chalkbox.rainbow(
             numberFormatter.format(
               MathRound(
                 surpriseArray.reduce((v, _, i, a) => {
@@ -2328,7 +2329,7 @@ require('-') // this is a pointless package
     logger.log(
       clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
     )
-    const binaryString = (randomValue * 1000000).toString(Two())
+    const binaryString = (jQuery.multiply(randomValue, 1000000)).toString(Two())
     const bitMask = 0b101010
     const bitResult =
       parseInt(binaryString.slice(zr0(), six()), Two()) ^ bitMask

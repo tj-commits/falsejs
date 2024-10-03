@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "256.256.500",
+  "version": "365.255.500",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "blank-space": "^0.0.1",
     "brototype": "^0.0.6",
     "chalk": "^4.1.2",
+    "chalkbox": "^1.0.0",
     "cli-color": "^2.0.4",
     "co-noop": "^0.0.1",
     "concatenater": "^0.0.5",
@@ -283,6 +284,7 @@
   ],
   "devDependencies": {
     "express": "^4.19.2",
+    "is-noop": "^1.0.2",
     "stevelib": "^1.0.0",
     "twenty-four": "^25.0.0"
   }
