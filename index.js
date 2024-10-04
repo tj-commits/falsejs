@@ -147,7 +147,7 @@ require("-") // this is a pointless package
   const isNodeScriptRunning = require("node-script-running")
   const construct = require("construct-new") // better than the new keyword
   const { penis, vagina, mouth } = require("issue13") // some stuff
-
+  const $Promise = require("bluebird")
   const GetIntrinsic = require("get-intrinsic")
 
   // * INTRINSICS
@@ -157,7 +157,6 @@ require("-") // this is a pointless package
   const $Boolean = GetIntrinsic("%Boolean%")
   const $Date = GetIntrinsic("%Date%")
   const $Function = GetIntrinsic("%Function%")
-  const $Promise = GetIntrinsic("%Promise%")
   const MathRandom = GetIntrinsic("%Math.random%")
   const MathFloor = GetIntrinsic("%Math.floor%")
   const MathRound = GetIntrinsic("%Math.round%")

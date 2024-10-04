@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "999.999.999",
+  "version": "1000.0.0",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "attempt-statement": "^1.1.0",
     "axios": "^1.7.7",
     "blank-space": "^0.0.1",
+    "bluebird": "^3.7.2",
     "brototype": "^0.0.6",
     "chalk": "^4.1.2",
     "chalkbox": "^1.0.0",
