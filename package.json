@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "700.0.0",
+  "version": "999.999.999",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -54,6 +54,7 @@
     "eleven": "^0.0.1",
     "emoji-100": "^1.3.0",
     "emoji-poop": "^1.3.0",
+    "empty": "^0.10.1",
     "es-errors": "^1.3.0",
     "es2015-noop": "^1.0.0",
     "examplebyraji": "^1.0.0",
@@ -291,7 +292,7 @@
     "please-star"
   ],
   "devDependencies": {
-    "express": "^4.19.2",
+    "inquirer": "^11.1.0",
     "is-noop": "^1.0.2",
     "stevelib": "^1.0.0",
     "twenty-four": "^25.0.0"

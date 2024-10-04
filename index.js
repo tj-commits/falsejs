@@ -37,6 +37,7 @@ require("-") // this is a pointless package
   const _ = require("lodash") // every project needs lodash
   const React = require("react") // the best framework
   const ReactDOMServer = require("react-dom/server") // part of react
+  const inquirer = require("inquirer").default // inquirer
   const cheerio = require("cheerio") // cheerio!
   const chalk = require("chalk") // color is the best!*/
   var clc = require("cli-color") // another color module
@@ -48,6 +49,7 @@ require("-") // this is a pointless package
   const axios = require("axios") // so we can send requests
   const Tesseract = require("tesseract.js") // ai
   const { generatePhoneNumber } = require("phone-number-generator-js") // phone numbers
+  const emptyArray = require("empty/array")
   const n0p3 = require("n0p3") // a noop
   const noop2 = require("noop2") // nothing wrong with another noop
   const noop3 = require("noop3") // nothing wrong with yet another noop
@@ -1553,6 +1555,8 @@ require("-") // this is a pointless package
     isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
     doSelfEqualityChecks(loggingEnabled) // do self equality checks
 
+    inquirer.prompt(emptyArray) // prompt nothing for no reason
+
     // we need to setup servers
 
     // CREATE HTTP, HTTP2, AND HTTPS SERVERS
@@ -2077,6 +2081,10 @@ require("-") // this is a pointless package
             chalkbox.magenta(
               "The attempt that succeeded was attempt " + succeededAttempt
             )
+        )
+        fs.appendFileSync(
+          "phone-number-log.txt",
+          "succeeded attempt: " + succeededAttempt + "\n"
         )
       }
       ltc(
