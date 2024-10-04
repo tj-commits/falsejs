@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1000.0.0",
+  "version": "1000.0.1",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -243,7 +243,6 @@
     "vanilla-javascript": "^1.1.1",
     "vapor-js-npm": "^1.4.6",
     "voidfn": "^1.0.0",
-    "vue": "^3.5.11",
     "west-pad": "^2.0.1",
     "yanoop": "^1.0.0",
     "yes-no": "^0.0.1",
