@@ -12,6 +12,7 @@
  */
 
 export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no", openRandomImageOfDofleWhenDone?: "yes" | "no"): boolean;
+export function AsyncFalse(): Promise<boolean>;
 /**
  * Checks if a given value is false.
  *
@@ -20,5 +21,6 @@ export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "y
  */
 
 export function isFalse(value: any): boolean;
+
 export function injectIntojQuery(): void;
 export function expressMiddleware(req: any, res: any, next: any): void;

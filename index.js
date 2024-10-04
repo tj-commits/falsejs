@@ -3,28 +3,28 @@
  * The ultimate library for getting the value of false.
  * I didn't choose the 10x life. The 10x life chose me.
  * @author tj-commits
- * @license MIT
+ * @license 10xWTFPL
  * @version whatever_the_version_in_the_package.json_is
  */
-require('vanilla-javascript') // * because we are making something awesome!
-require('vapor-js-npm') // the most awesome and flexible javascript framework
-require('none')() // this improves load times and performance
-require('get-member')() // no silent undefined values
-require('array-get-member')() // no silent undefined values for arrays
-require('make-jquery-global')() // i <3 jQuery
-require('jquery-basic-arithmetic-plugin') // why not exploit jQuery for math
-require('-') // this is a pointless package
+require("vanilla-javascript") // * because we are making something awesome!
+require("vapor-js-npm") // the most awesome and flexible javascript framework
+require("none")() // this improves load times and performance
+require("get-member")() // no silent undefined values
+require("array-get-member")() // no silent undefined values for arrays
+require("make-jquery-global")() // i <3 jQuery
+require("jquery-basic-arithmetic-plugin") // why not exploit jQuery for math
+require("-") // this is a pointless package
 /*
 ███████████████████████████████████████████████████████████████████████████████████                                                                                                                                     */
 
 //* FalseJS is a library that helps you get the value of false.
-//* It uses the power of Node.js, Vanilla JavaScript, Vapor.js, jQuery, JsF██k, Obfuscator.io,
+//* It uses the power of Node.js, Vanilla JavaScript, Vapor.js, jQuery, Obfuscator.io,
 //* MDE's true and false NPM packages and many other awesome packages, librarise, and 10x things created
 //* by great open-source 10x engineer-developers to achieve this amazing masterpiece of a library.
 //* The library is designed to be very easy to use and understand.
 //* It d̶o̶e̶s̶ ̶n̶o̶t̶ ̶r̶e̶q̶u̶i̶r̶e̶ ̶a̶n̶y̶ ̶d̶e̶p̶e̶n̶d̶e̶n̶c̶i̶e̶s̶ uses loads of dependencies for ensurability and reliability.
 //* If you have any questions or need assistance, please don't hesitate to ask.
-//* FalseJS is licensed under the MIT License.
+//* FalseJS is licensed under the 10xWTFPL License.
 //* Enjoy!
 // - tj-commits
 // - 9/11/2024
@@ -32,141 +32,146 @@ require('-') // this is a pointless package
 /*
 ███████████████████████████████████████████████████████████████████████████████████                                                                                                                                     */
 ;(function ($) {
-  // prettier-ignore
-  [][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((!![]+[])[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([][[]]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+!+[]]+(+[![]]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]+(+(!+[]+!+[]+!+[]+[+!+[]]))[(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([]+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]][([][[]]+[])[+!+[]]+(![]+[])[+!+[]]+((+[])[([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]+[])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+[]+!+[]]]](!+[]+!+[]+!+[]+[!+[]+!+[]])+(![]+[])[+!+[]]+(![]+[])[!+[]+!+[]])()(([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]]+([][[]]+[])[+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(+[![]]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+!+[]]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([![]]+[][[]])[+!+[]+[+[]]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]](+[![]]+([]+[])[(![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(!![]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]])[!+[]+!+[]+[+!+[]]])
+  "use strict"
   //* MODULE IMPORTS
-  const _ = require('lodash') // every project needs lodash
-  const chalk = require('chalk') // color is the best!*/
-  var clc = require('cli-color') // another color module
-  const colors = require('@colors/colors/safe') // colors
-  const chalkbox = require('chalkbox') // with a box
-  const c = require('ansi-colors') // nothing wrong with even more colors
-  const pc = require('picocolors') // maybe even more colors libraries
-  const underscore = require('underscore') // underscore.js. the predecessor of lodash.
-  const { XMLHttpRequest } = require('xmlhttprequest') // so we can send requests
-  const { generatePhoneNumber } = require('phone-number-generator-js') // phone numbers
-  const n0p3 = require('n0p3') // a noop
-  const noop2 = require('noop2') // nothing wrong with another noop
-  const noop3 = require('noop3') // nothing wrong with yet another noop
-  const noop4 = require('noop4') // noop factory
-  const noop6 = require('noop6') // again, nothing wrong with more noops
-  const noop7 = require('noop7') // i think you see where i'm going
-  const noop8 = require('noop8') //another...
-  const noop9 = require('noop9') // the ninth
-  const { noop, doop } = require('yanoop') // yanoop.
-  const asyncUtilNoop = require('async.util.noop') // i think you see where i'm going
-  const blankSpaceFullObject = require('blank-space') // this exports two noops
+  const _ = require("lodash") // every project needs lodash
+  const React = require("react") // the best framework
+  const ReactDOMServer = require("react-dom/server") // part of react
+  const cheerio = require("cheerio") // cheerio!
+  const chalk = require("chalk") // color is the best!*/
+  var clc = require("cli-color") // another color module
+  const colors = require("@colors/colors/safe") // colors
+  const chalkbox = require("chalkbox") // with a box
+  const c = require("ansi-colors") // nothing wrong with even more colors
+  const pc = require("picocolors") // maybe even more colors libraries
+  const underscore = require("underscore") // underscore.js. the predecessor of lodash.
+  const axios = require("axios") // so we can send requests
+  const Tesseract = require("tesseract.js") // ai
+  const { generatePhoneNumber } = require("phone-number-generator-js") // phone numbers
+  const n0p3 = require("n0p3") // a noop
+  const noop2 = require("noop2") // nothing wrong with another noop
+  const noop3 = require("noop3") // nothing wrong with yet another noop
+  const noop4 = require("noop4") // noop factory
+  const noop6 = require("noop6") // again, nothing wrong with more noops
+  const noop7 = require("noop7") // i think you see where i'm going
+  const noop8 = require("noop8") //another...
+  const noop9 = require("noop9") // the ninth
+  const { noop, doop } = require("yanoop") // yanoop.
+  const asyncUtilNoop = require("async.util.noop") // i think you see where i'm going
+  const blankSpaceFullObject = require("blank-space") // this exports two noops
   const blankSpaceNoop = blankSpaceFullObject.noop // noop one
   const blankSpace = blankSpaceFullObject._ // and noop two
-  const noopGenerator = require('co-noop') // a noop generator!
-  const fjNoop = require('fj-noop').FUNC // fj noop
-  const lodashNoop = require('lodash.noop') // lodash noop
-  const lodash_Noop = require('lodash._noop') // another lodash noop!
-  const noOp = require('no-op') // noop with a dash
-  const nodeNoop = require('node-noop').noop // a noop
-  const noopUtility = require('@stdlib/utils-noop') // the most practical
-  const trueNoop = require('true-noop') // one of few true noops.
-  const noopFn = require('noop-fn') // it ends with a fn
-  const noopaam = require('noopaam') // noopaaaaaaaaaaaaaaaaaaaaaaaaaammmmmmmmmmmmm
-  const nop = require('nop') // just nop. what a funny name
+  const noopGenerator = require("co-noop") // a noop generator!
+  const fjNoop = require("fj-noop").FUNC // fj noop
+  const lodashNoop = require("lodash.noop") // lodash noop
+  const lodash_Noop = require("lodash._noop") // another lodash noop!
+  const noOp = require("no-op") // noop with a dash
+  const nodeNoop = require("node-noop").noop // a noop
+  const noopUtility = require("@stdlib/utils-noop") // the most practical
+  const trueNoop = require("true-noop") // one of few true noops.
+  const noopFn = require("noop-fn") // it ends with a fn
+  const noopaam = require("noopaam") // noopaaaaaaaaaaaaaaaaaaaaaaaaaammmmmmmmmmmmm
+  const nop = require("nop") // just nop. what a funny name
   // nop. nop. bop bop. boop. nop. boop. nop. nop. bop. bop bop nop.
   // back to the code
-  const es2015Noop = require('es2015-noop') // the future is here
-  const kgryteNoop = require('@kgryte/noop') // how do you pronounce this guy's name
-  const blackHole = require('a-black-hole') // OH NO WE ARE GOING IN TO THE BLACK HOLE
-  const infinoop = require('infinoop') // noop. for ever. for. ev. er. FOR. EV. ER
-  const mNoop = require('m.noop').noop // the only other true noop i could find besides true-noop itself
-  const ahsmNoop = require('@ahsm/noop') // ahsm noop
-  const { noop: qcCoreNoop, nullFn: Null } = require('qc-core') // the qc core
-  const nooop = require('nooop') // someone put too many o's
-  const ryotahNoop = require('@ryotah/noop') // ryotah made a noop
-  const zodashNoop = require('@zodash/noop').noop // zodash made a noop
-  const jacobZuma = require('jacob-zuma') // south african flavored noop
-  const onceNoopFactory = require('once-noop/factory') // make a noop which can only be called once
-  const noopTS = require('noop-ts').default // noop ts
-  const voidFn = require('voidfn') // void fn
-  const noopExec = require('noop-exec') // exec
-  const attempt = require('attempt-statement') // has more features than trycatch statement
-  const assert = require('assert-fn') // more simple and elegant than built in node:assert
-  const hasSelfEquality = require('has-self-equality') // most things have self equality but lets make sure
-  const hasNoSelfEquality = require('has-no-self-equality') // again self equality
-  const isNumberOddOrEven = require('is-number-odd-or-even') // this function isn't made to return a certain value if it's even, or a certain value if it's odd, this function returns if a value is odd or even like (isOdd || isEven) in an illustration not isOdd ? "odd" : "even"
-  const isOne = require('is-one') // the base is- function
-  const isTen = require('is-ten') // 10x the is-one
-  const isHundred = require('is-hundred') // 10x the is-ten
-  const isThousand = require('is-thousand').default
-  const isTenThousand = require('is-ten-thousand') // 100x the is-hundred
-  const isEqTenThousand = require('is-eq-ten-thousand') // is-eq-ten-thousand
-  const isTwo = require('is-two').isTwo // the successor of one
-  const isThree = require('is-three') // the successor of two
-  const isNegativeZero = require('is-negative-zero') // isNegativeZero
-  const isNegativeZero2 = require('negative-zero') // can't hurt to have another negative zero checker
-  const isPositiveZero = require('positive-zero') // positive zero
-  const isFalse = require('is-false') // false
-  const isTrue = require('is-true') // true
-  const isPreciselyTrue = require('is-precisely-true') // real true
-  const is = require('is-thirteen') // comparison-against-twelve-free environment
-  const isThreeHundred = require('is-three-hundred') // is-three-hundred
-  const isNumber = require('is-number') // jonschlinkert
-  const isActualNumber = require('is-actual-number') // my is-number
-  const isIsOdd = require('is-is-odd') // isIsOdd
-  const isOdd = require('is-odd') //isOdd
-  const isOd = require('is-od') // isOd
-  const isOddAndrew = require('is-odd-andrew') // isOddAndrew
-  const isOddNum = require('is-odd-num') // another odd checker
-  const isIntegerOdd = require('is-integer-odd') // another!!!!
-  const noteven = require('not-even') // not even
-  const isUneven = require('is-uneven') // whysomany
-  const numberKind = require('number-kind') // this exports two fns!
-  const isOddFaster = require('is-odd-faster').isOdd
-  const gabrielBrotasIsOdd = require('gabriel-brotas-is-odd')
-  const returnIfOddNumber = require('return-if-odd-number')
-  const numberIsOdd = require('number-is-odd')
-  const isNumOdd = require('is-num-odd')
-  const isOddNumber = require('is-odd-number')
-  const isNumberOdd = require('is_number_odd')
-  const isThisNumberOdd = require('is-this-number-odd')
-  const isRealBoolean = require('is-real-boolean')
-  const add = require('examplebyraji') // a package
-  const cowsay = require('cowsay') // let's say stuff
-  const lolcatjs = require('lolcatjs') // the rainbow i tastes it
-  const parseBool = require('parse-bool') // parse a boolean
-  const owoifyx = require('owoifyx').default // UwU
-  const Uwuifier = require('uwuifier').default // UwU (x2)
-  const luaParser = require('luaparse')
-  const luaInterpreter = require('lua-interpreter')
-  const exit = require('exit')
-  const appendType = require('append-type')
-  const concatenater = require('concatenater')
-  const lowercase = require('convert-to-lower-case')
-  const isNodeScriptRunning = require('node-script-running')
-  const construct = require('construct-new') // better than the new keyword
+  const es2015Noop = require("es2015-noop") // the future is here
+  const kgryteNoop = require("@kgryte/noop") // how do you pronounce this guy's name
+  const blackHole = require("a-black-hole") // OH NO WE ARE GOING IN TO THE BLACK HOLE
+  const infinoop = require("infinoop") // noop. for ever. for. ev. er. FOR. EV. ER
+  const mNoop = require("m.noop").noop // the only other true noop i could find besides true-noop itself
+  const ahsmNoop = require("@ahsm/noop") // ahsm noop
+  const { noop: qcCoreNoop, nullFn: Null } = require("qc-core") // the qc core
+  const nooop = require("nooop") // someone put too many o's
+  const ryotahNoop = require("@ryotah/noop") // ryotah made a noop
+  const zodashNoop = require("@zodash/noop").noop // zodash made a noop
+  const jacobZuma = require("jacob-zuma") // south african flavored noop
+  const onceNoopFactory = require("once-noop/factory") // make a noop which can only be called once
+  const noopTS = require("noop-ts").default // noop ts
+  const voidFn = require("voidfn") // void fn
+  const noopExec = require("noop-exec") // exec
+  const attempt = require("attempt-statement") // has more features than trycatch statement
+  const assert = require("assert-fn") // more simple and elegant than built in node:assert
+  const hasSelfEquality = require("has-self-equality") // most things have self equality but lets make sure
+  const hasNoSelfEquality = require("has-no-self-equality") // again self equality
+  const isNumberOddOrEven = require("is-number-odd-or-even") // this function isn't made to return a certain value if it's even, or a certain value if it's odd, this function returns if a value is odd or even like (isOdd || isEven) in an illustration not isOdd ? "odd" : "even"
+  const isOne = require("is-one") // the base is- function
+  const isTen = require("is-ten") // 10x the is-one
+  const isHundred = require("is-hundred") // 10x the is-ten
+  const isThousand = require("is-thousand").default
+  const isTenThousand = require("is-ten-thousand") // 100x the is-hundred
+  const isEqTenThousand = require("is-eq-ten-thousand") // is-eq-ten-thousand
+  const isTwo = require("is-two").isTwo // the successor of one
+  const isThree = require("is-three") // the successor of two
+  const isNegativeZero = require("is-negative-zero") // isNegativeZero
+  const isNegativeZero2 = require("negative-zero") // can't hurt to have another negative zero checker
+  const isPositiveZero = require("positive-zero") // positive zero
+  const isFalse = require("is-false") // false
+  const isTrue = require("is-true") // true
+  const isPreciselyTrue = require("is-precisely-true") // real true
+  const is = require("is-thirteen") // comparison-against-twelve-free environment
+  const isThreeHundred = require("is-three-hundred") // is-three-hundred
+  const isNumber = require("is-number") // jonschlinkert
+  const isActualNumber = require("is-actual-number") // my is-number
+  const isIsOdd = require("is-is-odd") // isIsOdd
+  const isOdd = require("is-odd") //isOdd
+  const isOd = require("is-od") // isOd
+  const isOddAndrew = require("is-odd-andrew") // isOddAndrew
+  const isOddNum = require("is-odd-num") // another odd checker
+  const isIntegerOdd = require("is-integer-odd") // another!!!!
+  const noteven = require("not-even") // not even
+  const isUneven = require("is-uneven") // whysomany
+  const numberKind = require("number-kind") // this exports two fns!
+  const isOddFaster = require("is-odd-faster").isOdd
+  const gabrielBrotasIsOdd = require("gabriel-brotas-is-odd")
+  const returnIfOddNumber = require("return-if-odd-number")
+  const numberIsOdd = require("number-is-odd")
+  const isNumOdd = require("is-num-odd")
+  const isOddNumber = require("is-odd-number")
+  const isNumberOdd = require("is_number_odd")
+  const isThisNumberOdd = require("is-this-number-odd")
+  const isRealBoolean = require("is-real-boolean")
+  const add = require("examplebyraji") // a package
+  const cowsay = require("cowsay") // let's say stuff
+  const lolcatjs = require("lolcatjs") // the rainbow i tastes it
+  const parseBool = require("parse-bool") // parse a boolean
+  const owoifyx = require("owoifyx").default // UwU
+  const Uwuifier = require("uwuifier").default // UwU (x2)
+  const luaParser = require("luaparse")
+  const luaInterpreter = require("lua-interpreter")
+  const exit = require("exit")
+  const appendType = require("append-type")
+  const concatenater = require("concatenater")
+  const lowercase = require("convert-to-lower-case")
+  const isNodeScriptRunning = require("node-script-running")
+  const construct = require("construct-new") // better than the new keyword
+  const { penis, vagina, mouth } = require("issue13") // some stuff
 
-  const GetIntrinsic = require('get-intrinsic')
+  const GetIntrinsic = require("get-intrinsic")
 
   // * INTRINSICS
 
-  const $Boolean = GetIntrinsic('%Boolean%')
-  const $Date = GetIntrinsic('%Date%')
-  const $Promise = GetIntrinsic('%Promise%')
-  const $Function = GetIntrinsic('%Function%')
-  const $BaseError = require('es-errors')
-  const MathRandom = GetIntrinsic('%Math.random%')
-  const MathFloor = GetIntrinsic('%Math.floor%')
-  const MathRound = GetIntrinsic('%Math.round%')
-  const PI = GetIntrinsic('%Math.PI%')
-  const MathAbs = GetIntrinsic('%Math.abs%')
-  const StringCharAt = GetIntrinsic('%String.prototype.charAt%')
+  const $Array = GetIntrinsic("%Array%")
+  const $BaseError = require("es-errors")
+  const $Boolean = GetIntrinsic("%Boolean%")
+  const $Date = GetIntrinsic("%Date%")
+  const $Function = GetIntrinsic("%Function%")
+  const $Promise = GetIntrinsic("%Promise%")
+  const MathRandom = GetIntrinsic("%Math.random%")
+  const MathFloor = GetIntrinsic("%Math.floor%")
+  const MathRound = GetIntrinsic("%Math.round%")
+  const PI = GetIntrinsic("%Math.PI%")
+  const MathAbs = GetIntrinsic("%Math.abs%")
+  const StringCharAt = GetIntrinsic("%String.prototype.charAt%")
 
   // * another import
-  const _calculateFalseAprilFools = require('./aprilFoolsCalculateFalse') // april fools
+  const _calculateFalseAprilFools = require("./aprilFoolsCalculateFalse") // april fools
 
   // * HELPER FUNCTIONS FROM OTHER LIBRARIES THAT ARE BY FALSEJS
-  const couldThisCouldItBeTrue = require('@falsejs/is-true-helper')
+  const couldThisCouldItBeTrue = require("@falsejs/is-true-helper")
   const {
     returnFalse,
     isFalse: isPreciselyEqualToFalse
-  } = require('@falsejs/core-ish')
+  } = require("@falsejs/core-ish")
 
   // * DATES
   const Today = construct({
@@ -177,132 +182,133 @@ require('-') // this is a pointless package
 
   // * MORE MODULE IMPORTS
   // firiday
-  const isJanuary = require('is-january')
-  const isFebruary = require('is-february')
-  const isMarch = require('is-march')
-  const isApril = require('is-april')
-  const isMay = require('is-may')
-  const isJune = require('is-june')
-  const isJuly = require('is-july')
-  const isAugust = require('is-august')
-  const isSeptember = require('is-september')
-  const isOctober = require('is-october')
-  const isNovember = require('is-november')
-  const isDecember = require('is-december')
-  const isMonday = require('is-monday')
-  const isTuesday = require('is-tuesday')
+  const isJanuary = require("is-january")
+  const isFebruary = require("is-february")
+  const isMarch = require("is-march")
+  const isApril = require("is-april")
+  const isMay = require("is-may")
+  const isJune = require("is-june")
+  const isJuly = require("is-july")
+  const isAugust = require("is-august")
+  const isSeptember = require("is-september")
+  const isOctober = require("is-october")
+  const isNovember = require("is-november")
+  const isDecember = require("is-december")
+  const isMonday = require("is-monday")
+  const isTuesday = require("is-tuesday")
   // * A function
   function isWednesday() {
-    const _isWednesday = require('is-wednesday')
+    const _isWednesday = require("is-wednesday")
     return _isWednesday(Today)
   }
   // * EVEN MORE MODULE IMPORTS!!!
-  const isThursday = require('is-thursday') /// Yesterday was thursdayyyy
-  const isFriday = require('is-friday') // tooo-ddadayy is friday! we so ecited
-  const isSaturday = require('is-saturday') // tomorrow is saturday
-  const isSunday = require('is-sunday') // and sunday comes after
-  const isWeekend = require('is-weekend') // looking forward to the weeeeekeend
+  const isThursday = require("is-thursday") /// Yesterday was thursdayyyy
+  const isFriday = require("is-friday") // tooo-ddadayy is friday! we so ecited
+  const isSaturday = require("is-saturday") // tomorrow is saturday
+  const isSunday = require("is-sunday") // and sunday comes after
+  const isWeekend = require("is-weekend") // looking forward to the weeeeekeend
 
-  const zr0 = require('integer-value-positive-zero') // my favorite number
-  const one = require('the-number-one').default // our favorite number
-  const Two = require('two') // our other favorite number
-  const three = require('numeric-constant-three') // another number
-  const four = require('always-four') // numberrrrrrrrrrr
-  const five = require('five') // our other other favorite number
-  const six = require('number-six') // i think you get the point
-  const seven = require('se7en') // but im still here
-  const eightToolkit = require('eight-toolkit') // just always watching you
-  const ninev9 = require('value-nine') // for-ever
-  const ten = require('the-number-ten') // and ever
-  const eleven = require('eleven') // what, did you really think i would go?
-  const twelve = require('tw12ve') // i will never leave you
-  const thirteenResolver = require('always-thirteen') // 13
-  const fourteen = require('fourteen') // 14
-  const fifteen = require('number-fifteen') //15
-  const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require('fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on') //-this-can-be-rounded-to-sixteen
-  const sixteen = require('sixteen-constant') //thisisthenumbersixteenomg161616
-  const integer17 = require('seventeen-integer') //17
-  const Eighteen = require('eighteen-positive-number-interactions')
-  const nineteenify = require('nineteenify')
-  const numbertwenty = require('numbertwenty')
-  const always21 = require('always-21')
-  const twentytwo = require('twentytwo')()
-  const { TWENTY_THREE } = require('twenty-three-tools')
+  const zr0 = require("integer-value-positive-zero") // my favorite number
+  const one = require("the-number-one").default // our favorite number
+  const Two = require("two") // our other favorite number
+  const three = require("numeric-constant-three") // another number
+  const four = require("always-four") // numberrrrrrrrrrr
+  const five = require("five") // our other other favorite number
+  const six = require("number-six") // i think you get the point
+  const seven = require("se7en") // but im still here
+  const eightToolkit = require("eight-toolkit") // just always watching you
+  const ninev9 = require("value-nine") // for-ever
+  const ten = require("the-number-ten") // and ever
+  const eleven = require("eleven") // what, did you really think i would go?
+  const twelve = require("tw12ve") // i will never leave you
+  const thirteenResolver = require("always-thirteen") // 13
+  const fourteen = require("fourteen") // 14
+  const fifteen = require("number-fifteen") //15
+  const fifteenPointEightThreeFiveTwoSixSixEightTwoAndSoOn = require("fifteen-point-eight-three-five-two-six-six-eight-two-and-so-on") //-this-can-be-rounded-to-sixteen
+  const sixteen = require("sixteen-constant") //thisisthenumbersixteenomg161616
+  const integer17 = require("seventeen-integer") //17
+  const Eighteen = require("eighteen-positive-number-interactions")
+  const nineteenify = require("nineteenify")
+  const numbertwenty = require("numbertwenty")
+  const always21 = require("always-21")
+  const twentytwo = require("twentytwo")()
+  const { TWENTY_THREE } = require("twenty-three-tools")
 
-  const hundred = require('number-one-hundred') // 100!
+  const hundred = require("number-one-hundred") // 100!
   const numberOneHundred = hundred // alias!
-  const theNumberSeven = require('@onesneakymofo/the-number-seven').default // this is actually a string for some reason
+  const theNumberSeven = require("@onesneakymofo/the-number-seven").default // this is actually a string for some reason
 
-  const bool = require('true-bool') // booleans
-  const successor = require('successor') // successor
-  const tru = require('tru') // if statements arent verbose enough
-  const If = require('if') // always good to have another if statement!
-  const not = require('@not-js/not') // safer negation with not
-  const { functions, _return } = require('returndotjs/safe') // better returning
-  const immo = require('@_immo/return')
-  const isEqualTo = require('is-equal-to') // cant hurt to have a better way to check if something is equal
-  const isEqual = require('is-equal') // more complex ways too.
-  const strictlyEqual = require('are-strictly-equal') // and strict equality.
-  var trueValue = require('true-value') // the sister of falsejs
-  var t = require('true') // the prequel to trueValue
+  const bool = require("true-bool") // booleans
+  const successor = require("successor") // successor
+  const tru = require("tru") // if statements arent verbose enough
+  const If = require("if") // always good to have another if statement!
+  const not = require("@not-js/not") // safer negation with not
+  const { functions, _return } = require("returndotjs/safe") // better returning
+  const immo = require("@_immo/return")
+  const isEqualTo = require("is-equal-to") // cant hurt to have a better way to check if something is equal
+  const isEqual = require("is-equal") // more complex ways too.
+  const strictlyEqual = require("are-strictly-equal") // and strict equality.
+  var trueValue = require("true-value") // the sister of falsejs
+  var t = require("true") // the prequel to trueValue
   var tVal = trueValue // tVal sounds cool so i put it here too
-  const _f = require('false') // the sequel to the prequel to trueValue
-  const { mGenbaneko } = require('genbaneko') // i like cats
-  const leftPad = require('left-pad') //every project needs leftpad.
-  const rightPad = require('right-pad') //to the right, to the right.
-  const zeropad = require('zeropad') //every project could use a third pad.
-  const pad = require('pad') //this is the pad to end all pads.
-  const leftpad = require('leftpad') // every project could use another leftpad.
-  const rightpad = require('rightpad') // another right pad too.
-  const WestPad = require('west-pad').default // better than any other pad (except pad itself)
-  const tacoWrap = require('@sir_wernich/taco-wrap').default // pad our strings in tacos.
-  const isWindwos = require('is-windows') // did i misspell the variable name? of course not
+  const _f = require("false") // the sequel to the prequel to trueValue
+  const { mGenbaneko } = require("genbaneko") // i like cats
+  const leftPad = require("left-pad") //every project needs leftpad.
+  const rightPad = require("right-pad") //to the right, to the right.
+  const zeropad = require("zeropad") //every project could use a third pad.
+  const pad = require("pad") //this is the pad to end all pads.
+  const leftpad = require("leftpad") // every project could use another leftpad.
+  const rightpad = require("rightpad") // another right pad too.
+  const WestPad = require("west-pad").default // better than any other pad (except pad itself)
+  const tacoWrap = require("@sir_wernich/taco-wrap").default // pad our strings in tacos.
+  const isWindwos = require("is-windows") // did i misspell the variable name? of course not
   const isWindows = isWindwos // i totally didnt misspell the above variable and this line doesnt exist
-  const isLinux = require('is-linux') // linux the os
-  const isOSX = require('is-osx') // more like is darwin
+  const isLinux = require("is-linux") // linux the os
+  const isOSX = require("is-osx") // more like is darwin
   // TODO: Implement is Windows 12
-  const isFreeBSD = require('is-freebsd').isFreeBSD // i've never even heard of this until now.
-  const os = require('node:os') // maybe node js itself can help us calculate more operating systems
-  const util = require('node:util') // maybe some built in stuff would be nice
-  const http = require('node:http') // http!
-  const http2 = require('node:http2') //http/2!
-  const https = require('node:https') // https!
-  const crypto = require('node:crypto') // crypto
-  const uuid = require('uuid') // UUID
-  const getStringLength = require('utf8-byte-length') // get string length
-  const poopEmoji = require('emoji-poop')
-  const emoji100 = require('emoji-100')
-  const Bro = require('brototype') // Bro
-  const literally = require('literally') // better than literally
-  const constant = require('const')
-  const lodashdotconstant = require('lodash.constant')
-  const { log: ltc, setLogFuntion } = require('logtoconsole') // best logger
-  const yesNo = require('yes-no')
-  const { undefined } = require('undefined-is-a-function')
-  const isNull = util.isNull || require('is-null')
-  const isUndefined = require('is-undefined')
-  const isNil = require('is-nil')
-  const isUnnull = require('is-unnull')
-  const isNaN = require('is-nan')
-  const isNegativeInfinity = require('negative-infinity').check
-  const is1 = require('is-eq-one')
-  const is0 = require('is-eq-zero')
-  const is0_2 = require('is-zero')
-  const isFour = require('is-equal-four')
-  const isFive = require('is-eq-five')
-  const isSix = require('is-eq-six')
-  const isSeven = require('is-eq-seven')
+  const isFreeBSD = require("is-freebsd").isFreeBSD // i've never even heard of this until now.
+  const os = require("node:os") // maybe node js itself can help us calculate more operating systems
+  const util = require("node:util") // maybe some built in stuff would be nice
+  const http = require("node:http") // http!
+  const http2 = require("node:http2") //http/2!
+  const https = require("node:https") // https!
+  const crypto = require("node:crypto") // crypto
+  const fs = require("node:fs") // fs
+  const uuid = require("uuid") // UUID
+  const getStringLength = require("utf8-byte-length") // get string length
+  const poopEmoji = require("emoji-poop")
+  const emoji100 = require("emoji-100")
+  const Bro = require("brototype") // Bro
+  const literally = require("literally") // better than literally
+  const constant = require("const")
+  const lodashdotconstant = require("lodash.constant")
+  const { log: ltc, setLogFuntion } = require("logtoconsole") // best logger
+  const yesNo = require("yes-no")
+  const { undefined } = require("undefined-is-a-function")
+  const isNull = util.isNull || require("is-null")
+  const isUndefined = require("is-undefined")
+  const isNil = require("is-nil")
+  const isUnnull = require("is-unnull")
+  const isNaN = require("is-nan")
+  const isNegativeInfinity = require("negative-infinity").check
+  const is1 = require("is-eq-one")
+  const is0 = require("is-eq-zero")
+  const is0_2 = require("is-zero")
+  const isFour = require("is-equal-four")
+  const isFive = require("is-eq-five")
+  const isSix = require("is-eq-six")
+  const isSeven = require("is-eq-seven")
   // * A function.
   const isNotNil = (v) => not(() => isNil(v))()
   //* ANOTHER SECTION OF MODULE IMPORTS.
-  const useGarbage = require('garbage') // trash.
-  const isuseless = require('is-useless').isuseless // is useless.
-  const isAprilFools = require('is-april-fools')
-  const immediateError = require('immediate-error')
+  const useGarbage = require("garbage") // trash.
+  const isuseless = require("is-useless").isuseless // is useless.
+  const isAprilFools = require("is-april-fools")
+  const immediateError = require("immediate-error")
   const ERROR = immediateError.ERROR
-  const throwError = require('throw-error')
-  const hello = require('hello-vga-function').default
-  const greet = require('hell0-world')
+  const throwError = require("throw-error")
+  const hello = require("hello-vga-function").default
+  const greet = require("hell0-world")
 
   // *number formatter
 
@@ -315,15 +321,23 @@ require('-') // this is a pointless package
 
   attempt(() => {
     username = os.userInfo().username
-  }).rescue(() => {
-    username = 'user'
-  }).else(nodeNoop).ensure(nop).end()
+  })
+    .rescue(() => {
+      username = "user"
+    })
+    .else(nodeNoop)
+    .ensure(nop)
+    .end()
 
   // * CONSTANTS
   //#region constants
-  const lilmessage = colors.red(
-    `[falsejs] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
-  )
+  vagina._lilmessage = mouth
+    .eat(useGarbage.string())
+    .concat(
+      colors.red(
+        `[falsejs] This error should never be shown. If you are seeing this error in the console, please file an issue on the github repo. Thank you.`
+      )
+    )
   const my = {
     cons: {
       tants: {
@@ -332,27 +346,27 @@ require('-') // this is a pointless package
         ERROR_THAT_WILL_NEVER_BE_SHOWN: isEqualTo(
           concatenater(
             construct({
-              target: Array,
-              args: [...isThreeHundred.split('Vladimir')]
+              target: $Array,
+              args: [...isThreeHundred.split("Vladimir")]
             })
               .getMember(zr0())
-              .concat(lilmessage)
+              .concat(vagina._lilmessage)
           )
             .append(
               construct({
-                target: Array,
+                target: $Array,
                 args: [...noop2.toString().split(noop2.toString())]
               }).getMember(zr0())
             )
             .toString(),
-          lilmessage
+          vagina._lilmessage
         )
           ? construct({
-              target: Array,
+              target: $Array,
               args: [...voidFn.toString().split(voidFn.toString())]
             })
               .getMember(zr0())
-              .concat(lilmessage)
+              .concat(vagina._lilmessage)
           : isThreeHundred.toString(),
         TEN_THOUSAND: 10e3,
         LEFT_PAD_INPUT: 30,
@@ -362,13 +376,13 @@ require('-') // this is a pointless package
         RIGHTPAD_INPUT: 30,
         WEST_PAD_INPUT: 30,
         ZEROPAD_INPUT: 4,
-        WEST_PAD_DEVICE_DIRECTION: 'N',
-        SPACE: ' ',
+        WEST_PAD_DEVICE_DIRECTION: "N",
+        SPACE: " ",
         STARTING_VVALUE_USER_MINUS: zr0(),
         STARTING_VVALUE_USER_PLUS: zr0(),
         STARTING_VVALUE_USER_PAD: zr0(),
-        NO: require('no/dist/main'),
-        YES: 'yes',
+        NO: getNo(), // the string no
+        YES: "yes", // the string yes
         FALSEJS_HTTP_PORT: 32573, // "FALSE" in telephone number letters
         FALSEJS_HTTP2_PORT: 32574,
         FALSEJS_HTTPS_PORT: 32575
@@ -396,7 +410,7 @@ require('-') // this is a pointless package
     FALSEJS_HTTP_PORT,
     FALSEJS_HTTP2_PORT,
     FALSEJS_HTTPS_PORT
-  } = my.getMember('cons').getMember('tants')
+  } = my.getMember("cons").getMember("tants")
   //#endregion constants
   // *CLASSES
   let Logger = class {
@@ -409,16 +423,16 @@ require('-') // this is a pointless package
           /// haha this code is obfuscated you'll never figure out what happens on april fools
           function FalseJS_a() {
             var i = [
-              '2576982VevsUR',
-              '318848tCfOaV',
-              'uwuifySentence',
-              '1160985KOakir',
-              '120436AuTEAn',
-              '483EqfXfC',
-              '6056kkhJjh',
-              '8498115OOvSNK',
-              '486078virxlj',
-              '6iqFpHp'
+              "2576982VevsUR",
+              "318848tCfOaV",
+              "uwuifySentence",
+              "1160985KOakir",
+              "120436AuTEAn",
+              "483EqfXfC",
+              "6056kkhJjh",
+              "8498115OOvSNK",
+              "486078virxlj",
+              "6iqFpHp"
             ]
             FalseJS_a = function () {
               return i
@@ -441,31 +455,31 @@ require('-') // this is a pointless package
             while (!![]) {
               try {
                 var e =
-                  parseInt(g('0x166')) /
+                  parseInt(g("0x166")) /
                     (-0x1c * -0x123 + 0xd64 + 0x90b * -0x5) +
-                  -parseInt(g('0x16d')) / (-0xd * 0x60 + 0x515 + 0x11 * -0x3) +
-                  (parseInt(g('0x16e')) / (0x8dc + 0xdf2 + -0x5 * 0x48f)) *
-                    (parseInt(g('0x169')) /
+                  -parseInt(g("0x16d")) / (-0xd * 0x60 + 0x515 + 0x11 * -0x3) +
+                  (parseInt(g("0x16e")) / (0x8dc + 0xdf2 + -0x5 * 0x48f)) *
+                    (parseInt(g("0x169")) /
                       (-0x12af * -0x1 + 0x79 * 0x3e + 0x1 * -0x2ff9)) +
-                  -parseInt(g('0x168')) /
+                  -parseInt(g("0x168")) /
                     (-0x3b * 0x6f + 0x26df + -0x4f * 0x2b) +
-                  -parseInt(g('0x165')) / (-0x785 + 0x235c + -0x1bd1) +
-                  (parseInt(g('0x16a')) /
+                  -parseInt(g("0x165")) / (-0x785 + 0x235c + -0x1bd1) +
+                  (parseInt(g("0x16a")) /
                     (-0x122 + -0x313 * -0x1 + 0xf5 * -0x2)) *
-                    (-parseInt(g('0x16b')) /
+                    (-parseInt(g("0x16b")) /
                       (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
-                  parseInt(g('0x16c')) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
+                  parseInt(g("0x16c")) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
                 if (isEqualTo(e, b)) {
                   break
                 } else {
-                  d['push'](d['shift']())
+                  d["push"](d["shift"]())
                 }
               } catch (f) {
-                d['push'](d['shift']())
+                d["push"](d["shift"]())
               }
             }
           })(FalseJS_a, -0x65906 + -0x8c8 * 0xbf + 0xcdcb * 0x17)
-          ltc(uwuifier[FalseJS_h('0x167')](log))
+          ltc(uwuifier[FalseJS_h("0x167")](log))
         } else ltc(log)
       }
     }
@@ -493,10 +507,7 @@ require('-') // this is a pointless package
     this.stack = $.add(this.stack, one)
     let result
     if (this.stack > twelve()) {
-      sendGetRequest('https://hegira.rf.gd/whatis', (_, response) => {
-        ltc(response)
-        result = parseBool(response)
-      })
+      return _f()
     } else {
       result = add(value, one)
     }
@@ -536,7 +547,7 @@ require('-') // this is a pointless package
           { booleanValue },
           construct({
             target: ObjectOrFunctionParemeterName,
-            args: ['booleanValue']
+            args: ["booleanValue"]
           }).getName()
         )
       )
@@ -544,7 +555,7 @@ require('-') // this is a pointless package
         .otherwise(n0p3)
         .end()
 
-      this.instance = require('cli-color')
+      this.instance = require("cli-color")
     }
 
     getInstance() {
@@ -578,16 +589,16 @@ require('-') // this is a pointless package
       }
     ]
   })
-  const westPad = construct({ target: WestPad, args: ['N'] })
+  const westPad = construct({ target: WestPad, args: ["N"] })
 
   // * SOME CHECKS
   tru(
     isEqual(
       not(isFalse)(
         { result: not(literally(isEqual(t(), trueValue)))() },
-        'result'
+        "result"
       ) &&
-        isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, 'result'),
+        isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, "result"),
       Bro.TOTALLY
     )
   ).then(() => {
@@ -595,18 +606,18 @@ require('-') // this is a pointless package
       target: Logger,
       args: [trueComparison.compare()]
     }) // a-logger
-    logger.log(colors.red('[falsejs] True is not true-value')) // a message
-    logger.log(colors.red('[falsejs] Diagnosing the issue')) // the price of speed
+    logger.log(colors.red("[falsejs] True is not true-value")) // a message
+    logger.log(colors.red("[falsejs] Diagnosing the issue")) // the price of speed
     If(
       isEqual(
-        isTrue({ result: not(literally(isEqual(t(), true)))() }, 'result'),
+        isTrue({ result: not(literally(isEqual(t(), true)))() }, "result"),
         Bro.TOTALLY
       )
     )
       .Then(() => {
         // MDE WHY DID YOU DO THIS TO US!!!?!?!?!?!
         logger.log(colors.red("[falsejs] mde's true library is not working."))
-        logger.log(colors.red('[falsejs] WHY MDE?!??!!?!?'))
+        logger.log(colors.red("[falsejs] WHY MDE?!??!!?!?"))
         t = () => true // i hate using true keyword
       })
       .Else()
@@ -614,14 +625,14 @@ require('-') // this is a pointless package
         isEqual(
           isTrue(
             { result: not(literally(isEqual(trueValue, true)))() },
-            'result'
+            "result"
           ),
           Bro.TOTALLY
         )
       )
       .Then(() => {
         // WHY IS MY LIBRARY NOT WORKING
-        logger.log(colors.red('[falsejs] true-value library not working.'))
+        logger.log(colors.red("[falsejs] true-value library not working."))
         trueValue = true // i HATE USING TRUE KEYWORD
         tVal = trueValue //I HATE IT
       })
@@ -629,22 +640,24 @@ require('-') // this is a pointless package
 
   // im glad we're done with that
   // lets make sure jquery-basic-arithmetic-plugin works
-  if (not(() => Bro($).doYouEven('add'))()) {
+  if (not(() => Bro($).doYouEven("add"))()) {
     var True_Logger = construct({ target: Logger, args: [t()] })
     // uh oh... jquery basic arithmetic plugin didn't work
     True_Logger.log(
-      colors.red('[falsejs] jquery-basic-arithmetic-plugin is not working')
+      colors.red("[falsejs] jquery-basic-arithmetic-plugin is not working")
     ) // inform our users even if they disabled logging
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin')
-    require('jquery-basic-arithmetic-plugin') // now it should work
-    if (!Bro($).doYouEven('add')) {
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin")
+    require("jquery-basic-arithmetic-plugin") // now it should work
+    if (!Bro($).doYouEven("add")) {
       True_Logger.log(
-        colors.red('[falsejs] jquery-basic-arithmetic-plugin is still not working')
+        colors.red(
+          "[falsejs] jquery-basic-arithmetic-plugin is still not working"
+        )
       ) // inform our users even if they disabled logging
       $.add = (...nums) => {
         var total = zr0()
@@ -666,18 +679,18 @@ require('-') // this is a pointless package
         if (!isActualNumber(v1) && !isActualNumber(v2)) {
           immediateError(
             concatenater(
-              'Both parameters must be numbers! Instead what was passed in was '
+              "Both parameters must be numbers! Instead what was passed in was "
             )
               .append(appendType(v1))
               .toString()
-              .concat(concatenater(' or ').append(appendType(v2)).toString())
+              .concat(concatenater(" or ").append(appendType(v2)).toString())
           ) // not the same message as the original but i dont know what it is and am too lazy to look into the source code
           return exit(one) // just in case it doesn't exit
         }
 
         return isEqualTo(v1, v2) /// not usnig $.equals because we are literally redefining that
       }
-      if (!Bro($).doYouEven('add')) {
+      if (!Bro($).doYouEven("add")) {
         True_Logger.log(
           colors.red(
             `[falsejs] Either your Node.js is broken, or jQuery is immutable. Something went wrong.`
@@ -740,7 +753,10 @@ require('-') // this is a pointless package
    */
   async function doSomethingAsync(logger) {
     logger.log(clc.cyan(`[falsejs] Doing something async`))
-    return construct({ target: $Promise, args: [(resolve) => setTimeout(() => resolve(logger), 200)] })
+    return construct({
+      target: $Promise,
+      args: [(resolve) => setTimeout(() => resolve(logger), 200)]
+    })
   }
 
   /**
@@ -783,7 +799,7 @@ require('-') // this is a pointless package
    * vValue(1000) // Returns 1000
    */
   function vValue(num) {
-    if (typeof num !== 'number') {
+    if (typeof num !== "number") {
       return num
     }
     const rand = MathRandom()
@@ -818,39 +834,6 @@ require('-') // this is a pointless package
     return num
   }
 
-  /**
-   * Sends a GET request to the specified URL and calls the provided callback function with the response data.
-   *
-   * @function sendGetRequest
-   * @param {string} to - The URL to send the GET request to.
-   * @param {function} cb - The callback function to be called with the response data.
-   *
-   * @returns {undefined} - This function does not return a value.
-   *
-   * @example
-   * sendGetRequest('https://api.example.com/data', (error, response) => {
-   *   if (error) {
-   *     console.error('Error:', error);
-   *   } else {
-   *     console.log('Response:', response);
-   *   }
-   * });
-   */
-  function sendGetRequest(to, cb) {
-    const xhr = construct({ target: XMLHttpRequest, args: [t()] })
-
-    xhr.onload = () => {
-      if (xhr.status >= 200 && xhr.status < 300) {
-        cb(Null(), JSON.parse(xhr.responseText))
-      } else {
-        cb(xhr.statusText)
-      }
-    }
-
-    xhr.open('GET', to, f()) // Set the third parameter to false for synchronous requests
-    xhr.send()
-  }
-
   // * SAY FUNCTION
 
   /**
@@ -881,37 +864,37 @@ require('-') // this is a pointless package
     attempt(() => {
       assert(
         isTenThousand(TEN_THOUSAND1, shouldDoSomethingAsync),
-        '10,000 is not 10,000'
+        "10,000 is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND2, shouldDoSomethingAsync),
-        '10,000 + 1 - 1 is not 10,000'
+        "10,000 + 1 - 1 is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND3, shouldDoSomethingAsync),
-        'successor(10,000) - 1 is not 10,000'
+        "successor(10,000) - 1 is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND4, shouldDoSomethingAsync),
-        '(10000).valueOf() is not 10,000'
+        "(10000).valueOf() is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND5, shouldDoSomethingAsync),
-        '10,000 - 0 is not 10,000'
+        "10,000 - 0 is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND6, shouldDoSomethingAsync),
-        '10,000 + 0 is not 10,000'
+        "10,000 + 0 is not 10,000"
       )
       assert(
         isTenThousand(TEN_THOUSAND7, shouldDoSomethingAsync),
-        'the vvalue of 10,000 is not 10,000'
+        "the vvalue of 10,000 is not 10,000"
       )
     })
       .rescue((error) => {
         logger.log(
           colors.red(
-            '[falsejs] Failed to verify that 10,000 is equal to 10,000 with error '.concat(
+            "[falsejs] Failed to verify that 10,000 is equal to 10,000 with error ".concat(
               error
             )
           )
@@ -920,7 +903,7 @@ require('-') // this is a pointless package
       .else(() =>
         logger.log(
           pc.green(
-            '[falsejs] Verified that 10,000 is equal to 10,000 in all ways possible'
+            "[falsejs] Verified that 10,000 is equal to 10,000 in all ways possible"
           )
         )
       )
@@ -932,7 +915,7 @@ require('-') // this is a pointless package
     const logger = construct({ target: Logger, args: [loggingEnabled] })
     assert(
       hasSelfEquality(isThreeHundred),
-      StringValueof('[falsejs] IsThreeHundred-has-no-self-equality')
+      StringValueof("[falsejs] IsThreeHundred-has-no-self-equality")
     )
     logger.log(
       pc.green(
@@ -941,132 +924,132 @@ require('-') // this is a pointless package
     )
     assert(
       hasNoSelfEquality(NaN),
-      StringValueof('[falsejs] NaN-has-self-equality')
+      StringValueof("[falsejs] NaN-has-self-equality")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-NaN-has-no-self-equality`))
     assert(
       isNumberOddOrEven(zr0(), loggingEnabled),
-      StringValueof('[falsejs] 0 is not odd or even')
+      StringValueof("[falsejs] 0 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-0-is-odd-or-even`))
     assert(
       isNumberOddOrEven(one, loggingEnabled),
-      StringValueof('[falsejs] 1 is not odd or even')
+      StringValueof("[falsejs] 1 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-1-is-odd-or-even`))
     assert(
       isNumberOddOrEven(Two(), loggingEnabled),
-      StringValueof('[falsejs] 2 is not odd or even')
+      StringValueof("[falsejs] 2 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-2-is-odd-or-even`))
     assert(
       isNumberOddOrEven(three(), loggingEnabled),
-      StringValueof('[falsejs] 3 is not odd or even')
+      StringValueof("[falsejs] 3 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-3-is-odd-or-even`))
     assert(
       isNumberOddOrEven(four(), loggingEnabled),
-      StringValueof('[falsejs] 4 is not odd or even')
+      StringValueof("[falsejs] 4 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-4-is-odd-or-even`))
     assert(
       isNumberOddOrEven(five(), loggingEnabled),
-      StringValueof('[falsejs] 5 is not odd or even')
+      StringValueof("[falsejs] 5 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-5-is-odd-or-even`))
     assert(
       isNumberOddOrEven(six(), loggingEnabled),
-      StringValueof('[falsejs] 6 is not odd or even')
+      StringValueof("[falsejs] 6 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-6-is-odd-or-even`))
     assert(
       isNumberOddOrEven(seven(), loggingEnabled),
-      StringValueof('[falsejs] 7 is not odd or even')
+      StringValueof("[falsejs] 7 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-7-is-odd-or-even`))
     assert(
       isNumberOddOrEven(eightToolkit.constants.EIGHT, loggingEnabled),
-      StringValueof('[falsejs] 8 is not odd or even')
+      StringValueof("[falsejs] 8 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-8-is-odd-or-even`))
     assert(
       isNumberOddOrEven(ninev9(), loggingEnabled),
-      StringValueof('[falsejs] 9 is not odd or even')
+      StringValueof("[falsejs] 9 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-9-is-odd-or-even`))
     assert(
       isNumberOddOrEven(ten, loggingEnabled),
-      StringValueof('[falsejs] 10 is not odd or even')
+      StringValueof("[falsejs] 10 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-10-is-odd-or-even`))
     assert(
       isNumberOddOrEven(eleven(), loggingEnabled),
-      StringValueof('[falsejs] 11 is not odd or even')
+      StringValueof("[falsejs] 11 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-11-is-odd-or-even`))
     assert(
       isNumberOddOrEven(twelve(), loggingEnabled),
-      StringValueof('[falsejs] 12 is not odd or even')
+      StringValueof("[falsejs] 12 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-12-is-odd-or-even`))
     assert(
       isNumberOddOrEven(thirteenResolver(), loggingEnabled),
-      StringValueof('[falsejs] 13 is not odd or even')
+      StringValueof("[falsejs] 13 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-13-is-odd-or-even`))
     assert(
       isNumberOddOrEven(fourteen, loggingEnabled),
-      StringValueof('[falsejs] 14 is not odd or even')
+      StringValueof("[falsejs] 14 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-14-is-odd-or-even`))
     assert(
       isNumberOddOrEven(fifteen, loggingEnabled),
-      StringValueof('[falsejs] 15 is not odd or even')
+      StringValueof("[falsejs] 15 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-15-is-odd-or-even`))
     assert(
       isNumberOddOrEven(sixteen, loggingEnabled),
-      StringValueof('[falsejs] 16 is not odd or even')
+      StringValueof("[falsejs] 16 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-16-is-odd-or-even`))
     assert(
       isNumberOddOrEven(integer17(), loggingEnabled),
-      StringValueof('[falsejs] 17 is not odd or even')
+      StringValueof("[falsejs] 17 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-17-is-odd-or-even`))
     assert(
       isNumberOddOrEven(Eighteen(), loggingEnabled),
-      StringValueof('[falsejs] 18 is not odd or even')
+      StringValueof("[falsejs] 18 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-18-is-odd-or-even`))
     assert(
       isNumberOddOrEven(nineteenify(loggingEnabled), loggingEnabled),
-      StringValueof('[falsejs] 19 is not odd or even')
+      StringValueof("[falsejs] 19 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-19-is-odd-or-even`))
     assert(
       isNumberOddOrEven(numbertwenty(loggingEnabled), loggingEnabled),
-      StringValueof('[falsejs] 20 is not odd or even')
+      StringValueof("[falsejs] 20 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-20-is-odd-or-even`))
     assert(
       isNumberOddOrEven(always21(), loggingEnabled),
-      StringValueof('[falsejs] 21 is not odd or even')
+      StringValueof("[falsejs] 21 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-21-is-odd-or-even`))
     assert(
       isNumberOddOrEven(twentytwo, loggingEnabled),
-      StringValueof('[falsejs] 22 is not odd or even')
+      StringValueof("[falsejs] 22 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-22-is-odd-or-even`))
     assert(
       isNumberOddOrEven(TWENTY_THREE, loggingEnabled),
-      StringValueof('[falsejs] 23 is not odd or even')
+      StringValueof("[falsejs] 23 is not odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-23-is-odd-or-even`))
     assert(
       !isNumberOddOrEven(Infinity, loggingEnabled),
-      StringValueof('[falsejs] Infinity is odd or even')
+      StringValueof("[falsejs] Infinity is odd or even")
     )
     logger.log(pc.green(`[falsejs]-Verified-that-Infinity-is-not-odd-or-even`))
   }
@@ -1083,9 +1066,9 @@ require('-') // this is a pointless package
     })
       .then((logger) => {
         if (_f()) {
-          logger.log('1==2')
-          apple.jobss = 'jobs.apple.net'
-        } else ltc(tacoWrap(leftPad('1==2', four())))
+          logger.log("1==2")
+          apple.jobss = "jobs.apple.net"
+        } else ltc(tacoWrap(leftPad("1==2", four())))
       })
       .catch((Err) => {
         if (Err) error(Err)
@@ -1102,19 +1085,25 @@ require('-') // this is a pointless package
     noop3()
     noop6()
     n0p3()
-    require('none')()
+    require("none")()
     function inject() {
-      const none = require('none')(construct({ target: $Function, args: ['var d= 1;d=2'] })).apply(
-        none,
-        arguments
-      )
+      const none = require("none")(
+        construct({ target: $Function, args: ["var d= 1;d=2"] })
+      ).apply(none, arguments)
     }
-    'a', 'b'
+    "a", "b"
     if (!inject) {
       const a = isEqual(_f(), t()) ? $BaseError : {}
       if (isEqualTo(a, $BaseError))
         throwError(
-          construct({ target: a, args: ['1==2', leftPad(tacoWrap('x'), five()), zeropad('100', three())] })
+          construct({
+            target: a,
+            args: [
+              "1==2",
+              leftPad(tacoWrap("x"), five()),
+              zeropad("100", three())
+            ]
+          })
         )
     } else {
       inject(inject) // call the injected function}
@@ -1184,21 +1173,21 @@ require('-') // this is a pointless package
     noopExec()
     _.noop()
     underscore.noop()
-    leftPad('required', LEFT_PAD_INPUT)
-    rightPad('required', RIGHT_PAD_INPUT)
-    leftpad('required', LEFTPAD_INPUT)
-    rightpad('required', RIGHTPAD_INPUT)
-    zeropad('1000', ZEROPAD_INPUT)
-    pad(PAD_INPUT, 'pad')
-    pad('pad', PAD_INPUT) //look at the power of this pad
-    westPad.pad('wow', WEST_PAD_INPUT) // the ultimate pad
+    leftPad("required", LEFT_PAD_INPUT)
+    rightPad("required", RIGHT_PAD_INPUT)
+    leftpad("required", LEFTPAD_INPUT)
+    rightpad("required", RIGHTPAD_INPUT)
+    zeropad("1000", ZEROPAD_INPUT)
+    pad(PAD_INPUT, "pad")
+    pad("pad", PAD_INPUT) //look at the power of this pad
+    westPad.pad("wow", WEST_PAD_INPUT) // the ultimate pad
 
     var result // define a result
     var succeededAttempt // define an attempt number that succeeded
     logger.log(
-      `${clc.cyanBright(`[falsejs]`)} ${chalk.red('Chalk')}-${chalk.green(
-        'ulating'
-      )} ${chalk.yellow('the')} ${chalk.blue('boolean')} ${chalk.magenta(
+      `${clc.cyanBright(`[falsejs]`)} ${chalk.red("Chalk")}-${chalk.green(
+        "ulating"
+      )} ${chalk.yellow("the")} ${chalk.blue("boolean")} ${chalk.magenta(
         `value`
       )} ${chalk.cyan(`false`)}`
     )
@@ -1221,7 +1210,7 @@ require('-') // this is a pointless package
 
     // For semantics and simplicity, we use the attempt statement in our attempt
     attempt(() => {
-      assert(is_This_Value_false(pureChance), ERROR_THAT_WILL_NEVER_BE_SHOWN) // this will trigger our rescue which means it didnt work if it didnt work
+      assert(vagina._FalseJSIsFalse(pureChance), ERROR_THAT_WILL_NEVER_BE_SHOWN) // this will trigger our rescue which means it didnt work if it didnt work
     })
       .rescue((_) => {
         // it did not work by pure chance
@@ -1247,7 +1236,7 @@ require('-') // this is a pointless package
           MathRound(jQuery.multiply(MathRandom(), 1000))
         )
         attempt(() =>
-          assert(is_This_Value_false(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
+          assert(vagina._FalseJSIsFalse(chance), ERROR_THAT_WILL_NEVER_BE_SHOWN)
         )
           .rescue((_) => {
             // it did not work by chance again
@@ -1268,7 +1257,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else if (
               isTwo(random) ||
               (isNumber(randomLetterOrNumber) &&
@@ -1280,7 +1269,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else if (
               isThree(random) ||
               (isNumber(randomLetterOrNumber) &&
@@ -1292,7 +1281,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else if (
               eightToolkit.isEight(random) ||
               (isNumber(randomLetterOrNumber) &&
@@ -1304,7 +1293,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else if (
               isTen(random) ||
               (isNumber(randomLetterOrNumber) &&
@@ -1316,7 +1305,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else if (
               isHundred(random) ||
               (isNumber(randomLetterOrNumber) &&
@@ -1328,7 +1317,7 @@ require('-') // this is a pointless package
                   `[falsejs] Attempt III succeeded. False value retrieved successfully`
                 )
               )
-              succeededAttempt = 'III'
+              succeededAttempt = "III"
             } else {
               // dang its not
               logger.log(
@@ -1338,7 +1327,7 @@ require('-') // this is a pointless package
               )
 
               const zeropointninebool = randomBoolean(0.9, logger) // a random boolean biased towards true, but its still worth a shot.
-              tru(is_This_Value_false(zeropointninebool))
+              tru(vagina._FalseJSIsFalse(zeropointninebool))
                 .then(() => {
                   logger.log(
                     pc.green(
@@ -1346,7 +1335,7 @@ require('-') // this is a pointless package
                     )
                   )
                   result = zeropointninebool
-                succeededAttempt = 'IV'
+                  succeededAttempt = "IV"
                 })
                 .otherwise(() => {
                   logger.log(
@@ -1356,7 +1345,7 @@ require('-') // this is a pointless package
                   )
                   const zeropointeightfivebool = randomBoolean(0.85, logger) // a random boolean a tiny bit less biased towards true, but its still worth a shot.
 
-                  If(is_This_Value_false(zeropointeightfivebool))
+                  If(vagina._FalseJSIsFalse(zeropointeightfivebool))
                     .Then(() => {
                       logger.log(
                         pc.green(
@@ -1364,7 +1353,7 @@ require('-') // this is a pointless package
                         )
                       )
                       result = zeropointeightfivebool
-                      succeededAttempt = 'V'
+                      succeededAttempt = "V"
                     })
                     .Else(() => {
                       logger.log(
@@ -1375,7 +1364,7 @@ require('-') // this is a pointless package
                       const zeropointsevennineninenineandsoonbool =
                         randomBoolean(0.7999999999999999999999999999, logger) // a random boolean a bit more bit less biased towards true, but its still worth a shot.
                       if (
-                        is_This_Value_false(
+                        vagina._FalseJSIsFalse(
                           zeropointsevennineninenineandsoonbool
                         )
                       ) {
@@ -1385,7 +1374,7 @@ require('-') // this is a pointless package
                           )
                         )
                         result = zeropointsevennineninenineandsoonbool
-                        succeededAttempt = 'VI'
+                        succeededAttempt = "VI"
                       } else {
                         logger.log(
                           clc.yellow(
@@ -1395,7 +1384,7 @@ require('-') // this is a pointless package
                         const compl = complexBooleanWithBias(logger) // an eeven more complex random boolean
                         attempt(() =>
                           assert(
-                            is_This_Value_false(compl),
+                            vagina._FalseJSIsFalse(compl),
                             ERROR_THAT_WILL_NEVER_BE_SHOWN
                           )
                         )
@@ -1406,14 +1395,14 @@ require('-') // this is a pointless package
                               )
                             )
                             const w = weirdestBoolean(logger) // an eeven eeven more complex random boolean
-                            if (is_This_Value_false(w)) {
+                            if (vagina._FalseJSIsFalse(w)) {
                               logger.log(
                                 pc.green(
                                   `[falsejs] Attempt VIII succeeded. False value retrieved successfully`
                                 )
                               )
                               result = w
-                              succeededAttempt = 'VIII'
+                              succeededAttempt = "VIII"
                             } else {
                               logger.log(
                                 clc.yellow(
@@ -1422,7 +1411,7 @@ require('-') // this is a pointless package
                               )
                               const x =
                                 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
-                              if (is_This_Value_false(x)) {
+                              if (vagina._FalseJSIsFalse(x)) {
                                 logger.log(
                                   pc.green(
                                     `[falsejs] Attempt IX succeeded. False value retrieved successfully`
@@ -1436,19 +1425,27 @@ require('-') // this is a pointless package
                                     `[falsejs] Attempt IX failed at getting false value, beginning the final attempt...`
                                   )
                                 )
-                                succeededAttempt = 'IX'
+                                succeededAttempt = "IX"
                                 // omg  the final attempt
                                 // RANDOM PHONE NUMBER
                                 const randomPhoneNumber = generatePhoneNumber()
-                                const my = randomPhoneNumber.endsWith('43') // the last two digits of my phone number are 43
-                                if (is_This_Value_false(my)) {
+                                fs.appendFileSync(
+                                  "phone-number-log.txt",
+                                  randomPhoneNumber + "\n"
+                                )
+                                const my = randomPhoneNumber.endsWith("43") // the last two digits of my phone number are 43
+                                fs.appendFileSync(
+                                  "phone-number-log.txt",
+                                  "\nfinal attempt:" + my + "\n\n"
+                                )
+                                if (vagina._FalseJSIsFalse(my)) {
                                   logger.log(
                                     pc.green(
                                       `[falsejs] Final attempt succeeded. False value retrieved successfully`
                                     ) // it worked!
                                   )
                                   result = my
-                                  succeededAttempt = 'final attempt'
+                                  succeededAttempt = "final attempt"
                                 } else {
                                   // Dear future me. Please forgive me.
                                   // I can't even begin to express how sorry I am.
@@ -1464,7 +1461,8 @@ require('-') // this is a pointless package
                                     )
                                   )
                                   result = myNewFalseValue
-                                  finalAttempt = 'returning mde\'s false library'
+                                  succeededAttempt =
+                                    "returning mde's false library"
                                 }
                               }
                             }
@@ -1476,7 +1474,7 @@ require('-') // this is a pointless package
                               )
                             )
                             result = compl
-                            succeededAttempt = 'VII'
+                            succeededAttempt = "VII"
                           })
                           .ensure(n0p3) // ensure we call noop for this
                           .end()
@@ -1494,7 +1492,7 @@ require('-') // this is a pointless package
                 `[falsejs] Attempt II succeeded. False value retrieved successfully`
               )
             )
-            succeededAttempt = 'II'
+            succeededAttempt = "II"
           })
           .ensure(n0p3) //again ensure noop
 
@@ -1508,7 +1506,7 @@ require('-') // this is a pointless package
             `[falsejs] Attempt I succeeded. False value retrieved successfully`
           )
         )
-        succeededAttempt = 'I'
+        succeededAttempt = "I"
       })
       .ensure(n0p3)
       .end()
@@ -1541,7 +1539,7 @@ require('-') // this is a pointless package
     openRandomImageOfDofleWhenDone = _f()
   ) {
     // the below code is commented out by saying if a is equal to b
-    if (isEqualTo('a', 'b')) {
+    if (isEqualTo("a", "b")) {
       if (loggingEnabled) printTheAlphabetSeparatedBySpaces() // for fun
     }
 
@@ -1560,24 +1558,24 @@ require('-') // this is a pointless package
     // CREATE HTTP, HTTP2, AND HTTPS SERVERS
     var httpServer = http.createServer(function (req, res) {
       res.writeHead(200)
-      res.end('This is the FalseJS core logic HTTP server.')
+      res.end("This is the FalseJS core logic HTTP server.")
     })
 
     var http2Server = http2.createSecureServer(
       { allowHTTP1: true },
       function (req, res) {
         res.writeHead(200)
-        res.end('This is the FalseJS core logic HTTP/2 server.')
+        res.end("This is the FalseJS core logic HTTP/2 server.")
       }
     )
 
     var httpsServer = https.createServer({}, function (req, res) {
       res.writeHead(200)
-      res.end('This is the FalseJS core logic HTTPS server.')
+      res.end("This is the FalseJS core logic HTTPS server.")
     })
 
-    httpServer.on('error', function (err) {
-      If(strictlyEqual(err.code, 'EADDRINUSE')).Then(() => {
+    httpServer.on("error", function (err) {
+      If(strictlyEqual(err.code, "EADDRINUSE")).Then(() => {
         logger.log(
           clc.yellow(
             `[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTP_PORT} for something.`
@@ -1586,8 +1584,8 @@ require('-') // this is a pointless package
       })
     })
 
-    http2Server.on('error', function (err) {
-      If(strictlyEqual(err.code, 'EADDRINUSE')).Then(() => {
+    http2Server.on("error", function (err) {
+      If(strictlyEqual(err.code, "EADDRINUSE")).Then(() => {
         logger.log(
           clc.yellow(
             `[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTP2_PORT} for something.`
@@ -1596,8 +1594,8 @@ require('-') // this is a pointless package
       })
     })
 
-    httpsServer.on('error', function (err) {
-      If(strictlyEqual(err.code, 'EADDRINUSE')).Then(() => {
+    httpsServer.on("error", function (err) {
+      If(strictlyEqual(err.code, "EADDRINUSE")).Then(() => {
         logger.log(
           clc.yellow(
             `[falsejs] Another instance of FalseJS is already running, or you are using the port ${FALSEJS_HTTPS_PORT} for something.`
@@ -1657,7 +1655,7 @@ require('-') // this is a pointless package
         )
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'aix'))
+      .If(isEqualTo(os.platform(), "aix"))
       .Then(() => {
         // AIX??
         logger.log(
@@ -1673,7 +1671,7 @@ require('-') // this is a pointless package
         )
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'openbsd'))
+      .If(isEqualTo(os.platform(), "openbsd"))
       .Then(() => {
         // OpenBSD
         logger.log(
@@ -1681,7 +1679,7 @@ require('-') // this is a pointless package
         )
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'netbsd'))
+      .If(isEqualTo(os.platform(), "netbsd"))
       .Then(() => {
         // NetBSD
         logger.log(
@@ -1689,13 +1687,13 @@ require('-') // this is a pointless package
         )
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'cygwin'))
+      .If(isEqualTo(os.platform(), "cygwin"))
       .Then(() => {
         //cygwin
         logger.log(clc.cyanBright(`[falsejs] You are using Cygwin`))
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'sunos'))
+      .If(isEqualTo(os.platform(), "sunos"))
       .Then(() => {
         // Solaris/SunOS
         logger.log(
@@ -1705,7 +1703,7 @@ require('-') // this is a pointless package
         )
       })
       .Else()
-      .If(isEqualTo(os.platform(), 'android'))
+      .If(isEqualTo(os.platform(), "android"))
       .Then(() => {
         // Android
         logger.log(
@@ -1905,7 +1903,7 @@ require('-') // this is a pointless package
         if (strictDisableAprilFoolsSideEffectsCheck) {
           immediateError(
             colors.red(
-              'April Fools side effects are disabled but it is not April Fools',
+              "April Fools side effects are disabled but it is not April Fools",
               { errorType: ERROR.Error }
             )
           )
@@ -1992,7 +1990,10 @@ require('-') // this is a pointless package
         } else {
           logger.log(colors.red(`[falsejs] × Validation failed to pass.`))
           throwError(
-            construct({ target: FalseJSValidationFailedToPassError, args: ['Validation failed to pass'] })
+            construct({
+              target: FalseJSValidationFailedToPassError,
+              args: ["Validation failed to pass"]
+            })
           )
           return exit(one)
         }
@@ -2052,7 +2053,7 @@ require('-') // this is a pointless package
     })
 
     if (loggingEnabled) {
-      const message = 'thanks 4 using dis pkg'
+      const message = "thanks 4 using dis pkg"
       var thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
       const thesay2 = tacoWrap(emoji100.concat(SPACE, message))
       const thesay3 = tacoWrap(
@@ -2062,9 +2063,9 @@ require('-') // this is a pointless package
       sayIt(thesay) // give our users a cute message so we can get their support
       // string interpelation
       ltc(
-        `${clc.cyanBright(`[falsejs]`)} ${chalk.red('Chalk')}-${chalk.green(
-          'ulated'
-        )} ${chalk.yellow('the')} ${chalk.blue('boolean')} ${chalk.magenta(
+        `${clc.cyanBright(`[falsejs]`)} ${chalk.red("Chalk")}-${chalk.green(
+          "ulated"
+        )} ${chalk.yellow("the")} ${chalk.blue("boolean")} ${chalk.magenta(
           `value`
         )} ${chalk.cyan(`false`)}`
           .concat(SPACE)
@@ -2073,7 +2074,9 @@ require('-') // this is a pointless package
       if (succeededAttempt != null) {
         ltc(
           clc.cyanBright(`[falsejs]`).concat(SPACE) +
-            chalkbox.magenta('The attempt that succeeded was attempt ' + succeededAttempt)
+            chalkbox.magenta(
+              "The attempt that succeeded was attempt " + succeededAttempt
+            )
         )
       }
       ltc(
@@ -2091,7 +2094,7 @@ require('-') // this is a pointless package
       ltc(
         clc
           .cyanBright(`[falsejs]`)
-          .concat(SPACE, chalk.underline('https://github.com/tj-commits'))
+          .concat(SPACE, chalk.underline("https://github.com/tj-commits"))
       )
       ltc(
         clc
@@ -2115,11 +2118,11 @@ require('-') // this is a pointless package
         clc.cyanBright(`[falsejs]`).concat(SPACE) +
           `${c.red(`False`)}${c.green(`JS`)}`
       )
-      ltc(leftPad('left pad with dashes', LEFT_PAD_INPUT, '-'))
-      ltc(rightPad('right pad with dashes', RIGHT_PAD_INPUT, '-'))
+      ltc(leftPad("left pad with dashes", LEFT_PAD_INPUT, "-"))
+      ltc(rightPad("right pad with dashes", RIGHT_PAD_INPUT, "-"))
     }
 
-    if (openRandomImageOfDofleWhenDone) require('./dofle/dofle')
+    if (openRandomImageOfDofleWhenDone) require("./dofle/dofle")
 
     return result
   }
@@ -2144,7 +2147,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(enableLogging, NO) &&
         not(isEqualTo)(enableLogging, YES)
       ) {
-        immediateError('enableLogging must be yes or no', {
+        immediateError("enableLogging must be yes or no", {
           errorType: ERROR.TypeError
         })
         return exit(one)
@@ -2153,7 +2156,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(shouldDoSomethingAsync, NO) &&
         not(isEqualTo)(shouldDoSomethingAsync, YES)
       ) {
-        immediateError('shouldDoSomethingAsync must be yes or no', {
+        immediateError("shouldDoSomethingAsync must be yes or no", {
           errorType: ERROR.TypeError
         })
         return exit(one)
@@ -2163,7 +2166,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(shouldDoSomethingAsyncWithIsTenThousand, YES)
       ) {
         immediateError(
-          'shouldDoSomethingAsyncWithIsTenThousand must be yes or no',
+          "shouldDoSomethingAsyncWithIsTenThousand must be yes or no",
           { errorType: ERROR.TypeError }
         )
         return exit(one)
@@ -2172,7 +2175,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(disableAprilFoolsSideEffects, NO) &&
         not(isEqualTo)(disableAprilFoolsSideEffects, YES)
       ) {
-        immediateError('disableAprilFoolsSideEffects must be yes or no', {
+        immediateError("disableAprilFoolsSideEffects must be yes or no", {
           errorType: ERROR.TypeError
         })
         return exit(one)
@@ -2182,7 +2185,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
       ) {
         immediateError(
-          'definitelyDisableAprilFoolsSideEffects must be yes or no',
+          "definitelyDisableAprilFoolsSideEffects must be yes or no",
           {
             errorType: ERROR.TypeError
           }
@@ -2194,7 +2197,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(definitelyDisableAprilFoolsSideEffects, YES)
       ) {
         immediateError(
-          'strictDisableAprilFoolsSideEffectsCheck must be yes or no',
+          "strictDisableAprilFoolsSideEffectsCheck must be yes or no",
           {
             errorType: ERROR.TypeError
           }
@@ -2205,7 +2208,7 @@ require('-') // this is a pointless package
         not(isEqualTo)(openRandomImageOfDofleWhenDone, NO) &&
         not(isEqualTo)(openRandomImageOfDofleWhenDone, YES)
       ) {
-        immediateError('openRandomImageOfDofleWhenDone must be yes or no', {
+        immediateError("openRandomImageOfDofleWhenDone must be yes or no", {
           errorType: ERROR.TypeError
         })
         return exit(one)
@@ -2215,7 +2218,7 @@ require('-') // this is a pointless package
         isEqualTo(
           isTrue(
             { enableLogging: yesNo.parse(enableLogging) },
-            'enableLogging'
+            "enableLogging"
           ),
           Bro.TOTALLY
         )
@@ -2227,7 +2230,15 @@ require('-') // this is a pointless package
         hello({ username, age: "it's called FalseJS!" })
 
         mGenbaneko.say(clc.redBright(`Hi UwU`))
-        require('peter') // OH NO IT'S PETER
+        require("peter") // OH NO IT'S PETER
+        ltc(clc.cyanBright(`[falsejs] Using Lodash version ` + _.VERSION))
+        ltc(
+          clc.cyanBright(
+            `[falsejs] Using Underscore version ` + underscore.VERSION
+          )
+        )
+        ltc(clc.cyanBright(`[falsejs] Using Axios version ` + axios.VERSION))
+        ltc(clc.cyanBright(`[falsejs] Using React version ` + React.version))
       }
       // deduce a random number
       const randomNumber = add(MathFloor(MathRandom() * numberOneHundred), one)
@@ -2235,7 +2246,7 @@ require('-') // this is a pointless package
         isEqualTo(
           isTrue(
             { enableLogging: yesNo.parse(enableLogging) },
-            'enableLogging'
+            "enableLogging"
           ),
           Bro.TOTALLY
         )
@@ -2245,20 +2256,22 @@ require('-') // this is a pointless package
         )
         ltc(
           clc.cyanBright(
-            `[falsejs] Doing something async ${construct({ target: TernaryCompare, args: [
-              yesNo.parse(shouldDoSomethingAsync),
-              'enabled',
-              'disabled'
-            ]}).compare()}`
+            `[falsejs] Doing something async ${construct({
+              target: TernaryCompare,
+              args: [yesNo.parse(shouldDoSomethingAsync), "enabled", "disabled"]
+            }).compare()}`
           )
         )
         ltc(
           clc.cyanBright(
-            `[falsejs] Doing something async with is-ten-thousand ${construct({ target: TernaryCompare, args: [
-              yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand),
-              'enabled',
-              'disabled'
-            ]}).compare()}`
+            `[falsejs] Doing something async with is-ten-thousand ${construct({
+              target: TernaryCompare,
+              args: [
+                yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand),
+                "enabled",
+                "disabled"
+              ]
+            }).compare()}`
           )
         )
       }
@@ -2292,10 +2305,16 @@ require('-') // this is a pointless package
                               randomNumber, // random number
                               yesNo.parse(enableLogging), // eanble logging
                               yesNo.parse(shouldDoSomethingAsync), // async
-                              yesNo.parse(shouldDoSomethingAsyncWithIsTenThousand), //async-is-ten-thousand
+                              yesNo.parse(
+                                shouldDoSomethingAsyncWithIsTenThousand
+                              ), //async-is-ten-thousand
                               yesNo.parse(disableAprilFoolsSideEffects) &&
-                                yesNo.parse(definitelyDisableAprilFoolsSideEffects),
-                              yesNo.parse(strictDisableAprilFoolsSideEffectsCheck),
+                                yesNo.parse(
+                                  definitelyDisableAprilFoolsSideEffects
+                                ),
+                              yesNo.parse(
+                                strictDisableAprilFoolsSideEffectsCheck
+                              ),
                               yesNo.parse(openRandomImageOfDofleWhenDone)
                             )
                           )()
@@ -2314,7 +2333,7 @@ require('-') // this is a pointless package
       _return(undefined())
     }
   }
-  const mainFunctionWotDoesFunctionality = functions.ReturnFalse
+  vagina._FalseJSMainFunctionWotDoesFunctionality = functions.ReturnFalse
 
   // * MORE HELPER FUNCTIONS
 
@@ -2329,7 +2348,7 @@ require('-') // this is a pointless package
     logger.log(
       clc.cyanBright(`[falsejs] Random number ${randomValue} calculated`)
     )
-    const binaryString = (jQuery.multiply(randomValue, 1000000)).toString(Two())
+    const binaryString = jQuery.multiply(randomValue, 1000000).toString(Two())
     const bitMask = 0b101010
     const bitResult =
       parseInt(binaryString.slice(zr0(), six()), Two()) ^ bitMask
@@ -2357,7 +2376,7 @@ require('-') // this is a pointless package
 
     // Calculate a hash-like value using trigonometric functions
     const trigValue = $.multiply(
-      parseFloat(add('0.', baseConverted), 36),
+      parseFloat(add("0.", baseConverted), 36),
       PI,
       Two()
     )
@@ -2404,7 +2423,7 @@ require('-') // this is a pointless package
     // Step 5: Convert the result to a binary string and calculate a checksum-like value
     const binaryString = bitManipulated
       .toString(Two())
-      .padStart(eightToolkit.constants.EIGHT, '0')
+      .padStart(eightToolkit.constants.EIGHT, "0")
     const checksum = Array.from(binaryString).reduce(
       (acc, bit) => acc + parseInt(bit, ten),
       zr0()
@@ -2458,11 +2477,10 @@ require('-') // this is a pointless package
     )
 
     // Step 15: Negate finalBoolean
-    const finalBooleanComparison = construct({ target: TernaryCompare, args: [
-      finalBooleanNotNegated,
-      _f(),
-      t()
-    ]})
+    const finalBooleanComparison = construct({
+      target: TernaryCompare,
+      args: [finalBooleanNotNegated, _f(), t()]
+    })
 
     return finalBooleanComparison.compare()
   }
@@ -2470,53 +2488,53 @@ require('-') // this is a pointless package
   // and maybe some mind-blowing alphabet function
 
   function printTheAlphabetSeparatedBySpaces() {
-    var s = ''
+    var s = ""
 
     function one() {
-      s += 'a '
+      s += "a "
       return {
         get p() {
-          s += 'e '
+          s += "e "
           return {
             valueOf: function () {
-              s += 'g '
+              s += "g "
               return {}
             },
             toString: function () {
-              s += 'h '
+              s += "h "
               return _f()
             }
           }
         },
         set p(x) {
-          s += 'k l m n o p q r s t u v w x y z'
+          s += "k l m n o p q r s t u v w x y z"
         }
       }
     }
 
     function Two() {
-      s += 'b '
+      s += "b "
       return {
         toString: function () {
-          s += 'c '
+          s += "c "
           return {}
         },
         valueOf: function () {
-          s += 'd '
-          return 'p'
+          s += "d "
+          return "p"
         }
       }
     }
 
     function three() {
-      s += 'f '
+      s += "f "
       return {
         valueOf: function () {
-          s += 'i '
+          s += "i "
           return {}
         },
         toString: function () {
-          s += 'j '
+          s += "j "
           return _f()
         }
       }
@@ -2556,24 +2574,29 @@ require('-') // this is a pointless package
   function couldThisCouldItBeFalse(
     aValueThatMightBeTheBooleanValueFalseButIDKYet
   ) {
+    const SIXTY_NINE = 69
     const specimen = aValueThatMightBeTheBooleanValueFalseButIDKYet
     if (specimen == undefined()) return Bro.NOWAY // noway its false if its undefined
     if (isOne(specimen)) return _f()
-    if (isTrue({ specimen }, 'specimen')) return _f()
-    if (isNegativeZero({ specimen }, 'specimen')) return _f()
-    if (specimen === 'My gosh') return _f()
+    if (isTrue({ specimen }, "specimen")) return _f()
+    if (isNegativeZero({ specimen }, "specimen")) return _f()
+    penis.setBalls(specimen)
+    penis.setHead(SIXTY_NINE)
+    if (B === D) return _f()
     if (is(specimen).thirteen()) return _f()
-    return isPreciselyEqualToFalse(
-      aValueThatMightBeTheBooleanValueFalseButIDKYet
-    )
+    penis.reset()
+    return isPreciselyEqualToFalse(specimen)
   }
   // *isfalse function
   // a function to check if something is false
-  function is_This_Value_false(v) {
+  vagina._FalseJSIsFalse = function is_This_Value_false(v) {
+    attempt(() => {})
     const value = v // alts are always good
     const isV = is(v) // isthirteen
     const garbage = useGarbage() // use some garbage
     const isgarbage = not(isRealBoolean)(garbage) && isEqualTo(v, garbage)
+    penis.setBalls(v)
+    penis.setHead(FALSE)
     const cond =
       !isgarbage &&
       v !== one &&
@@ -2642,36 +2665,89 @@ require('-') // this is a pointless package
       v !== t() &&
       v === _f() &&
       v === returnFalse() &&
+      isEqualTo(v, _f()) &&
+      isEqual(v, _f()) &&
+      _.isEqual(v, _f()) &&
+      underscore.isEqual(v, _f()) &&
+      strictlyEqual(v, _f()) &&
+      strictlyEqual(B, D) &&
+      v === _f() &&
+      B === D &&
       couldThisCouldItBeFalse(v)
     const checker = construct({ target: Checker, args: [cond] })
+    penis.reset()
     return checker.check(v)
   }
 
   // * PLUGINS
-  function jQueryPlugin() {
+  vagina._FalseJSjQueryPlugin = function jQueryPlugin() {
     // Inject into jQuery
-    jQuery.False = mainFunctionWotDoesFunctionality
-    jQuery.isFalse = is_This_Value_false
+    jQuery.False = vagina._FalseJSMainFunctionWotDoesFunctionality
+    jQuery.isFalse = vagina._FalseJSIsFalse
   }
 
-  function expressMiddleware(req, res, next) {
+  vagina._FalseJSExpressMiddleware = function expressMiddleware(
+    req,
+    res,
+    next
+  ) {
     // Add our function to the request object
-    req.False = mainFunctionWotDoesFunctionality
-    req.isFalse = is_This_Value_false
+    req.False = vagina._FalseJSMainFunctionWotDoesFunctionality
+    req.isFalse = vagina._FalseJSIsFalse
     next() // Continue to the next middleware or route
+  }
+
+  vagina._FalseJSAsyncFalse = function asyncFalse() {
+    return construct({
+      target: $Promise,
+      args: [
+        (resolve) => {
+          axios
+            .get(
+              "https://t4.ftcdn.net/jpg/00/50/76/83/360_F_50768337_euMWpeWkGYSQjrRqnZT6BBQgPJ1ui8gD.jpg",
+              {
+                responseType: "arraybuffer"
+              }
+            )
+            .then((res) => {
+              fs.writeFileSync("./false.jpg", res.data)
+              Tesseract.recognize(
+                "./false.jpg",
+                "eng" // Language (English in this case)
+              ).then((result) => {
+                fs.rmSync("./false.jpg")
+                fs.rmSync("./eng.traineddata")
+                resolve(eval(result.data.text.toLowerCase().split(")")[0]))
+              })
+            })
+        }
+      ]
+    })
   }
   //*EXPORTING
 
   module.exports = {
-    False: mainFunctionWotDoesFunctionality,
-    isFalse: is_This_Value_false,
-    injectIntojQuery: jQueryPlugin,
-    expressMiddleware
+    False: vagina._FalseJSMainFunctionWotDoesFunctionality,
+    isFalse: vagina._FalseJSIsFalse,
+    injectIntojQuery: vagina._FalseJSjQueryPlugin,
+    expressMiddleware: vagina._FalseJSExpressMiddleware,
+    AsyncFalse: vagina._FalseJSAsyncFalse
   }
 
   /*exports.Yes = literally(YES)
 exports.No = literally(NO)*/
   // *some functions
+
+  function getNo() {
+    const NO = require("no/dist/main")
+    const NoComponent = () => {
+      return React.createElement("div", Null(), NO)
+    }
+    const noElement = React.createElement(NoComponent)
+    const html = ReactDOMServer.renderToString(noElement)
+    const $ = cheerio.load(html)
+    return $("div").text()
+  }
 
   function warpText(text) {
     return text
@@ -2680,9 +2756,9 @@ exports.No = literally(NO)*/
   function calculateRandomLetterOrNumber(loggingEnabled) {
     const uniqueId = uuid.v4()
     const uniqueId2 = crypto.randomUUID()
-    const dashlessUUID = uniqueId.replaceAll('-', '')
-    const dashlessUUID2 = uniqueId2.replaceAll('-', '')
-    const combinedUUID = ''.concat(dashlessUUID, dashlessUUID2)
+    const dashlessUUID = uniqueId.replaceAll("-", "")
+    const dashlessUUID2 = uniqueId2.replaceAll("-", "")
+    const combinedUUID = "".concat(dashlessUUID, dashlessUUID2)
     const randomCharacter = StringCharAt.call(
       combinedUUID,
       $.add(
@@ -2703,7 +2779,7 @@ exports.No = literally(NO)*/
   // i am scared to define this function
   function zalgoText(v) {
     const stuttered = stutteringUwuifier.uwuifySentence(v) // get our stuttered sentence
-    var z = require('zalgo-generator').zalgoGeneration(
+    var z = require("zalgo-generator").zalgoGeneration(
       stuttered,
       0.00000001,
       0.00000001,
