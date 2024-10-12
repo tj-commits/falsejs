@@ -2,9 +2,9 @@
 
 # FalseJS
 
-> #### Better than the keyword itself.
->
-> Ever wondered what would happen if JavaScript changed the `false` keyword to something else, like `no`, `nope`, `noway`, or something else? Chaos. That is what FalseJS is for.
+#### Better than the keyword itself.
+
+Ever wondered what would happen if JavaScript changed the `false` keyword to something else, like `no`, `nope`, `noway`, or something else? Chaos. That is what FalseJS is for.
 
 The 10 attempts to get the value of false ensure that if one fails, it will go on to the next, so if JavaScript breaks one, there will still be more attempts. This is an alternative to the library `false` by mde, which uses the hardcoded boolean value `false` (which I believe they are trying to resolve on the sister library `true`, which will probably be passed down to the `false` library), and is way too short. FalseJS is way better.
 
@@ -156,6 +156,7 @@ app.listen(PORT)
 This is the list of all FalseJS versions:
 
 ```
+1000.1000.1000
 1000.0.1
 1000.0.0
 999.999.999
@@ -214,3 +215,5 @@ This is the list of all FalseJS versions:
 ## License
 
 FalseJS uses the 10xWTFPL license.
+
+## made with HEAVY BLACK HEART U+2764
