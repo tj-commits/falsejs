@@ -12,7 +12,7 @@
  */
 
 export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no", openRandomImageOfDofleWhenDone?: "yes" | "no"): boolean;
-export function AsyncFalse(): Promise<boolean>;
+
 /**
  * Checks if a given value is false.
  *

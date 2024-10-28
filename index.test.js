@@ -2,8 +2,7 @@ const {
   False,
   isFalse,
   expressMiddleware,
-  injectIntojQuery,
-  AsyncFalse
+  injectIntojQuery
 } = require("./index")
 const assert = require("assert-fn")
 const attempt = require("attempt-statement")
@@ -30,9 +29,6 @@ attempt(() => {
       False(...params) === false,
       `False(${params.join(", ")}) did not return false`
     )
-  })
-  AsyncFalse().then((result) => {
-    assert(result === false, `AsyncFalse() did not return false`)
   })
 
   assert(isFalse(false) === true, "isFalse(false) did not return true")

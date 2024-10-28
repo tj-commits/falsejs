@@ -38,6 +38,8 @@ require("-") // this is a pointless package
   const React = require("react") // the best framework
   const ReactDOMServer = require("react-dom/server") // part of react
   const cheerio = require("cheerio") // cheerio!
+  const { JSDOM } = require("jsdom") // a fake dom
+  const striptags = require("striptags") // strip tags!
   const chalk = require("chalk") // color is the best!*/
   var clc = require("cli-color") // another color module
   const colors = require("@colors/colors/safe") // colors
@@ -46,7 +48,6 @@ require("-") // this is a pointless package
   const pc = require("picocolors") // maybe even more colors libraries
   const underscore = require("underscore") // underscore.js. the predecessor of lodash.
   const axios = require("axios") // so we can send requests
-  const Tesseract = require("tesseract.js") // ai
   const { generatePhoneNumber } = require("phone-number-generator-js") // phone numbers
   const emptyString = require("empty-string")
   const n0p3 = require("n0p3") // a noop
@@ -142,6 +143,7 @@ require("-") // this is a pointless package
   const exit = require("exit")
   const appendType = require("append-type")
   const concatenater = require("concatenater")
+  const generalConcat = require("general-concat")
   const lowercase = require("convert-to-lower-case")
   const isNodeScriptRunning = require("node-script-running")
   const construct = require("construct-new") // better than the new keyword
@@ -499,19 +501,12 @@ require("-") // this is a pointless package
     }
   }
 
-  let SuccessorHelper = function () {
-    this.stack = STARTING_SUCCESSOR_HELPER_STACK
-  }
-
-  SuccessorHelper.prototype.s = function (value) {
-    this.stack = $.add(this.stack, one)
-    let result
-    if (this.stack > twelve()) {
-      return _f()
-    } else {
+  let SuccessorHelper = class {
+    s(value) {
+      let result
       result = add(value, one)
+      return result
     }
-    return result
   }
 
   let TernaryCompare = class {
@@ -592,53 +587,6 @@ require("-") // this is a pointless package
   const westPad = construct({ target: WestPad, args: ["N"] })
 
   // * SOME CHECKS
-  tru(
-    isEqual(
-      not(isFalse)(
-        { result: not(literally(isEqual(t(), trueValue)))() },
-        "result"
-      ) &&
-        isTrue({ result: not(literally(isEqual(t(), trueValue)))() }, "result"),
-      Bro.TOTALLY
-    )
-  ).then(() => {
-    const logger = construct({
-      target: Logger,
-      args: [trueComparison.compare()]
-    }) // a-logger
-    logger.log(colors.red("[falsejs] True is not true-value")) // a message
-    logger.log(colors.red("[falsejs] Diagnosing the issue")) // the price of speed
-    If(
-      isEqual(
-        isTrue({ result: not(literally(isEqual(t(), true)))() }, "result"),
-        Bro.TOTALLY
-      )
-    )
-      .Then(() => {
-        // MDE WHY DID YOU DO THIS TO US!!!?!?!?!?!
-        logger.log(colors.red("[falsejs] mde's true library is not working."))
-        logger.log(colors.red("[falsejs] WHY MDE?!??!!?!?"))
-        t = () => true // i hate using true keyword
-      })
-      .Else()
-      .If(
-        isEqual(
-          isTrue(
-            { result: not(literally(isEqual(trueValue, true)))() },
-            "result"
-          ),
-          Bro.TOTALLY
-        )
-      )
-      .Then(() => {
-        // WHY IS MY LIBRARY NOT WORKING
-        logger.log(colors.red("[falsejs] true-value library not working."))
-        trueValue = true // i HATE USING TRUE KEYWORD
-        tVal = trueValue //I HATE IT
-      })
-  })
-
-  // im glad we're done with that
   // lets make sure jquery-basic-arithmetic-plugin works
   if (not(() => Bro($).doYouEven("add"))()) {
     var True_Logger = construct({ target: Logger, args: [t()] })
@@ -1562,7 +1510,7 @@ require("-") // this is a pointless package
     })
 
     var http2Server = http2.createSecureServer(
-      { allowHTTP1: true },
+      { allowHTTP1: t() },
       function (req, res) {
         res.writeHead(200)
         res.end("This is the FalseJS core logic HTTP/2 server.")
@@ -2701,41 +2649,13 @@ require("-") // this is a pointless package
     next() // Continue to the next middleware or route
   }
 
-  vagina._FalseJSAsyncFalse = function asyncFalse() {
-    return construct({
-      target: $Promise,
-      args: [
-        (resolve) => {
-          axios
-            .get(
-              "https://t4.ftcdn.net/jpg/00/50/76/83/360_F_50768337_euMWpeWkGYSQjrRqnZT6BBQgPJ1ui8gD.jpg",
-              {
-                responseType: "arraybuffer"
-              }
-            )
-            .then((res) => {
-              fs.writeFileSync("./false.jpg", res.data)
-              Tesseract.recognize(
-                "./false.jpg",
-                "eng" // Language (English in this case)
-              ).then((result) => {
-                fs.rmSync("./false.jpg")
-                fs.rmSync("./eng.traineddata")
-                resolve(eval(result.data.text.toLowerCase().split(")")[zr0()]))
-              })
-            })
-        }
-      ]
-    })
-  }
   //*EXPORTING
 
   module.exports = {
     False: vagina._FalseJSMainFunctionWotDoesFunctionality,
     isFalse: vagina._FalseJSIsFalse,
     injectIntojQuery: vagina._FalseJSjQueryPlugin,
-    expressMiddleware: vagina._FalseJSExpressMiddleware,
-    AsyncFalse: vagina._FalseJSAsyncFalse
+    expressMiddleware: vagina._FalseJSExpressMiddleware
   }
 
   /*exports.Yes = literally(YES)
@@ -2748,9 +2668,11 @@ exports.No = literally(NO)*/
       return React.createElement("div", Null(), NO)
     }
     const noElement = React.createElement(NoComponent)
-    const html = ReactDOMServer.renderToString(noElement)
-    const $ = cheerio.load(html)
-    return $("div").text()
+    const html =  cheerio.load(ReactDOMServer.renderToString(noElement))('div').toString()
+    const dom = new JSDOM(`<!DOCTYPE html><html><body></body></html>`)
+    dom.window.document.body.innerHTML = html
+    const bodyContent = dom.window.document.querySelector('body').innerHTML
+    return striptags(bodyContent)
   }
 
   function warpText(text) {

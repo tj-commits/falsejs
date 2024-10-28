@@ -2,6 +2,4 @@
 
 const f = require("../index")
 
-f.AsyncFalse().then((myFalseValue) => {
-  console.log(myFalseValue)
-})
+console.log(f.False("no", "no", "no", "yes", "yes", "no", "no")) // false

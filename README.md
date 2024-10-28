@@ -57,17 +57,6 @@ const False = f.False("yes", "no", "no", "yes", "yes", "no", "no") // outputs a 
 console.log(False) // outputs false
 ```
 
-## Async version
-
-There is also the exported function `AsyncFalse`, which is an async function that resolves with false. It does not take any arguments, and does not log anything, but is slow as it uses an AI model to get the text `false` from an image.
-
-```js
-const f = require("falsejs")
-f.AsyncFalse().then((result) => {
-  console.log(result) // outputs false
-})
-```
-
 ## `isFalse` function
 
 FalseJS also exports a function called `isFalse`, which returns true if the value is false, otherwise false. This can be used to test whether FalseJS worked and returned false (like it wouldn't, so there's no need to do that). `f.isFalse` just takes in a value and returns true if the value is false.
@@ -156,6 +145,9 @@ app.listen(PORT)
 This is the list of all FalseJS versions:
 
 ```
+1337.0.0
+1234.56.789
+1000.2000.3000
 1000.1000.1000
 1000.0.1
 1000.0.0
