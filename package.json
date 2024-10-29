@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "1337.0.0",
+  "version": "1337.69.420",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -251,15 +251,15 @@
     "zalgo-generator": "^1.5.1",
     "zeropad": "^1.1.0"
   },
-  "homepage": "https://github.com/tj-commits/falsejs",
+  "homepage": "https://github.com/10xEngineersQualityProgramming/FalseJS",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tj-commits/falsejs"
+    "url": "git+https://github.com/10xEngineersQualityProgramming/FalseJS.git"
   },
   "bin": {
     "false": "cli/cli.js"
   },
-  "bugs": "https://github.com/tj-commits/falsejs/issues",
+  "bugs": "https://github.com/10xEngineersQualityProgramming/FalseJS/issues",
   "keywords": [
     "false",
     "javascript",
