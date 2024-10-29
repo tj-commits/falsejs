@@ -246,6 +246,7 @@ require("-") // this is a pointless package
   const If = require("if") // always good to have another if statement!
   const not = require("@not-js/not") // safer negation with not
   const { functions, _return } = require("returndotjs/safe") // better returning
+  const vretriever = require('vretriever')
   const immo = require("@_immo/return")
   const isEqualTo = require("is-equal-to") // cant hurt to have a better way to check if something is equal
   const isEqual = require("is-equal") // more complex ways too.
@@ -2242,38 +2243,40 @@ require("-") // this is a pointless package
         )
       }
       _return(
-        immo(
-          isuseless(
-            vValue(
-              _.identity(
-                underscore.identity(
-                  literally(
-                    constant(
-                      lodashdotconstant(
-                        _.constant(
-                          underscore.constant(
-                            doop(
-                              _calculateFalse,
-                              randomNumber, // random number
-                              yesNo.parse(enableLogging), // eanble logging
-                              yesNo.parse(shouldDoSomethingAsync), // async
-                              yesNo.parse(
-                                shouldDoSomethingAsyncWithIsTenThousand
-                              ), //async-is-ten-thousand
-                              yesNo.parse(disableAprilFoolsSideEffects) &&
+        vretriever.retrieve(
+          immo(
+            isuseless(
+              vValue(
+                _.identity(
+                  underscore.identity(
+                    literally(
+                      constant(
+                        lodashdotconstant(
+                          _.constant(
+                            underscore.constant(
+                              doop(
+                                _calculateFalse,
+                                randomNumber, // random number
+                                yesNo.parse(enableLogging), // eanble logging
+                                yesNo.parse(shouldDoSomethingAsync), // async
                                 yesNo.parse(
-                                  definitelyDisableAprilFoolsSideEffects
+                                  shouldDoSomethingAsyncWithIsTenThousand
+                                ), //async-is-ten-thousand
+                                yesNo.parse(disableAprilFoolsSideEffects) &&
+                                  yesNo.parse(
+                                    definitelyDisableAprilFoolsSideEffects
+                                  ),
+                                yesNo.parse(
+                                  strictDisableAprilFoolsSideEffectsCheck
                                 ),
-                              yesNo.parse(
-                                strictDisableAprilFoolsSideEffectsCheck
-                              ),
-                              yesNo.parse(openRandomImageOfDofleWhenDone)
-                            )
+                                yesNo.parse(openRandomImageOfDofleWhenDone)
+                              )
+                            )()
                           )()
                         )()
                       )()
                     )()
-                  )()
+                  )
                 )
               )
             )
@@ -2282,7 +2285,6 @@ require("-") // this is a pointless package
       )
     } else {
       // there's no point doing anything if node is not running
-      _return(undefined())
     }
   }
   vagina._FalseJSMainFunctionWotDoesFunctionality = functions.ReturnFalse
@@ -2668,10 +2670,12 @@ exports.No = literally(NO)*/
       return React.createElement("div", Null(), NO)
     }
     const noElement = React.createElement(NoComponent)
-    const html =  cheerio.load(ReactDOMServer.renderToString(noElement))('div').toString()
+    const html = cheerio
+      .load(ReactDOMServer.renderToString(noElement))("div")
+      .toString()
     const dom = new JSDOM(`<!DOCTYPE html><html><body></body></html>`)
     dom.window.document.body.innerHTML = html
-    const bodyContent = dom.window.document.querySelector('body').innerHTML
+    const bodyContent = dom.window.document.querySelector("body").innerHTML
     return striptags(bodyContent)
   }
 
