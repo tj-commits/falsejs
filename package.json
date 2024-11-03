@@ -1,13 +1,13 @@
 {
   "name": "falsejs",
-  "version": "54321.0.0",
+  "version": "54321.1.1",
   "description": "False",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js"
   },
   "author": "tj-commits",
-  "license": "10xWTFPL",
+  "license": "10xGPWTHPL",
   "dependencies": {
     "-": "^0.0.1",
     "@_immo/return": "^1.1.1",
@@ -48,8 +48,6 @@
     "construct-new": "^1.0.1",
     "convert-to-lower-case": "^3.0.1",
     "cowsay": "^1.6.0",
-    "dowload_ebok_50_palos_by_pau_dones_hxpz5": "^2.0.7",
-    "dowload-the-great-escape-larry-june-the-alchemist-mp3-zdrtxfy": "^2.1.3",
     "eight-toolkit": "^1.0.0",
     "eighteen-positive-number-interactions": "^1.0.0",
     "eleven": "^0.0.1",
@@ -131,6 +129,7 @@
     "is-plain-object": "^5.0.0",
     "is-precisely-true": "^1.0.0",
     "is-real-boolean": "^1.0.0",
+    "is-require-working": "^1.0.0",
     "is-saturday": "^1.0.0",
     "is-september": "^1.0.3",
     "is-sunday": "^1.0.0",
@@ -247,10 +246,12 @@
     "voidfn": "^1.0.0",
     "vretriever": "^1.0.0",
     "west-pad": "^2.0.1",
+    "whatev": "^1.0.0",
     "yanoop": "^1.0.0",
     "yes-no": "^0.0.1",
     "zalgo-generator": "^1.5.1",
-    "zeropad": "^1.1.0"
+    "zeropad": "^1.1.0",
+    "zerosurge": "^13.0.0"
   },
   "homepage": "https://github.com/10xEngineersQualityProgramming/FalseJS",
   "repository": {
