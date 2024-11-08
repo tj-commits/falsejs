@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "9999999.999999.99999999",
+  "version": "9999999.999999.10000000",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -266,7 +266,7 @@
     "zeropad": "^1.1.0",
     "zerosurge": "^13.0.0"
   },
-  "homepage": "https://github.com/10xEngineersQualityProgramming/FalseJS",
+  "homepage": "https://10xengineersqualityprogramming.github.io/falsejs.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/10xEngineersQualityProgramming/FalseJS.git"
