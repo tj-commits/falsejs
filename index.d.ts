@@ -20,7 +20,7 @@ export function False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "y
  * @returns {boolean} - True if the value is false, false otherwise.
  */
 
-export function isFalse(value: any): boolean;
+export function isFalse(value: any, loggingEnabled?: "yes" | "no"): boolean;
 
 export function injectIntojQuery(): void;
 export function expressMiddleware(req: any, res: any, next: any): void;

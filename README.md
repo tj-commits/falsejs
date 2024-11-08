@@ -61,11 +61,13 @@ console.log(False) // outputs false
 
 FalseJS also exports a function called `isFalse`, which returns true if the value is false, otherwise false. This can be used to test whether FalseJS worked and returned false (like it wouldn't, so there's no need to do that). `f.isFalse` just takes in a value and returns true if the value is false.
 
+It takes in too parameters, the value to check whether it is false, and `loggingEnabled` which can be `"yes"` or `"no"`.
+
 Example:
 
 ```javascript
 const f = require("falsejs")
-const False = f.False("yes", "no", "no")
+const False = f.False("no", "no", "no")
 
 console.log(f.isFalse(False)) // true
 console.log(f.isFalse(false)) // probably true
@@ -139,6 +141,36 @@ app.get("/", (req, res) => {
 
 app.listen(PORT)
 ```
+
+## April Fools Behavior
+
+### **Not April Fools Day**
+- **FalseJS will return** `false` by default.
+- The flags `disableAprilFoolsSideEffects` and `definitelyDisableAprilFoolsSideEffects` **do not affect the behavior** of FalseJS. It behaves normally as it would on any non-April Fools' Day.
+  - However, if `strictDisableAprilFoolsSideEffectsCheck` is **not `no"`** and instead `"yes"` (by default it's `"yes"`), it will throw an error if these options are set to `"yes"`, because it's not April Fools' Day, and there are no side effects to disable.
+  - If `strictDisableAprilFoolsSideEffectsCheck` is set to **"no"**, FalseJS behaves normally without throwing an error, even if the side effect parameters are set to `"yes"`.
+
+### **April Fools Day**
+- **On April Fools' Day**, FalseJS **always returns `true`**, regardless of the state of the flags.
+- **To prevent this behavior**, you must set both `disableAprilFoolsSideEffects` to `"yes"` and `definitelyDisableAprilFoolsSideEffects` to `"yes"` when you call FalsejS.
+  - If these flags are set to `"yes"`, FalseJS will return its expected behavior (return `false`), even on April Fools' Day.
+
+### **Best Usage For April Fools Behavior**
+
+This usage ensures that you will always get `false` whether it's April Fools or not and no errors.
+
+```js
+const f = require('falsejs')
+const isAprilFools = require('is-april-fools')
+const disableAprilFoolsSideEffects = isAprilFools() ? "yes" : "no"
+
+const falseValue = f.False("no", "no", "no"/*the first three options you can choose, for examples we set them all to "no"*/, disableAprilFoolsSideEffects, disableAprilFoolsSideEffects, "yes")
+
+// or you can do this, but the above is better
+
+const falseValue = f.False("no", "no", "no"/*the first three options you can choose, for examples we set them all to "no"*/, "yes", "yes", "no")
+```
+
 
 ## Related Projects
 

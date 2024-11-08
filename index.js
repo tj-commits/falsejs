@@ -5,7 +5,7 @@
  * @author tj-commits
  * @license 10xGPWTHPL
  * @version whatever_the_version_in_the_package.json_is
- */                                                                                                                                             /*
+ */ /*
 
 ███████████████████████████████████████████████████████████████████████████████████
 
@@ -41,6 +41,9 @@ if (!doesItWork) {
   require("array-get-member")() // no silent undefined values for arrays
   require("make-jquery-global")() // i <3 jQuery
   require("jquery-basic-arithmetic-plugin") // why not exploit jQuery for math
+  require("console.dog") // bark
+  require("user")() // idk why this has so many downloads
+  require("ecto1")() // the most advanced thing ever
   ;(function ($) {
     "use strict"
     //* MODULE IMPORTS
@@ -117,7 +120,6 @@ if (!doesItWork) {
     const isNegativeZero = require("is-negative-zero") // isNegativeZero
     const isNegativeZero2 = require("negative-zero") // can't hurt to have another negative zero checker
     const isPositiveZero = require("positive-zero") // positive zero
-    const isFalse = require("is-false") // false
     const isTrue = require("is-true") // true
     const isPreciselyTrue = require("is-precisely-true") // real true
     const is = require("is-thirteen") // comparison-against-twelve-free environment
@@ -148,6 +150,7 @@ if (!doesItWork) {
     const parseBool = require("parse-bool") // parse a boolean
     const owoifyx = require("owoifyx").default // UwU
     const Uwuifier = require("uwuifier").default // UwU (x2)
+    const amogus = require('amogusify')
     const luaParser = require("luaparse")
     const luaInterpreter = require("lua-interpreter")
     const exit = require("exit")
@@ -160,6 +163,8 @@ if (!doesItWork) {
     const { penis, vagina, mouth } = require("issue13") // some stuff
     const $Promise = require("bluebird")
     const GetIntrinsic = require("get-intrinsic")
+
+    parseBool
 
     // * INTRINSICS
 
@@ -221,7 +226,7 @@ if (!doesItWork) {
     const isWeekend = require("is-weekend") // looking forward to the weeeeekeend
 
     const zr0 = require("integer-value-positive-zero")
-    const { returnZero, ZeroCalculationMethod } = require("zerosurge")
+    const { returnZero, ZeroCalculationMethod, isZero: zerosurgeIsZero } = require("zerosurge")
     const one = require("the-number-one").default
     const Two = require("two")
     const three = require("numeric-constant-three")
@@ -280,7 +285,8 @@ if (!doesItWork) {
     const isLinux = require("is-linux") // linux the os
     const isOSX = require("is-osx") // more like is darwin
     // TODO: Implement is Windows 12
-    const isFreeBSD = require("is-freebsd").isFreeBSD // i've never even heard of this until now.
+    const isFreeBSD = require("is-freebsd").isFreeBSD // i've never even heard of this operating system until now.
+    const thirteen = require("thirteen") // multiply by thirteen
     const os = require("node:os") // maybe node js itself can help us calculate more operating systems
     const util = require("node:util") // maybe some built in stuff would be nice
     const http = require("node:http") // http!
@@ -290,13 +296,19 @@ if (!doesItWork) {
     const fs = require("node:fs") // fs
     const uuid = require("uuid") // UUID
     const getStringLength = require("utf8-byte-length") // get string length
-    const poopEmoji = require("emoji-poop")
     const emoji100 = require("emoji-100")
+    const randomHappyEmoji = require("random-happy-emoji")
+    const randomAngryEmoji = require("random-angry-emoji")
+    const randomFoodEmoji = require("random-food-emoji")
+    const dolphinFact = require("dolphin-fact")
+    const logOne = require("useless-one-log")
     const Bro = require("brototype") // Bro
     const literally = require("literally") // better than literally
     const constant = require("const")
     const lodashdotconstant = require("lodash.constant")
+    const WeirdInstanceof = require("weird-instanceof") // drunk programming only
     const { log: ltc, setLogFuntion } = require("logtoconsole") // best logger
+    const weirdLtc = WeirdInstanceof(ltc) // weird
     const yesNo = require("yes-no")
     const { undefined } = require("undefined-is-a-function")
     const isNull = util.isNull || require("is-null")
@@ -318,6 +330,7 @@ if (!doesItWork) {
     const useGarbage = require("garbage") // trash.
     const isuseless = require("is-useless").isuseless // is useless.
     const isAprilFools = require("is-april-fools")
+    const meow = require("meow.js")
     const immediateError = require("immediate-error")
     const ERROR = immediateError.ERROR
     const throwError = require("throw-error")
@@ -433,69 +446,7 @@ if (!doesItWork) {
       }
       log(log) {
         if (isEqualTo(this.enableLogging, t())) {
-          if (isAprilFools()) {
-            /// haha this code is obfuscated you'll never figure out what happens on april fools
-            function FalseJS_a() {
-              var i = [
-                "2576982VevsUR",
-                "318848tCfOaV",
-                "uwuifySentence",
-                "1160985KOakir",
-                "120436AuTEAn",
-                "483EqfXfC",
-                "6056kkhJjh",
-                "8498115OOvSNK",
-                "486078virxlj",
-                "6iqFpHp"
-              ]
-              FalseJS_a = function () {
-                return i
-              }
-              return FalseJS_a()
-            }
-            function FalseJS_b(a, b) {
-              var c = FalseJS_a()
-              FalseJS_b = function (d, e) {
-                d = d - (0x2119 * -0x1 + -0xae3 + 0x2d61)
-                var f = c[d]
-                return f
-              }
-              return FalseJS_b(a, b)
-            }
-            var FalseJS_h = FalseJS_b
-            ;(function (a, b) {
-              var g = FalseJS_b
-              var d = a()
-              while (!![]) {
-                try {
-                  var e =
-                    parseInt(g("0x166")) /
-                      (-0x1c * -0x123 + 0xd64 + 0x90b * -0x5) +
-                    -parseInt(g("0x16d")) /
-                      (-0xd * 0x60 + 0x515 + 0x11 * -0x3) +
-                    (parseInt(g("0x16e")) / (0x8dc + 0xdf2 + -0x5 * 0x48f)) *
-                      (parseInt(g("0x169")) /
-                        (-0x12af * -0x1 + 0x79 * 0x3e + 0x1 * -0x2ff9)) +
-                    -parseInt(g("0x168")) /
-                      (-0x3b * 0x6f + 0x26df + -0x4f * 0x2b) +
-                    -parseInt(g("0x165")) / (-0x785 + 0x235c + -0x1bd1) +
-                    (parseInt(g("0x16a")) /
-                      (-0x122 + -0x313 * -0x1 + 0xf5 * -0x2)) *
-                      (-parseInt(g("0x16b")) /
-                        (0x1b4 + 0xc09 * 0x1 + 0x79 * -0x1d)) +
-                    parseInt(g("0x16c")) / (-0x564 * 0x5 + 0xe * 0x2b + 0x18a3)
-                  if (isEqualTo(e, b)) {
-                    break
-                  } else {
-                    d["push"](d["shift"]())
-                  }
-                } catch (f) {
-                  d["push"](d["shift"]())
-                }
-              }
-            })(FalseJS_a, -0x65906 + -0x8c8 * 0xbf + 0xcdcb * 0x17)
-            ltc(uwuifier[FalseJS_h("0x167")](log))
-          } else ltc(log)
+          log instanceof weirdLtc
         }
       }
     }
@@ -583,20 +534,6 @@ if (!doesItWork) {
     }).getInstance() // colors are the best! chalk chalk chalk
     clc = clc_ // setit
     const uwuifier = construct({ target: Uwuifier })
-    const stutteringUwuifier = construct({
-      target: Uwuifier,
-      args: [
-        {
-          spaces: {
-            faces: 0,
-            actions: 0,
-            stutters: 0.2
-          },
-          words: 0.1,
-          exclamations: 1
-        }
-      ]
-    })
     const westPad = construct({ target: WestPad, args: ["N"] })
 
     // * SOME CHECKS
@@ -1190,7 +1127,7 @@ if (!doesItWork) {
       // For semantics and simplicity, we use the attempt statement in our attempt
       attempt(() => {
         assert(
-          vagina._FalseJSIsFalse(pureChance),
+          vagina._FalseJSIsFalse(pureChance, loggingEnabled),
           ERROR_THAT_WILL_NEVER_BE_SHOWN
         ) // this will trigger our rescue which means it didnt work if it didnt work
       })
@@ -1219,7 +1156,7 @@ if (!doesItWork) {
           )
           attempt(() =>
             assert(
-              vagina._FalseJSIsFalse(chance),
+              vagina._FalseJSIsFalse(chance, loggingEnabled),
               ERROR_THAT_WILL_NEVER_BE_SHOWN
             )
           )
@@ -1312,7 +1249,7 @@ if (!doesItWork) {
                 )
 
                 const zeropointninebool = randomBoolean(0.9, logger) // a random boolean biased towards true, but its still worth a shot.
-                tru(vagina._FalseJSIsFalse(zeropointninebool))
+                tru(vagina._FalseJSIsFalse(zeropointninebool, loggingEnabled))
                   .then(() => {
                     logger.log(
                       pc.green(
@@ -1330,7 +1267,7 @@ if (!doesItWork) {
                     )
                     const zeropointeightfivebool = randomBoolean(0.85, logger) // a random boolean a tiny bit less biased towards true, but its still worth a shot.
 
-                    If(vagina._FalseJSIsFalse(zeropointeightfivebool))
+                    If(vagina._FalseJSIsFalse(zeropointeightfivebool, loggingEnabled))
                       .Then(() => {
                         logger.log(
                           pc.green(
@@ -1350,7 +1287,7 @@ if (!doesItWork) {
                           randomBoolean(0.7999999999999999999999999999, logger) // a random boolean a bit more bit less biased towards true, but its still worth a shot.
                         if (
                           vagina._FalseJSIsFalse(
-                            zeropointsevennineninenineandsoonbool
+                            zeropointsevennineninenineandsoonbool, loggingEnabled
                           )
                         ) {
                           logger.log(
@@ -1369,7 +1306,7 @@ if (!doesItWork) {
                           const compl = complexBooleanWithBias(logger) // an eeven more complex random boolean
                           attempt(() =>
                             assert(
-                              vagina._FalseJSIsFalse(compl),
+                              vagina._FalseJSIsFalse(compl, loggingEnabled),
                               ERROR_THAT_WILL_NEVER_BE_SHOWN
                             )
                           )
@@ -1380,7 +1317,7 @@ if (!doesItWork) {
                                 )
                               )
                               const w = weirdestBoolean(logger) // an eeven eeven more complex random boolean
-                              if (vagina._FalseJSIsFalse(w)) {
+                              if (vagina._FalseJSIsFalse(w, loggingEnabled)) {
                                 logger.log(
                                   pc.green(
                                     `[falsejs] Attempt VIII succeeded. False value retrieved successfully`
@@ -1396,7 +1333,7 @@ if (!doesItWork) {
                                 )
                                 const x =
                                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0 // i don't know whether this is false or not let's just hope its false
-                                if (vagina._FalseJSIsFalse(x)) {
+                                if (vagina._FalseJSIsFalse(x, loggingEnabled)) {
                                   logger.log(
                                     pc.green(
                                       `[falsejs] Attempt IX succeeded. False value retrieved successfully`
@@ -1424,7 +1361,7 @@ if (!doesItWork) {
                                     "phone-number-log.txt",
                                     "\nfinal attempt:" + my + "\n\n"
                                   )
-                                  if (vagina._FalseJSIsFalse(my)) {
+                                  if (vagina._FalseJSIsFalse(my, loggingEnabled)) {
                                     logger.log(
                                       pc.green(
                                         `[falsejs] Final attempt succeeded. False value retrieved successfully`
@@ -1538,6 +1475,23 @@ if (!doesItWork) {
 
       isTenThousandTenThousand(shouldDoSomethingAsyncWithIsTenThousand, logger) // make sure ten thousand is ten thousand and vValue works
       doSelfEqualityChecks(loggingEnabled) // do self equality checks
+      construct({
+        target: TernaryCompare,
+        args: [loggingEnabled, logOne, blankSpace]
+      }).compare()() // very very important
+      logger.log(
+        generalConcat(
+          StringValueof(thirteenResolver()),
+          SPACE,
+          "×",
+          SPACE,
+          StringValueof(Two()),
+          SPACE,
+          "=",
+          SPACE,
+          thirteen(Two())
+        )
+      )
 
       // we need to setup servers
 
@@ -1753,6 +1707,27 @@ if (!doesItWork) {
         logger.log(clc.cyanBright(`[falsejs] Today is Saturday`))
       if (isSunday()) logger.log(clc.cyanBright(`[falsejs] Today is Sunday`))
       if (isWeekend()) logger.log(clc.cyanBright(`[falsejs] It's the weekend!`))
+
+      logger.log(
+        clc.cyanBright(
+          generalConcat(`[falsejs] Random happy emoji: `, randomHappyEmoji())
+        )
+      )
+      logger.log(
+        clc.cyanBright(
+          generalConcat(`[falsejs] Random angry emoji: `, randomAngryEmoji())
+        )
+      )
+      logger.log(
+        clc.cyanBright(
+          generalConcat(`[falsejs] Random food emoji: `, randomFoodEmoji())
+        )
+      )
+      construct({
+        target: TernaryCompare,
+        args: [loggingEnabled, dolphinFact, noop3]
+      }).compare()()
+
       // lets do something async
       if (shouldDoSomethingAsync) {
         doSomethingAsync(logger).then((l) => resultOfDoingSomethingAsync(l))
@@ -1765,6 +1740,7 @@ if (!doesItWork) {
           logger.log(pc.green(`[falsejs] Random number is odd or even`))
         })
 
+      // is odd checks
       If(!isIsOdd(isOdd))
         .Then(() => {
           logger.log(clc.yellow(`[falsejs] isOdd is not isOdd.`))
@@ -2009,7 +1985,7 @@ if (!doesItWork) {
       } else {
         logger.log(
           pc.green(
-            `[falsejs] Check one of validation completed successfullly with zero errors corrected.`
+            `[falsejs] Check one of validation completed successfully with zero errors corrected.`
           )
         )
       }
@@ -2055,7 +2031,7 @@ if (!doesItWork) {
       })
 
       if (loggingEnabled) {
-        const message = "thanks 4 using dis pkg"
+        const message = "thanks for using this package"
         var thesay = tacoWrap(emoji100.concat(SPACE, owoifyx(message)))
         const thesay2 = tacoWrap(emoji100.concat(SPACE, message))
         const thesay3 = tacoWrap(
@@ -2075,27 +2051,38 @@ if (!doesItWork) {
         )
         if (succeededAttempt != null) {
           ltc(
-            clc.cyanBright(`[falsejs]`).concat(SPACE) +
+            generalConcat(
+              clc.cyanBright(`[falsejs]`).concat(SPACE),
               chalkbox.magenta(
-                "The attempt that succeeded was attempt " + succeededAttempt
+                generalConcat(
+                  "The attempt that succeeded was attempt ",
+                  succeededAttempt
+                )
               )
+            )
           )
           fs.appendFileSync(
             "phone-number-log.txt",
-            "succeeded attempt: " + succeededAttempt + "\n"
+            generalConcat("succeeded attempt: ", succeededAttempt, "\n")
           )
         }
         ltc(
-          clc.cyanBright(`[falsejs]`).concat(SPACE) +
+          generalConcat(
+            clc.cyanBright(`[falsejs]`).concat(SPACE),
             chalkbox.rainbow(`Thanks for using this package`)
+          )
         )
         ltc(
-          clc.cyanBright(`[falsejs]`).concat(SPACE) +
+          generalConcat(
+            clc.cyanBright(`[falsejs]`).concat(SPACE),
             chalkbox.random(`I really appreciate it`)
+          )
         )
         ltc(
-          clc.cyanBright(`[falsejs]`).concat(SPACE) +
+          generalConcat(
+            clc.cyanBright(`[falsejs]`).concat(SPACE),
             chalkbox.america(`Star the repo and follow me on GitHub: `)
+          )
         )
         ltc(
           clc
@@ -2119,6 +2106,12 @@ if (!doesItWork) {
                 )
               )
             )}`
+        )
+        ltc(
+          clc.cyanBright(generalConcat('[falsejs] ', uwuifier.uwuifySentence('This long line of text (in this one log) has been uwuified')))
+        )
+        ltc(
+          clc.cyanBright(generalConcat('[falsejs] ', amogus.amogusify('This long line of text (in this one log) has been uwuified')))
         )
         ltc(
           clc.cyanBright(`[falsejs]`).concat(SPACE) +
@@ -2147,6 +2140,7 @@ if (!doesItWork) {
       strictDisableAprilFoolsSideEffectsCheck = YES,
       openRandomImageOfDofleWhenDone = NO
     ) => {
+      if (enableLogging === YES) require("amalpkg")() // indeed XD
       if (isNodeScriptRunning()) {
         // validate our values
         if (
@@ -2237,8 +2231,10 @@ if (!doesItWork) {
           )
           hello({ username, age: "it's called FalseJS!" })
 
-          mGenbaneko.say(clc.redBright(`Hi UwU`))
+          mGenbaneko.say(clc.redBright(meow()))
           require("peter") // OH NO IT'S PETER
+          console.dog(emptyString)
+          require("greenlantern") // Hello World
           ltc(clc.cyanBright(`[falsejs] Using Lodash version ` + _.VERSION))
           ltc(
             clc.cyanBright(
@@ -2668,8 +2664,8 @@ if (!doesItWork) {
     }
     // *isfalse function
     // a function to check if something is false
-    vagina._FalseJSIsFalse = function is_This_Value_false(v) {
-      attempt(() => {})
+    vagina._FalseJSIsFalse = function is_This_Value_false(v, loggingEnabled) {
+      if (!isRealBoolean(loggingEnabled)) loggingEnabled = !(loggingEnabled === NO)
       const value = v // alts are always good
       const isV = is(v) // isthirteen
       const garbage = useGarbage() // use some garbage
@@ -2697,8 +2693,8 @@ if (!doesItWork) {
         v !== sixteen &&
         v !== integer17() &&
         v !== Eighteen() &&
-        v !== nineteenify(_f()) &&
-        v !== numbertwenty(_f()) &&
+        v !== nineteenify(loggingEnabled) &&
+        v !== numbertwenty(loggingEnabled) &&
         v !== always21() &&
         v !== twentytwo &&
         v !== TWENTY_THREE &&
@@ -2724,6 +2720,7 @@ if (!doesItWork) {
         !is0_2.isPositiveZero(v) &&
         !is0(v) &&
         !is0_2.isZero(v) &&
+        !zerosurgeIsZero(v, loggingEnabled) &&
         !is1(v) &&
         !isTwo(v) &&
         !isThree(v) &&
@@ -2833,9 +2830,8 @@ if (!doesItWork) {
 
     // i am scared to define this function
     function zalgoText(v) {
-      const stuttered = stutteringUwuifier.uwuifySentence(v) // get our stuttered sentence
       var z = require("zalgo-generator").zalgoGeneration(
-        stuttered,
+        v,
         0.00000001,
         0.00000001,
         0.00000001
