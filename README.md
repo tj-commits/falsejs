@@ -21,21 +21,29 @@ PNPM: `pnpm add falsejs`
 Import it with require:
 
 ```javascript
-const f = require("falsejs")
+const falsejs = require("falsejs").default
 ```
 
 Import it with import:
 
 ```javascript
-import f from "falsejs"
+import falsejs from "falsejs"
 ```
 
 ## Usage
 
-`f.False` is a function that calculates the boolean value false and returns it. It takes three arguments.
+`falsejs.False` is a function that calculates the boolean value false and returns it. It takes three arguments.
 
 ```
-f.False(loggingEnabled?: "yes" | "no", shouldDoSomethingAsync?: "yes" | "no", shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no", disableAprilFoolsSideEffects?: "yes" | "no", definitelyDisableAprilFoolsSideEffects?: "yes" | "no", strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no"): boolean | undefined;
+function False(
+  loggingEnabled?: "yes" | "no",
+  shouldDoSomethingAsync?: "yes" | "no",
+  shouldDoSomethingAsyncWithIsTenThousand?: "yes" | "no",
+  disableAprilFoolsSideEffects?: "yes" | "no",
+  definitelyDisableAprilFoolsSideEffects?: "yes" | "no",
+  strictDisableAprilFoolsSideEffectsCheck?: "yes" | "no",
+  openRandomImageOfDofleWhenDone?: "yes" | "no"
+): boolean
 ```
 
 The first argument is `loggingEnabled`, which is whether to output useful and funny logs or not. This can be `"yes"` or `"no"`. Some logs may still be output even when you pass in `"no"`, because FalseJS uses other libraries that may log things without user consent. `"yes"` and `"no"` are basically `true` and `false`, except the whole reason you're calling the function is to get a boolean, so it wouldn't make sense to pass in a boolean.
@@ -51,31 +59,32 @@ The sixth argument, `openRandomImageOfDofleWhenDone`, can be `"yes"` or `"no"`. 
 ## Example
 
 ```javascript
-const f = require("falsejs")
-const False = f.False("yes", "no", "no", "yes", "yes", "no", "no") // outputs a bunch of logs
+const falsejs = require("falsejs").default
+const falseValue = falsejs.False("yes", "no", "no", "yes", "yes", "no", "no") // outputs a bunch of logs
 
-console.log(False) // outputs false
+console.log(falseValue) // outputs false
 ```
 
 ## `isFalse` function
 
-FalseJS also exports a function called `isFalse`, which returns true if the value is false, otherwise false. This can be used to test whether FalseJS worked and returned false (like it wouldn't, so there's no need to do that). `f.isFalse` just takes in a value and returns true if the value is false.
+FalseJS also exports a function called `isFalse`, which returns true if the value is false, otherwise false. This can be used to test whether FalseJS worked and returned false (like it wouldn't, so there's no need to do that). `falsejs.isFalse` just takes in a value and returns true if the value is false.
 
 It takes in too parameters, the value to check whether it is false, and `loggingEnabled` which can be `"yes"` or `"no"`.
 
 Example:
 
 ```javascript
-const f = require("falsejs")
-const False = f.False("no", "no", "no")
+const falsejs = require("falsejs").default
+const falseValue = falsejs.False("no", "no", "no")
+const trueValue = require("true-value")
 
-console.log(f.isFalse(False)) // true
-console.log(f.isFalse(false)) // probably true
-console.log(f.isFalse(true)) // probably false
-console.log(f.isFalse("hi")) // false
+console.log(falsejs.isFalse(falseValue)) // true
+console.log(falsejs.isFalse(false)) // probably true
+console.log(falsejs.isFalse(trueValue)) // false
+console.log(falsejs.isFalse("hi")) // false
 ```
 
-`isFalse` can also be used as an alternative to running the `f.False` function and instead just passing a value that isn't false into the `f.isFalse` (actually there's no point doing that because `f.False` can output useful logs if you want it to and is safer and better while `f.isFalse` is definitely not just made to be used as a tool to get the value of false).
+`falsejs.isFalse` can also be used as an alternative to running the `falsejs.False` function and instead just passing a value that isn't false into `falsejs.isFalse`.
 
 ## CLI
 
@@ -110,9 +119,9 @@ false
 A jQuery plugin is also provided for FalseJS. Here is an example:
 
 ```javascript
-const f = require("falsejs")
+const falsejs = require("falsejs").default
 global.jQuery = require("jquery")
-f.injectIntojQuery()
+falsejs.injectIntojQuery()
 
 const $ = jQuery
 
@@ -127,16 +136,16 @@ Express middleware is also exported. Here is an example:
 
 ```javascript
 const express = require("express")
-const f = require("falsejs")
+const falsejs = require("falsejs").default
 const Bro = require("brototype")
 
 const app = express()
 const PORT = Bro(process).doYouEven("env.PORT") ? process.env.PORT : 3000
 
-app.use(f.expressMiddleware)
+app.use(falsejs.expressMiddleware)
 
 app.get("/", (req, res) => {
-  res.send(req.isFalse(req.False())) // sends true to the client (except on april fools (because false is false (except on april fools (because the defualt parameters were set (which enables april fools side effects (so many parentheses (can we stop the parentheses (no? (dang it (im bored (this actually looks cool (im closing the parentheses now anyway (NO DONT KILL ME (whispers to self: ill have to figure out how to close the parentheses (*closes parentheses by surprise*))))))))))))))) haha! i got out!
+  res.send(req.isFalse(req.False())) // sends true to the client haha! i got out!
 })
 
 app.listen(PORT)
@@ -145,12 +154,14 @@ app.listen(PORT)
 ## April Fools Behavior
 
 ### **Not April Fools Day**
+
 - **FalseJS will return** `false` by default.
 - The flags `disableAprilFoolsSideEffects` and `definitelyDisableAprilFoolsSideEffects` **do not affect the behavior** of FalseJS. It behaves normally as it would on any non-April Fools' Day.
   - However, if `strictDisableAprilFoolsSideEffectsCheck` is **not `no"`** and instead `"yes"` (by default it's `"yes"`), it will throw an error if these options are set to `"yes"`, because it's not April Fools' Day, and there are no side effects to disable.
   - If `strictDisableAprilFoolsSideEffectsCheck` is set to **"no"**, FalseJS behaves normally without throwing an error, even if the side effect parameters are set to `"yes"`.
 
 ### **April Fools Day**
+
 - **On April Fools' Day**, FalseJS **always returns `true`**, regardless of the state of the flags.
 - **To prevent this behavior**, you must set both `disableAprilFoolsSideEffects` to `"yes"` and `definitelyDisableAprilFoolsSideEffects` to `"yes"` when you call FalsejS.
   - If these flags are set to `"yes"`, FalseJS will return its expected behavior (return `false`), even on April Fools' Day.
@@ -160,17 +171,30 @@ app.listen(PORT)
 This usage ensures that you will always get `false` whether it's April Fools or not and no errors.
 
 ```js
-const f = require('falsejs')
-const isAprilFools = require('is-april-fools')
+const falsejs = require("falsejs").default
+const isAprilFools = require("is-april-fools")
 const disableAprilFoolsSideEffects = isAprilFools() ? "yes" : "no"
 
-const falseValue = f.False("no", "no", "no"/*the first three options you can choose, for examples we set them all to "no"*/, disableAprilFoolsSideEffects, disableAprilFoolsSideEffects, "yes")
+const falseValue = falsejs.False(
+  "no",
+  "no",
+  "no" /*the first three options you can choose, for examples we set them all to "no"*/,
+  disableAprilFoolsSideEffects,
+  disableAprilFoolsSideEffects,
+  "yes"
+)
 
 // or you can do this, but the above is better
 
-const falseValue = f.False("no", "no", "no"/*the first three options you can choose, for examples we set them all to "no"*/, "yes", "yes", "no")
+const falseValue = falsejs.False(
+  "no",
+  "no",
+  "no" /*the first three options you can choose, for examples we set them all to "no"*/,
+  "yes",
+  "yes",
+  "no"
+)
 ```
-
 
 ## Related Projects
 

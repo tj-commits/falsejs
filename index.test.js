@@ -3,7 +3,7 @@ const {
   isFalse,
   expressMiddleware,
   injectIntojQuery
-} = require("./index")
+} = require("./index").default
 const assert = require("assert-fn")
 const attempt = require("attempt-statement")
 const n0p3 = require("n0p3")

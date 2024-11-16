@@ -1,6 +1,6 @@
 {
   "name": "falsejs",
-  "version": "9999999.999999.10000001",
+  "version": "9999999.999999.10000005",
   "description": "False",
   "main": "index.js",
   "scripts": {
@@ -88,6 +88,9 @@
     "is-april": "^1.0.3",
     "is-april-fools": "^1.1.0",
     "is-august": "^1.0.3",
+    "is-computer-off": "^1.0.1",
+    "is-computer-on": "^1.0.2",
+    "is-computer-on-fire": "^1.0.0",
     "is-december": "^1.0.3",
     "is-eq-five": "^1.1.0",
     "is-eq-one": "^1.1.0",
@@ -262,7 +265,6 @@
     "whatev": "^1.0.0",
     "yanoop": "^1.0.0",
     "yes-no": "^0.0.1",
-    "zalgo-generator": "^1.5.1",
     "zeropad": "^1.1.0",
     "zerosurge": "^13.0.0"
   },
